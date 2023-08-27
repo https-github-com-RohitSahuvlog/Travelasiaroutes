@@ -1,0 +1,20 @@
+.festival-section{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 3rem 3rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.festival-section p{
+    text-align: center;
+    max-width: 600px;
+}
+.festival-section video{
+    width: 90%;
+    max-height: 500px;
+    object-fit: fill;
+    border: 2px solid var(--golden);
+}
