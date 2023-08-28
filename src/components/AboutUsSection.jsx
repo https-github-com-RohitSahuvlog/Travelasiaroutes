@@ -8,28 +8,22 @@ export default function AboutUsSection() {
       <div className="about-us-section-para-portion">
         <div className="about-us-section-para-portion-left">
           <p>
-            Seek the remarkable. Seek it in the world you know. But also in a
-            world you don't: Asia.
+            Midasia Routes, born from the adventurous spirit of Sumit Pruthi, a
+            true traveler with a Middle Eastern soul.
           </p>
           <p>
-            In distant, idyllic archipelagos, explored by luxury yacht, or
-            unforgettable landscapes, witnessed from a private helicopter. In
-            palatial hideaways on secret shores. In the natural habitats of the
-            world's most cherished wildlife. In the welcome of remote mountain
-            villages and ancient communities.
+            Since 2006, we've crafted heart-pounding journeys that transcend
+            tourism, weaving dreams into expeditions.
           </p>
         </div>
         <div className="about-us-section-para-portion-right">
           <p>
-            Discover sides of Asia you never knew existed, revealed by people
-            who know every facet. Find serenity in a journey that flows at your
-            pace and follows your path, effortlessly accommodating any
-            diversion.
-          </p>
-          <p>
-            A journey not only of the body and mind but also of the soul; an
-            opportunity for deeper, lasting connection with places and people,
-            for you, for those you travel with and for those you meet.
+            Unveil hidden wonders: yacht-explored archipelagos, breathtaking
+            chopper vistas, and secluded wildlife realms. Embrace palatial
+            sanctuaries on secret shores, connect with ancient communities, and
+            discover an unseen part of the world led by those who know its
+            essence. Your journey, your pace, your connection—etched in 15 years
+            of expertise. Unveil your travel DNA with Midasia Routes.
           </p>
         </div>
       </div>

@@ -1,37 +1,37 @@
-import React, { useState, useEffect } from 'react';
-import '../css/LandingCarousal.css';
+import React, { useState, useEffect } from "react";
+import "../css/LandingCarousal.css";
 
 const carousalData = [
   {
-    image: require("../images/mountain.jpg"),
-    heading: 'Welcome to Our Website',
-    para: 'Discover amazing things with us.',
+    image: require("../images/trailblaze.jpeg"),
+    heading: "Welcome to Our Website",
+    para: "Trail-blaze Uncharted Discoveries.",
   },
   {
-    image: require("../images/skyDiving.jpg"),
-    heading: 'Explore Our Services',
-    para: 'We offer a wide range of services.',
+    image: require("../images/GuidedbyExcellence.jpeg"),
+    heading: "Explore Our Services",
+    para: "We offer a wide range of services.",
   },
   {
-    image: require("../images/nightBoat.jpg"),
-    heading: 'Join Our Community',
-    para: 'Connect with others who share your interests.',
+    image: require("../images/IntimateGroupExperience.jpeg"),
+    heading: "Join Our Community",
+    para: "Intimate Group Experience",
   },
   {
-    image: require("../images/scubaDiving.jpg"),
-    heading: 'Welcome to Our Website',
-    para: 'Discover amazing things with us.',
+    image: require("../images/KeepyouSafe.jpeg"),
+    heading: "Keep you Safe",
+    para: "Discover amazing things with us.",
   },
   {
-    image: require("../images/river.jpg"),
-    heading: 'Explore Our Services',
-    para: 'We offer a wide range of services.',
+    image: require("../images/OurHand-Crafted.jpeg"),
+    heading: "Our Hand-Crafted Experiences",
+    para: "We offer a wide range of services.",
   },
   {
-    image: require("../images/japan.jpg"),
-    heading: 'Join Our Community',
-    para: 'Connect with others who share your interests.',
-  }
+    image: require("../images/seamlessluxury.jpeg"),
+    heading: "Seamless Luxury",
+    para: "Connect with others who share your interests.",
+  },
 ];
 
 const LandingCarousal = () => {
@@ -54,8 +54,12 @@ const LandingCarousal = () => {
       {carousalData.map((slide, index) => (
         <div
           key={index}
-          className={`slide-section ${index === activeIndex ? 'active' : ''}`}
-          style={{ backgroundImage: `url(${slide.image})`,backgroundSize:"cover" , backgroundPosition:"center" }}
+          className={`slide-section ${index === activeIndex ? "active" : ""}`}
+          style={{
+            backgroundImage: `url(${slide.image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
           <div className="content">
             <h2>{slide.heading}</h2>
@@ -67,7 +71,7 @@ const LandingCarousal = () => {
         {carousalData.map((_, index) => (
           <div
             key={index}
-            className={`dot ${index === activeIndex ? 'active' : ''}`}
+            className={`dot ${index === activeIndex ? "active" : ""}`}
             onClick={() => handleDotClick(index)}
           ></div>
         ))}

@@ -40,43 +40,37 @@ export default function Navbar() {
       )}
       <div className="nav-items">
         <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="#">Bespoke-For your Travel DNA</a>
         <div className="drop-down-item">
-          <p>Our Geography</p>
+          <p>Small Group Boutique Expeditions</p>
           <div className="drop-down-menu">
-            <a href="#">India</a>
-            <a href="#">Asia</a>
-            <a href="#">Sri Lanka</a>
+            <a href="#">Asia Pacific</a>
+            <a href="#">Middle East/ Africa</a>
           </div>
         </div>
-        <a href="#">Private Travel</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Online Payment</a>
+        <a href="#">Majestic Cruising</a>
+        <a href="#">Our Story</a>
       </div>
-      <button className="btn-a btn-a-outline">Enquire</button>
+      <button className="btn-a btn-a-outline">Start Planning</button>
       <MenuIcon className="menu-icon" onClick={openMenu} />
 
       <div className="responsive-navbar" id="responsiveNavbar">
         <CloseIcon className="close-icon" onClick={closeMenu} />
         <img src={logo} alt="" className="navbar-logo" />
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <p>Our Geography</p>
+        <a href="#">Bespoke-For your Travel DNA</a>
+        <p>Small Group Boutique Expeditions</p>
         <ul>
           <li>
-            <a href="#">Asia/Pacific</a>
+            <a href="#">Asia Pacific</a>
           </li>
           <li>
-            <a href="#">MiddleEast</a>
-          </li>
-          <li>
-            <a href="#">Sri Lanka</a>
+            <a href="#">Middle East/ Africa</a>
           </li>
         </ul>
-        <a href="#">Private Travel</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Online Payment</a>
-        <button className="btn-a btn-a-outline">Enquire</button>
+        <a href="#">Majestic Cruising</a>
+        <a href="#">Our Story</a>
+        <button className="btn-a btn-a-outline">Start Planning</button>
       </div>
     </div>
   );
