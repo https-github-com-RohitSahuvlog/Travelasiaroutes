@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "../css/LandingCarousal.css";
-
+import { CircularProgress } from "@mui/material";
 const carousalData = [
   {
-    image: require("../images/trailblaze.jpeg"),
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693201416/nzn8rg4b0nj9iwhowjio.jpg",
     heading: "Welcome to Our Website",
     para: "Trail-blaze Uncharted Discoveries.",
   },
@@ -35,20 +36,45 @@ const carousalData = [
 ];
 
 const LandingCarousal = () => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % carousalData.length);
-    }, 5000);
+    const imagePromises = carousalData.map((slide) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = slide.image;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    });
 
-    return () => clearInterval(interval);
+    Promise.all(imagePromises)
+      .then(() => setImagesLoaded(true))
+      .catch(() => setImagesLoaded(false));
   }, []);
+
+  useEffect(() => {
+    if (imagesLoaded) {
+      const interval = setInterval(() => {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % carousalData.length);
+      }, 5000);
+
+      return () => clearInterval(interval);
+    }
+  }, [imagesLoaded]);
 
   const handleDotClick = (index) => {
     setActiveIndex(index);
   };
 
+  if (!imagesLoaded) {
+    return (
+      <div className="loading-container">
+        <CircularProgress />
+      </div>
+    );
+  }
   return (
     <div className="landing-carousal">
       {carousalData.map((slide, index) => (

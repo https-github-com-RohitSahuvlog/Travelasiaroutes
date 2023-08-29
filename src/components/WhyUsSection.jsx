@@ -1,19 +1,120 @@
-import React from "react";
-import "../css/WhyUsSection.css";
-export default function WhyUsSection() {
+import React, { useState, useEffect } from "react";
+import { CircularProgress } from "@mui/material";
+// import "../css/WhyUsSection.css";
+const carousalData = [
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693201416/nzn8rg4b0nj9iwhowjio.jpg",
+    heading: "Trail-blaze Uncharted Discoveries",
+    para: "Venture beyond the ordinary. Uncover hidden gems that remain a secret from most. Embrace both iconic highlights and off-the-radar treasures, creating a truly enriched and unparalleled journey.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693226848/dqpl5twt3coxnvtw0jmi.jpg",
+    heading: "Seamless Luxury",
+    para: "Elevate Your Experience with All-Inclusive Comfort. Indulge in Top-Rated Restaurants and Hotels, Unlocking Unsurpassed Value on Your Journey.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693227339/fdtqeymwpgsyd942h8ly.jpg",
+    heading: "Our Hand-Crafted Experiences",
+    para: "Crafting bespoke journeys is our artistry. Our local travel experts meticulously weave unique itineraries, painting your desires into travel reality for an extraordinary, personalized adventure of a lifetime",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693227344/zz5xxvshl55l9bajajbj.jpg",
+    heading: "Guided by Excellence",
+    para: "Our Local Experts and Tour Leaders. Immerse in authentic culture with seasoned guides who epitomize professionalism, knowledge, and boundless enthusiasm for unparalleled experiences.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693227351/siedbybinrwwwekhmats.jpg",
+    heading: "Keep you Safe",
+    para: "Backed by the World Travel and Tourism Council’s Safe Travels Stamp. Your Health and Well-being Are Our Priority.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693227358/qk42o8hw9wwxwnokxonf.jpg",
+    heading: "Intimate Group Experience",
+    para: "Connect with fellow explorers in groups of a dozen, with a maximum of 8. Enjoy personalized attention and shared journeys that forge lasting connections.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693227123/dh7opvs3eyfxynutxegb.jpg",
+    heading: "Give Back",
+    para: "Every destination, a chance to give back. Our local expertise and ground teams empower us to select impactful community and conservation projects that truly matter",
+  },
+];
+
+const WhyUsSection = () => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const imagePromises = carousalData.map((slide) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = slide.image;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    });
+
+    Promise.all(imagePromises)
+      .then(() => setImagesLoaded(true))
+      .catch(() => setImagesLoaded(false));
+  }, []);
+
+  useEffect(() => {
+    if (imagesLoaded) {
+      const interval = setInterval(() => {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % carousalData.length);
+      }, 5000);
+
+      return () => clearInterval(interval);
+    }
+  }, [imagesLoaded]);
+
+  const handleDotClick = (index) => {
+    setActiveIndex(index);
+  };
+
+  if (!imagesLoaded) {
+    return (
+      <div className="loading-container">
+        <CircularProgress />
+      </div>
+    );
+  }
   return (
-    <div className="why-us-section">
-      <h2>Why Us?</h2>
-      <span className="about-us-section-underline"></span>
-      <p>
-        With Remote Lands you'll travel with people who have made Asia the
-        solitary focus of their own lifelong adventure. As our guest, in the
-        continent that our north American founders Catherine and Jay have adored
-        and explored for decades, you'll discover Asia on a journey that is
-        completely, authentically your own, adapted from our own remarkable
-        experiences and adventures over the years.
-      </p>
-      <button className="btn-a btn-a-solid">Know More !</button>
+    <div className="landing-carousal" style={{ height: "70vh" }}>
+      {carousalData.map((slide, index) => (
+        <div
+          key={index}
+          className={`slide-section ${index === activeIndex ? "active" : ""}`}
+          style={{
+            backgroundImage: `url(${slide.image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="content flex justify-center bg-[#222] color-white">
+            <h2>{slide.heading}</h2>
+            <p className="color-[#222]">{slide.para}</p>
+          </div>
+        </div>
+      ))}
+      {/* <div className="dots">
+        {carousalData.map((_, index) => (
+          <div
+            key={index}
+            className={`dot ${index === activeIndex ? "active" : ""}`}
+            onClick={() => handleDotClick(index)}
+          ></div>
+        ))}
+      </div> */}
     </div>
   );
-}
+};
+
+export default WhyUsSection;

@@ -1,10 +1,6 @@
 import React from "react";
 import "../css/ScrollVideoSection.css";
-import video1 from "../videos/video1.mp4";
-import video2 from "../videos/video2.mp4";
-import video3 from "../videos/video3.mp4";
-import video4 from "../videos/video4.mp4";
-import video5 from "../videos/festivalSectionVideo.mp4";
+
 export default function ScrollVideoSection() {
   return (
     <div className="scroll-video-section">
@@ -15,11 +11,31 @@ export default function ScrollVideoSection() {
         aspernatur veniam quasi illo.
       </p>
       <div className="scrollable-section">
-        <video src={video1} controls className="video-section-video"></video>
-        <video src={video2} controls className="video-section-video"></video>
-        <video src={video3} controls className="video-section-video"></video>
-        <video src={video4} controls className="video-section-video"></video>
-        <video src={video5} controls className="video-section-video"></video>
+        <video
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          controls
+          className="video-section-video"
+        ></video>
+        <video
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+          controls
+          className="video-section-video"
+        ></video>
+        <video
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          controls
+          className="video-section-video"
+        ></video>
+        <video
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+          controls
+          className="video-section-video"
+        ></video>
+        <video
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+          controls
+          className="video-section-video"
+        ></video>
       </div>
     </div>
   );
