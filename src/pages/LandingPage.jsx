@@ -11,21 +11,23 @@ import SliderComponent from "../components/SliderComponent";
 import TravelVlog from "../components/TravelVlog";
 import LandingCarousal from "../components/LandingCarousal";
 import AwardSection from "../components/AwardSection";
+import styled from "@emotion/styled";
+import image from "../images/mapbackground.png";
+const Landingpage = styled.div`
+  background-image: url(${image});
+`;
 
 export default function LandingPage() {
   return (
-    <div className="landing-page">
-      {/* <HomePageLandingSection/> */}
+    <Landingpage className="Landingpage">
       <LandingCarousal />
       <AwardSection />
-      {/* <FestivalSection/> */}
       <TravelVlog />
       <AboutUsSection />
       <TestimonailSection />
-      <WhyUsSection />
       <JetExpeditions />
       <Newsletter />
       <ScrollVideoSection />
-    </div>
+    </Landingpage>
   );
 }

@@ -73,11 +73,13 @@ export default function SliderComponent() {
 
   return (
     <div className="slider-component">
-      <div className="previous-btn move-btn" onClick={previousSlide}>
+      <div className="previous-btn" onClick={previousSlide}>
         <FaChevronLeft />
       </div>
       <div className="slides">
-        <img src={myText.image} alt={myText.imageTitle} />
+        <div className="slidesimage">
+          <img src={myText.image} alt={myText.imageTitle} />
+        </div>
         <div className="slides-text">
           <h2>{myText.name}</h2>
           <h4>{myText.job}</h4>
@@ -87,7 +89,7 @@ export default function SliderComponent() {
           </a>
         </div>
       </div>
-      <div className="next-btn move-btn" onClick={nextSlide}>
+      <div className="next-btn" onClick={nextSlide}>
         <FaChevronRight />
       </div>
     </div>

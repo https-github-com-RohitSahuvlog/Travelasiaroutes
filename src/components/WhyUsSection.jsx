@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CircularProgress } from "@mui/material";
-// import "../css/WhyUsSection.css";
+import "../css/WhyUsSection.css"; // Import your custom CSS file
+
 const carousalData = [
   {
     image:
@@ -86,33 +87,25 @@ const WhyUsSection = () => {
       </div>
     );
   }
+
   return (
-    <div className="landing-carousal" style={{ height: "70vh" }}>
+    <div className="my-carousel">
       {carousalData.map((slide, index) => (
         <div
           key={index}
-          className={`slide-section ${index === activeIndex ? "active" : ""}`}
+          className={`my-slide ${index === activeIndex ? "active" : ""}`}
           style={{
             backgroundImage: `url(${slide.image})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div className="content flex justify-center bg-[#222] color-white">
+          <div className=" my-content">
             <h2>{slide.heading}</h2>
             <p className="color-[#222]">{slide.para}</p>
           </div>
         </div>
       ))}
-      {/* <div className="dots">
-        {carousalData.map((_, index) => (
-          <div
-            key={index}
-            className={`dot ${index === activeIndex ? "active" : ""}`}
-            onClick={() => handleDotClick(index)}
-          ></div>
-        ))}
-      </div> */}
     </div>
   );
 };

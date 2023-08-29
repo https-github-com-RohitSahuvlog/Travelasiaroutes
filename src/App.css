@@ -17,7 +17,7 @@ body {
   max-width: 1600px;
 }
 :root {
-  --blue: #022848;
+  --black: black;
   --white: white;
   --golden: #e4bd5a;
 }

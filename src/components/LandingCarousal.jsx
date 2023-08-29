@@ -4,34 +4,51 @@ import { CircularProgress } from "@mui/material";
 const carousalData = [
   {
     image:
-      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693201416/nzn8rg4b0nj9iwhowjio.jpg",
-    heading: "Welcome to Our Website",
-    para: "Trail-blaze Uncharted Discoveries.",
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288332/lqojfz3kdgjgk3ufpdfa.jpg",
+    heading: "",
+    para: "",
   },
   {
-    image: require("../images/GuidedbyExcellence.jpeg"),
-    heading: "Explore Our Services",
-    para: "We offer a wide range of services.",
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693292014/ebbk0kkna8wvvm6ajysj.jpg",
+    heading: "",
+    para: "",
   },
   {
-    image: require("../images/IntimateGroupExperience.jpeg"),
-    heading: "Join Our Community",
-    para: "Intimate Group Experience",
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288332/z9g7rpj8ddmmfuyurfwn.jpg",
+    heading: "",
+    para: "",
   },
   {
-    image: require("../images/KeepyouSafe.jpeg"),
-    heading: "Keep you Safe",
-    para: "Discover amazing things with us.",
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288332/a1aleqataokwjnzp2ua2.jpg",
+    heading: "",
+    para: "",
   },
   {
-    image: require("../images/OurHand-Crafted.jpeg"),
-    heading: "Our Hand-Crafted Experiences",
-    para: "We offer a wide range of services.",
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288332/zn8fne4kchxjkmghai1l.jpg",
+    heading: "",
+    para: "",
   },
   {
-    image: require("../images/seamlessluxury.jpeg"),
-    heading: "Seamless Luxury",
-    para: "Connect with others who share your interests.",
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288331/nvmspnna9rszpq4sq0ex.jpg",
+    heading: "",
+    para: "",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288334/hg3vbjtsbqqwxbra8cx6.jpg",
+    heading: "",
+    para: "",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288333/nrpuksyfgfqxwjtkixrv.jpg",
+    heading: "",
+    para: "",
   },
 ];
 
@@ -58,7 +75,7 @@ const LandingCarousal = () => {
     if (imagesLoaded) {
       const interval = setInterval(() => {
         setActiveIndex((prevIndex) => (prevIndex + 1) % carousalData.length);
-      }, 5000);
+      }, 7000);
 
       return () => clearInterval(interval);
     }

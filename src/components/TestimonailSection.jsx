@@ -7,41 +7,69 @@ import card3 from "../images/japan.jfif";
 import card4 from "../images/india.jfif";
 import card5 from "../images/kailash.jfif";
 import card6 from "../images/nepal.jfif";
+const carousalData = [
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693201416/nzn8rg4b0nj9iwhowjio.jpg",
+    heading: "Trail-blaze Uncharted Discoveries",
+    para: "Venture beyond the ordinary. Uncover hidden gems that remain a secret from most. Embrace both iconic highlights and off-the-radar treasures, creating a truly enriched and unparalleled journey.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693226848/dqpl5twt3coxnvtw0jmi.jpg",
+    heading: "Seamless Luxury",
+    para: "Elevate Your Experience with All-Inclusive Comfort. Indulge in Top-Rated Restaurants and Hotels, Unlocking Unsurpassed Value on Your Journey.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693227339/fdtqeymwpgsyd942h8ly.jpg",
+    heading: "Our Hand-Crafted Experiences",
+    para: "Crafting bespoke journeys is our artistry. Our local travel experts meticulously weave unique itineraries, painting your desires into travel reality for an extraordinary, personalized adventure of a lifetime",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693227344/zz5xxvshl55l9bajajbj.jpg",
+    heading: "Guided by Excellence",
+    para: "Our Local Experts and Tour Leaders. Immerse in authentic culture with seasoned guides who epitomize professionalism, knowledge, and boundless enthusiasm for unparalleled experiences.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693227351/siedbybinrwwwekhmats.jpg",
+    heading: "Keep you Safe",
+    para: "Backed by the World Travel and Tourism Council’s Safe Travels Stamp. Your Health and Well-being Are Our Priority.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693227358/qk42o8hw9wwxwnokxonf.jpg",
+    heading: "Intimate Group Experience",
+    para: "Connect with fellow explorers in groups of a dozen, with a maximum of 8. Enjoy personalized attention and shared journeys that forge lasting connections.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693227123/dh7opvs3eyfxynutxegb.jpg",
+    heading: "Give Back",
+    para: "Every destination, a chance to give back. Our local expertise and ground teams empower us to select impactful community and conservation projects that truly matter",
+  },
+];
 export default function TestimonailSection() {
   return (
     <div className="testimonial-section">
-      <h2>What Others Says</h2>
+      <h2>Why Travel with us?</h2>
       <span className="about-us-section-underline"></span>
       <p>
         Here is a small selection of the kind words our clients have said about
         us recently.
       </p>
       <div className="scrollable-section">
-        <Card
-          image={card1}
-          name="Customer Name"
-          para="Exemplary service! The travel agency meticulously planned every detail, ensuring a seamless and unforgettable journey. Highly recommended for hassle-free travel!"
-        />
-        <Card
-          image={card2}
-          name="Customer Name"
-          para="Exemplary service! The travel agency meticulously planned every detail, ensuring a seamless and unforgettable journey. Highly recommended for hassle-free travel!"
-        />
-        <Card
-          image={card3}
-          name="Customer Name"
-          para="Exemplary service! The travel agency meticulously planned every detail, ensuring a seamless and unforgettable journey. Highly recommended for hassle-free travel!"
-        />
-        <Card
-          image={card4}
-          name="Customer Name"
-          para="Exemplary service! The travel agency meticulously planned every detail, ensuring a seamless and unforgettable journey. Highly recommended for hassle-free travel!"
-        />
-        <Card
-          image={card5}
-          name="Customer Name"
-          para="Exemplary service! The travel agency meticulously planned every detail, ensuring a seamless and unforgettable journey. Highly recommended for hassle-free travel!"
-        />
+        {carousalData.map((carousal) => {
+          return (
+            <Card
+              image={carousal.image}
+              name={carousal.heading}
+              para={carousal.para}
+            />
+          );
+        })}
       </div>
     </div>
   );

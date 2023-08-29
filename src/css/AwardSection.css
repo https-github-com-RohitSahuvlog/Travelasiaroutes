@@ -1,27 +1,27 @@
-.award-section{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 2rem;
-    background-color: var(--blue);
-    padding: 2rem 2rem;
+.award-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  background-color: black;
+  padding: 2rem 2rem;
 }
-.awards{
-    text-align: center;
-    color: white;
+.awards {
+  text-align: center;
+  color: white;
 }
-.awards h3{
-    font-size: 1.7rem;
+.awards h3 {
+  font-size: 1.7rem;
 }
-.awards p{
-    color: var(--golden);
+.awards p {
+  color: var(--golden);
 }
 
-@media screen and (max-width:600px) {
-    .awards h3{
-        font-size: 1rem;
-    }
-    .awards p{
-        font-size: 8px;
-    }
+@media screen and (max-width: 600px) {
+  .awards h3 {
+    font-size: 1rem;
+  }
+  .awards p {
+    font-size: 8px;
+  }
 }

@@ -14,21 +14,42 @@ function ExpeditionCrousal() {
       link: "",
     },
     {
-      url: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693202416/fljvku9bhstxi2ut62du.jpg",
+      url: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693292757/ka03ovlu5hk0654slb5v.jpg",
       title: "Journey to the World",
       places: "Nepal-Bhutan-Indian-Sri Lanka",
       date: "September 29 - October 30",
       link: "",
     },
     {
-      url: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693202451/hxufcettbr4xuf0nwjb9.jpg",
+      url: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693293026/yijgjhxmo6ekrlomesfc.webp",
       title: "A Mindful Cultural Journey",
       places: "Nepal-Bhutan-Indian-Sri Lanka",
       date: "September 29 - October 30",
       link: "",
     },
     {
-      url: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693203192/mlopgsl39ddjfrkrdf2s.jpg",
+      url: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693293442/omcmlatkoehtya0zzwj0.jpg",
+      title: "A Mindful Cultural Journey",
+      places: "Nepal-Bhutan-Indian-Sri Lanka",
+      date: "September 29 - October 30",
+      link: "",
+    },
+    {
+      url: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693293442/m8ssz0i8xsyifwxxwjks.jpg",
+      title: "Journey to the World",
+      places: "Nepal-Bhutan-Indian-Sri Lanka",
+      date: "September 29 - October 30",
+      link: "",
+    },
+    {
+      url: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693294567/ntcy8zumib6v372jah5q.jpg",
+      title: "A Mindful Cultural Journey",
+      places: "Nepal-Bhutan-Indian-Sri Lanka",
+      date: "September 29 - October 30",
+      link: "",
+    },
+    {
+      url: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693294567/ojfmkwmcaousk8mbscvz.webp",
       title: "A Mindful Cultural Journey",
       places: "Nepal-Bhutan-Indian-Sri Lanka",
       date: "September 29 - October 30",
@@ -42,8 +63,8 @@ function ExpeditionCrousal() {
     dots: true,
     duration: 500,
     arrowsBlock: false,
-    prevArrow: <FaChevronLeft className="custom-arrow prev-arrow" />,
-    nextArrow: <FaChevronRight className="custom-arrow next-arrow" />,
+    prevArrow: <FaChevronLeft className="customarrow prev-arrow" />,
+    nextArrow: <FaChevronRight className="customarrow next-arrow" />,
   };
 
   return (
@@ -61,7 +82,7 @@ function ExpeditionCrousal() {
             type="button"
             onClick={onClickHandler}
             title={label}
-            className="custom-arrow prev-arrow"
+            className="customarrow prev-arrow"
           >
             <FaChevronLeft />
           </button>
@@ -73,7 +94,7 @@ function ExpeditionCrousal() {
             type="button"
             onClick={onClickHandler}
             title={label}
-            className="custom-arrow next-arrow"
+            className="customarrow next-arrow"
           >
             <FaChevronRight />
           </button>
@@ -87,7 +108,7 @@ function ExpeditionCrousal() {
             <h3>{data.title}</h3>
             <p>{data.places}</p>
             <p>{data.date}</p>
-            <a href={data.link} className="btn-a btn-a-outline">
+            <a href={data.link} className="exbtn-a exbtn-a-outline">
               See More
             </a>
           </div>
