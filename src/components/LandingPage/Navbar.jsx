@@ -22,7 +22,7 @@ const style = {
 };
 
 export default function Navbar() {
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [displayContactInNavbar, setDisplayContactInNavbar] = useState(false);
@@ -66,11 +66,11 @@ export default function Navbar() {
             <a href="#">Middle East/ Africa</a>
           </div>
         </div>
-        <a href="#">Majestic Cruising</a>
+        <a href="#">By Destination</a>
         <a href="#">Our Story</a>
       </div>
       <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
-        <Modal
+      <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
@@ -97,7 +97,7 @@ export default function Navbar() {
             <a href="#">Middle East/ Africa</a>
           </li>
         </ul>
-        <a href="#">Majestic Cruising</a>
+        <a href="#">By Destination</a>
         <a href="#">Our Story</a>
         <button className="btn-a btn-a-outline">Start Planning</button>
       </div>
