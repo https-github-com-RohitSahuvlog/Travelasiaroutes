@@ -69,7 +69,7 @@ const LandingCarousal = () => {
     if (imagesLoaded) {
       const interval = setInterval(() => {
         setActiveIndex((prevIndex) => (prevIndex + 1) % carousalData.length);
-      }, 7000);
+      }, 5000);
 
       return () => clearInterval(interval);
     }
