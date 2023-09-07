@@ -34,8 +34,17 @@
   height: 60vh;
   object-position: center;
   border-radius: 5px;
-  border: 2px solid #fff;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  transform: rotate(-3deg);
+  border-width: 5px 15px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--golden);
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 .about-us-section::before {
   content: "";
   position: absolute;
@@ -54,6 +63,14 @@
   background-color: var(--golden);
   border-radius: 20px;
   position: relative;
+}
+
+.about-us-sectionleft > img:hover {
+  transform: rotate(3deg);
+}
+
+.about-us-sectionleft.rotate {
+  animation: rotate 0.3s ease-in-out alternate infinite;
 }
 .about-us-section-para-portion {
   display: flex;

@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/ScrollVideoSection.css";
+import "../../css/ScrollVideoSection.css";
 
 export default function ScrollVideoSection() {
   return (

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "../css/LandingCarousal.css";
+import "../../css/LandingCarousal.css";
 import { CircularProgress } from "@mui/material";
+import tanjortemple from "../../images/tanjoretemple.jpg";
 const carousalData = [
   {
-    image:
-      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288332/lqojfz3kdgjgk3ufpdfa.jpg",
+    image: `${tanjortemple}`,
     heading: "",
     para: "",
   },
@@ -41,12 +41,6 @@ const carousalData = [
   {
     image:
       "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288334/hg3vbjtsbqqwxbra8cx6.jpg",
-    heading: "",
-    para: "",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288333/nrpuksyfgfqxwjtkixrv.jpg",
     heading: "",
     para: "",
   },

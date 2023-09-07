@@ -1,0 +1,473 @@
+
+.FooterMain{
+    width: 100%;
+    /* background-image: url("../images/inspiring.jpg"); */
+    background-image: url("https://talentcorner.in/wp-content/uploads/2019/07/bgimage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.image {
+    width: 100%;
+    height: 100px;
+  }
+
+  .FooterLogo {
+    width: 100%;
+    height: 100px;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: -30px;
+    padding: 20px 0px;
+  }
+
+.clientText{
+  font-size: 1.3rem;
+  margin-right: 30px;
+   font-family: "Tinos-Italic" !important;
+}
+  .location_title {
+    /* Styles for the location title */
+    font-size: 25px;
+    color: #fff;
+    font-style: italic;
+  }
+  .flagimg {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Container{
+    margin-top: -2%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    background: rgba(10, 10, 10, 0.9);
+}
+  .imgf {
+    width: 70px;
+    height: 70px;
+  }
+
+  .contact_us_new {
+    /* Styles for the contact section */
+    color: #fff;
+    margin-top: 30px;
+  }
+  .H3_use{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 15px;
+    margin-top: 0;
+    line-height: 1;
+    font-style: italic;
+    padding: 20px;
+  }
+  .H3_us{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 0;
+    line-height: 1.5;
+  }
+  .hrclass{
+    width: 80px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: white;
+  }
+  .location_new {
+    /* Styles for each location item */
+    border-left: 1px solid #ffffff;
+    width: 400px;
+    color: #ffffff;
+    font-size: 15px;
+    font-style: italic;
+    padding: 0 0 0 30px;
+  }
+
+  .local_li{
+        padding-left: 15px;
+        font-size: 18px;
+        color: #fff;
+        margin-bottom:15px;
+        display: list-item;
+        line-height: 30px;
+        margin-right: 2px;
+  }
+  .loca_li{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom:15px ;
+    display: list-item;
+    line-height: 30px;
+    font-style: italic;
+}
+.loc_li{
+  font-size: 19px;
+  height: 20px;
+  color: #fff;
+  margin-bottom:19px ;
+  display: list-item;
+  line-height: 36px;
+  font-style: italic;
+  font-weight: 400 ;
+}
+  .location_title{
+    margin: auto;
+    display: flex;
+
+  }
+  .location_new.first-child {
+    border-left: none;
+}
+.menulist{
+  list-style: none;
+}
+
+  .Footsec{
+    width: 80%;
+    margin: auto;
+    color: #fff;
+    /* height: 650px; */
+  }
+  .about_logo .img {
+    width: 238px;
+    margin-bottom: 30px;
+}
+.footer_logo {
+    margin-top: 30px;
+}
+
+.hr{
+  margin: 20px 0;
+}
+
+/* second part  */
+
+
+.footer-links {
+  padding: 45px 0 41px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+
+.footer_left {
+  width: 35%;
+  padding: 0px 30px;
+  float: left;
+}
+.footer_right{
+    width: 65%;
+    padding: 0px 0px;
+    display: flex;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-links .H3_us {
+  color: #fff;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 10px;
+  font-size: 21px;
+  font-weight: 500;
+  margin-top: 0;
+    line-height: 1.5;
+    font-family: "Tinos-Italic" !important;
+}
+
+
+
+
+/* last part  */
+
+
+.copyright {
+  padding: 10px 0px;
+  z-index: 1;
+  background: rgba(0,0,0,0.99);
+  color: #ffffff;
+}
+
+.container_fluid {
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+margin: auto;
+}
+
+.payment_content {
+  width: 30%;
+  display: flex;
+  margin-top: 0px;
+  padding-top: 0px;
+  text-align: center;
+  float: left;
+align-items: center;
+
+}
+.li {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-align: -webkit-match-parent;
+  align-items: center;
+}
+.copyLink{
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.images {
+  width: 35px;
+  vertical-align: middle;
+}
+
+.copyright_content {
+  margin: 0px;
+  width: 65%;
+  text-align: left;
+  float: left;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyP {
+  margin-bottom: 0;
+  display: inline-block;
+  color: #fff ;
+  font-size: 15px;
+}
+
+.copyP {
+  font-family: "Tinos-Italic" !important;
+  font-size: 20px ;
+  font-weight: 500 !important;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: #ffffff !important;
+  letter-spacing: 1px !important;
+  margin: 0 0 10px;
+  font-style: italic;
+}
+
+.designerName{
+  font-size: 1.1rem;
+    color: #ffc63f;
+}
+
+
+
+
+@media all and (min-width: 129px ) and (max-width: 721px) {
+  .container{
+    margin-top: -4%;
+    width: 95%;
+    display: grid;
+    font-size: 19px;
+}
+.Footsec{
+  width: 90%;
+  margin: auto;
+  color: #fff;
+  /* height: 1740px; */
+}
+.FooterLogo{
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+.flagimg{
+  opacity: 1;
+  width: 50%;
+  overflow: auto;
+  justify-content: space-around;
+}
+.flagimg .imgf{
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+.location_new {
+  /* Styles for each location item */
+  width: 100%;
+  color: #ffffff;
+  font-size: 15px;
+  font-style: italic;
+  margin: 0 0 15px;
+  padding: 0 0 0 30px;
+}
+.location_title{
+  display: grid;
+  width: 100%;
+}
+.footer_links {
+  display: grid;
+  flex-direction: column;
+}
+.container_fluid {
+     width: 100%;
+  display: grid;
+  margin: auto;
+}
+.payment_content {
+  width: 100%;
+  margin: auto;
+
+}
+.copyright_content {
+  margin: 0px;
+  width: 100%;
+  text-align: left;
+  float: left;
+  margin: auto;
+}
+
+.copyP {
+  width: 100%;
+  font-family: "Tinos-Italic" !important;
+  font-size: 15px ;
+  font-weight: 500 !important;
+  margin-bottom: 15px;
+  color: #ffffff !important;
+  letter-spacing: 1px !important;
+  margin: 0 0 10px;
+  text-align: center;
+}
+.footer_left{
+  width: 50%;
+  padding: 10px;
+}
+.footer_right{
+  width: 80%;
+  padding: 20px ;
+}
+.row {
+  display: grid;
+  width: 100%;
+  padding: 20px 0px;
+  margin: 4px;
+  justify-content: left;
+}
+.footer_links_list{
+  margin: 20px 0px;
+}
+}
+
+@media all and (min-width: 720px) and (max-width: 957px) {
+  .container{
+    margin-top: -4%;
+      width: 95%;
+      display: grid;
+      font-size: 19px;
+  }
+  .Footsec{
+    width: 90%;
+    margin: auto;
+    color: #fff;
+    /* height: 1450px; */
+  }
+  .clientText{
+  font-size: 1.3rem;
+}
+  .FooterLogo{
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .flagimg{
+    width: 70%;
+    justify-content: space-around;
+  }
+  .imgf{
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+  }
+  .location_new {
+    /* Styles for each location item */
+    width: 100%;
+    height: 120px;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0 0 15px;
+    padding: 0 0 0 30px;
+  }
+  .location_title{
+    display: grid;
+    width: 100%;
+  }
+  .footer_links {
+    display: grid;
+    flex-direction: column;
+  }
+  .container_fluid {
+    width: 95%;
+    display: grid;
+    margin: auto;
+  }
+  .payment_content {
+    width: 40%;
+    margin: auto;
+
+  }
+  .copyright_content {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin: auto;
+  }
+
+  .copyP {
+    width: 100%;
+    font-family: "Tinos-Italic" !important;
+    font-size: 18px ;
+    font-weight: 500 !important;
+    /* line-height: 30px; */
+    margin-bottom: 15px;
+    color: #ffffff !important;
+    letter-spacing: 1px !important;
+    margin: 0 0 10px;
+  }
+  .footer_left{
+    width: 50%;
+    padding: 10px;
+  }
+  .footer_right{
+    width: 100%;
+    padding: 10px ;
+    display: flex;
+  }
+
+}

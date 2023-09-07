@@ -1,0 +1,48 @@
+.findus_container{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.findus_container> div{
+    width: 48%;
+    text-align: left;
+}
+.findus_container h2{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.findus_map{
+    height: 300px;
+    width: 100%;
+    border:1px solid red
+}
+
+.findus_office_details p{
+    /* margin-top: -15px; */
+}
+.findus_container a{
+    text-decoration: none !important ;
+     color:#A39060!important;
+     margin-left: 5px;
+}
+
+@media (max-width: 770px) {
+    .findus_container{
+        width: 95%;
+        margin: auto;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .findus_container> div{
+        width: 100%;
+        text-align: left;
+    }
+}

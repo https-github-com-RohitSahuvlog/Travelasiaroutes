@@ -1,12 +1,7 @@
-import React from "react";
-import "../css/TestimonialSection.css";
-import Card from "./Card";
-import card1 from "../images/america.jfif";
-import card2 from "../images/china.jfif";
-import card3 from "../images/japan.jfif";
-import card4 from "../images/india.jfif";
-import card5 from "../images/kailash.jfif";
-import card6 from "../images/nepal.jfif";
+import React, { useState, useEffect } from "react";
+import { CircularProgress } from "@mui/material";
+import "../../css/WhyUsSection.css"; // Import your custom CSS file
+
 const carousalData = [
   {
     image:
@@ -51,26 +46,68 @@ const carousalData = [
     para: "Every destination, a chance to give back. Our local expertise and ground teams empower us to select impactful community and conservation projects that truly matter",
   },
 ];
-export default function TestimonailSection() {
-  return (
-    <div className="testimonial-section">
-      <h2>Why Travel with us?</h2>
-      <span className="about-us-section-underline"></span>
-      <p>
-        Here is a small selection of the kind words our clients have said about
-        us recently.
-      </p>
-      <div className="scrollable-section">
-        {carousalData.map((carousal) => {
-          return (
-            <Card
-              image={carousal.image}
-              name={carousal.heading}
-              para={carousal.para}
-            />
-          );
-        })}
+
+const WhyUsSection = () => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const imagePromises = carousalData.map((slide) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = slide.image;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    });
+
+    Promise.all(imagePromises)
+      .then(() => setImagesLoaded(true))
+      .catch(() => setImagesLoaded(false));
+  }, []);
+
+  useEffect(() => {
+    if (imagesLoaded) {
+      const interval = setInterval(() => {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % carousalData.length);
+      }, 5000);
+
+      return () => clearInterval(interval);
+    }
+  }, [imagesLoaded]);
+
+  const handleDotClick = (index) => {
+    setActiveIndex(index);
+  };
+
+  if (!imagesLoaded) {
+    return (
+      <div className="loading-container">
+        <CircularProgress />
       </div>
+    );
+  }
+
+  return (
+    <div className="my-carousel">
+      {carousalData.map((slide, index) => (
+        <div
+          key={index}
+          className={`my-slide ${index === activeIndex ? "active" : ""}`}
+          style={{
+            backgroundImage: `url(${slide.image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className=" my-content">
+            <h2>{slide.heading}</h2>
+            <p className="color-[#222]">{slide.para}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
-}
+};
+
+export default WhyUsSection;

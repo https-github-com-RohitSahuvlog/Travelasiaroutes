@@ -1,7 +1,8 @@
-import React from "react";
-import "../css/AboutUsSection.css";
-import pic from "../images/sumittravel.jpeg";
+import React, { useState } from "react";
+import "../../css/AboutUsSection.css";
 export default function AboutUsSection() {
+  const [isImageHovered, setIsImageHovered] = useState(false);
+
   return (
     <div className="about-us-section">
       <div className="about-us-sectionright">
@@ -31,8 +32,17 @@ export default function AboutUsSection() {
         </div>
         <button className="btn-a btn-a-outline">About Us</button>
       </div>
-      <div className="about-us-sectionleft">
-        <img src={pic} />
+      <div
+        className={`about-us-sectionleft ${isImageHovered ? "rotate" : ""}`}
+        onMouseEnter={() => setIsImageHovered(true)}
+        onMouseLeave={() => setIsImageHovered(false)}
+      >
+        <img
+          src={
+            "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693333123/xzafx2fd1toloh9b9wif.jpg"
+          }
+          alt="Sumit Travel"
+        />
       </div>
     </div>
   );

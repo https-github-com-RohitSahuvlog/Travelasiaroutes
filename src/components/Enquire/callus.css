@@ -1,0 +1,50 @@
+.callus_container{
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.callus_container> div{
+    width: 48%;
+    text-align: left;
+}
+
+.callus_container .left p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.callus_container .left h2{
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+
+.callus_container .right p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.callus_container .right h2{
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+.callus_container .right h3{
+     display: flex;
+     justify-content: space-between;
+     font-weight: 400;
+}
+
+@media (max-width: 770px) {
+    .callus_container{
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .callus_container> div{
+        width: 100%;
+        text-align: left;
+    }
+}

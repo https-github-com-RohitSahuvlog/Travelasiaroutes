@@ -1,18 +1,16 @@
 import React from "react";
-import HomePageLandingSection from "../components/HomePageLandingSection";
-import AboutUsSection from "../components/AboutUsSection";
-import FestivalSection from "../components/FestivalSection";
-import TestimonailSection from "../components/TestimonailSection";
-import WhyUsSection from "../components/WhyUsSection";
-import Newsletter from "../components/Newsletter";
-import ScrollVideoSection from "../components/ScrollVideoSection";
-import JetExpeditions from "../components/JetExpeditions";
-import SliderComponent from "../components/SliderComponent";
-import TravelVlog from "../components/TravelVlog";
-import LandingCarousal from "../components/LandingCarousal";
-import AwardSection from "../components/AwardSection";
+
 import styled from "@emotion/styled";
 import image from "../images/mapbackground.png";
+import LandingCarousal from "../components/LandingPage/LandingCarousal";
+import AboutUsSection from "../components/LandingPage/AboutUsSection";
+import AwardSection from "../components/LandingPage/AwardSection";
+import TravelVlog from "../components/LandingPage/TravelVlog";
+import TestimonailSection from "../components/LandingPage/TestimonailSection";
+import JetExpeditions from "../components/LandingPage/JetExpeditions";
+import Newsletter from "../components/LandingPage/Newsletter";
+import ScrollVideoSection from "../components/LandingPage/ScrollVideoSection";
+import Footer from "../components/LandingPage/Footer";
 const Landingpage = styled.div`
   background-image: url(${image});
 `;
@@ -28,6 +26,7 @@ export default function LandingPage() {
       <JetExpeditions />
       <Newsletter />
       <ScrollVideoSection />
+      <Footer />
     </Landingpage>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/JetExpeditions.css";
+import "../../css/JetExpeditions.css";
 import ExpeditionCrousal from "./ExpeditionCrousal";
 export default function JetExpeditions() {
   return (

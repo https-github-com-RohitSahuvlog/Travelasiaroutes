@@ -1,6 +1,5 @@
 import React from "react";
-import "../css/ExpeditionCrousal.css";
-import testImg from "../images/whyusbg.jpg";
+import "../../css/ExpeditionCrousal.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Import arrow icons

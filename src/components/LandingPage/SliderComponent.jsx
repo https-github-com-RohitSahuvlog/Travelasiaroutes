@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../css/SliderComponent.css";
+import "../../css/SliderComponent.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 export default function SliderComponent() {
   const text = [
