@@ -33,13 +33,13 @@ function Occassion({ prevClick, handleCountNext }) {
 
     if (selectedOccasion !== "other") {
       setOtherOccasionText("");
-    }else {
+    } else {
       setOtherOccasion((prevOccasion) => {
         if (!prevOccasion.includes(selectedOccasion)) {
           return [...prevOccasion, selectedOccasion];
 
         } else {
-           return prevOccasion.filter((exp) => exp !== selectedOccasion);
+          return prevOccasion.filter((exp) => exp !== selectedOccasion);
         }
       });
     }
@@ -56,13 +56,13 @@ function Occassion({ prevClick, handleCountNext }) {
           return [...prevExperiences, value];
 
         } else {
-           return prevExperiences.filter((exp) => exp !== value);
+          return prevExperiences.filter((exp) => exp !== value);
         }
       });
     }
   };
-    const handleAccommodationTypeChange = (event) => {
-     const value = event.target.value;
+  const handleAccommodationTypeChange = (event) => {
+    const value = event.target.name;
     if (value === "OtherAccommodation") {
       setOtherAccommodation(event.target.checked);
     } else {
@@ -80,22 +80,23 @@ function Occassion({ prevClick, handleCountNext }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-     const selectedExperiences = experiences.includes("OtherExperience")
-      ? [...experiences ,experiencesOther]
+    const selectedExperiences = experiences.includes("OtherExperience")
+      ? [...experiences, experiencesOther]
       : experiences;
 
     const selectedAccommodations = accommodationType.includes("OtherAccommodation")
-      ? [...accommodationType ,otherAccommodation]
+      ? [...accommodationType, otherAccommodation]
       : accommodationType;
     const formData = {
       travelOccasion: travelOccasion === "other" ? otherOccasionText : travelOccasion,
       experiences: selectedExperiences,
-      accommodationType:selectedAccommodations ,
+      accommodationType: selectedAccommodations,
     };
     console.log("Form Data:", formData);
     console.log("experiencesOther:", experiencesOther)
+    console.log(accommodationType)
+
   };
-console.log(experiences ,otherExperienceText)
   return (
     <form onSubmit={handleSubmit}>
       <Box className={styles.subcontent}>
@@ -177,18 +178,18 @@ console.log(experiences ,otherExperienceText)
                   onChange={handleExperienceChange}
                 />
               </RadioGroup>
-                  {experiences.includes("occasion") && (
+              {experiences.includes("occasion") && (
                 <TextField
-              label="Please specify the occasion"
-              variant="outlined"
-              fullWidth
-              margin="normal"
-              name="occasionOther"
-              value={otherOccasionText}
-              onChange={(event) => setOtherOccasionText(event.target.value)}
-              className={styles.experiencesOther}
-            />
-            )}
+                  label="Please specify the occasion"
+                  variant="outlined"
+                  fullWidth
+                  margin="normal"
+                  name="occasionOther"
+                  value={otherOccasionText}
+                  onChange={(event) => setOtherOccasionText(event.target.value)}
+                  className={styles.experiencesOther}
+                />
+              )}
             </Box>
           </Box>
           <Box sx={{ marginBottom: "20px" }}>
@@ -310,16 +311,16 @@ console.log(experiences ,otherExperienceText)
               </Grid>
             </FormGroup>
             {otherExperienceText && (
-                <TextField
-              label="Please specify the experience you want to have"
-              variant="outlined"
-              fullWidth
-              margin="normal"
-              name="experiencesOther"
-              value={experiencesOther}
-              onChange={(event) => setexperiencesOther(event.target.value)}
-              className={styles.experiencesOther}
-            />
+              <TextField
+                label="Please specify the experience you want to have"
+                variant="outlined"
+                fullWidth
+                margin="normal"
+                name="experiencesOther"
+                value={experiencesOther}
+                onChange={(event) => setexperiencesOther(event.target.value)}
+                className={styles.experiencesOther}
+              />
             )}
 
           </Box>
@@ -328,40 +329,45 @@ console.log(experiences ,otherExperienceText)
               What types of accommodation do you prefer?
             </Typography>
             <FormGroup>
-                <div className={styles.MuiFormGroup_root}>
-                  <FormControlLabel
-                    control={<Checkbox />}
-                    label="5 Star Hotels"
-                    name="5 Star Hotels"
-                  />
-                  <FormControlLabel
-                    control={<Checkbox />}
-                    label="Boutique Hotels"
-                    name="Boutique Hotels"
-                  />
-                  <FormControlLabel
-                    control={<Checkbox />}
-                    label="Villa"
-                    name="Villa"
-                  />
-                  <FormControlLabel
-                    control={<Checkbox />}
-                    label="Yacht"
-                    name="Yacht"
-                  />
-                  <FormControlLabel
-                    control={<Checkbox />}
-                    label="Private Home"
-                    name="Private Home"
-                  />
-                  <FormControlLabel
-                    control={<Checkbox />}
-                    label="Other"
-                      name="OtherAccommodation"
-                     value="OtherAccommodation"
-                   onChange={handleAccommodationTypeChange}
-                  />
-                </div>
+              <div className={styles.MuiFormGroup_root}>
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="5 Star Hotels"
+                  name="5 Star Hotels"
+                  onChange={handleAccommodationTypeChange}
+                />
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Boutique Hotels"
+                  name="Boutique Hotels"
+                  onChange={handleAccommodationTypeChange}
+                />
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Villa"
+                  name="Villa"
+                  onChange={handleAccommodationTypeChange}
+                />
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Yacht"
+                  name="Yacht"
+                  onChange={handleAccommodationTypeChange}
+                />
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Private Home"
+                  name="Private Home"
+                  onChange={handleAccommodationTypeChange}
+                />
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="Other"
+                  name="OtherAccommodation"
+                  value="OtherAccommodation"
+                  onChange={handleAccommodationTypeChange}
+                />
+              </div>
               {accommodationType.includes("OtherAccommodation") && (
                 <TextField
                   label="Please specify the type of accomodations you want to have"
@@ -383,19 +389,19 @@ console.log(experiences ,otherExperienceText)
             marginTop={2}
             spacing={3}
             className={styles.containerbtn}
-        >
-          <button
-            variant="contained"
-            color="secondary"
-            onClick={prevClick}
-            className="buttonform"
           >
-            Previous
-          </button>
-          <button type="submit" variant="contained" color="primary"  className="buttonform">
-            Next
-          </button>
-        </Grid>
+            <button
+              variant="contained"
+              color="secondary"
+              onClick={prevClick}
+              className="buttonform"
+            >
+              Previous
+            </button>
+            <button type="submit" variant="contained" color="primary" className="buttonform">
+              Next
+            </button>
+          </Grid>
         </Box>
       </Box>
     </form>

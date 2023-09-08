@@ -845,11 +845,13 @@ const Enquire = () => {
           <div>
             <label>Enquiry Details</label>
             <textarea
-              name=""
-              id=""
               cols="20"
               rows="6"
-              placeholder="Tell us about your intrests,passions,needs and any other detail relevant to your trip"></textarea>
+              placeholder="Tell us about your intrests,passions,needs and any other detail relevant to your trip"
+              name="enquiryDetails"
+              value={formData.enquiryDetails}
+              onChange={handleChange}
+            ></textarea>
           </div>
           <div>
             <label
