@@ -1,41 +1,49 @@
-.callus_container{
-    width: 60%;
+.callus_container {
+    width: 80%;
     margin: auto;
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
 }
-.callus_container> div{
-    width: 48%;
+
+.callus_container>div {
+    width: 50%;
     text-align: left;
 }
 
-.callus_container .left p{
+.callus_container .left p {
     font-size: 20px;
     font-weight: 400;
+    height: 180px;
 }
-.callus_container .left h2{
-    letter-spacing: 5px;
-    font-weight: 400;
+
+.callus_container .left h2 {
+    font-size: 16px;
+    font-weight: 600;
 }
 
 
-.callus_container .right p{
+.callus_container .right p {
     font-size: 20px;
     font-weight: 400;
+    height: 180px;
 }
-.callus_container .right h2{
-    letter-spacing: 5px;
-    font-weight: 400;
+
+.callus_container .right h2 {
+    font-size: 16px;
+    font-weight: 600;
 }
-.callus_container .right h3{
-     display: flex;
-     justify-content: space-between;
-     font-weight: 400;
+
+.callus_container .right h3 {
+    max-width: 430px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 @media (max-width: 770px) {
-    .callus_container{
+    .callus_container {
         width: 90%;
         margin: auto;
         margin-top: 100px;
@@ -43,7 +51,8 @@
         justify-content: space-between;
         flex-direction: column;
     }
-    .callus_container> div{
+
+    .callus_container>div {
         width: 100%;
         text-align: left;
     }

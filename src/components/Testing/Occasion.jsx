@@ -25,41 +25,49 @@ function Occassion({ prevClick, handleCountNext }) {
   const [accommodationType, setAccommodationType] = useState([]);
   const [otherOccasionText, setOtherOccasionText] = useState("");
   const [experiencesOther, setexperiencesOther] = useState("");
+  const [isOtherExperienceChecked, setIsOtherExperienceChecked] = useState(
+    false
+  );
 
 
   const handleTravelOccasionChange = (event) => {
     const selectedOccasion = event.target.value;
     setTravelOccasion(event.target.value);
-
+    console.log(selectedOccasion)
     if (selectedOccasion !== "other") {
       setOtherOccasionText("");
-    } else {
-      setOtherOccasion((prevOccasion) => {
-        if (!prevOccasion.includes(selectedOccasion)) {
-          return [...prevOccasion, selectedOccasion];
-
-        } else {
-          return prevOccasion.filter((exp) => exp !== selectedOccasion);
-        }
-      });
     }
+    setOtherOccasion((prevOccasion) => {
+      if (!prevOccasion.includes(selectedOccasion)) {
+        return [...prevOccasion, selectedOccasion];
+
+      } else {
+        return prevOccasion.filter((exp) => exp !== selectedOccasion);
+      }
+    });
+
   };
 
   const handleExperienceChange = (event) => {
     const value = event.target.name;
-    console.log(value)
+    console.log("value", value)
     if (value === "OtherExperience") {
-      setOtherExperienceText(event.target.checked);
+      setIsOtherExperienceChecked(event.target.checked);
+      setOtherExperienceText(experiencesOther);
     } else {
       setExperiences((prevExperiences) => {
-        if (!prevExperiences.includes(value)) {
+        if (event.target.checked) {
           return [...prevExperiences, value];
-
-        } else {
+        }
+        else {
           return prevExperiences.filter((exp) => exp !== value);
         }
       });
+
+
     }
+    console.log('======experiences =====', experiences, otherExperienceText, event.target.value);
+
   };
   const handleAccommodationTypeChange = (event) => {
     const value = event.target.name;
@@ -81,8 +89,9 @@ function Occassion({ prevClick, handleCountNext }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     const selectedExperiences = experiences.includes("OtherExperience")
-      ? [...experiences, experiencesOther]
+      ? [...experiences, otherExperienceText]
       : experiences;
+    console.log("experiencesOther:", experiences)
 
     const selectedAccommodations = accommodationType.includes("OtherAccommodation")
       ? [...accommodationType, otherAccommodation]
@@ -93,7 +102,6 @@ function Occassion({ prevClick, handleCountNext }) {
       accommodationType: selectedAccommodations,
     };
     console.log("Form Data:", formData);
-    console.log("experiencesOther:", experiencesOther)
     console.log(accommodationType)
 
   };
@@ -175,10 +183,10 @@ function Occassion({ prevClick, handleCountNext }) {
                   control={<Radio />}
                   label="Other"
                   name="occasion"
-                  onChange={handleExperienceChange}
+                  onChange={handleTravelOccasionChange}
                 />
               </RadioGroup>
-              {experiences.includes("occasion") && (
+              {travelOccasion === "other" && (
                 <TextField
                   label="Please specify the occasion"
                   variant="outlined"
@@ -310,7 +318,7 @@ function Occassion({ prevClick, handleCountNext }) {
                 </Grid>
               </Grid>
             </FormGroup>
-            {otherExperienceText && (
+            {isOtherExperienceChecked && (
               <TextField
                 label="Please specify the experience you want to have"
                 variant="outlined"

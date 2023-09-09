@@ -7,6 +7,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ModalCom from "../Enquire/ModalCom";
 import { Box, Button, Modal } from "@mui/material";
+import { Link } from 'react-router-dom'; // Import Link from React Router
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -27,6 +29,7 @@ export default function Navbar() {
   const handleClose = () => setOpen(false);
   const [displayContactInNavbar, setDisplayContactInNavbar] = useState(false);
   const [displayLogoInNavbar, setDisplayLogoInNavbar] = useState(true);
+
   document.addEventListener("scroll", () => {
     if (window.scrollY >= 70) {
       setDisplayContactInNavbar(true);
@@ -43,6 +46,7 @@ export default function Navbar() {
   const closeMenu = () => {
     document.getElementById("responsiveNavbar").style.right = "-100%";
   };
+
   return (
     <div className="navbar">
       {displayLogoInNavbar && <img src={logo} alt="" className="navbar-logo" />}
@@ -51,33 +55,34 @@ export default function Navbar() {
           <CallIcon />
           <p>+91 123 456 789 0</p>
           <p>|</p>
-          <a href="#">
+          <Link to="/"> {/* Use Link for navigation */}
             <HomeIcon />
-          </a>
+          </Link>
         </div>
       )}
       <div className="nav-items">
-        <a href="#">Home</a>
-        <a href="#">Bespoke-For your Travel DNA</a>
+        <Link to="/">Home</Link> {/* Use Link for navigation */}
+        <Link to="/bespoke">Bespoke-For your Travel DNA</Link> {/* Use Link for navigation */}
         <div className="drop-down-item">
           <p>Small Group Boutique Expeditions</p>
           <div className="drop-down-menu">
-            <a href="#">Asia Pacific</a>
-            <a href="#">Middle East/ Africa</a>
+            <Link to="/asia-pacific">Asia Pacific</Link> {/* Use Link for navigation */}
+            <Link to="/middle-east-africa">Middle East/ Africa</Link> {/* Use Link for navigation */}
           </div>
         </div>
-        <a href="#">By Destination</a>
-        <a href="#">Our Story</a>
+        <Link to="/bespoke">By Destination</Link> {/* Use Link for navigation */}
+        <Link to="/our-story">Our Story</Link> {/* Use Link for navigation */}
       </div>
-      <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
+      <button className="btn-a btn-a-outline" onClick={handleOpen}>
+        Start Planning
+      </button>
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description">
-        <Box
-          sx={style}
-        >
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
           <ModalCom handleClose={handleClose} />
         </Box>
       </Modal>
@@ -86,19 +91,19 @@ export default function Navbar() {
       <div className="responsive-navbar" id="responsiveNavbar">
         <CloseIcon className="close-icon" onClick={closeMenu} />
         <img src={logo} alt="" className="navbar-logo" />
-        <a href="#">Home</a>
-        <a href="#">Bespoke-For your Travel DNA</a>
+        <Link to="/">Home</Link> {/* Use Link for navigation */}
+        <Link to="/bespoke">Bespoke-For your Travel DNA</Link> {/* Use Link for navigation */}
         <p>Small Group Boutique Expeditions</p>
         <ul>
           <li>
-            <a href="#">Asia Pacific</a>
+            <Link to="/asia-pacific">Asia Pacific</Link> {/* Use Link for navigation */}
           </li>
           <li>
-            <a href="#">Middle East/ Africa</a>
+            <Link to="/middle-east-africa">Middle East/ Africa</Link> {/* Use Link for navigation */}
           </li>
         </ul>
-        <a href="#">By Destination</a>
-        <a href="#">Our Story</a>
+        <Link to="/bespoke">By Destination</Link> {/* Use Link for navigation */}
+        <Link to="/our-story">Our Story</Link> {/* Use Link for navigation */}
         <button className="btn-a btn-a-outline">Start Planning</button>
       </div>
     </div>
