@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../css/Navbar.css";
 import "../../css/Navbar_by_destination.css";
+import { Link } from "react-router-dom";
 
 import logo from "../../images/logo.png";
 import CallIcon from "@mui/icons-material/Call";
@@ -22,6 +23,67 @@ const style = {
   overflowY: "scroll",
   m: "auto",
 };
+
+const destinations = [
+  { text: "Armenia", link: "#" },
+  { text: "Azerbaijan", link: "#" },
+  { text: "Bangladesh", link: "#" },
+  { text: "Bhutan", link: "#" },
+  { text: "Brunei", link: "#" },
+  { text: "Cambodia", link: "#" },
+  { text: "China", link: "#" },
+  { text: "Georgia", link: "#" },
+  { text: "Hong Kong", link: "#" },
+  { text: "India", link: "#" },
+  { text: "Indonesia", link: "#" },
+  { text: "Japan", link: "#" },
+  { text: "Kazakhstan", link: "#" },
+  { text: "Kyrgyzstan", link: "#" },
+  { text: "Laos", link: "#" },
+  { text: "Macao", link: "#" },
+  { text: "Malaysia", link: "#" },
+  { text: "Maldives", link: "#" },
+  { text: "Mongolia", link: "#" },
+  { text: "Myanmar", link: "#" },
+  { text: "Nepal", link: "#" },
+  { text: "Oman", link: "#" },
+  { text: "Papua New Guinea", link: "#" },
+  { text: "Philippines", link: "#" },
+  { text: "Qatar", link: "#" },
+  { text: "Saudi Arabia", link: "#" },
+  { text: "Siberia & Russian Far East", link: "#" },
+  { text: "Singapore", link: "#" },
+  { text: "South Korea", link: "#" },
+  { text: "Sri Lanka", link: "#" },
+  { text: "Taiwan", link: "#" },
+  { text: "Tajikistan", link: "#" },
+  { text: "Thailand", link: "#" },
+  { text: "Tibet", link: "#" },
+  { text: "Turkmenistan", link: "#" },
+  { text: "UAE", link: "#" },
+  { text: "Uzbekistan", link: "#" },
+  { text: "Vietnam", link: "#" },
+];
+
+
+const regionalDestinations = [
+  { text: "Abu Dhabi", link: "#" },
+  { text: "Bali", link: "#" },
+  { text: "Borneo", link: "#" },
+  { text: "Dubai", link: "#" },
+  { text: "Kamchatka", link: "#" },
+];
+
+const regionalDestinationItems = regionalDestinations.map((destination, index) => (
+  <li className="regional_destinations_li" key={index}>
+    <Link to={destination.link}>{destination.text}</Link>
+  </li>
+));
+const destinationItems = destinations.map((destination, index) => (
+  <li className="all_destinations_li" key={index}>
+    <Link to={destination.link}>{destination.text}</Link>
+  </li>
+));
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -53,23 +115,23 @@ export default function Navbar() {
           <CallIcon />
           <p>+91 123 456 789 0</p>
           <p>|</p>
-          <a href="#">
+         <Link to="#">
             <HomeIcon />
-          </a>
+          </Link>
         </div>
       )}
       <div className="nav-items">
-        <a href="#">Home</a>
-        <a href="#">Bespoke-For your Travel DNA</a>
+       <Link to="#">Home</Link>
+       <Link to="#">Bespoke-For your Travel DNA</Link>
         <div className="drop-down-item">
           <p>Small Group Boutique Expeditions</p>
           <div className="drop-down-menu">
-            <a href="#">Asia Pacific</a>
-            <a href="#">Middle East/ Africa</a>
+           <Link to="#">Asia Pacific</Link>
+           <Link to="#">Middle East/ Africa</Link>
           </div>
         </div>
         <li className="to_drop" >
-          <a href="#"> By Destination </a>
+         <Link to="#"> By Destination </Link>
 
             <div id="id_R_by_destination">
         <div class="R_by_destination">
@@ -77,233 +139,18 @@ export default function Navbar() {
             <div class="all_destinations_container">
                 <h4 class="all_destinations_h4">All Destinations</h4>
                 <ul class="all_destinations_ul" >
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Armenia
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Azerbaijan
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Bangladesh
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Bhutan
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Brunei
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                      <a href="#">
-                            Cambodia
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            China
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Georgia
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Hong Kong
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            India
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Indonesia
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Japan
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Kazakhstan
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Kyrgyzstan
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Laos
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Macao
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Malaysia
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Maldives
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Mongolia
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Myanmar
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Nepal
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Oman
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Papua New Guinea
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Philippines
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                        <a href="#">
-                            Qatar
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Saudi Arabia
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Siberia &amp; Russian Far East
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Singapore
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            South Korea
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Sri Lanka
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Taiwan
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Tajikistan
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Thailand
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Tibet
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Turkmenistan
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            UAE
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Uzbekistan
-                        </a>
-                    </li>
-                    <li class="all_destinations_li">
-                    <a href="#">
-                            Vietnam
-                        </a>
-                    </li>
+                  {destinationItems}
                 </ul>
             </div>
 
             <div class="regional_destinations_container">
                 <h4 class="regional_destinations_h4">Regional Destinations</h4>
-                <ul class="regional_destinations_ul">
-                    <li class="regional_destinations_li">
-                    <a href="#">
-                            Abu Dhabi
-                        </a>
-                    </li>
-                    <li class="regional_destinations_li">
-                    <a href="#">
-                            Bali
-                        </a>
-                    </li>
-                    <li class="regional_destinations_li">
-                    <a href="#">
-                            Borneo
-                        </a>
-                    </li>
-                    <li class="regional_destinations_li">
-                    <a href="#">
-                            Dubai
-                        </a>
-                    </li>
-                    <li class="regional_destinations_li">
-                    <a href="#">
-                            Kamchatka
-                        </a>
-                    </li>
-                </ul>
+                <ul className="regional_destinations_ul">{regionalDestinationItems}</ul>
             </div>
 
             <div class="all_itineraries_container">
                 <div class="divvv">
-                    <a  href="#">
+                    <Link to="#">
                         <div class="img_B_D">
                             <h4 class="all_itineraries_h4">
                                 <span>All Itineraries</span>
@@ -311,7 +158,7 @@ export default function Navbar() {
                             <p>Browse more than 400 sample itineraries across Asia.
                             </p>
                         </div>
-                    </a>
+                    </Link>
 
                 </div>
             </div>
@@ -320,7 +167,7 @@ export default function Navbar() {
 
             </div>
         </li>
-        <a href="#">Our Story</a>
+       <Link to="#">Our Story</Link>
       </div>
       <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
       <Modal
@@ -339,19 +186,19 @@ export default function Navbar() {
       <div className="responsive-navbar" id="responsiveNavbar">
         <CloseIcon className="close-icon" onClick={closeMenu} />
         <img src={logo} alt="" className="navbar-logo" />
-        <a href="#">Home</a>
-        <a href="#">Bespoke-For your Travel DNA</a>
+       <Link to="#">Home</Link>
+       <Link to="#">Bespoke-For your Travel DNA</Link>
         <p>Small Group Boutique Expeditions</p>
         <ul>
           <li>
-            <a href="#">Asia Pacific</a>
+           <Link to="#">Asia Pacific</Link>
           </li>
           <li>
-            <a href="#">Middle East/ Africa</a>
+           <Link to="#">Middle East/ Africa</Link>
           </li>
         </ul>
-        <a href="#">By Destination</a>
-        <a href="#">Our Story</a>
+       <Link to="#">By Destination</Link>
+       <Link to="#">Our Story</Link>
         <button className="btn-a btn-a-outline">Start Planning</button>
       </div>
     </div>

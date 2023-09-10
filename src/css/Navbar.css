@@ -27,6 +27,7 @@
   align-items: center;
   gap: 1.5rem;
 }
+
 .drop-down-item {
   display: flex;
   flex-direction: column;
@@ -87,7 +88,7 @@
   left: 0px;
   top: 42px;
   /* top: 5vmax; */
-  /* display: none; */
+  display: none;
 }
 
 .to_drop:hover  #id_R_by_destination{

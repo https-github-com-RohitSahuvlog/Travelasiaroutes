@@ -57,14 +57,14 @@
     background-color: #ffffff14;
     /* background-color: #ffffff1c; */
 }
-.all_destinations_li a{
+.all_destinations_li Link{
     display: inline-block;
     width: 100%;
     font-size: 1vmax;
     color: white;
     text-decoration: none;
 }
-.all_destinations_li a:hover{
+.all_destinations_li Link:hover{
     color: var(--golden);
 }
 
@@ -110,12 +110,12 @@
     margin-left: -1.1vmax;
   }
 
-.regional_destinations_li a{
+.regional_destinations_li Link{
     font-size: 1vmax;
     color: white;
     text-decoration: none;
 }
-.regional_destinations_li a:hover{
+.regional_destinations_li Link:hover{
     color: var(--golden);
 }
 
@@ -158,7 +158,7 @@
     /* padding: 40px; */
 }
 
-.divvv a{
+.divvv Link{
     text-decoration: none;
     /* font-size: ; */
 }
