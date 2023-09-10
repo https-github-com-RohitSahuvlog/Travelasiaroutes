@@ -20,15 +20,19 @@
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  animation: zoomEffect 7s infinite alternate; /* Add animation for smooth zoom */
+  animation: zoomEffect 7s infinite alternate;
+  /* Add animation for smooth zoom */
 }
 
 @keyframes zoomEffect {
   0% {
-    transform: scale(1); /* Initial scale value for no zoom */
+    transform: scale(1);
+    /* Initial scale value for no zoom */
   }
+
   100% {
-    transform: scale(1.1); /* Scale up to achieve the zoom effect */
+    transform: scale(1.1);
+    /* Scale up to achieve the zoom effect */
   }
 }
 
@@ -68,33 +72,55 @@
 .dot.active {
   background-color: var(--golden);
 }
+
 .content p {
   background-color: var(--golden);
   padding: 0.2rem 1rem;
   color: white;
   border-radius: 6px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bolder;
 }
+
 .content h2 {
-  color: white;
+  font-size: 1.5rem;
+  color: black;
+  background-color: #f2f2f2;
+  opacity: 0.7;
+  text-transform: uppercase;
+  animation: rotateOnce 2s linear;
+  padding: 0px 10px;
 }
+
+@keyframes rotateOnce {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 @media screen and (max-width: 500px) {
   .landing-carousal {
     width: 100vw;
     height: 50vh;
   }
+
   .content p {
     font-size: 14px;
   }
 }
+
 @media screen and (max-width: 800px) {
   .landing-carousal {
     width: 100vw;
     height: 70vh;
   }
+
   .content p {
     font-size: 14px;
   }

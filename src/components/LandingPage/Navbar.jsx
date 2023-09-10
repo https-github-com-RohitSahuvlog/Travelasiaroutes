@@ -173,45 +173,56 @@ export default function Navbar() {
 
             </div>
 
+
+            <Link to="/">Home</Link>
+            <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
+            <div className="drop-down-item">
+              <p>Small Group Boutique Expeditions</p>
+              <div className="drop-down-menu">
+                <Link to="/asia-pacific">Asia Pacific</Link>
+                <Link to="/middle-east-africa">Middle East/ Africa</Link>
+              </div>
+            </div>
+            <Link to="/">By Destination</Link>
+            <Link to="/our-story">Our Story</Link>
           </div>
-        </li>
-        <li className="to_drop">
-          <Link to="#">Our Story</Link>
-        </li>
-      </div>
-      <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description">
-        <Box
-          sx={style}
-        >
-          <ModalCom handleClose={handleClose} />
-        </Box>
-      </Modal>
-      <MenuIcon className="menu-icon" onClick={openMenu} />
+          <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
+          <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description">
+            <Box
+              sx={style}
+            >
+              <ModalCom handleClose={handleClose} />
+            </Box>
+          </Modal>
+          <MenuIcon className="menu-icon" onClick={openMenu} />
 
-      <div className="responsive-navbar" id="responsiveNavbar">
-        <CloseIcon className="close-icon" onClick={closeMenu} />
-        <img src={logo} alt="" className="navbar-logo" />
+          <div className="responsive-navbar" id="responsiveNavbar">
+            <CloseIcon className="close-icon" onClick={closeMenu} />
+            <img src={logo} alt="" className="navbar-logo" />
 
-        <Link to="#">Home</Link>
-        <Link to="#">Bespoke-For your Travel DNA</Link>
-        <p>Small Group Boutique Expeditions</p>
-        <ul>
-          <li>
-            <Link to="#">Asia Pacific</Link>
-          </li>
-          <li>
-            <Link to="#">Middle East/ Africa</Link>
-          </li>
-        </ul>
-        <Link to="#">By Destination</Link>
-        <Link to="#">Our Story</Link>
-        <button className="btn-a btn-a-outline">Start Planning</button>
+
+            <Link to="/">Home</Link>
+            <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
+            <p>Small Group Boutique Expeditions</p>
+            <ul>
+              <li>
+                <Link to="#">Asia Pacific</Link>
+              </li>
+              <li>
+                <Link to="#">Middle East/ Africa</Link>
+              </li>
+            </ul>
+
+            <Link to="/">By Destination</Link>
+            <Link to="/our-story">Our Story</Link>
+            <button className="btn-a btn-a-outline">Start Planning</button>
+          </div >
+        </li>
       </div >
-    </div >
+    </div>
   );
 }

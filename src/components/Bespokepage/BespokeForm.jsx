@@ -5,6 +5,7 @@ import BespokeForm1 from "./TripDetails";
 import BespokeForm2 from "./Travelingwith";
 import Occassion from "./Occasion";
 import TripuserInfo from "./tripuserInfo";
+import ConfirmForm from "./confirmForm";
 const Container = styled.div`
         maxWidth: 650,
         margin: "auto",
@@ -58,6 +59,10 @@ const BespokeForm = () => {
           prevClick={prevClick}
           handleCountNext={handleCountNext}
           formData={formData}
+        />
+      )}
+      {currentStep === 5 && (
+        <ConfirmForm
         />
       )}
     </Container>
