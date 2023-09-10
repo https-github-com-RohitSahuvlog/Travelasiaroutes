@@ -20,6 +20,7 @@ function ModalCom({ handleClose }) {
           top: 0,
           cursor: "pointer",
           color: "grey",
+          fontSize: "30px"
         }}
         onClick={handleClose}
       />

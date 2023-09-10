@@ -7,7 +7,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ModalCom from "../Enquire/ModalCom";
 import { Box, Button, Modal } from "@mui/material";
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { Link } from 'react-router-dom';
 
 const style = {
   position: "absolute",
@@ -55,23 +55,24 @@ export default function Navbar() {
           <CallIcon />
           <p>+91 123 456 789 0</p>
           <p>|</p>
-          <Link to="/"> {/* Use Link for navigation */}
+          <Link to="/">
             <HomeIcon />
           </Link>
         </div>
       )}
       <div className="nav-items">
-        <Link to="/">Home</Link> {/* Use Link for navigation */}
-        <Link to="/bespoke">Bespoke-For your Travel DNA</Link> {/* Use Link for navigation */}
+
+        <Link to="#">Home</Link>
+        <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
         <div className="drop-down-item">
           <p>Small Group Boutique Expeditions</p>
           <div className="drop-down-menu">
-            <Link to="/asia-pacific">Asia Pacific</Link> {/* Use Link for navigation */}
-            <Link to="/middle-east-africa">Middle East/ Africa</Link> {/* Use Link for navigation */}
+            <Link to="/asia-pacific">Asia Pacific</Link>
+            <Link to="/middle-east-africa">Middle East/ Africa</Link>
           </div>
         </div>
-        <Link to="/bespoke">By Destination</Link> {/* Use Link for navigation */}
-        <Link to="/our-story">Our Story</Link> {/* Use Link for navigation */}
+        <Link to="/bespoke">By Destination</Link>
+        <Link to="/our-story">Our Story</Link>
       </div>
       <button className="btn-a btn-a-outline" onClick={handleOpen}>
         Start Planning
@@ -91,19 +92,20 @@ export default function Navbar() {
       <div className="responsive-navbar" id="responsiveNavbar">
         <CloseIcon className="close-icon" onClick={closeMenu} />
         <img src={logo} alt="" className="navbar-logo" />
-        <Link to="/">Home</Link> {/* Use Link for navigation */}
-        <Link to="/bespoke">Bespoke-For your Travel DNA</Link> {/* Use Link for navigation */}
+
+        <Link to="#">Home</Link>
+        <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
         <p>Small Group Boutique Expeditions</p>
         <ul>
           <li>
-            <Link to="/asia-pacific">Asia Pacific</Link> {/* Use Link for navigation */}
+            <Link to="/asia-pacific">Asia Pacific</Link>
           </li>
           <li>
-            <Link to="/middle-east-africa">Middle East/ Africa</Link> {/* Use Link for navigation */}
+            <Link to="/middle-east-africa">Middle East/ Africa</Link>
           </li>
         </ul>
-        <Link to="/bespoke">By Destination</Link> {/* Use Link for navigation */}
-        <Link to="/our-story">Our Story</Link> {/* Use Link for navigation */}
+        <Link to="/bespoke">By Destination</Link>
+        <Link to="/our-story">Our Story</Link>
         <button className="btn-a btn-a-outline">Start Planning</button>
       </div>
     </div>
