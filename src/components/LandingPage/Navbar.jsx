@@ -119,27 +119,27 @@ export default function Navbar() {
           <CallIcon />
           <p>+91 123 456 789 0</p>
           <p>|</p>
-          <Link to="#">
+          <Link to="/">
             <HomeIcon />
           </Link>
         </div>
       )}
       <div className="nav-items">
         <li className="to_drop"  >
-          <Link to="#">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li className="to_drop">
-          <Link to="#">Bespoke-For your Travel DNA</Link>
+          <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
         </li>
         <li className="to_drop">
-          <Link to="#"> Small Group Boutique Expeditions </Link>
+          <Link to="/"> Small Group Boutique Expeditions </Link>
           <div className="small_group">
             <Link className="small_group_Link" to="#">Asia Pacific</Link>
             <Link className="small_group_Link" to="#">Middle East/ Africa</Link>
           </div >
         </li>
         <li className="to_drop" >
-          <Link to="#"> By Destination </Link>
+          <Link to="/"> By Destination </Link>
 
           <div id="id_R_by_destination">
             <div class="R_by_destination">
