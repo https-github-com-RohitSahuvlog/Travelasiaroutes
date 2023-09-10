@@ -10,7 +10,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ModalCom from "../Enquire/ModalCom";
 import { Box, Button, Modal } from "@mui/material";
-import { Link } from 'react-router-dom';
 
 
 const style = {
