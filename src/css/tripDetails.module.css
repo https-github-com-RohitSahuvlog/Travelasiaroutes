@@ -1,0 +1,11 @@
+.tripDetailsheader {
+    text-align: center;
+    margin-bottom: 60px;
+    text-align: center;
+    color: rgb(219, 170, 121);
+    padding: 0px 15px;
+    font-weight: bold;
+    font-family: Lora, serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}

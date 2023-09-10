@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
-import "./BespokeTravel.css";
+import "../../css/BespokeTravel.css";
 import BespokeForm1 from "./TripDetails";
 import BespokeForm2 from "./Travelingwith";
 import Occassion from "./Occasion";
+import TripuserInfo from "./tripuserInfo";
 const Container = styled.div`
         maxWidth: 650,
         margin: "auto",
@@ -47,6 +48,13 @@ const BespokeForm = () => {
       )}
       {currentStep === 3 && (
         <Occassion
+          prevClick={prevClick}
+          handleCountNext={handleCountNext}
+          formData={formData}
+        />
+      )}
+      {currentStep === 4 && (
+        <TripuserInfo
           prevClick={prevClick}
           handleCountNext={handleCountNext}
           formData={formData}

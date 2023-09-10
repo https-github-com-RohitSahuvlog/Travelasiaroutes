@@ -1,69 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300&family=Montserrat:wght@300&display=swap");
+
 * {
   padding: 0%;
   margin: 0%;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
   display: flex;
   justify-content: center;
 }
+
 body {
   width: 100%;
   overflow-x: hidden;
   max-width: 1600px;
 }
+
 :root {
   --black: black;
   --white: white;
   --golden: #e4bd5a;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+
 .btn-a {
   padding: 0.4rem 1.2rem;
   cursor: pointer;
   border-radius: 20px;
   border: none;
 }
+
 .btn-a-outline {
   background-color: var(--golden);
   color: white;
+  border-radius: 8px 2px 8px 2px;
 }
+
 .btn-a-outline:hover {
   transition: all;
   transform: scale(1.1);
 }
+
 .btn-a-solid {
   background-color: var(--golden);
   border: 1px solid var(--golden);
   color: white;
 }
+
 .btn-a-solid:hover {
   background-color: transparent;
   color: var(--golden);
 }
+
 h1 {
   font-size: 4rem;
   font-weight: 900;
 }
+
 h2 {
   font-size: 2.4rem;
 }
+
 h3 {
   font-size: 2rem;
 }
+
 .input-box {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--golden);
   outline: none;
 }
+
 .scrollable-section {
   width: 100%;
   display: flex;
@@ -81,6 +97,7 @@ h3 {
   h2 {
     font-size: 1.8rem;
   }
+
   p {
     font-size: 12px;
   }

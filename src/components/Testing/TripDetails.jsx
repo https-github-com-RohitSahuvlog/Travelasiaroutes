@@ -17,7 +17,7 @@ import {
   Checkbox,
   FormGroup,
 } from "@mui/material";
-// import "./BespokeTravel.css";
+import styles from "../../css/tripDetails.module.css";
 
 const destinations = [
   { value: "paris", label: "Paris" },
@@ -29,12 +29,7 @@ const destinations = [
 const groupCounts = [1, 2, 3, 4, 5];
 
 const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
-  console.log(
-    "setCurrentStep1",
-    setCurrentStep1,
-    setFormData1,
-    handleCountNext
-  );
+
   const [BespokeFormData1, setBespokeFormData1] = useState({
     destination: "",
     travelDates: "",
@@ -52,15 +47,17 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("setCurrentStep1", setCurrentStep1);
-    handleCountNext(BespokeFormData1);
+    handleCountNext({ form1: BespokeFormData1 });
   };
 
   return (
     <form onSubmit={handleSubmit} sx={{ justifyContent: "center" }}>
       <Paper elevation={3} sx={{ padding: 3 }} className="bespoke-form-content">
-        <Typography variant="h4" align="center" gutterBottom>
+        <h2
+          className={styles.tripDetailsheader}
+        >
           Start Planning Your Trip
-        </Typography>
+        </h2>
 
         <Typography align="center" gutterBottom>
           Please provide us with the below information, and a B&amp;R Travel
@@ -142,16 +139,16 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
           justifyContent="center"
           alignItems="center"
           marginTop={2}
-           className="containerbtn"
+          className="containerbtn"
         >
-           <button
+          <button
             variant="contained"
             color="secondary"
             className="buttonform"
           >
             Previous
           </button>
-          <button type="submit" variant="contained" color="primary"  className="buttonform">
+          <button type="submit" variant="contained" color="primary" className="buttonform">
             Next
           </button>
         </Grid>

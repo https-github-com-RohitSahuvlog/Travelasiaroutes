@@ -11,7 +11,7 @@ import {
   Select,
   MenuItem,
 } from "@mui/material";
-import styles from "./Occassion.module.css";
+import styles from "../../css/Occassion.module.css";
 import TextField from "@mui/material/TextField";
 import FormGroup from "@mui/material/FormGroup";
 import Grid from "@mui/material/Grid";
@@ -50,18 +50,18 @@ function Occassion({ prevClick, handleCountNext }) {
 
   const handleExperienceChange = (event) => {
     const value = event.target.name;
-    console.log("value", value)
+    console.log("value", experiencesOther)
     if (value === "OtherExperience") {
       setIsOtherExperienceChecked(event.target.checked);
       setOtherExperienceText(experiencesOther);
     } else {
       setExperiences((prevExperiences) => {
-        if (event.target.checked) {
+        if (!experiences.includes(prevExperiences)) {
           return [...prevExperiences, value];
         }
-        else {
-          return prevExperiences.filter((exp) => exp !== value);
-        }
+        // else if (!event.target.checked) {
+        //   return prevExperiences.filter((exp) => exp !== value);
+        // }
       });
 
 
@@ -91,7 +91,7 @@ function Occassion({ prevClick, handleCountNext }) {
     const selectedExperiences = experiences.includes("OtherExperience")
       ? [...experiences, otherExperienceText]
       : experiences;
-    console.log("experiencesOther:", experiences)
+    console.log("experiencesOther:", otherExperienceText, selectedExperiences)
 
     const selectedAccommodations = accommodationType.includes("OtherAccommodation")
       ? [...accommodationType, otherAccommodation]
@@ -103,23 +103,18 @@ function Occassion({ prevClick, handleCountNext }) {
     };
     console.log("Form Data:", formData);
     console.log(accommodationType)
+    handleCountNext({ form3: formData });
 
   };
   return (
     <form onSubmit={handleSubmit}>
       <Box className={styles.subcontent}>
         <Box sx={{ maxWidth: "600px", color: "#494949" }}>
-          <Typography
-            variant="h6"
-            sx={{
-              textAlign: "center",
-              color: "rgb(219, 170, 121)",
-              padding: "0px 15px",
-              textTransform: "uppercase",
-            }}
+          <h2
+            className={styles.Occasionheader}
           >
             Start Planning Your Trip
-          </Typography>
+          </h2>
         </Box>
         <Box sx={{ textAlign: "center" }}>
           <Box
