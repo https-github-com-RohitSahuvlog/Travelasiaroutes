@@ -20,7 +20,7 @@ function TripuserInfo({ prevClick, handleCountNext, formData }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log({ ...formData, ...formInfoData });
-        // handleCountNext();
+        handleCountNext();
     };
     return (
         <div className="form-container">

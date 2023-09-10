@@ -5,32 +5,32 @@ import tanjortemple from "../../images/tanjoretemple.jpg";
 const carousalData = [
   {
     image: `${tanjortemple}`,
-    heading: "",
-    para: "",
+    heading: "Pioneering Excellence in Middle East, Asia and Africa.",
+    para: "Crafting Extraordinary Journeys",
   },
   {
     image:
       "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693292014/ebbk0kkna8wvvm6ajysj.jpg",
-    heading: "",
-    para: "",
+    heading: "Unlocking Your Travel DNA",
+    para: "Tailoring Experiences Just for You.",
   },
   {
     image:
       "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288332/z9g7rpj8ddmmfuyurfwn.jpg",
-    heading: "",
-    para: "",
+    heading: "Once-in-a-Lifetime Memory",
+    para: "A Symphony of Culture, Luxury and Discovery.",
   },
   {
     image:
       "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288332/a1aleqataokwjnzp2ua2.jpg",
-    heading: "",
-    para: "",
+    heading: "Unleash Wanderlust",
+    para: "Your Path to Untouched Destinations",
   },
   {
     image:
       "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288332/zn8fne4kchxjkmghai1l.jpg",
-    heading: "",
-    para: "",
+    heading: "Guiding Beyond Maps",
+    para: "Authentic Encounters with Exceptional Local Leaders",
   },
   {
     image:
