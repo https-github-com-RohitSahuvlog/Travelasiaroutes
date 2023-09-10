@@ -1,8 +1,8 @@
 import React from "react";
-import BespokeTravel from "../components/Bespokepage/BespokeTravel";
+import BespokeForm from "../components/Bespokepage/BespokeForm";
 
 const BesTravel = () => {
-  return <BespokeTravel />;
+  return <BespokeForm />;
 };
 
 export default BesTravel;
