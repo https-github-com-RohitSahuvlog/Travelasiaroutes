@@ -62,7 +62,7 @@ export default function Navbar() {
       )}
       <div className="nav-items">
 
-        <Link to="#">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
         <div className="drop-down-item">
           <p>Small Group Boutique Expeditions</p>
@@ -71,7 +71,7 @@ export default function Navbar() {
             <Link to="/middle-east-africa">Middle East/ Africa</Link>
           </div>
         </div>
-        <Link to="/bespoke">By Destination</Link>
+        <Link to="/">By Destination</Link>
         <Link to="/our-story">Our Story</Link>
       </div>
       <button className="btn-a btn-a-outline" onClick={handleOpen}>
@@ -93,7 +93,7 @@ export default function Navbar() {
         <CloseIcon className="close-icon" onClick={closeMenu} />
         <img src={logo} alt="" className="navbar-logo" />
 
-        <Link to="#">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
         <p>Small Group Boutique Expeditions</p>
         <ul>
@@ -104,7 +104,7 @@ export default function Navbar() {
             <Link to="/middle-east-africa">Middle East/ Africa</Link>
           </li>
         </ul>
-        <Link to="/bespoke">By Destination</Link>
+        <Link to="/">By Destination</Link>
         <Link to="/our-story">Our Story</Link>
         <button className="btn-a btn-a-outline">Start Planning</button>
       </div>
