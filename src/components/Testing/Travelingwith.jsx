@@ -204,7 +204,14 @@ const BespokeForm2 = ({ prevClick, handleCountNext }) => {
           spacing={3}
           className="containerbtn"
         >
-
+          <button
+            variant="contained"
+            color="secondary"
+            onClick={prevClick}
+            className="buttonform"
+          >
+            Previous
+          </button>
           <button type="submit" variant="contained" color="primary" className="buttonform">
             Next
           </button>

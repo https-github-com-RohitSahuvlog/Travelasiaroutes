@@ -59,12 +59,12 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
           Start Planning Your Trip
         </h2>
 
-        <Typography align="center" gutterBottom>
+        <Typography align="center" gutterBottom maxWidth={"600px"}>
           Please provide us with the below information, and a B&amp;R Travel
           Advisor will be in touch shortly to confirm your trip details.
         </Typography>
 
-        <FormControl fullWidth sx={{ width: "70%", marginBottom: 2 }}>
+        <FormControl fullWidth sx={{ maxWidth: "50%", marginBottom: 2 }}>
           <InputLabel id="destination-label">
             Where do you want to go?
           </InputLabel>
@@ -86,7 +86,7 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
         <FormControl
           component="fieldset"
           fullWidth
-          sx={{ justifyContent: "center" }}
+          sx={{ justifyContent: "center", maxWidth: "50%", marginBottom: 2 }}
         >
           <FormLabel
             component="legend"
@@ -115,7 +115,7 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
             />
           </RadioGroup>
         </FormControl>
-        <FormControl sx={{ width: "70%", marginBottom: 2 }}>
+        <FormControl fullWidth sx={{ maxWidth: "50%", marginBottom: 2 }}>
           <InputLabel id="group-size-label">
             How many people are you travelling with?
           </InputLabel>
@@ -141,13 +141,7 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
           marginTop={2}
           className="containerbtn"
         >
-          <button
-            variant="contained"
-            color="secondary"
-            className="buttonform"
-          >
-            Previous
-          </button>
+
           <button type="submit" variant="contained" color="primary" className="buttonform">
             Next
           </button>
