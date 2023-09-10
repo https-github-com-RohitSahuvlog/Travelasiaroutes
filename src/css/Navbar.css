@@ -57,6 +57,49 @@
   display: none;
 }
 
+
+
+
+
+/* --------------------------------------------------- */
+
+
+
+.to_drop{
+  list-style: none;
+}
+
+/* .dropdown_2{
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  display: none;
+  list-style: none;
+} */
+
+/* .to_drop:hover .dropdown_2{
+  display: block;
+} */
+
+#id_R_by_destination{
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 42px;
+  /* top: 5vmax; */
+  /* display: none; */
+}
+
+.to_drop:hover  #id_R_by_destination{
+  display: block;
+}
+
+
+
+
+
+/* --------------------------------------oi9 */
+
 @media screen and (max-width: 1050px) {
   .navbar {
     font-size: 12px;
