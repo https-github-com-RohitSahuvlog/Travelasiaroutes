@@ -57,16 +57,19 @@
     background-color: #ffffff14;
     /* background-color: #ffffff1c; */
 }
-.all_destinations_li Link{
+/* .all_destinations_li Link{ */
+    .all_destination_Link{
     display: inline-block;
     width: 100%;
     font-size: 1vmax;
     color: white;
     text-decoration: none;
 }
-.all_destinations_li Link:hover{
+/* .all_destinations_li Link:hover{ */
+.all_destination_Link:hover{
     color: var(--golden);
 }
+
 
 .all_destinations_ul {
     width: 100%;
@@ -110,12 +113,12 @@
     margin-left: -1.1vmax;
   }
 
-.regional_destinations_li Link{
+.regional_destinations_Link{
     font-size: 1vmax;
     color: white;
     text-decoration: none;
 }
-.regional_destinations_li Link:hover{
+.regional_destinations_Link:hover{
     color: var(--golden);
 }
 

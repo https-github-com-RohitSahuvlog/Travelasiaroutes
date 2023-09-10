@@ -74,16 +74,18 @@ const regionalDestinations = [
   { text: "Kamchatka", link: "#" },
 ];
 
-const regionalDestinationItems = regionalDestinations.map((destination, index) => (
-  <li className="regional_destinations_li" key={index}>
-    <Link to={destination.link}>{destination.text}</Link>
-  </li>
-));
 const destinationItems = destinations.map((destination, index) => (
   <li className="all_destinations_li" key={index}>
-    <Link to={destination.link}>{destination.text}</Link>
+    <Link className="all_destination_Link" to={destination.link}>{destination.text}</Link>
   </li>
 ));
+
+const regionalDestinationItems = regionalDestinations.map((destination, index) => (
+  <li className="regional_destinations_li" key={index}>
+    <Link regional_destinations_Link to={destination.link}>{destination.text}</Link>
+  </li>
+));
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -115,59 +117,65 @@ export default function Navbar() {
           <CallIcon />
           <p>+91 123 456 789 0</p>
           <p>|</p>
-         <Link to="#">
+          <Link to="#">
             <HomeIcon />
           </Link>
         </div>
       )}
       <div className="nav-items">
-       <Link to="#">Home</Link>
-       <Link to="#">Bespoke-For your Travel DNA</Link>
-        <div className="drop-down-item">
-          <p>Small Group Boutique Expeditions</p>
-          <div className="drop-down-menu">
-           <Link to="#">Asia Pacific</Link>
-           <Link to="#">Middle East/ Africa</Link>
-          </div>
-        </div>
+        <li className="to_drop"  >
+          <Link to="#">Home</Link>
+        </li>
+        <li className="to_drop">
+          <Link to="#">Bespoke-For your Travel DNA</Link>
+        </li>
+        <li className="to_drop">
+          <Link to="#"> Small Group Boutique Expeditions </Link>
+          <div className="small_group">
+            <Link className="small_group_Link" to="#">Asia Pacific</Link>
+            <Link className="small_group_Link" to="#">Middle East/ Africa</Link>
+          </div >
+        </li>
         <li className="to_drop" >
-         <Link to="#"> By Destination </Link>
+          <Link to="#"> By Destination </Link>
 
-            <div id="id_R_by_destination">
-        <div class="R_by_destination">
+          <div id="id_R_by_destination">
+            <div class="R_by_destination">
 
-            <div class="all_destinations_container">
+              <div class="all_destinations_container">
                 <h4 class="all_destinations_h4">All Destinations</h4>
                 <ul class="all_destinations_ul" >
                   {destinationItems}
                 </ul>
-            </div>
+              </div>
 
-            <div class="regional_destinations_container">
+              <div class="regional_destinations_container">
                 <h4 class="regional_destinations_h4">Regional Destinations</h4>
                 <ul className="regional_destinations_ul">{regionalDestinationItems}</ul>
-            </div>
+              </div>
 
-            <div class="all_itineraries_container">
+              <div class="all_itineraries_container">
                 <div class="divvv">
-                    <Link to="#">
-                        <div class="img_B_D">
-                            <h4 class="all_itineraries_h4">
-                                <span>All Itineraries</span>
-                            </h4>
-                            <p>Browse more than 400 sample itineraries across Asia.
-                            </p>
-                        </div>
-                    </Link>
+                  <Link to="#">
+                    <div class="img_B_D">
+                      <h4 class="all_itineraries_h4">
+                        <span>All Itineraries</span>
+                      </h4>
+                      <p>Browse more than 400 sample itineraries across Asia.
+                      </p>
+                    </div>
+                  </Link>
 
                 </div>
-            </div>
-
-        </div>
+              </div>
 
             </div>
+
+          </div>
         </li>
-       <Link to="#">Our Story</Link>
+        <li className="to_drop">
+          <Link to="#">Our Story</Link>
+        </li>
       </div>
       <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
       <Modal
@@ -186,19 +194,19 @@ export default function Navbar() {
       <div className="responsive-navbar" id="responsiveNavbar">
         <CloseIcon className="close-icon" onClick={closeMenu} />
         <img src={logo} alt="" className="navbar-logo" />
-       <Link to="#">Home</Link>
-       <Link to="#">Bespoke-For your Travel DNA</Link>
+        <Link to="#">Home</Link>
+        <Link to="#">Bespoke-For your Travel DNA</Link>
         <p>Small Group Boutique Expeditions</p>
         <ul>
           <li>
-           <Link to="#">Asia Pacific</Link>
+            <Link to="#">Asia Pacific</Link>
           </li>
           <li>
-           <Link to="#">Middle East/ Africa</Link>
+            <Link to="#">Middle East/ Africa</Link>
           </li>
         </ul>
-       <Link to="#">By Destination</Link>
-       <Link to="#">Our Story</Link>
+        <Link to="#">By Destination</Link>
+        <Link to="#">Our Story</Link>
         <button className="btn-a btn-a-outline">Start Planning</button>
       </div>
     </div>
