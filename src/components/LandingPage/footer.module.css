@@ -92,6 +92,10 @@
   cursor: pointer;
 }
 
+.H3_us:hover {
+  /* position: t ; */
+}
+
 .hrclass {
   width: 80px;
   height: 3px;
@@ -137,6 +141,10 @@
   line-height: 36px;
   font-style: italic;
   font-weight: 400;
+}
+
+.loc_li>a :hover {
+  color: #ffc63f;
 }
 
 .location_title {
@@ -517,4 +525,67 @@
     display: flex;
   }
 
+}
+
+
+
+
+.social_link {
+  width: 100%;
+}
+
+.social_icons {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.iconinsta {
+  width: 100px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.icon {
+  width: 100px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.icon:hover {
+  color: #1877f2;
+  /* Change to the desired hover color */
+}
+
+.iconinsta :hover {
+  color: red;
+}
+
+.icon i::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.icon:hover i::before {
+  opacity: 1;
+  visibility: visible;
 }
