@@ -4,12 +4,10 @@ import SliderComponent from "./SliderComponent";
 export default function TravelVlog() {
   return (
     <div className="travel-vlog">
-      <h2>Travel Vlog</h2>
+      <h2>Why Travel with us?</h2>
       <span className="about-us-section-underline"></span>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta dolor
-        nobis in magni id excepturi placeat. Rerum id, aspernatur repudiandae
-        incidunt neque sunt voluptate possimus?
+        An Asia-focused magazine brought to you by MidAsiaRoutes - a platform for adventure, luxury, and authenticity from experts and explorers around the continent.
       </p>
       <SliderComponent />
     </div>

@@ -5,7 +5,7 @@ import tanjortemple from "../../images/tanjoretemple.jpg";
 const carousalData = [
   {
     image: `${tanjortemple}`,
-    heading: "Pioneering Excellence in Middle East, Asia and Africa.",
+    heading: "Pioneering Excellence Across MEA.",
     para: "Crafting Extraordinary Journeys",
   },
   {

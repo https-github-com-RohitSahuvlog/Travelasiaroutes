@@ -109,38 +109,41 @@
   width: 400px;
   color: #ffffff;
   font-size: 15px;
-  font-style: italic;
+  /* font-style: italic; */
   padding: 0 0 0 30px;
 }
 
 .local_li {
   padding-left: 15px;
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   margin-bottom: 15px;
   display: list-item;
   line-height: 30px;
   margin-right: 2px;
+  cursor: pointer;
 }
 
 .loca_li {
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   margin-bottom: 15px;
   display: list-item;
   line-height: 30px;
-  font-style: italic;
+  /* font-style: italic; */
+  cursor: pointer;
 }
 
 .loc_li {
-  font-size: 19px;
+  font-size: 15px;
   height: 20px;
   color: #fff;
   margin-bottom: 19px;
   display: list-item;
   line-height: 36px;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 400;
+  cursor: pointer;
 }
 
 .loc_li>a :hover {
@@ -340,9 +343,19 @@
 
   .flagimg {
     opacity: 1;
-    width: 50%;
+    width: 95%;
     overflow: auto;
     justify-content: space-around;
+  }
+
+  .flagimg::-webkit-scrollbar {
+    width: 0.1rem;
+    /* Set the width to a very small value */
+  }
+
+  .flagimg::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Make the thumb transparent */
   }
 
   .flagimg .imgf {
@@ -356,7 +369,7 @@
     width: 100%;
     color: #ffffff;
     font-size: 15px;
-    font-style: italic;
+    /* font-style: italic; */
     margin: 0 0 15px;
     padding: 0 0 0 30px;
   }
@@ -467,7 +480,7 @@
     height: 120px;
     color: #ffffff;
     font-size: 16px;
-    font-style: italic;
+    /* font-style: italic; */
     margin: 0 0 15px;
     padding: 0 0 0 30px;
   }

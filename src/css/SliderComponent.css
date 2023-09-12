@@ -49,13 +49,16 @@
   text-align: right;
   margin-top: 2rem;
 }
+
 .slides-text a {
   margin-top: 2rem;
   font-size: 10px;
 }
+
 .slides-text h2 {
   text-align: center;
 }
+
 .exbtn-a {
   width: 100px;
   height: 30px;
@@ -70,6 +73,7 @@
     align-items: center;
     position: relative;
   }
+
   .slides {
     width: 100%;
     border-radius: 8px;
@@ -92,6 +96,7 @@
     display: flex;
     justify-content: center;
   }
+
   .previous-btn {
     padding: 0.5rem;
     background: var(--golden);
@@ -106,6 +111,7 @@
     left: 0%;
     bottom: 0%;
   }
+
   .next-btn {
     padding: 0.5rem;
     background: var(--golden);
@@ -120,10 +126,13 @@
     right: 0%;
     bottom: 0%;
   }
+
   .slides img {
     width: 100%;
     height: 300px;
+    border-radius: 8px 2px 8px 2px;
   }
+
   .slides-text {
     display: flex;
     flex-direction: column;
@@ -132,14 +141,17 @@
     align-items: center;
     max-width: 500px;
   }
+
   .slides-text p {
     /* text-align: right; */
     margin-top: 2rem;
   }
+
   .slides-text a {
     margin-top: 2rem;
     font-size: 10px;
   }
+
   .slides-text h2 {
     text-align: center;
   }
@@ -153,6 +165,7 @@
     align-items: center;
     position: relative;
   }
+
   .slides {
     width: 100%;
     border-radius: 8px;
@@ -175,6 +188,7 @@
     display: flex;
     justify-content: center;
   }
+
   .previous-btn {
     padding: 0.5rem;
     background: var(--golden);
@@ -189,6 +203,7 @@
     left: 0%;
     bottom: 0%;
   }
+
   .next-btn {
     padding: 0.5rem;
     background: var(--golden);
@@ -203,10 +218,13 @@
     right: 0%;
     bottom: 0%;
   }
+
   .slides img {
     width: 100%;
     height: 300px;
+    border-radius: 15px 2px 15px 2px;
   }
+
   .slides-text {
     display: flex;
     flex-direction: column;
@@ -215,14 +233,18 @@
     align-items: center;
     max-width: 500px;
   }
+
   .slides-text p {
     /* text-align: right; */
     margin-top: 2rem;
   }
+
   .slides-text a {
     margin-top: 2rem;
     font-size: 10px;
+    border-radius: 8px 2px 8px 2px;
   }
+
   .slides-text h2 {
     text-align: center;
   }
@@ -238,6 +260,7 @@
     align-items: center;
     position: relative;
   }
+
   .slides {
     width: 100%;
     border-radius: 8px;
@@ -245,11 +268,14 @@
     display: flex;
     gap: 3rem;
   }
+
   .slidesimage {
     width: 100%;
     height: 100%;
     padding: 10px;
+
   }
+
   .slides-text {
     width: 100%;
     margin: auto;
@@ -274,6 +300,7 @@
     left: -1%;
     top: 50%;
   }
+
   .next-btn {
     padding: 0.5rem;
     background: var(--golden);
@@ -287,18 +314,23 @@
     right: -1%;
     top: 50%;
   }
+
   .slides img {
     width: 100%;
     height: 400px;
+    border-radius: 30px 2px 30px 2px;
   }
+
   .slides-text p {
     text-align: center;
     margin-top: 2rem;
   }
+
   .slides-text a {
     margin-top: 2rem;
     font-size: 10px;
   }
+
   .slides-text h2 {
     text-align: center;
   }

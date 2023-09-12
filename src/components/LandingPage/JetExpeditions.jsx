@@ -4,7 +4,7 @@ import ExpeditionCrousal from "./ExpeditionCrousal";
 export default function JetExpeditions() {
   return (
     <div className="jet-expeditions-section">
-      <h2>Aman Jet Expeditions</h2>
+      <h2 className="jetheading">Our Jet Expeditions</h2>
       <span className="about-us-section-underline"></span>
       <p>
         You are invited to Remote Lands’ signature Aman Jet Expeditions, in

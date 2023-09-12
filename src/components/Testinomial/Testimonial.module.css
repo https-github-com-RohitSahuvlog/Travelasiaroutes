@@ -1,0 +1,124 @@
+.section-three-main-div {
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  justify-items: center;
+  row-gap: 1rem;
+  background-color: rgb(250, 251, 253);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.testinomialheader {
+  width: 100%;
+  text-align: center;
+}
+
+.fa-star.checked {
+  color: gold;
+}
+
+.testinomialheader>h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #e4bd5a;
+}
+
+.quotes-img-right {
+  justify-self: end;
+  background-image: url(../../images/left.png);
+  margin-right: 20px;
+}
+
+.quotes-img-left {
+  background-image: url(../../images/right.png);
+  margin-left: 20px;
+}
+
+.section-three-sub-div-one {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.main-quotes-div {
+  /* width: 1110px; */
+  transition: 1s;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.quotes-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 23px;
+}
+
+
+.star-rating {
+  display: inline-block;
+  font-size: 1.2rem;
+  /* Adjust the size as needed */
+  color: #FFD700;
+  /* Gold color for filled stars */
+}
+
+.star-rating::before {
+  content: "\2605";
+  /* Unicode character for a solid star (★) */
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.star-rating.filled::before {
+  opacity: 1;
+}
+
+/* ------------------ */
+.para {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+.subText {
+  margin-top: 1rem;
+  font-size: 16px;
+  color: #11da43;
+  font-weight: 600;
+  color: #005294;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  -webkit-transition: opacity 0.7s cubic-bezier(.39, .575, .565, 1);
+  transition: opacity 0.7s cubic-bezier(.39, .575, .565, 1);
+}
+
+.myDot {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 5.5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
+  background: rgb(130, 126, 119);
+}
+
+.myDot--active {
+  background: rgb(24, 24, 21);
+}
+
+.not-visible {
+  opacity: 0;
+  transition: 1s;
+}
+
+@media (max-width: 767px) {
+
+  .section-three-sub-div-one {
+    grid-template-columns: 15% 1fr 15%;
+  }
+}

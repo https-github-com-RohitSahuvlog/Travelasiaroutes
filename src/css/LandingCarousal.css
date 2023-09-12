@@ -74,22 +74,24 @@
 }
 
 .content p {
-  background-color: var(--golden);
-  padding: 0.2rem 1rem;
-  color: black;
-  border-radius: 6px;
-  display: inline-block;
   font-size: 1rem;
-  font-weight: bolder;
+  display: inline;
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 145 97/var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255/var(--tw-text-opacity));
+  padding: 0.3125em 0.6875em;
+  -webkit-box-decoration-break: clone;
+  font-weight: 600;
 }
 
 .content h2 {
-  font-size: 1.5rem;
-  color: white;
-  background-color: black;
-  opacity: 0.7;
+  font-size: 2rem;
+  font-family: Mont, Montserrat, Trebuchet MS, Helvetica, sans-serif !important;
+  font-weight: 600;
   text-transform: uppercase;
-  padding: 0px 10px;
+  letter-spacing: .125em;
+  color: white;
 }
 
 @media screen and (max-width: 500px) {

@@ -22,7 +22,6 @@ const Footer = () => {
           <img className={styles.imgf}  src={america} alt="" />
           <img className={styles.imgf}  src={canada} alt="" />
           <img className={styles.imgf}  src={germany} alt="" /> */}
-
             <img className={styles.imgf} src='https://midasiaroutes.com/panel/clients/1608019763_6358.jpg' alt="" />
             <img className={styles.imgf} src="https://midasiaroutes.com/panel/clients/1608019772_8254.jpg" alt="" />
             <img className={styles.imgf} src="https://midasiaroutes.com/panel/clients/1608019779_6242.jpg" alt="" />
