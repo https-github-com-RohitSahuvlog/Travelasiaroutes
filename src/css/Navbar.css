@@ -19,9 +19,14 @@
 }
 
 .call-and-home-nav-item {
-  display: flex;
+  width: fit-content;
+  display: -webkit-inline-box;
   align-items: center;
   gap: 0.5rem;
+}
+
+.call-and-home-nav-item>p {
+  margin: auto;
 }
 
 .nav-items {
@@ -122,6 +127,29 @@
   display: block;
 }
 
+/* /////////////////////sidenavbar/////////////// */
+
+
+.side_destinations_container {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.side_destinations_ul {
+  margin: 10px;
+}
+
+.side_destinations_li {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  color: rgb(255 255 255/var(--tw-text-opacity));
+}
+
 
 
 
@@ -161,6 +189,7 @@
   align-items: center;
   gap: 1.5rem;
   transition: 1s;
+  overflow: scroll;
 }
 
 .nav-link {
@@ -180,6 +209,24 @@
   line-height: 1.666;
   padding: 1rem;
 
+}
+
+.side_nav_link {
+  text-align: center;
+  font-family: Mont, Montserrat, Trebuchet MS, Helvetica, sans-serif !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .125em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255/var(--tw-text-opacity));
+  display: block;
+  width: 100%;
+  position: relative;
+  background: 0 0;
+  border: none;
+  /* font-size: .85rem; */
+  line-height: 1.666;
+  padding: 1rem;
 }
 
 .close-icon {

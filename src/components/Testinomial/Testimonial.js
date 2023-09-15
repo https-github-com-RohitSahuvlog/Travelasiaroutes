@@ -1,6 +1,7 @@
 import styles from "./Testimonial.module.css";
 import React, { useEffect, useRef, useState } from "react";
-
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { BsStarHalf } from "react-icons/bs";
 const TESTIMONIAL_DELAY = 3000;
 
 const Testimonial = (props) => {
@@ -63,20 +64,46 @@ const Testimonial = (props) => {
   };
   const generateStars = (rating) => {
     const stars = [];
+
     for (let i = 1; i <= 5; i++) {
-      const starClass = i <= rating ? 'star-rating filled' : 'star-rating';
-      stars.push(<span key={i} className={starClass}></span>);
+      if (i <= rating) {
+        stars.push(
+          <AiFillStar
+            key={i}
+            size={20}
+            color="#FFC485"
+            className="mr-2 cursor-pointer"
+          />
+        );
+      } else if (i === Math.ceil(rating) && !Number.isInteger(rating)) {
+        stars.push(
+          <BsStarHalf
+            key={i}
+            size={17}
+            color="#FFC485"
+            className="mr-1 cursor-pointer"
+          />
+        );
+      } else {
+        stars.push(
+          <AiOutlineStar
+            key={i}
+            size={20}
+            color="#FFC485"
+            className="mr-1 cursor-pointer"
+          />
+        );
+      }
     }
-    return stars;
+    return <div className="flex"> {stars}</div>;
   };
 
   return (
     <div>
+
       <div className={styles.testinomialheader}>
         <h2>Our Client's Feedback</h2>
-
       </div>
-
       <div className={`${styles["section-three-main-div"]} testimonial`}>
 
         <div

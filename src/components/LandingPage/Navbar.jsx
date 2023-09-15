@@ -77,9 +77,14 @@ const regionalDestinations = [
 ];
 
 const destinationItems = destinations.map((destination, index) => (
-  <li className="all_destinations_li" key={index}>
+  <div className="all_destinations_li" key={index}>
     <Link className="all_destination_Link" to={destination.link}>{destination.text}</Link>
-  </li>
+  </div>
+));
+const sidedestinationItems = destinations.map((destination, index) => (
+  <div className="side_destinations_li" key={index}>
+    <Link className="side_destination_Link" to={destination.link}>{destination.text}</Link>
+  </div>
 ));
 
 const regionalDestinationItems = regionalDestinations.map((destination, index) => (
@@ -91,10 +96,12 @@ const regionalDestinationItems = regionalDestinations.map((destination, index) =
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
   const [displayContactInNavbar, setDisplayContactInNavbar] = useState(false);
   const [displayLogoInNavbar, setDisplayLogoInNavbar] = useState(true);
+  const [showDestinationDropdown, setShowDestinationDropdown] = useState(false);
+  const [showBespokeDropdown, setShowBespokeDropdown] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   document.addEventListener("scroll", () => {
     if (window.scrollY >= 70) {
       setDisplayContactInNavbar(true);
@@ -106,6 +113,7 @@ export default function Navbar() {
   });
 
   const openMenu = () => {
+    setShowDestinationDropdown(false);
     document.getElementById("responsiveNavbar").style.right = "0%";
   };
   const closeMenu = () => {
@@ -174,7 +182,7 @@ export default function Navbar() {
             </div>
 
 
-            <Link to="/">Home</Link>
+            {/* <Link to="/">Home</Link>
             <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
             <div className="drop-down-item">
               <p>Small Group Boutique Expeditions</p>
@@ -184,7 +192,7 @@ export default function Navbar() {
               </div>
             </div>
             <Link to="/">By Destination</Link>
-            <Link to="/our-story">Our Story</Link>
+            <Link to="/our-story">Our Story</Link> */}
           </div>
 
 
@@ -212,25 +220,25 @@ export default function Navbar() {
         <div className="responsive-navbar" id="responsiveNavbar">
           <CloseIcon className="close-icon" onClick={closeMenu} />
           <img src={logo} alt="" className="navbar-logo" />
+          {!showDestinationDropdown && <>
+            <div className="side_nav-link">
+              <Link to="/">Home</Link>
+            </div>
+            <div className="side_nav_link">
+              <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
+            </div>
+            <div className="side_nav_link">
+              <Link to="/" >Small Group Boutique Expeditions</Link>
+            </div>
+            <div className="side_nav_link" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}>
+              <Link to="/">By Destination</Link>
+            </div>
 
-          <div className="nav-link">
-            <Link to="/">Home</Link>
-          </div>
-          <div className="nav-link">
-            <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
-          </div>
-          <div className="nav-link">
-            <Link to="/" >Small Group Boutique Expeditions</Link>
-          </div>
-          <div className="nav-link">
-            <Link to="/">By Destination</Link>
-          </div>
+            <div className="side_nav_link">
+              <Link to="/our-story">Our Story</Link>
+            </div>
 
-          <div className="nav-link">
-            <Link to="/our-story">Our Story</Link>
-          </div>
-
-          {/* <ul>
+            {/* <ul>
             <li>
               <Link to="#">Asia Pacific</Link>
             </li>
@@ -239,23 +247,62 @@ export default function Navbar() {
             </li>
           </ul> */}
 
-          <div className="nav-link">
-            <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
-            <Modal
-              open={open}
-              onClose={handleClose}
-              aria-labelledby="modal-modal-title"
-              aria-describedby="modal-modal-description">
-              <Box
-                sx={style}
-              >
-                <ModalCom handleClose={handleClose} />
-              </Box>
-            </Modal>
-          </div>
+            <div className="side_nav_link">
+              <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
+              <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description">
+                <Box
+                  sx={style}
+                >
+                  <ModalCom handleClose={handleClose} />
+                </Box>
+              </Modal>
+            </div></>}
 
+          {showDestinationDropdown && (
+            <div >
+              <div class="side_by_destination">
+                <h4 class="side_destinations_h4">All Destinations</h4>
+
+                <div class="side_destinations_container">
+                  <ul class="side_destinations_ul" >
+                    {sidedestinationItems.slice(0, Math.ceil(destinationItems.length / 2))}
+                  </ul>
+                  <ul class="side_destinations_ul" >
+                    {sidedestinationItems.slice(Math.ceil(destinationItems.length / 2))}
+                  </ul>
+                </div>
+                <div class="regional_destinations_container">
+                  <h4 class="regional_destinations_h4">Regional Destinations</h4>
+                  <ul className="regional_destinations_ul">{regionalDestinationItems}</ul>
+                </div>
+                <div class="all_itineraries_container">
+                  <div class="divvv">
+                    <Link to="#">
+                      <div class="img_B_D">
+                        <h4 class="all_itineraries_h4">
+                          <span>All Itineraries</span>
+                        </h4>
+                        <p>Browse more than 400 sample itineraries across Asia.
+                        </p>
+                      </div>
+                    </Link>
+
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+          )}
 
         </div >
+
       </div>
     </div>
   );
