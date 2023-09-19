@@ -51,10 +51,7 @@ export default function TestimonailSection() {
     <div className="testimonial-section">
       <h2>Why Travel with us?</h2>
       <span className="about-us-section-underline"></span>
-      <p>
-        Here is a small selection of the kind words our clients have said about
-        us recently.
-      </p>
+
       <div className="scrollable-section">
         {carousalData.map((carousal) => {
           return (

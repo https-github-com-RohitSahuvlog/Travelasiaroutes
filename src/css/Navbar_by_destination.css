@@ -1,5 +1,4 @@
-
-.R_by_destination{
+.R_by_destination {
     padding: 1.5vmax;
     /* padding: 20px; */
     background-color: black;
@@ -7,42 +6,48 @@
     display: flex;
     flex-direction: row;
     /* height: 78vh ; */
-    height: 41.5vmax ;
+    height: 41.5vmax;
     width: 100%;
     font-family: "Montserrat", sans-serif;
 }
 
 
-.all_destinations_container{
+.all_destinations_container {
     width: 55%;
     /* background-color: yellow; */
 }
-.all_destinations_container:hover{
+
+.all_destinations_container:hover {
     width: 55%;
     /* background-color: #ffffff07; */
-    background-image: linear-gradient( to bottom , #ffffff24, black);
+    background-image: linear-gradient(to bottom, #ffffff24, black);
     /* background-image: radial-gradient( #ffffff14, black); */
     /* background-color: yellow; */
 }
-.regional_destinations_container{
+
+.regional_destinations_container {
     width: 25%;
     /* background-color: purple; */
 }
-.regional_destinations_container:hover{
-    background-image: linear-gradient( #ffffff1b, black);
+
+.regional_destinations_container:hover {
+    background-image: linear-gradient(#ffffff1b, black);
     width: 25%;
     /* background-color: purple; */
 }
-.all_itineraries_container{
+
+.all_itineraries_container {
     /* background-color: pink; */
 }
-.all_itineraries_container:hover{
+
+.all_itineraries_container:hover {
     /* background-color: pink; */
     /* background-image: linear-gradient( #ffffff14, black); */
-    background-image: linear-gradient( #eef95a21, black);
+    background-image: linear-gradient(#eef95a21, black);
 
 }
-.all_destinations_li{
+
+.all_destinations_li {
     list-style-type: none;
     display: inline-block;
     /* LI */
@@ -52,21 +57,37 @@
     margin: 0.5vmax 0.9vmax;
     padding: 0.1vmax 0;
 }
-.all_destinations_li:hover{
+
+.side_destinations_li {
+    list-style-type: none;
+    list-style: none;
+    background-color: #ffffff06;
+
+}
+
+.all_destinations_li:hover {
     /* background-color: #ffffff0f; */
     background-color: #ffffff14;
     /* background-color: #ffffff1c; */
 }
+
+.side_destinations_li:hover {
+    /* background-color: #ffffff0f; */
+    background-color: #ffffff14;
+    /* background-color: #ffffff1c; */
+}
+
 /* .all_destinations_li Link{ */
-    .all_destination_Link{
+.all_destination_Link {
     display: inline-block;
     width: 100%;
     font-size: 1vmax;
     color: white;
     text-decoration: none;
 }
+
 /* .all_destinations_li Link:hover{ */
-.all_destination_Link:hover{
+.all_destination_Link:hover {
     color: var(--golden);
 }
 
@@ -74,7 +95,7 @@
 .all_destinations_ul {
     width: 100%;
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
     flex-wrap: wrap;
     /* width: 100px; */
     /* background-color: red; */
@@ -82,70 +103,94 @@
     height: 32vmax;
     padding: 0.2vmax 1.5vmax;
 }
-.all_destinations_h4{
+
+.all_destinations_h4 {
     font-size: 1.3vmax;
     padding: 0 2.4vmax;
     color: white;
-    margin-bottom: 1.1vmax; 
+    margin-bottom: 1.1vmax;
     margin-top: 2.6vmax;
 
 }
 
 /* -++++++++++++++++++++++++++++++++++++++++++++++ */
-.regional_destinations_li{
+.regional_destinations_li {
 
     box-sizing: content-box;
     list-style-type: none;
-    display: inline-block;
+    display: flex;
     /* margin: 5px 0px; */
     margin: 0.5vmax 0.9vmax;
     padding-left: 1.1vmax;
     margin-left: 0vmax;
+    /* border: 1px solid red; */
 }
+
 .regional_destinations_li::before {
     content: "\2022";
-    color:  #a39161;
+    color: #a39161;
     font-weight: bolder;
-    display: inline-block; 
+    display: inline-block;
     /* width: 1em; */
     width: 1.1vmax;
     /* margin-left: -1em; */
     margin-left: -1.1vmax;
-  }
+}
 
-.regional_destinations_Link{
+.sideregional_destinations_li {
+    max-width: 50vw !important;
+}
+
+.sideregional_destinations_li::before {
+    content: "\2022";
+    color: #a39161;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+.regional_destinations_Link {
     font-size: 1vmax;
     color: white;
     text-decoration: none;
 }
-.regional_destinations_Link:hover{
+
+.regional_destinations_Link:hover {
     color: var(--golden);
 }
 
-.regional_destinations_h4{
+.regional_destinations_h4 {
     font-size: 1.3vmax;
 
     padding: 0 2vmax;
     color: white;
-    margin-bottom: 0.8vmax; 
+    margin-bottom: 0.8vmax;
     margin-top: 2.6vmax;
 }
-.regional_destinations_ul{
+
+.regional_destinations_ul {
     width: 100%;
     display: flex;
-    flex-direction: column  ;
     flex-wrap: wrap;
     height: 60vh;
     padding: 2.2vmax;
+    flex-direction: column;
+}
+
+.sidenavregional_ul {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 
 /* +-+-+-+-+-++++++++++----++++++++++++-----++++--++++++++++++++++---++ */
 
-.all_itineraries_container{
+.all_itineraries_container {
     /* background-color: yellow; */
 }
-.divvv{
+
+.divvv {
     background-image: url("https://images.unsplash.com/photo-1682687220801-eef408f95d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,20 +199,20 @@
     height: 50vh;
     width: 85%;
     margin: auto;
-    margin-bottom: 1.1vmax; 
+    margin-bottom: 1.1vmax;
     margin-top: 2.6vmax;
     border-radius: 1vmax;
     /* padding: 25px; */
     /* padding: 40px; */
 }
 
-.divvv Link{
+.divvv Link {
     text-decoration: none;
     /* font-size: ; */
 }
 
 
-.img_B_D{
+.img_B_D {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -179,22 +224,23 @@
     /* background-color: green; */
     /* align-items: center; */
     color: white;
-    
+
 }
 
-.all_itineraries_h4{
+.all_itineraries_h4 {
     display: block;
     font-size: 1.5vmax;
     color: white;
     width: 62%;
-     background-color:  #fed86fa3!important;
-     /* margin: 10px 0; */
-     margin: 1vmax 0;
-     padding: 0.1vmax 0.2vmax;
-     /* border-radius: 5px; */
-     border-radius: 0.2vmax;
+    background-color: #fed86fa3 !important;
+    /* margin: 10px 0; */
+    margin: 1vmax 0;
+    padding: 0.1vmax 0.2vmax;
+    /* border-radius: 5px; */
+    border-radius: 0.2vmax;
 }
-.all_itineraries_h4 span{
+
+.all_itineraries_h4 span {
     font-weight: bolder;
     margin-left: 0.3vmax;
 }

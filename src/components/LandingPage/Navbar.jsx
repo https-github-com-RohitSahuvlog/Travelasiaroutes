@@ -36,7 +36,7 @@ const destinations = [
   { text: "China", link: "#" },
   { text: "Georgia", link: "#" },
   { text: "Hong Kong", link: "#" },
-  { text: "India", link: "#" },
+  { text: "India", link: "/india" },
   { text: "Indonesia", link: "#" },
   { text: "Japan", link: "#" },
   { text: "Kazakhstan", link: "#" },
@@ -78,17 +78,24 @@ const regionalDestinations = [
 
 const destinationItems = destinations.map((destination, index) => (
   <div className="all_destinations_li" key={index}>
-    <Link className="all_destination_Link" to={destination.link}>{destination.text}</Link>
+    <Link className="all_destination_Link" to={`country${destination.link}`}>{destination.text}</Link>
   </div>
 ));
 const sidedestinationItems = destinations.map((destination, index) => (
-  <div className="side_destinations_li" key={index}>
-    <Link className="side_destination_Link" to={destination.link}>{destination.text}</Link>
-  </div>
+  <Link className="side_destination_Link" to={`country${destination.link}`} key={index}>
+    <div className="side_destinations_li" >
+      {destination.text}
+    </div>
+  </Link>
 ));
 
 const regionalDestinationItems = regionalDestinations.map((destination, index) => (
   <li className="regional_destinations_li" key={index}>
+    <Link regional_destinations_Link to={destination.link}>{destination.text}</Link>
+  </li>
+));
+const sideregionalDestination = regionalDestinations.map((destination, index) => (
+  <li className="sideregional_destinations_li" key={index}>
     <Link regional_destinations_Link to={destination.link}>{destination.text}</Link>
   </li>
 ));
@@ -117,7 +124,8 @@ export default function Navbar() {
     document.getElementById("responsiveNavbar").style.right = "0%";
   };
   const closeMenu = () => {
-    document.getElementById("responsiveNavbar").style.right = "-100%";
+    document.getElementById("responsiveNavbar").style.right = "-150%";
+
   };
   return (
     <div className="navbar">
@@ -217,11 +225,11 @@ export default function Navbar() {
       <div>
         <MenuIcon className="menu-icon" onClick={openMenu} />
 
-        <div className="responsive-navbar" id="responsiveNavbar">
+        <div className="responsive-navbar" id="responsiveNavbar" >
           <CloseIcon className="close-icon" onClick={closeMenu} />
           <img src={logo} alt="" className="navbar-logo" />
           {!showDestinationDropdown && <>
-            <div className="side_nav-link">
+            <div className="side_nav_link">
               <Link to="/">Home</Link>
             </div>
             <div className="side_nav_link">
@@ -275,11 +283,11 @@ export default function Navbar() {
                     {sidedestinationItems.slice(Math.ceil(destinationItems.length / 2))}
                   </ul>
                 </div>
-                <div class="regional_destinations_container">
-                  <h4 class="regional_destinations_h4">Regional Destinations</h4>
-                  <ul className="regional_destinations_ul">{regionalDestinationItems}</ul>
+                <div class="sideregional_destinations_container">
+                  <h4 class="sideregional_destinations_h4">Regional Destinations</h4>
+                  <ul className="sidenavregional_ul">{sideregionalDestination}</ul>
                 </div>
-                <div class="all_itineraries_container">
+                <div class="sideall_itineraries_container">
                   <div class="divvv">
                     <Link to="#">
                       <div class="img_B_D">

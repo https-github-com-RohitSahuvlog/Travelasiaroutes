@@ -2,11 +2,10 @@
   width: 100%;
   position: fixed;
   top: 0%;
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
   background-color: var(--black);
   color: white;
   font-size: 14px;
@@ -30,10 +29,10 @@
 }
 
 .nav-items {
-  width: 100%;
+  width: 90%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: flex-end;
+  /* align-items: center; */
   gap: 1.5rem;
 }
 
@@ -86,7 +85,7 @@
 .to_drop {
   list-style: none;
   padding: 0.5vmax 0;
-  font-size: 1.15vmax;
+  font-size: 1.25vmax;
 }
 
 .small_group {
@@ -131,7 +130,7 @@
 
 
 .side_destinations_container {
-  width: 95vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -162,7 +161,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 920px) {
   .nav-items {
     display: none;
   }
@@ -172,20 +171,23 @@
   .navbar .menu-icon {
     display: block;
   }
+
 }
+
+
+
 
 .responsive-navbar {
   position: fixed;
   top: 0%;
-  right: -100%;
+  right: -150%;
   padding: 2rem 2rem;
-  width: 100%;
+  max-width: 400px;
   height: 100vh;
   z-index: 999;
   background-color: var(--black);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   gap: 1.5rem;
   transition: 1s;
@@ -237,10 +239,16 @@
 }
 
 .responsive-navbar ul li {
-  transform: translateX(20px);
-  margin: 0.5rem 0;
+  /* transform: translateX(20px); */
+  margin: 0.5rem 0.5rem;
 }
 
 .call-and-home-nav-item {
   font-size: 12px;
+}
+
+@media screen and (min-width: 920px) {
+  .responsive-navbar {
+    display: none;
+  }
 }

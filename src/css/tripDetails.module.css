@@ -9,3 +9,7 @@
     font-weight: 300;
     text-transform: uppercase;
 }
+
+.custom_menu_item>li {
+    color: black;
+}

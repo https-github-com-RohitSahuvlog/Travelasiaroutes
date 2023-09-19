@@ -9,7 +9,7 @@ const Testimonial = (props) => {
   const refFeedbackParentDiv = useRef(null);
   const refButtonsParentDiv = useRef(null);
   const timeoutRef = useRef(null);
-  const [delay, setDelay] = useState(100);
+  const [delay, setDelay] = useState(6000);
   const [index, setIndex] = useState(0);
 
   useEffect(() => setDelay(TESTIMONIAL_DELAY), []);
@@ -20,7 +20,7 @@ const Testimonial = (props) => {
         setIndex((prevIndex) =>
           prevIndex === props.testimonialData.length - 1 ? 0 : prevIndex + 1
         ),
-      delay
+      6000
     );
 
     return () => clearTimeout(timeoutRef.current);
@@ -71,7 +71,7 @@ const Testimonial = (props) => {
           <AiFillStar
             key={i}
             size={20}
-            color="#FFC485"
+            color="#E4BD5A"
             className="mr-2 cursor-pointer"
           />
         );
@@ -80,7 +80,7 @@ const Testimonial = (props) => {
           <BsStarHalf
             key={i}
             size={17}
-            color="#FFC485"
+            color="#E4BD5A"
             className="mr-1 cursor-pointer"
           />
         );
@@ -89,7 +89,7 @@ const Testimonial = (props) => {
           <AiOutlineStar
             key={i}
             size={20}
-            color="#FFC485"
+            color="#E4BD5A"
             className="mr-1 cursor-pointer"
           />
         );
@@ -103,6 +103,10 @@ const Testimonial = (props) => {
 
       <div className={styles.testinomialheader}>
         <h2>Our Client's Feedback</h2>
+        <h4>
+          Here is a small selection of the kind words our clients have said about
+          us recently.
+        </h4>
       </div>
       <div className={`${styles["section-three-main-div"]} testimonial`}>
 

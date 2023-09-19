@@ -15,20 +15,20 @@ const Footer = () => {
   return (
     <>
       <div className={styles.FooterMain}>
-        <div className={styles.FooterLogo}>
-          {/* <h3 className={styles.clientText}>OUR CLIENT</h3> */}
-          <div className={styles.flagimg}>
-            {/* <img  className={styles.imgf}  src={india} alt="" />
+        {/* <div className={styles.FooterLogo}> */}
+        {/* <h3 className={styles.clientText}>OUR CLIENT</h3> */}
+        {/* <div className={styles.flagimg}> */}
+        {/* <img  className={styles.imgf}  src={india} alt="" />
           <img className={styles.imgf}  src={america} alt="" />
           <img className={styles.imgf}  src={canada} alt="" />
           <img className={styles.imgf}  src={germany} alt="" /> */}
-            <img className={styles.imgf} src='https://midasiaroutes.com/panel/clients/1608019763_6358.jpg' alt="" />
+        {/* <img className={styles.imgf} src='https://midasiaroutes.com/panel/clients/1608019763_6358.jpg' alt="" />
             <img className={styles.imgf} src="https://midasiaroutes.com/panel/clients/1608019772_8254.jpg" alt="" />
             <img className={styles.imgf} src="https://midasiaroutes.com/panel/clients/1608019779_6242.jpg" alt="" />
             <img className={styles.imgf} src="https://midasiaroutes.com/panel/clients/1608019786_3814.jpg" alt="" />
-            <img className={styles.imgf} src="https://midasiaroutes.com/panel/clients/1608287140_4419.png" alt="" />
-          </div>
-        </div>
+            <img className={styles.imgf} src="https://midasiaroutes.com/panel/clients/1608287140_4419.png" alt="" /> */}
+        {/* </div> */}
+        {/* </div> */}
         <div className={styles.Container}>
           <div className={styles.Footsec}>
             <div className={`${styles["col-md-12 col-12"]} ${styles.footer_logo}`}>

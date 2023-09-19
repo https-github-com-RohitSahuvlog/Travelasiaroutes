@@ -83,6 +83,7 @@
   position: relative;
   font-family: Aleo, Georgia, serif;
 
+  text-align: justify;
   /* word-break: break-all; */
   /* align-items: center; */
 }

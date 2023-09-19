@@ -18,24 +18,27 @@ import {
   FormGroup,
 } from "@mui/material";
 import styles from "../../css/tripDetails.module.css";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 
 const destinations = [
-  { value: "paris", label: "Paris" },
-  { value: "tokyo", label: "Tokyo" },
-  { value: "new-york", label: "New York" },
-  { value: "cape-town", label: "Cape Town" },
+  { value: "india", label: "India", link: "/india" },
+  { value: "paris", label: "Paris", link: "/india" },
+  { value: "tokyo", label: "Tokyo", link: "/india" },
+  { value: "new-york", label: "New York", link: "/india" },
+  { value: "cape-town", label: "Cape Town", link: "/india" },
 ];
 
 const groupCounts = [1, 2, 3, 4, 5];
 
 const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
-
+  const navigate = useNavigate();
   const [BespokeFormData1, setBespokeFormData1] = useState({
     destination: "",
     travelDates: "",
     groupSize: "",
   });
 
+  const location = useLocation();
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setBespokeFormData1({
@@ -50,6 +53,31 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
     handleCountNext({ form1: BespokeFormData1 });
   };
 
+  const handleDestinationChange = (event) => {
+    const selectedDestination = event.target.value;
+    setBespokeFormData1({
+      ...BespokeFormData1,
+      destination: selectedDestination,
+    });
+    localStorage.setItem("selectedDestination", selectedDestination);
+    navigate(`/country${destinations.find((d) => d.value === selectedDestination)?.link}`, {
+      state: { destination: selectedDestination },
+    });;
+  }
+
+
+  useEffect(() => {
+
+    const selectedDestination = localStorage.getItem("selectedDestination");
+    if (selectedDestination) {
+      setBespokeFormData1((prevData) => ({
+        ...prevData,
+        destination: selectedDestination,
+      }));
+    }
+  }, []);
+
+  console.log(location, "location")
   return (
     <form onSubmit={handleSubmit} sx={{ justifyContent: "center" }}>
       <Paper elevation={3} sx={{ padding: 3 }} className="bespoke-form-content">
@@ -74,12 +102,16 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
             name="destination"
             label="Where do you want to go?"
             value={BespokeFormData1.destination}
-            onChange={handleInputChange}
+            className={styles.custom_select}
+            onChange={handleDestinationChange}
           >
             {destinations.map((destination) => (
-              <MenuItem key={destination.value} value={destination.value}>
+
+              <MenuItem key={destination.value} value={destination.value} className={styles.custom_menu_item} >
+
                 {destination.label}
               </MenuItem>
+
             ))}
           </Select>
         </FormControl>

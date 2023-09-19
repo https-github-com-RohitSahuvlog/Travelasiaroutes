@@ -46,8 +46,9 @@
   max-width: 500px;
 }*/
 .slides-text p {
-  text-align: right;
+  text-align: center;
   margin-top: 2rem;
+  font-family: Aleo, Georgia, serif;
 }
 
 .slides-text a {
@@ -143,8 +144,9 @@
   }
 
   .slides-text p {
-    /* text-align: right; */
+    text-align: center;
     margin-top: 2rem;
+    font-family: Aleo, Georgia, serif;
   }
 
   .slides-text a {
@@ -235,8 +237,9 @@
   }
 
   .slides-text p {
-    /* text-align: right; */
+    text-align: center;
     margin-top: 2rem;
+    font-family: Aleo, Georgia, serif;
   }
 
   .slides-text a {

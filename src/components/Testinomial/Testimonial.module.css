@@ -21,6 +21,7 @@
   font-size: 2rem;
   font-weight: 600;
   color: #e4bd5a;
+  font-family: Aleo, Georgia, serif;
 }
 
 .quotes-img-right {
@@ -80,7 +81,9 @@
 
 /* ------------------ */
 .para {
-  font-family: "Lato", sans-serif;
+  font-family: Aleo, Georgia, serif;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
   font-size: 18px;
 }
 
@@ -95,6 +98,7 @@
   text-decoration: none;
   -webkit-transition: opacity 0.7s cubic-bezier(.39, .575, .565, 1);
   transition: opacity 0.7s cubic-bezier(.39, .575, .565, 1);
+  font-family: Aleo, Georgia, serif;
 }
 
 .myDot {
