@@ -27,60 +27,90 @@ const style = {
 };
 
 const destinations = [
-  { text: "Armenia", link: "#" },
-  { text: "Azerbaijan", link: "#" },
-  { text: "Bangladesh", link: "#" },
-  { text: "Bhutan", link: "#" },
-  { text: "Brunei", link: "#" },
-  { text: "Cambodia", link: "#" },
-  { text: "China", link: "#" },
-  { text: "Georgia", link: "#" },
-  { text: "Hong Kong", link: "#" },
+  { text: "Armenia", link: "/armenia" },
+  { text: "Azerbaijan", link: "/azerbaijan" },
+  { text: "Bangladesh", link: "/bangladesh" },
+  { text: "Bhutan", link: "/bhutan" },
+  { text: "Borneo", link: "/borneo" },
+  { text: "Brunei", link: "/brunei" },
+  { text: "Cambodia", link: "/cambodia" },
+  { text: "China", link: "/china" },
   { text: "India", link: "/india" },
-  { text: "Indonesia", link: "#" },
-  { text: "Japan", link: "#" },
-  { text: "Kazakhstan", link: "#" },
-  { text: "Kyrgyzstan", link: "#" },
-  { text: "Laos", link: "#" },
-  { text: "Macao", link: "#" },
-  { text: "Malaysia", link: "#" },
-  { text: "Maldives", link: "#" },
-  { text: "Mongolia", link: "#" },
-  { text: "Myanmar", link: "#" },
-  { text: "Nepal", link: "#" },
-  { text: "Oman", link: "#" },
-  { text: "Papua New Guinea", link: "#" },
-  { text: "Philippines", link: "#" },
-  { text: "Qatar", link: "#" },
-  { text: "Saudi Arabia", link: "#" },
-  { text: "Siberia & Russian Far East", link: "#" },
-  { text: "Singapore", link: "#" },
-  { text: "South Korea", link: "#" },
-  { text: "Sri Lanka", link: "#" },
-  { text: "Taiwan", link: "#" },
-  { text: "Tajikistan", link: "#" },
-  { text: "Thailand", link: "#" },
-  { text: "Tibet", link: "#" },
-  { text: "Turkmenistan", link: "#" },
-  { text: "UAE", link: "#" },
-  { text: "Uzbekistan", link: "#" },
-  { text: "Vietnam", link: "#" },
+  { text: "Indonesia", link: "/indonesia" },
+  { text: "Iran", link: "/iran" },
+  { text: "Iraq", link: "/iraq" },
+  { text: "Japan", link: "/japan" },
+  { text: "Kazakhstan", link: "/kazakhstan" },
+  { text: "Kyrgyzstan", link: "/kyrgyzstan" },
+  { text: "Laos", link: "/laos" },
+  { text: "Malaysia", link: "/malaysia" },
+  { text: "Maldives", link: "/maldives" },
+  { text: "Mongolia", link: "/mongolia" },
+  { text: "Myanmar (Burma)", link: "/myanmar" },
+  { text: "Nepal", link: "/nepal" },
+  { text: "Pakistan", link: "/pakistan" },
+  { text: "Philippines", link: "/philippines" },
+  { text: "Singapore", link: "/singapore" },
+  { text: "South Korea", link: "/south-korea" },
+  { text: "Sri Lanka", link: "/sri-lanka" },
+  { text: "Taiwan", link: "/taiwan" },
+  { text: "Tajikistan", link: "/tajikistan" },
+  { text: "Thailand", link: "/thailand" },
+  { text: "Tibet", link: "/tibet" },
+  { text: "Turkmenistan", link: "/turkmenistan" },
+  { text: "UAE", link: "/uae" },
+  { text: "Uzbekistan", link: "/uzbekistan" },
+  { text: "Vietnam", link: "/vietnam" },
+  { text: "Egypt", link: "/egypt" },
+  { text: "Israel", link: "/israel" },
+  { text: "Jordan", link: "/jordan" },
+  { text: "Lebanon", link: "/lebanon" },
+  { text: "Oman", link: "/oman" },
+  { text: "Palestine", link: "/palestine" },
+  { text: "Saudi Arabia", link: "/saudi-arabia" },
+  { text: "United Arab Emirates", link: "/uae" },
+  { text: "Yemen", link: "/yemen" },
+  { text: "Algeria", link: "/algeria" },
+  { text: "Botswana", link: "/botswana" },
+  { text: "Burkina Faso", link: "/burkina-faso" },
+  { text: "Burundi", link: "/burundi" },
+  { text: "Cameroon", link: "/cameroon" },
+  { text: "Chad", link: "/chad" },
+  { text: "Comoros", link: "/comoros" },
+  { text: "Congo", link: "/congo" },
+  { text: "Djibouti", link: "/djibouti" },
+  { text: "Eritrea", link: "/eritrea" },
+  { text: "Ethiopia", link: "/ethiopia" },
+  { text: "Kenya", link: "/kenya" },
+  { text: "Madagascar", link: "/madagascar" },
+  { text: "Malawi", link: "/malawi" },
+  { text: "Mali", link: "/mali" },
+  { text: "Mauritius", link: "/mauritius" },
+  { text: "Morocco", link: "/morocco" },
+  { text: "Mozambique", link: "/mozambique" },
+  { text: "Namibia", link: "/namibia" },
+  { text: "Reunion", link: "/reunion" },
+  { text: "Rwanda", link: "/rwanda" },
+  { text: "Seychelles", link: "/seychelles" },
+  { text: "Sierra Leone", link: "/sierra-leone" },
+  { text: "Somalia", link: "/somalia" },
+  { text: "South Africa", link: "/south-africa" },
+  { text: "South Sudan", link: "/south-sudan" },
+  { text: "Sudan", link: "/sudan" },
+  { text: "Tanzania", link: "/tanzania" },
+  { text: "Tunisia", link: "/tunisia" },
+  { text: "Uganda", link: "/uganda" }
 ];
 
 
-const regionalDestinations = [
-  { text: "Abu Dhabi", link: "#" },
-  { text: "Bali", link: "#" },
-  { text: "Borneo", link: "#" },
-  { text: "Dubai", link: "#" },
-  { text: "Kamchatka", link: "#" },
-];
 
 const destinationItems = destinations.map((destination, index) => (
   <div className="all_destinations_li" key={index}>
     <Link className="all_destination_Link" to={`country${destination.link}`}>{destination.text}</Link>
   </div>
 ));
+
+
 const sidedestinationItems = destinations.map((destination, index) => (
   <Link className="side_destination_Link" to={`country${destination.link}`} key={index}>
     <div className="side_destinations_li" >
@@ -89,16 +119,7 @@ const sidedestinationItems = destinations.map((destination, index) => (
   </Link>
 ));
 
-const regionalDestinationItems = regionalDestinations.map((destination, index) => (
-  <li className="regional_destinations_li" key={index}>
-    <Link regional_destinations_Link to={destination.link}>{destination.text}</Link>
-  </li>
-));
-const sideregionalDestination = regionalDestinations.map((destination, index) => (
-  <li className="sideregional_destinations_li" key={index}>
-    <Link regional_destinations_Link to={destination.link}>{destination.text}</Link>
-  </li>
-));
+
 
 
 export default function Navbar() {
@@ -168,8 +189,8 @@ export default function Navbar() {
               </div>
 
               <div class="regional_destinations_container">
-                <h4 class="regional_destinations_h4">Regional Destinations</h4>
-                <ul className="regional_destinations_ul">{regionalDestinationItems}</ul>
+                {/* <h4 class="regional_destinations_h4">Regional Destinations</h4>
+                <ul className="regional_destinations_ul">{regionalDestinationItems}</ul> */}
               </div>
 
               <div class="all_itineraries_container">
@@ -283,10 +304,10 @@ export default function Navbar() {
                     {sidedestinationItems.slice(Math.ceil(destinationItems.length / 2))}
                   </ul>
                 </div>
-                <div class="sideregional_destinations_container">
+                {/* <div class="sideregional_destinations_container">
                   <h4 class="sideregional_destinations_h4">Regional Destinations</h4>
                   <ul className="sidenavregional_ul">{sideregionalDestination}</ul>
-                </div>
+                </div> */}
                 <div class="sideall_itineraries_container">
                   <div class="divvv">
                     <Link to="#">
