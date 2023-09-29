@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Home.css"
+import "./travel-group.css"
 const TravelGroups = () => {
   const data = [
     { image: "https://www.geoex.com/app/uploads/2019/07/antarctica-crabeater-seal-geoex-393x221.jpg", topic: "ANTARCTICA ADVENTURES", des: "Cruise to the White Continent" },

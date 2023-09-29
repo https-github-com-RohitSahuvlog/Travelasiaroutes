@@ -2,7 +2,7 @@ import React from 'react'
 import "./Connect.css"
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from './ScrollHighlightNabbar/ScrollHighlightNabbar'
-import styles from "./about.module.css";
+// import styles from "./about.module.css";
 const Connect = () => {
 
   const section1Ref = useRef();
@@ -35,7 +35,7 @@ const Connect = () => {
 
   return (
     <div>
-      <div className={styles.MainUpperr}>
+      <div className="MainUpperr">
         <div className='MainContent'>
           <h1 className='Title' > ANTARCTICA ADVENTURES</h1>
           <div className='Italic'>CRUISES TO THE WHITE CONTINENT</div>
