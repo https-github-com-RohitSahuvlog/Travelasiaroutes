@@ -29,7 +29,7 @@ export default function LandingPage() {
       <Newsletter />
       <ScrollVideoSection />
       <Testimonial testimonialData={data} />
-      <Footer />
+      {/* <Footer /> */}
     </Landingpage>
   );
 }

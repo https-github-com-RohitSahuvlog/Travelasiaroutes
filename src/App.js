@@ -6,6 +6,9 @@ import LandingPage from "./pages/LandingPage";
 import IndiaPage from "./components/Bydestination/India/IndiaPage";
 import Itineraries from "./components/Bydestination/India/Itineraries";
 import About from "./components/AboutUs/About";
+import Footer from "./components/LandingPage/Footer";
+import TravelGroups from "./components/travel-group/travel-group";
+import Connect from "./components/travel-group/Connect";
 function App() {
   return (
     <div className="App">
@@ -16,7 +19,10 @@ function App() {
         <Route path="/country/:countryname" element={<IndiaPage />} />
         <Route path="/Itineraries" element={<Itineraries />} />
         <Route path="/aboutus" element={<About />} />
+        <Route path="/travel-groups" element={<TravelGroups />} />
+        <Route path="/connect" element={<Connect />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

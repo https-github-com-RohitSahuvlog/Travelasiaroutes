@@ -4,11 +4,10 @@ import "../../css/ScrollVideoSection.css";
 export default function ScrollVideoSection() {
   return (
     <div className="scroll-video-section">
-      <h2>Inside Mid Asia Routes</h2>
-      <span className="about-us-section-underline"></span>
+      <h2 style={{ borderBottom: "3px solid   #e4bd5a" }}>Travel Inspiration : Discover, Dream, Wander, Repeat.</h2>
+      {/* <span className="about-us-section-underline"></span> */}
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolor iusto
-        aspernatur veniam quasi illo.
+        Unearth your inner wanderer, let the world's beauty be your muse. Seek adventure, create stories, and find inspiration in every corner.
       </p>
       <div className="scrollable-section">
         <video

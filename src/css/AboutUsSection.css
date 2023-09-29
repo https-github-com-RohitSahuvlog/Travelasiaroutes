@@ -60,11 +60,7 @@
 }
 
 .about-us-section-underline {
-  width: 250px;
-  height: 3px;
-  background-color: var(--golden);
-  border-radius: 20px;
-  position: relative;
+  border-bottom: 3px solid #e4bd5a;
 }
 
 .about-us-sectionleft>img:hover {
@@ -77,13 +73,13 @@
 
 .about-us-section-para-portion {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
   font-family: Aleo, Georgia, serif;
-
   text-align: justify;
+  font-size: 1.2rem;
   /* word-break: break-all; */
   /* align-items: center; */
 }
@@ -159,13 +155,6 @@
     color: white;
   }
 
-  .about-us-section-underline {
-    width: 250px;
-    height: 3px;
-    background-color: var(--golden);
-    border-radius: 20px;
-    position: relative;
-  }
 
   .about-us-section-para-portion {
     display: flex;

@@ -8,8 +8,10 @@ const About = () => {
         <div>
             <div className={styles.about_contaner}>
                 <div className={` ${styles.section_title} styles[" text-center "]`}>
-                    <p className={`$ {styles[" block font-light text-center text-black text-3xl "]} ${styles.about_p}`}>Welcome to</p>
-                    <h1 className={`$ {styles[" text-5xl leading-10 font-bold text-center m-10 text-black "]} ${styles.about_h2}`}>Midasia Routes</h1>
+
+                    <h1 className={`$ {styles[" text-5xl leading-10 font-bold text-center m-10 text-black "]} ${styles.about_h2}`}>
+                        <p className={`$ {styles[" block font-light text-center text-black text-3xl "]} ${styles.about_p}`}>Welcome to</p>
+                        MidAsia Routes</h1>
                     <div className={styles.section_icon}>
                         <IoDiamondOutline />
                     </div>
@@ -147,7 +149,7 @@ const About = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.about_row2} `}>
+                        <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.about_row3} `}>
                             <img className={styles.img3} src="https://midasiaroutes.com/images/pages/141952892747.png" />
                         </div>
 
@@ -196,8 +198,8 @@ const About = () => {
                     </div>
 
                     <div className={styles.about_row3}>
-                        <div className={`{styles[" col-lg-6 col-md-6 col-xs-12 "]} ${styles.about_row3_div}`}>
-                            <div className={`styles[ " pl-30 " ] ${styles.why_about_inner}`}>
+                        <div className={`{styles[" col-lg-6 col-md-6 col-xs-12 "]} ${styles.safetyabout_row3_div}`}>
+                            <div className={`styles[ " pl-30 " ] ${styles.Safetywhy_about_inner}`}>
                                 <h3>
                                     <span className={styles.about_h3}>Access & Safety</span>
                                 </h3>
@@ -213,15 +215,15 @@ const About = () => {
                             </div>
                         </div>
                         <div className={`{styles[" col-lg-6 col-md-6 col-xs-12 "]} ${styles.about_row3_div}`} >
-                            <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.about_row2} `}>
-                                <img className={styles.img} src="https://midasiaroutes.com/images/pages/a5239097295.jpg" />
-                                <img className={styles.img} src="https://midasiaroutes.com/images/pages/a101601449854.jpg" />
+                            <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.Safetyabout_row2} `}>
+                                <img className={styles.Safetyimg} src="https://midasiaroutes.com/images/pages/a5239097295.jpg" />
+
                             </div>
                         </div>
                     </div>
 
                     <div className={styles.about_row22}>
-                        <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.about_row2} `}>
+                        <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.Qualityabout_row2} `}>
                             <img className={styles.img3} src="https://midasiaroutes.com/images/pages/a9202399905.jpg" />
                         </div>
                         <div className={`styles[" col-lg-6 col-md-6 col-xs-12 "]`}>

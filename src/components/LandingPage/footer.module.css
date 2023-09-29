@@ -71,7 +71,7 @@
 }
 
 .H3_use {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #fff;
   font-weight: 800;
   margin-bottom: 15px;
@@ -82,7 +82,7 @@
 }
 
 .H3_us {
-  font-size: 20px;
+  font-size: 1.3rem;
   color: #fff;
   font-weight: 500;
   margin-bottom: 15px;
@@ -122,6 +122,7 @@
   line-height: 30px;
   margin-right: 2px;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .loca_li {
@@ -132,6 +133,7 @@
   line-height: 30px;
   /* font-style: italic; */
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .loc_li {
@@ -144,6 +146,7 @@
   /* font-style: italic; */
   font-weight: 400;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .loc_li>a :hover {

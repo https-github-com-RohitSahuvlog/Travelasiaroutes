@@ -1,0 +1,230 @@
+.MainUpper {
+  padding: 0%;
+  margin: 0%;
+  border: 1px solid black;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url("https://www.geoex.com/app/uploads/2019/10/group-travel-safari-tanzania.jpg");
+}
+
+
+.MainContent {
+  width: 70%;
+  color: #fff;
+  margin: auto;
+}
+
+.Title {
+  font-size: 2.375rem;
+  font-weight: 400;
+  /* letter-spacing: 2.5px; */
+}
+
+.Italic {
+  font-weight: 400;
+  font-size: 1.375rem;
+  font-style: italic;
+  line-height: 1.7;
+  text-align: center;
+  color: #fff;
+}
+
+.GoButton {
+  margin: 2%;
+}
+
+.ButtonFirst {
+  color: #fff;
+  border-color: #fff;
+  width: 45%;
+  /* margin: 10%; */
+  height: 40px;
+  font-size: 0.990;
+  background-color: rgba(51, 51, 51, .5);
+
+}
+
+.Mainmid {
+  padding: 0%;
+  /* margin: 0%; */
+  /* border: 1px solid black; */
+  height: auto;
+  /* padding-bottom: 1%; */
+  width: 100%;
+  /* background-color:black; */
+}
+
+.AddContent {
+
+  height: auto;
+  /* padding-bottom:  1%; */
+  width: 70%;
+  margin: 13%;
+  /* background-color: antiquewhite; */
+}
+
+.TitleSet {
+  font-size: 2.375rem;
+  font-weight: 400;
+  color: gray;
+  text-align: center;
+}
+
+.ParaSet {
+  letter-spacing: .6px;
+  text-align: center;
+  color: gray;
+}
+
+
+.MainDiv {
+
+  /* border: 1px solid black; */
+  height: 100px;
+  /* padding: 1%; */
+
+  /* padding-bottom: 1%; */
+  width: 100%;
+  background-color: #444;
+}
+
+
+.AddMore {
+  height: auto;
+  padding-bottom: 1%;
+  width: 70%;
+  margin: 4% 5% 5% 15%;
+
+}
+
+.ItalicData {
+  color: white;
+  font-weight: 400;
+  font-size: 1.375rem;
+  font-style: italic;
+  line-height: 1.7;
+  text-align: center;
+  color: #fff;
+  padding-top: 2.5%;
+}
+
+
+.HomeHead {
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+.HomeHeadingData {
+  font-size: 2.375rem;
+  font-weight: 400;
+  color: gray;
+  margin: 3%;
+}
+
+/* .MainData
+  {
+    line-height: 2.5;
+    text-align: center;
+  } */
+
+
+.GridData {
+  display: grid;
+  grid-template-columns: repeat(3, 470px);
+  /* gap: 1%; */
+  /* padding: 1%; */
+  /* gap:10px; */
+  /* border: 1px solid black;
+    height:auto;
+    padding-bottom: 1%;
+    width: 100%;
+    display: grid;
+    gap:2%;
+    grid-template-columns: repeat(3,450px); */
+}
+
+.GridData>div {
+  border: 1px solid black;
+  width: 100%;
+  margin: 10%;
+
+}
+
+.GridFill {
+  height: 400px;
+  width: 100px;
+  /* border: 1px soild black; */
+}
+
+.HomeImageSet {
+  width: 100%;
+  /* padding: 2%; */
+}
+
+.EntityOne {
+  /* height: 70px; */
+}
+
+.EntityOne>div {
+  border: 2px solid black;
+  /* height: 30px; */
+  margin: 20px 100px;
+  text-align: Center;
+  font-size: 16px;
+}
+
+.EntityTwo {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+  .GridData {
+    display: grid;
+    grid-template-columns: repeat(2, 410px);
+    /* gap:10px; */
+    /* border: 1px solid black;
+      height:800px;
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(1,450px); */
+  }
+
+  .EntityOne>div {
+    border: 2px solid black;
+    height: 30px;
+    margin: 20px 100px;
+    text-align: Center;
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (max-width: 700px) and (min-width: 360px) {
+  .GridData {
+    display: grid;
+    grid-template-columns: repeat(1, 85%);
+    /* gap:10px; */
+    /* border: 1px solid black;
+      height:800px;
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(1,450px); */
+  }
+
+  .EntityOne>div {
+    border: 2px solid black;
+    /* height: 30px; */
+    margin: 20px 100px;
+    text-align: Center;
+    font-size: 14px;
+  }
+
+}

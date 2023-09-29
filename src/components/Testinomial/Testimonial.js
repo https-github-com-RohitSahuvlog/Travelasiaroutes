@@ -103,10 +103,10 @@ const Testimonial = (props) => {
 
       <div className={styles.testinomialheader}>
         <h2>Our Client's Feedback</h2>
-        <h4>
+        <h3 style={{ fontSize: "20px" }}>
           Here is a small selection of the kind words our clients have said about
           us recently.
-        </h4>
+        </h3>
       </div>
       <div className={`${styles["section-three-main-div"]} testimonial`}>
 

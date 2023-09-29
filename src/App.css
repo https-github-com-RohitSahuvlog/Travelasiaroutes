@@ -42,6 +42,7 @@ a {
   background-color: var(--golden);
   color: white;
   border-radius: 8px 2px 8px 2px;
+  font-size: 1.1rem;
 }
 
 .btn-a-outline:hover {
@@ -70,13 +71,7 @@ h1 {
   font-weight: 900;
 }
 
-/* h2 {
-  font-size: 2.4rem;
-} */
 
-h3 {
-  font-size: 2rem;
-}
 
 .input-box {
   background-color: transparent;

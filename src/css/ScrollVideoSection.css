@@ -8,9 +8,12 @@
   padding: 2rem 2rem;
   text-align: center;
 }
+
 .scroll-video-section p {
-  max-width: 500px;
+  max-width: 800px;
+  font-size: 1.4rem;
 }
+
 .video-section-video {
   width: 75%;
 }

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "../../css/Navbar.css";
 import "../../css/Navbar_by_destination.css";
 import { Link } from "react-router-dom";
-
-import logo from "../../images/logo.png";
+import logo from "../../images/Assetmidsvg.svg";
 import CallIcon from "@mui/icons-material/Call";
 import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";

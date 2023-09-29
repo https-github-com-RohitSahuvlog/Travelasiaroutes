@@ -129,9 +129,9 @@ export default function SliderComponent() {
           <h2>{myText.heading}</h2>
           <h4>{myText.job}</h4>
           <p>{myText.para}</p>
-          <a href={myText.link} className="btn-a btn-a-solid">
+          {/* <a href={myText.link} className="btn-a btn-a-solid">
             Read Article
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="next-btn" onClick={nextSlide}>

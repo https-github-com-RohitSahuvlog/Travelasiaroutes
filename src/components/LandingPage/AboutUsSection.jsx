@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "../../css/AboutUsSection.css";
+import { Link } from "react-router-dom";
 export default function AboutUsSection() {
   const [isImageHovered, setIsImageHovered] = useState(false);
 
   return (
     <div className="about-us-section">
       <div className="about-us-sectionright">
-        <h2>Mid Asia Journey</h2>
-        <span className="about-us-section-underline"></span>
+        <h2 style={{ borderBottom: "3px solid   #e4bd5a" }}>Mid Asia Journey</h2>
         <div className="about-us-section-para-portion">
           <div className="about-us-section-para-portion-left">
             <p>
@@ -30,7 +30,10 @@ export default function AboutUsSection() {
             </p>
           </div>
         </div>
-        <button className="btn-a btn-a-outline">About Us</button>
+
+        <button className="btn-a btn-a-outline" style={{ zIndex: 5 }}>
+          <Link to="/aboutus" >About Us</Link>
+        </button>
       </div>
       <div
         className={`about-us-sectionleft ${isImageHovered ? "rotate" : ""}`}
