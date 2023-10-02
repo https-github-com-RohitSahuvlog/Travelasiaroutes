@@ -2,7 +2,7 @@
   width: 100%;
   color: #3C3D3D;
   background-color: white;
-  margin-bottom: 400px;
+  margin-bottom: 100px;
 }
 
 .buttons_container {
@@ -12,6 +12,18 @@
   justify-content: center;
   gap: 10px;
   /* align-items: center; */
+}
+
+.Logo_design {
+  width: 100%;
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 40px 0px;
+
 }
 
 .buttons_container>button:hover {

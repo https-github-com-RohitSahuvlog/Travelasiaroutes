@@ -4,6 +4,8 @@ import Enquire from "./Enquire";
 import Callus from "./Callus";
 import Findus from "./Findus";
 import CloseIcon from "@mui/icons-material/Close";
+import logo from "../../images/Assetmidsvg.svg";
+import { Link } from "react-router-dom";
 
 function ModalCom({ handleClose }) {
   const [component, setComponent] = useState("enquire");
@@ -24,7 +26,10 @@ function ModalCom({ handleClose }) {
         }}
         onClick={handleClose}
       />
-      <h1>Logo</h1>
+      <div className="Logo_design">
+        <Link to="/"><img src={logo} alt="" className="navbar-logo" /></Link>
+      </div>
+
       <div className="main_container">
         <div className="buttons_container">
           <button

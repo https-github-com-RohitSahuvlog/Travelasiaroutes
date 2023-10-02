@@ -1,7 +1,7 @@
 .MainUpper {
   padding: 0%;
   margin: 0%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 100vh;
   width: 100%;
   background-color: black;
@@ -15,24 +15,30 @@
 
 
 .MainContent {
-  width: 70%;
+  /* width: 70%; */
+  padding: 20px;
   color: #fff;
   margin: auto;
 }
 
 .Title {
-  font-size: 2.375rem;
+  font-size: 3.375rem;
   font-weight: 400;
-  /* letter-spacing: 2.5px; */
+  margin: 0;
+  line-height: 1.1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  text-shadow: 0 3px 5px #000;
 }
 
 .Italic {
   font-weight: 400;
-  font-size: 1.375rem;
-  font-style: italic;
+  font-size: 2.375rem;
   line-height: 1.7;
   text-align: center;
   color: #fff;
+  text-shadow: 0 3px 5px #000;
 }
 
 .GoButton {
@@ -40,13 +46,30 @@
 }
 
 .ButtonFirst {
+  width: 300px;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-family: Roboto;
+  font-weight: 700;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  padding: 0.563rem 1.125rem;
+  font-size: 1.125rem;
+  border-radius: 0;
+  line-height: 1.4;
   color: #fff;
-  border-color: #fff;
-  width: 45%;
-  /* margin: 10%; */
-  height: 40px;
-  font-size: 0.990;
   background-color: rgba(51, 51, 51, .5);
+  border: 3px solid #fff;
 
 }
 
@@ -62,36 +85,45 @@
 
 .AddContent {
 
-  height: auto;
-  /* padding-bottom:  1%; */
-  width: 70%;
-  margin: 13%;
-  /* background-color: antiquewhite; */
+  max-width: 1380px;
+  width: 80%;
+  padding: 25px;
+  margin: auto;
+  text-align: center;
+
+
 }
 
 .TitleSet {
-  font-size: 2.375rem;
+  margin: 20px 0px;
+  line-height: 1.1;
   font-weight: 400;
-  color: gray;
-  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+
+
 }
 
 .ParaSet {
   letter-spacing: .6px;
   text-align: center;
-  color: gray;
+  color: black;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
 
 .MainDiv {
 
-  /* border: 1px solid black; */
   height: 100px;
-  /* padding: 1%; */
-
-  /* padding-bottom: 1%; */
+  max-width: 1380px;
   width: 100%;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #444;
+  text-align: center;
 }
 
 
@@ -107,7 +139,6 @@
   color: white;
   font-weight: 400;
   font-size: 1.375rem;
-  font-style: italic;
   line-height: 1.7;
   text-align: center;
   color: #fff;
@@ -116,17 +147,20 @@
 
 
 .HomeHead {
-  height: 100px;
   width: 100%;
-  /* border: 1px solid black; */
   text-align: center;
+  padding: 20px;
+  margin: 20px 0px;
+
 }
 
 .HomeHeadingData {
-  font-size: 2.375rem;
+  width: 80%;
+  line-height: 1.1;
   font-weight: 400;
-  color: gray;
-  margin: 3%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: auto;
 }
 
 /* .MainData
@@ -205,9 +239,13 @@
     font-size: 16px;
   }
 
+  .Title {
+    font-size: 4.375rem;
+  }
+
 }
 
-@media only screen and (max-width: 700px) and (min-width: 360px) {
+@media only screen and (max-width: 700px) and (min-width: 300px) {
   .GridData {
     display: grid;
     grid-template-columns: repeat(1, 85%);
@@ -225,6 +263,20 @@
     margin: 20px 100px;
     text-align: Center;
     font-size: 14px;
+  }
+
+  .Title {
+    font-size: 2.375rem;
+  }
+
+  .Italic {
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 1.7;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 3px 5px #000;
+    margin: 20px;
   }
 
 }

@@ -9,6 +9,7 @@ import About from "./components/AboutUs/About";
 import Footer from "./components/LandingPage/Footer";
 import TravelGroups from "./components/travel-group/travel-group";
 import Connect from "./components/travel-group/Connect";
+import ActivityLevels from "./components/activityLevel/activityLevel";
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
         <Route path="/aboutus" element={<About />} />
         <Route path="/travel-groups" element={<TravelGroups />} />
         <Route path="/connect" element={<Connect />} />
+        <Route path="/activitylevel" element={<ActivityLevels />} />
       </Routes>
       <Footer />
     </div>

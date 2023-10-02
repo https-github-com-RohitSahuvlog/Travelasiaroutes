@@ -97,7 +97,7 @@
 @media screen and (max-width: 500px) {
   .landing-carousal {
     width: 100vw;
-    height: 50vh;
+    height: 75vh;
   }
 
   .content p {
@@ -108,7 +108,7 @@
 @media screen and (max-width: 800px) {
   .landing-carousal {
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
   }
 
   .content p {

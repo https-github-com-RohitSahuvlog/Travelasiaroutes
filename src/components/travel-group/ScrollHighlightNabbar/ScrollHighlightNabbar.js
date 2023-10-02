@@ -1,98 +1,80 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
-import "./ScrollHighlightNabbar.css"
-import PropTypes from "prop-types"
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import styles from './ScrollHighlightNavbar.module.css';
 
+const ScrollHighlightNavbar = ({ navHeader }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
 
-const nearestIndex = (
-    currentPosition,
-    sectionPositionArray,
-    startIndex,
-    endIndex
-  ) => {
-    if (startIndex === endIndex) return startIndex;
-    else if (startIndex === endIndex - 1) {
-      if (
-        Math.abs(
-          sectionPositionArray[startIndex].headerRef.current.offsetTop -
-            currentPosition
-        ) <
-        Math.abs(
-          sectionPositionArray[endIndex].headerRef.current.offsetTop -
-            currentPosition
-        )
-      )
-        return startIndex;
-      else return endIndex;
-    } else {
-      var nextNearest = ~~((startIndex + endIndex) / 2);
-      var a = Math.abs(
-        sectionPositionArray[nextNearest].headerRef.current.offsetTop -
-          currentPosition
-      );
-      var b = Math.abs(
-        sectionPositionArray[nextNearest + 1].headerRef.current.offsetTop -
-          currentPosition
-      );
-      if (a < b) {
-        return nearestIndex(
-          currentPosition,
-          sectionPositionArray,
-          startIndex,
-          nextNearest
-        );
-      } else {
-        return nearestIndex(
-          currentPosition,
-          sectionPositionArray,
-          nextNearest,
-          endIndex
-        );
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = window.scrollY;
+
+      // Create an array to store the offsets of each header
+      const offsets = navHeader.map((header) => {
+        // Check if headerRef and its current property are defined
+        if (header.headerRef && header.headerRef.current) {
+          return {
+            headerRef: header.headerRef,
+            offsetTop: header.headerRef.current.offsetTop,
+          };
+        }
+        // Return a default offset if headerRef is not defined or null
+        return {
+          headerRef: null,
+          offsetTop: 0,
+        };
+      });
+
+      // Find the nearest section based on the current scroll position
+      let nearestIdx = 0;
+      let nearestOffset = Math.abs(offsets[0].offsetTop - currentPosition);
+
+      for (let i = 1; i < offsets.length; i++) {
+        const offset = Math.abs(offsets[i].offsetTop - currentPosition);
+        if (offset < nearestOffset) {
+          nearestIdx = i;
+          nearestOffset = offset;
+        }
       }
-    }
-  };
-  
-  export default function ScrollHighlightNabbar({ navHeader }) {
-    const [activeIndex, setActiveIndex] = useState(0);
-    useEffect(() => {
-      const handleScroll = (e) => {
-        var index = nearestIndex(
-          window.scrollY,
-          navHeader,
-          0,
-          navHeader.length - 1
-        );
-        setActiveIndex(index);
-      };
-      document.addEventListener("scroll", handleScroll);
-      return () => {
-        document.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
-  
-    return (
-      <div className="navContainer">
-        {navHeader.map((header, index) => (
-          <a
-            key={index + header.headerID}
-            className="navlink"
-            style={{ backgroundColor: activeIndex === index ? "gray" : "white",color: activeIndex === index ? "white" : "gray",textDecoration: "none" }}
-            href={`#${header.headerID}`}
-          >
-            {header.headerTitle}
-          </a>
-        ))}
-      </div>
-    );
-  }
-  
-  ScrollHighlightNabbar.propTypes = {
-    navHeader: PropTypes.arrayOf(
-      PropTypes.shape({
-        headerID: PropTypes.string,
-        headerRef: PropTypes.object.isRequired,
-        headerTitle: PropTypes.string.isRequired
-      })
-    ).isRequired
-  };
-  
+
+      setActiveIndex(nearestIdx);
+    };
+
+    document.addEventListener('scroll', handleScroll);
+
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, [navHeader]);
+
+  return (
+    <div className={styles.navContainer}>
+      {navHeader.map((header, index) => (
+        <a
+          key={header.headerID}
+          className={styles.navlink}
+          style={{
+            backgroundColor: activeIndex === index ? 'gray' : 'white',
+            color: activeIndex === index ? 'white' : 'gray',
+            textDecoration: 'none',
+          }}
+          href={`#${header.headerID}`}
+        >
+          {header.headerTitle}
+        </a>
+      ))}
+    </div>
+  );
+};
+
+ScrollHighlightNavbar.propTypes = {
+  navHeader: PropTypes.arrayOf(
+    PropTypes.shape({
+      headerID: PropTypes.string.isRequired,
+      headerRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+      headerTitle: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
+export default ScrollHighlightNavbar;

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+
+.complete-page {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container-box {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.container-box h2 {
+    font-size: 30px;
+    margin: 0px;
+
+}
+
+
+
+.subcontainer h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.subcontainer hr {
+    margin: 16px;
+}
+
+.level-btn {
+    background-color: #950013;
+    color: aliceblue;
+    padding: 16px 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.container-text {
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.25;
+    font-size: #2A2A2A;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container-text-title {
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+    border-bottom: 2px solid #c19c5d;
+    margin: 20px;
+}
+
+.container-text-subtitle {
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+    border-bottom: 2px solid #c19c5d;
+}
+
+.subcontainer {
+    display: flex;
+    /* justify-content: ; */
+    height: max-content;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.r-sub {
+    width: 45%;
+    /* padding: 30px; */
+
+
+}
+
+.l-sub {
+    width: 45%;
+    padding: 30px;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img {
+    width: 100%;
+
+}
+
+@media (max-width: 768px) {
+    .container-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .container-box h2 {
+        font-size: 24px;
+    }
+
+    .container-box hr {
+        margin: 12px;
+    }
+
+    .subcontainer h3 {
+        font-size: 20px;
+        width: 100%;
+
+    }
+
+    .subcontainer {
+        margin: 20px 0px;
+    }
+
+    .level-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .container-text {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .container-text-title {
+        font-size: 24px;
+    }
+
+    .container-text-subtitle {
+        font-size: 20px;
+    }
+
+    .r-sub,
+    .l-sub {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .subcontainer:nth-child(even) {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+}

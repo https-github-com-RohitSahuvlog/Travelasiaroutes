@@ -1,0 +1,32 @@
+.navContainer {
+  display: flex;
+  /*   justify-content: coloumn; */
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  position: sticky;
+  top: 0;
+  /* background-color: black; */
+  height: 650px;
+  padding: 20px;
+  background-image: url("https://www.geoex.com/app/uploads/2019/07/antarctica-crabeater-seal-geoex.jpg");
+  /*   overflow-x: scroll; */
+}
+
+.navlink {
+  /* border-radius: 5px; */
+  padding: 10px 20px;
+  background-color: white;
+  margin: 5px;
+  min-width: 300px;
+  color: gray;
+  font-weight: 400;
+}
+
+
+
+@media only screen and (max-width: 954px) {
+  .navContainer {
+    display: none;
+  }
+}

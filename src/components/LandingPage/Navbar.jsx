@@ -149,7 +149,7 @@ export default function Navbar() {
   };
   return (
     <div className="navbar">
-      {displayLogoInNavbar && <img src={logo} alt="" className="navbar-logo" />}
+      {displayLogoInNavbar && <Link to="/"><img src={logo} alt="" className="navbar-logo" /></Link>}
       {displayContactInNavbar && (
         <div className="call-and-home-nav-item">
           <CallIcon />
@@ -247,7 +247,7 @@ export default function Navbar() {
 
         <div className="responsive-navbar" id="responsiveNavbar" >
           <CloseIcon className="close-icon" onClick={closeMenu} />
-          <img src={logo} alt="" className="navbar-logo" />
+          <Link to="/"> <img src={logo} alt="" className="navbar-logo" /> </Link>
           {!showDestinationDropdown && <>
             <div className="side_nav_link">
               <Link to="/">Home</Link>
