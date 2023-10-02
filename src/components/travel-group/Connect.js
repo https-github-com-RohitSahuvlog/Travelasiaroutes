@@ -76,11 +76,11 @@ const Connect = () => {
                   </div>
                 </div>
 
-                <div className={"styles.SettingHeadingRatio"}>
+                <div className={styles.SettingHeadingRatio}>
                   <div className={styles.SetTextRatio}>WE ARE PLEASED TO EXTEND A LIMITED-TIME OFFER ABOARD THE MS SEAVENTURE</div>
-                  <div className={"styles.SetImage"}>
+                  <div className={styles.SetImage}>
                     <img src="https://www.geoex.com/app/uploads/2023/09/Polar_Latitudes_Seaventure_by_air-1920x1080-1-1536x864.jpg" className={styles.SetBackGround}></img>
-                    <div className="wp-block-cover__inner-container">
+                    <div className={styles.inner_container}>
                       <h2 id="h-1-500-per-person-exclusive-savings-available-until-november-3-2023">$1,500 PER PERSON exclusive SAVINGS <br /> available until November 3, 2023*&nbsp;</h2>
                     </div>
                   </div>

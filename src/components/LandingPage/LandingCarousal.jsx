@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../../css/LandingCarousal.css";
 import { CircularProgress } from "@mui/material";
 import tanjortemple from "../../images/tanjoretemple.jpg";
@@ -46,6 +46,40 @@ const carousalData = [
   },
 ];
 
+const Slide = ({ image, heading, para, isActive }) => (
+  <div
+    className={`landingslide-section ${isActive ? "active" : ""}`}
+    style={{
+      backgroundImage: `url(${image})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  >
+    <div className="landingcontent">
+      <h2>{heading}</h2>
+      <p>{para}</p>
+    </div>
+  </div>
+);
+
+const useInterval = (callback, delay) => {
+  const savedCallback = useRef();
+
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  useEffect(() => {
+    const tick = () => {
+      savedCallback.current();
+    };
+    if (delay !== null) {
+      const id = setInterval(tick, delay);
+      return () => clearInterval(id);
+    }
+  }, [delay]);
+};
+
 const LandingCarousal = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -65,15 +99,11 @@ const LandingCarousal = () => {
       .catch(() => setImagesLoaded(false));
   }, []);
 
-  useEffect(() => {
+  useInterval(() => {
     if (imagesLoaded) {
-      const interval = setInterval(() => {
-        setActiveIndex((prevIndex) => (prevIndex + 1) % carousalData.length);
-      }, 5000);
-
-      return () => clearInterval(interval);
+      setActiveIndex((prevIndex) => (prevIndex + 1) % carousalData.length);
     }
-  }, [imagesLoaded]);
+  }, 5000);
 
   const handleDotClick = (index) => {
     setActiveIndex(index);
@@ -81,34 +111,28 @@ const LandingCarousal = () => {
 
   if (!imagesLoaded) {
     return (
-      <div className="loading-container">
+      <div className="landingloading-container">
         <CircularProgress />
       </div>
     );
   }
+
   return (
-    <div className="landing-carousal">
+    <div className="landinglanding-carousal">
       {carousalData.map((slide, index) => (
-        <div
+        <Slide
           key={index}
-          className={`slide-section ${index === activeIndex ? "active" : ""}`}
-          style={{
-            backgroundImage: `url(${slide.image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="content">
-            <h2>{slide.heading}</h2>
-            <p>{slide.para}</p>
-          </div>
-        </div>
+          image={slide.image}
+          heading={slide.heading}
+          para={slide.para}
+          isActive={index === activeIndex}
+        />
       ))}
-      <div className="dots">
+      <div className="landingdots">
         {carousalData.map((_, index) => (
           <div
             key={index}
-            className={`dot ${index === activeIndex ? "active" : ""}`}
+            className={`landingdot ${index === activeIndex ? "active" : ""}`}
             onClick={() => handleDotClick(index)}
           ></div>
         ))}

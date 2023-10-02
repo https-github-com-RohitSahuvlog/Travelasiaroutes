@@ -18,12 +18,14 @@ const Card = ({ products }) => {
 
 	return (
 		<CardContainer>
-			<CardMediaContainer>
-				<CardMedia src={products.thumbnail} atl={products.title} />
-				<CardCategory>{products.title}</CardCategory>
-			</CardMediaContainer>
-			<CardTitle>{products.title}</CardTitle>
-			<CardDesc>{products.description}</CardDesc>
+			<Link to={"/connect"}>
+				<CardMediaContainer>
+					<CardMedia src={products.thumbnail} atl={products.title} />
+					<CardCategory>{products.title}</CardCategory>
+				</CardMediaContainer>
+				<CardTitle>{products.title}</CardTitle>
+				<CardDesc>{products.description}</CardDesc>
+			</Link>
 		</CardContainer>
 	);
 }

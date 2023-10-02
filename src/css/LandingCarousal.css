@@ -1,4 +1,4 @@
-.landing-carousal {
+.landinglanding-carousal {
   position: relative;
   width: 100%;
   height: 90vh;
@@ -7,7 +7,7 @@
   margin-top: 50px;
 }
 
-.slide-section {
+.landingslide-section {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -36,12 +36,12 @@
   }
 }
 
-.slide-section.active {
+.landingslide-section.active {
   opacity: 1;
   /* animation: none;  */
 }
 
-.content {
+.landingcontent {
   transform: translateY(80px);
   display: flex;
   flex-direction: column;
@@ -50,9 +50,12 @@
   gap: 2rem;
   text-align: center;
   color: black;
+  width: 80%;
+  margin: auto;
+  letter-spacing: 0.3rem;
 }
 
-.dots {
+.landingdots {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -60,7 +63,7 @@
   display: flex;
 }
 
-.dot {
+.landingdot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -69,11 +72,12 @@
   cursor: pointer;
 }
 
-.dot.active {
+.landingdot.active {
   background-color: var(--golden);
 }
 
-.content p {
+.landingcontent p {
+  /* width: 50%; */
   font-size: 1rem;
   display: inline;
   --tw-bg-opacity: 1;
@@ -81,37 +85,84 @@
   --tw-text-opacity: 1;
   color: rgb(255 255 255/var(--tw-text-opacity));
   padding: 0.3125em 0.6875em;
-  -webkit-box-decoration-break: clone;
   font-weight: 600;
+  color: #fff;
+  margin: auto;
+  text-transform: uppercase;
+  /* border: 2px solid #fff; */
 }
 
-.content h2 {
-  font-size: 2rem;
-  font-family: Mont, Montserrat, Trebuchet MS, Helvetica, sans-serif !important;
+.landingcontent h2 {
+  letter-spacing: .3rem;
+  font-size: 2.5em;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: .125em;
-  color: white;
+  color: #fff;
+  text-shadow: 0 3px 5px #000;
 }
 
 @media screen and (max-width: 500px) {
-  .landing-carousal {
+  .landinglanding-carousal {
     width: 100vw;
     height: 75vh;
   }
 
-  .content p {
-    font-size: 14px;
+  .landingcontent {
+    transform: translateY(80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    color: black;
+    width: 90%;
+    margin: auto;
+  }
+
+  .landingcontent p {
+    font-size: 1rem;
+    display: inline;
+    --tw-bg-opacity: 1;
+    background-color: rgb(163 145 97/var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    padding: 0.3125em 0.6875em;
+    font-weight: 600;
+    color: #fff;
+    margin: auto;
+    text-transform: uppercase;
+
+  }
+
+  .landingcontent h2 {
+    letter-spacing: .3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 3px 5px #000;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .landing-carousal {
+@media screen and (max-width: 800px) and (min-width: 501px) {
+  .landinglanding-carousal {
     width: 100vw;
     height: 80vh;
   }
 
-  .content p {
-    font-size: 14px;
+
+
+  .landingcontent p {
+    font-size: 1rem;
+  }
+
+  .landingcontent h2 {
+    letter-spacing: .3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 3px 5px #000;
   }
 }

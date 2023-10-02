@@ -2,7 +2,10 @@
 import React, { useState } from 'react';
 import '../../css/tripuserinfo.css'; // Import your CSS file
 import { Grid } from '@mui/material';
+import { useDispatch } from 'react-redux';
+import { addTravelForm } from '../../redux/action/travel';
 function TripuserInfo({ prevClick, handleCountNext, formData }) {
+    const dispatch = useDispatch();
     const [formInfoData, setformInfoData] = useState({
         FirstName: '',
         LastName: '',
@@ -19,8 +22,19 @@ function TripuserInfo({ prevClick, handleCountNext, formData }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log({ ...formData, ...formInfoData });
+        const mappedData = mapFormDataToSchema({
+            FirstName,
+            LastName,
+            Email,
+            Phone,
+            PostalCode,
+            form1: formData.form1,
+            form2: formData.form2,
+            form3: formData.form3,
+        });
+        addTravelForm(mappedData)
         handleCountNext();
+
     };
     return (
         <div className="form-container">
@@ -114,3 +128,50 @@ function TripuserInfo({ prevClick, handleCountNext, formData }) {
 }
 
 export default TripuserInfo;
+
+
+const mapFormDataToSchema = (formData) => {
+    const {
+        FirstName,
+        LastName,
+        Email,
+        Phone,
+        PostalCode,
+        form1,
+        form2,
+        form3,
+    } = formData;
+
+    const travelForm = {
+        destination: form1.destination,
+        travelDates: form1.travelDates === "I'm flexible with my dates" ? "I know my dates" : form1.travelDates,
+        groupSize: form1.groupSize,
+        travelWith: {
+            solo: form2.travelWith.solo,
+            partner: form2.travelWith.partner,
+            youngKids: form2.travelWith.youngKids,
+            friends: form2.travelWith.friends,
+            couples: form2.travelWith.couples,
+            multiGenerationalFamily: form2.travelWith.multiGenerationalFamily,
+            other: form2.travelWith.other,
+        },
+        travelDuration: form2.travelDuration,
+        budgetPerDay: form2.budgetPerDay,
+        travelOccasion: form3.travelOccasion,
+        experiences: form3.experiences,
+        accommodationType: form3.accommodationType,
+    };
+
+    const personalInfo = {
+        firstName: FirstName,
+        lastName: LastName,
+        email: Email,
+        phone: Phone,
+        postalCode: PostalCode,
+    };
+
+    return {
+        ...personalInfo,
+        travelForms: [travelForm],
+    };
+};

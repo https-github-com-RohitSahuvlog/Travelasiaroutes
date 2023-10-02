@@ -50,7 +50,6 @@ function Occassion({ prevClick, handleCountNext }) {
 
   const handleExperienceChange = (event) => {
     const value = event.target.name;
-    console.log("value", experiencesOther)
     if (value === "OtherExperience") {
       setIsOtherExperienceChecked(event.target.checked);
       setOtherExperienceText(experiencesOther);
@@ -66,7 +65,6 @@ function Occassion({ prevClick, handleCountNext }) {
 
 
     }
-    console.log('======experiences =====', experiences, otherExperienceText, event.target.value);
 
   };
   const handleAccommodationTypeChange = (event) => {

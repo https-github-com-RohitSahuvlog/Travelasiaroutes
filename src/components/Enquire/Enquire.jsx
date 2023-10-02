@@ -8,6 +8,7 @@ import Select from "@mui/material/Select";
 import Chip from "@mui/material/Chip";
 import { useState } from "react";
 import { InputLabel, TextField } from "@mui/material";
+import { addEnquiry } from "../../redux/action/enquiry";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -391,8 +392,7 @@ const Enquire = () => {
     const errors = validateForm(formData);
 
     if (Object.keys(errors).length === 0) {
-      // Form is valid, you can submit the data
-      // Send formData to your backend or perform any desired action
+      addEnquiry(formData)
       setIsSubmitted(true);
     } else {
       setFormErrors(errors);
