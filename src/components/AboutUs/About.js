@@ -182,6 +182,8 @@ const About = () => {
                         </h3>
                         <p>
                             <span className={styles.about_p2}>You’ll get to engage with local people throughout each adventure.Typical experiences include village walks, shopping at local markets, visiting children at their school, and Home-Hosted meals with local families.</span>
+                            <br />
+                            <br />
                         </p>
 
 

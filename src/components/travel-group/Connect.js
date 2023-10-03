@@ -5,6 +5,8 @@ import styles from "./Connect.module.css";
 import App from './slider-group';
 import MyGallery from './slider-group';
 import VerticalTimeLine from './vertical-timeline';
+import MyAccordion from './myaccordian';
+
 const Connect = () => {
 
   const section1Ref = useRef();
@@ -14,33 +16,46 @@ const Connect = () => {
 
   const navHeader = [
     {
-      headerTitle: "INTRODUCTION",
+      headerTitle: "TRIP OVERVIEW",
       headerRef: section1Ref,
+      headerID: "section3"
+    },
+    {
+      headerTitle: "ITNERY",
+      headerRef: section2Ref,
       headerID: "section1"
     },
     {
-      headerTitle: "PHOTO & VIDEO",
-      headerRef: section2Ref,
-      headerID: "section2"
-    },
-    {
-      headerTitle: "TRIP OVERVIEW",
+      headerTitle: "DATES & PRICES",
       headerRef: section3Ref,
       headerID: "section3"
     },
     {
-      headerTitle: "DATES & PRICES",
+      headerTitle: "PHOTO & VIDEO",
       headerRef: section4Ref,
       headerID: "section4"
-    }
+    },
+
+
   ];
+
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      window.scrollTo({
+        top: ref.current.offsetTop,
+        behavior: 'smooth', // Add smooth scrolling behavior
+      });
+    }
+  };
+
+
 
   return (
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title} > ANTARCTICA ADVENTURES</h1>
-          <div className={styles.Italic}>CRUISES TO THE WHITE CONTINENT</div>
+          <h1 className={styles.Title} > NEPAL ADVENTURES</h1>
+          <div className={styles.Italic}>Nepal Unveiled: Embark on Epic Adventures</div>
           <div className={styles.GoButton}><button className={styles.ButtonFirst}>Request Itinerary</button></div>
         </div>
       </div>
@@ -51,74 +66,10 @@ const Connect = () => {
         {/* <div><img src="https://www.geoex.com/app/uploads/2019/07/antarctica-crabeater-seal-geoex.jpg"></img></div> */}
         <div className={styles.Flex}>
           <div>
-            <ScrollHighlightNabbar section3Ref={section3Ref} navHeader={navHeader} />
+            <ScrollHighlightNabbar scrollToSection={scrollToSection} navHeader={navHeader} />
           </div>
           <div className=''>
             <div className={styles.section} ref={section1Ref} id={styles.section1} >
-              <div className={styles.MainHeading} >
-                <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>ANTARCTICA ADVENTURES</h2>
-                  <h5 className={styles.SetTextWith}>Luxury Group Travel | 12 Days</h5>
-                </div>
-
-                <div className={styles.SetFlexProperty}>
-                  <div className={styles.SetDataLeft}>
-                    <ul>
-                      <li>Choose from itineraries lasting 12–22 days</li>
-                      <li>Be surrounded by penguins and watch whales and seals</li>
-                      <li>Weave through spectacular ice and sea passages</li>
-                      <li>Enjoy a comfortable ship with superior amenities, learning from scientists, experts, and lecturers</li>
-                      <li>Opt to add time in Chile and Argentina before or after your cruise</li>
-                    </ul>
-                  </div>
-                  <div className={styles.SetDataright}>
-                    Touring Antarctica is something many fantasize about; we count ourselves lucky to be able to make so many dreams possible. These expeditions to the White Continent start at the southern tip of South America, in Ushuaia, Argentina. All of the small, ice-strengthened ships we use are quite comfortable, with expedition teams of naturalists, historians, and geologists to help make sense of the abundant wildlife and expound on human’s exploration (and exploitation) of Antarctica.
-                  </div>
-                </div>
-
-                <div className={styles.SettingHeadingRatio}>
-                  <div className={styles.SetTextRatio}>WE ARE PLEASED TO EXTEND A LIMITED-TIME OFFER ABOARD THE MS SEAVENTURE</div>
-                  <div className={styles.SetImage}>
-                    <img src="https://www.geoex.com/app/uploads/2023/09/Polar_Latitudes_Seaventure_by_air-1920x1080-1-1536x864.jpg" className={styles.SetBackGround}></img>
-                    <div className={styles.inner_container}>
-                      <h2 id="h-1-500-per-person-exclusive-savings-available-until-november-3-2023">$1,500 PER PERSON exclusive SAVINGS <br /> available until November 3, 2023*&nbsp;</h2>
-                    </div>
-                  </div>
-
-                  <div className={styles.EnterData}>
-                    <div className={styles.PutData}>
-                      <div className={styles.DataHeading}>
-                        *Promotion’s Rules:
-                      </div>
-                      <div className={styles.HeadingContent}>
-                        All prices are per person and expressed in USD.<br></br>
-                        Single supplements apply.<br></br>
-                        Applies to all 2023-24 Polar Latitudes departures aboard the Seaventure.<br></br>
-                        The offer cannot be combined with any other offer or discount (such as loyalty discount, child discount, etc.)<br></br>
-                        The offer is valid until 11/03/2023.<br></br>
-                        GeoEx reserves the right to discontinue or extend this offer at any time.<br></br>
-                        Except where modified above, the Terms and Conditions of Sale indicated in the 2023-24 Exploring Antarctica brochure apply.<br></br>
-                        1 / 14
-
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div>
-
-
-
-              </div>
-
-            </div>
-            <div className={styles.section} ref={section2Ref} id={styles.section2}>
-
-
-              <MyGallery />
-
-            </div>
-            <div className={styles.section} ref={section3Ref} id={styles.section3} >
               <div className={styles.SettingHeadingRatio}>
                 <div className={styles.SetText}>TRIP OVERVIEW</div>
               </div>
@@ -127,28 +78,118 @@ const Connect = () => {
                 <div className={styles.FirstDiv}>
 
 
-                  <img className={styles.ThirdPic} src="https://tse4.mm.bing.net/th?id=OIP.z_PfIRZ6gr4gCVF6qhBkVQHaFj&pid=Api&P=0&h=180"></img>
+                  <img className={styles.ThirdPic} src="https://aidiaasia.org/images/contents/2WqLt-nepal-india-china.jpg"></img>
 
                   <div className={styles.tripfeedbackquote}>
-                    <p>On our Antarctica trip, everything was a highlight! We saw an abundance of animals: whales (orca and humpback), penguins (chinstrap, gentoo, Adelie, and even one lone emperor), seals, and birds. Each and every expedition guide was outstanding. Their enthusiasm was infectious.</p>
-                    <strong>– JANE C.</strong>
+                    <p>A tiny Himalayan country where sherpas trudge the mountain paths and prayer flags crisscross the sky, their fluttering Buddhist mantras snatched on the breeze</p>
+                    <br />
+                    <br />
+                    <p>
+                      Nestled within the rugged embrace of the Himalayas, Nepal is a jewel among nations, a place where the very essence of adventure, spirituality, and raw natural beauty converge. Picture this: Sherpas, the unsung heroes of these towering peaks, navigating treacherous mountain paths, each step echoing with a centuries-old legacy of resilience. Above them, prayer flags dance like ethereal spirits, carrying the whispers of Buddhist mantras into the boundless sky. It's a land where we can't help but let our hearts choose favorites, especially after three decades of guiding intrepid souls through its enchanting tapestry.
+                    </p>
                   </div>
                 </div>
 
                 <div className={styles.SecondDiv}>
-                  <p>Heading south toward Cape Horn into the Drake Passage (notorious for its rough seas), you soon encounter pack ice and icebergs—a veritable floating sculpture garden. Birds, whales, and seals bring the skies and seas to life. Take advantage of the almost 24-hour daylight at such famous and dramatic settings as Paradise Bay, Anvers Island, King George Island, Port Lockroy, and Deception Island. You'll spend as much time as possible on the Antarctic Peninsula and the spectacular South Shetlands, going ashore by Zodiac a couple of times each day.<br></br>
+                  <p>
+
+
+                    Everest Base Camp beckons, a pilgrimage for those who dare to touch the roof of the world. The Annapurna region unfurls its rhododendron-clad forests, a living canvas of vibrant colors. Venture into Chitwan National Park, where rhinos roam freely, a testament to Nepal's commitment to wildlife preservation. And amidst the labyrinthine streets of Kathmandu's Thamel, immerse yourself in the sensory symphony of sizzling momos and the warm camaraderie of locals.
                     <br />
-
-                    The longer voyages include visits to South Georgia Island—a breath-stopping, 9500-foot rock massif, populated by enormous congeries of penguins and seals—Elephant Island, and the Falkland Islands.
-
-                    <br></br>    If you don't have the time or stomach for the Drake Passage crossing, check out our Antarctica Fly & Cruise journey.
-
-                    <br></br>    Whichever itinerary you choose, we’re here to arrange all the details.</p>
+                    <br />
+                    Regardless of the path you tread, one promise holds true: Nepal is an unparalleled experience, a place where the soul finds solace, and wanderlust finds its muse. The diversity here extends far beyond landscapes; it's a cultural kaleidoscope, where traditions are as vivid as the landscapes themselves. Slow-moving Himalayan glaciers, crystalline lakes, cascading waterfalls, and emerald forests that stretch to infinity—all contribute to Nepal's ethereal beauty, a testament to nature's artistry that you won't find replicated anywhere else on this planet.
+                    <br />
+                    <br />
+                    Nepal isn't just a destination; it's an odyssey, an opportunity to embrace the extraordinary. It's where dreams ascend, where inner peace finds its sanctuary, and where every step taken is a promise of adventure. So, heed the call of the Himalayas and discover Nepal, for it's a voyage that will etch itself into your heart, forever changing the way you see the world.</p>
                 </div>
               </div>
 
             </div>
-            <div className={styles.section} ref={section4Ref} id="section4">
+            <div className={styles.section} ref={section2Ref} id={styles.section2} >
+              <div className={styles.MainHeading} >
+                <div className={styles.SettingHeading}>
+                  <h2 className={styles.SetText}>The Paraglide Nepal</h2>
+                  <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Paraglide, Trek in Himalayas)</h5>
+                </div>
+                <MyAccordion />
+                <h2 className={styles.SetText} >Highlights</h2>
+                <div className={styles.SetFlexProperty}>
+                  <div className={styles.SetDataLeft}>
+                    <ul>
+                      <li>Explore the enchanting Kathmandu Durbar Square and Kumari Temple, where the living goddess resides.</li>
+                      <li>Ascend to the serene Swyambhunath Stupa, also known as the Monkey Temple, with its panoramic views.</li>
+                      <li>Immerse yourself in the artistic splendors of Patan City, a treasure trove of crafts and culture.</li>
+                      <li>Witness the spiritual fervor at Pashupatinath, a revered Hindu temple by the Bagmati River.</li>
+                      <li>Marvel at the grandeur of Boudhanath Stupa, the largest stupa in Nepal and a symbol of Tibetan Buddhism.</li>
+                      <li>Step back in time in Bhaktapur, the city of devotees, where history whispers through ancient streets.</li>
+                      <li>Embark on a unique adventure with a 'street helicopter' ride, exploring local life from a rickshaw.</li>
+                      <li>Soar like a bird paragliding over the majestic Himalayan landscapes.</li>
+
+                    </ul>
+                  </div>
+                  <div className={styles.SetDataLeft}>
+                    <ul>
+                      <li>Encounter wildlife in their natural habitat at Chitwan National Park, a UNESCO World Heritage site.</li>
+                      <li>Delve into the serenity of Buddhist monasteries, where spirituality and tranquility converge.</li>
+                      <li>Discover the natural beauty of Pokhara, a city nestled by serene lakes and towering mountains.</li>
+                      <li>Glide across the pristine waters of Phewa Lake and visit the picturesque Barahi Temple in its midst.</li>
+                      <li>Gain insight into the resilient lives of Tibetan refugees living in Nepal.</li>
+                      <li>Catch the breathtaking sunrise over the Himalayas from Sarangkot.</li>
+                      <li>Explore the wonders of Seti River Gorge, Mahadev Cave, and David's Fall.</li>
+                      <li>Embark on epic treks and hikes through remote Himalayan regions, including the scenic Australian Camp.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className={styles.SettingHeadingRatio}>
+                  <div className={styles.SetTextRatio}>TRIP COST DOES NOT INCLUDE</div>
+                  <div className={styles.SetImage}>
+                    <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Pokhara-Valley.jpg?w=1024&ssl=1" className={styles.SetBackGround}></img>
+                    <div className={styles.inner_container}>
+                      <h2 className={styles.exclusivesavings}>International airfare,any airport departure taxes, any meals not specified after each itinerary day in the Detailed Itinerary, gratuities to tour leader,hotels en route to or on return from starting or ending city or additional hotel nights that may be necessary due to airline schedule changes or other factors, visa fees, cost of medical immunizations (if any), travel insurance, and other expenses of a personal nature (alcoholic beverages, laundry, etc.)&nbsp;</h2>
+                    </div>
+                  </div>
+
+                  <div className={styles.EnterData}>
+                    <div className={styles.PutData}>
+                      <div className={styles.DataHeading}>
+                        *Facts and Inclusions:
+                      </div>
+                      <div className={styles.HeadingContent}>
+                        <ul>
+                          <li>Total trip duration: 15 days</li>
+                          <li>Trip starts and finishes in Kathmandu, immersing you in the heart of Nepal.</li>
+                          <li>This expedition takes place in March, offering comfortable weather ranging from approximately 45°F to 80°F.</li>
+                          <li>Altitude levels vary from 800 meters to 2250 meters, ensuring diverse landscapes throughout your journey.</li>
+                          <li>Expect bumpy and extended (5-6 hours) rides due to road conditions.</li>
+                          <li>Prepare for climbs with up to 1000 steps to reach certain destinations.</li>
+                          <li>Toilets: Clean western-style toilets available at accommodations, restaurants, and sites, but squat toilets may be encountered during drives.</li>
+                          <li>Experience a thrilling 2-day hike/trek in the Himalayas within the Annapurna valley, navigating rocky terrains, paved paths, and ascending after conquering hundreds of steps.</li>
+                          <li>Travel with a small group, limited to a maximum of 10 travelers, led by an experienced tour leader.</li>
+                          <li>Accommodations include 10 nights in comfortable hotels, 1 night in a standard guest house in a monastery with shared bathrooms, 1 night in a local lodge in the Himalayas with private bathrooms, and 2 nights in a comfortable forest lodge with private bathrooms.</li>
+                          <li>All accommodations are carefully chosen for their location, services, cleanliness, and private bathrooms.</li>
+                          <li>This comprehensive package covers all internal/domestic flights, ensuring a hassle-free journey.</li>
+                          <li>Enjoy delicious meals as all your dining needs are included.</li>
+                          <li>Explore Nepal through various cultural adventures, including walking tours, hiking, rugged off-road travel, and even paragliding.</li>
+                          <li>This tour falls within the Level 2-4 experience range, involving individual hikes of up to 2 hours with gentle slopes, walks through towns or cities lasting 1 or more hours, explorations of archaeological sites for 2-3 hours, and the ability to climb 3-4 flights of stairs and walk at least 2 miles with ease.</li>
+                          <li>Benefit from the services of a knowledgeable tour leader and local tour experts throughout your journey.</li>
+                          <li>Gratuities for local guides, restaurants, and porters are included, ensuring a seamless and respectful experience.</li>
+                          <li>Indulge in a 1-hour Nepalese trekker massage, a soothing treat for body and soul.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+            <div className={styles.section} ref={section3Ref} id={styles.section3}>
               <div className={styles.SettingHeadingRatio}>
                 <div className={styles.SetText}>DATES & PRICES</div>
 
@@ -161,13 +202,13 @@ const Connect = () => {
                   <p className={styles.FourPara}>Departures offered November–March; request itinerary for specific dates.</p>
 
                   <h3 className={styles.FourSubHeading}>Pricing</h3>
-                  <p className={styles.FourPara}>12 days (with 9-night cruise): From $9,895 per person </p>
+                  <p className={styles.FourPara}>12 days (with 9-night cruise): From $870  per person </p>
                 </div>
                 <div>
                   <h3 className={styles.FourAling}>Inclusions</h3>
-                  <ul className={styles.SetLi}>
-                    <li>Expertise of GeoEx’s travel specialists</li>
-                    <li>Services of GeoEx’s in-house air reservations team</li>
+                  <ul className={styles.SetDataLeft}>
+                    <li>Expertise of MidAsia travel specialists</li>
+                    <li>Services of MidAsia in-house air reservations team</li>
                     <li>All accommodations</li>
                     <li>All ground transportation and airport transfers</li>
                     <li>Sightseeing, events, visits, and entrance fees</li>
@@ -183,13 +224,20 @@ const Connect = () => {
 
               </div>
 
+
+            </div>
+            <div className={styles.section} ref={section4Ref} id={styles.section4}>
+
+
+              <MyGallery />
               <div className={styles.LastFourContent}>
                 <div>
                   <h4 className={styles.ContentSubHeading}>A JOURNEY BUILT JUST FOR YOU</h4>
-                  <p className={styles.ContentSubHeadingPart}>Take customization to the next level on a journey fully tailored to you. GeoEx's destination specialists will gladly tailor this existing itinerary—or build one completely from scratch—to suit your style, interests, and time frame. Contact us to see what's possible.</p>
+                  <p className={styles.ContentSubHeadingPart}>Take customization to the next level on a journey fully tailored to you. MidAsia's destination specialists will gladly tailor this existing itinerary—or build one completely from scratch—to suit your style, interests, and time frame. Contact us to see what's possible.</p>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>

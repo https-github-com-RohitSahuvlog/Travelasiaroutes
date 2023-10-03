@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './ScrollHighlightNavbar.module.css';
 
-const ScrollHighlightNavbar = ({ navHeader }) => {
+const ScrollHighlightNavbar = ({ navHeader, scrollToSection }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -59,6 +59,7 @@ const ScrollHighlightNavbar = ({ navHeader }) => {
             textDecoration: 'none',
           }}
           href={`#${header.headerID}`}
+          onClick={() => scrollToSection(header.headerRef)}
         >
           {header.headerTitle}
         </a>
@@ -73,6 +74,7 @@ ScrollHighlightNavbar.propTypes = {
       headerID: PropTypes.string.isRequired,
       headerRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
       headerTitle: PropTypes.string.isRequired,
+      scrollToSection: PropTypes.func.isRequired,
     })
   ).isRequired,
 };

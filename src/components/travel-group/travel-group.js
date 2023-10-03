@@ -4,9 +4,9 @@ import { createGlobalStyle } from 'styled-components';
 import Card from "./Card/Card";
 const TravelGroups = () => {
   const data = [
-    { thumbnail: "https://www.geoex.com/app/uploads/2019/07/antarctica-crabeater-seal-geoex-393x221.jpg", title: "ANTARCTICA ADVENTURES", description: "Cruise to the White Continent" },
-    { thumbnail: "	https://www.geoex.com/app/uploads/2019/06/Egypt-Great-Pyramids-karimhesham-iStock-393x221.jpg", title: "Splendors of Egypt", description: "A Guided Trip along the Nile from Cairo to Aswan" },
-    { thumbnail: "https://www.geoex.com/app/uploads/2019/07/japan-kyoto-arashiyama-bamboo-forest-geoex-393x221.jpg", title: "Journey Through Ancient Japan", description: "Discovering Shikoku and Kyoto" }
+    { thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/104733483266635338.jpg", title: "NEPAL ADVENTURES", description: "Nepal Unveiled: Embark on Epic Adventures" },
+    // { thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/1143620516535.jpg", title: "Splendors of Egypt", description: "THE SECRETS OF BANGLADESH, It’s Culture & Wildlife- Yes, it is Adventure!!" },
+    // { thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/image_manager__teaser_girls_in_laos_costume_credit_visoot_-_stock753617940.jpg", description: "LANDLOCKED LAOS, The GOLDEN TRIANGLE & TEMPLES OF ANGKOR WAT" }
   ]
 
   const GlobalStyle = createGlobalStyle`
