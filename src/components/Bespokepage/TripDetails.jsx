@@ -88,7 +88,7 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
         </h2>
 
         <Typography align="center" gutterBottom maxWidth={"600px"}>
-          Please provide us with the below information, and a B&amp;R Travel
+          Please provide us with the below information, and a MidAsia Routes Travel
           Advisor will be in touch shortly to confirm your trip details.
         </Typography>
 
