@@ -1,7 +1,7 @@
 import React from 'react';
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import "./myaccordon.css";
+// import "./myaccordon.css";
 function MyAccordion() {
     return (
         <div>

@@ -146,7 +146,7 @@
   padding-left: 1.6rem;
   color: #666;
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: Crimson Text, serif;
 }
 
@@ -210,31 +210,19 @@
 }
 
 
-.SetImage {
-  position: relative;
-  background-size: cover;
-  background-position: 50%;
-  min-height: 430px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* padding: 1em; */
-  box-sizing: border-box;
-  /* border: 1px solid black; */
-}
+
 
 .inner_container {
   width: 100%;
-  /* z-index: 1; */
-  /* color: white; */
-  /* background-color: #000; */
-  opacity: 0.7;
-  /* background-color: rgba(51, 51, 51, .5); */
+  margin: auto;
+  line-height: 1.5;
 }
 
 .exclusivesavings {
   font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2;
+  padding: 1rem;
 }
 
 .SetBackGround {
@@ -255,6 +243,7 @@
 .EnterData {
   height: auto;
   padding: 2%;
+  font-size: 1.2rem;
   /* border: 1px solid black; */
 }
 
@@ -266,10 +255,13 @@
 }
 
 .DataHeading {
-  font-size: 1.5rem;
-  line-height: 2.2rem;
+  font-size: 2.2rem;
   color: #333;
-  font-weight: 700;
+  font-weight: 300;
+  letter-spacing: .2rem;
+  gap: 20px;
+  text-align: center;
+
 }
 
 .HeadingContent {
@@ -278,6 +270,7 @@
   color: #666;
   font-weight: 600;
   margin-left: 30px;
+  margin: 20px;
 }
 
 @media only screen and (max-width: 503px) and (min-width: 434px) {
@@ -439,7 +432,7 @@
 }
 
 .tripfeedbackquote {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   /* font-style: italic; */
   font-family: Crimson Text, serif;
   /* color: #aaa; */
@@ -477,14 +470,12 @@
 
   .SectionThreeMain>div {
     height: auto;
-    /* width: 100%; */
-    /* border:1px solid black; */
     display: flex;
     flex-direction: row;
     margin: 2%;
     display: flex;
     flex-direction: column;
-
+    font-size: 1.2rem;
   }
 
   .FirstDiv {
@@ -583,6 +574,7 @@
   font-size: 1.4rem;
   font-family: Crimson Text, serif;
   font-weight: 600;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 700px) and (min-width: 360px) {

@@ -5,7 +5,7 @@ import styles from "./Connect.module.css";
 import App from './slider-group';
 import MyGallery from './slider-group';
 import VerticalTimeLine from './vertical-timeline';
-import MyAccordion from './myaccordian';
+import MyAccordion from './accordian/accordian';
 
 const Connect = () => {
 
@@ -68,7 +68,7 @@ const Connect = () => {
           <div>
             <ScrollHighlightNabbar scrollToSection={scrollToSection} navHeader={navHeader} />
           </div>
-          <div className=''>
+          <div className='w-[100vw]' style={{ width: "100vw" }}>
             <div className={styles.section} ref={section1Ref} id={styles.section1} >
               <div className={styles.SettingHeadingRatio}>
                 <div className={styles.SetText}>TRIP OVERVIEW</div>
@@ -111,6 +111,7 @@ const Connect = () => {
                   <h2 className={styles.SetText}>The Paraglide Nepal</h2>
                   <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Paraglide, Trek in Himalayas)</h5>
                 </div>
+                {/* <MyAccordion /> */}
                 <MyAccordion />
                 <h2 className={styles.SetText} >Highlights</h2>
                 <div className={styles.SetFlexProperty}>
@@ -195,6 +196,52 @@ const Connect = () => {
 
               </div> */}
 
+              <div className={styles.tab_content}
+              // style="display: block;"
+              >
+                <div className={styles.table_data}>
+                  <table className={styles.table_bordered}>
+                    <thead>
+                      <tr>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Price</th>
+                        <th>Single Supplement Price</th>
+                        <th>Status</th>
+                        <th>Availability</th>
+                        <th>
+                          Action
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className={styles.pricingRow}>
+                        <td>22rd March 2024</td>
+                        <td>6th April 2024</td>
+                        <td>$ 5775 USD</td>
+                        <td>
+                          $ 870 USD
+                        </td>
+                        <td>
+                          <img src="https://www.eldertreks.com/images/check.png"
+                          // style="width: auto;"
+                          />&nbsp;&nbsp;
+                        </td>
+                        <td>6 Spaces</td>
+                        <td>
+                          <a href="contact-us.php" className={styles.btn_blue}>Book Now</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="travel_sts">
+                  <img src="https://www.eldertreks.com/images/check.png"
+
+                  // style="width: auto;"
+                  /> <span> Guaranteed Departures</span>
+                </div>
+              </div>
               <div className={styles.FourFlex}>
                 {/* <div className={styles.FourAling}>
 
@@ -230,7 +277,7 @@ const Connect = () => {
                 <div className={styles.EnterData}>
                   <div className={styles.PutData}>
                     <div className={styles.DataHeading}>
-                      *Facts and Inclusions:
+                      *Facts and Inclusions
                     </div>
                     <div className={styles.HeadingContent}>
                       <ul>
@@ -258,11 +305,10 @@ const Connect = () => {
                 </div>
 
                 <div className={styles.SetTextRatio}>TRIP COST DOES NOT INCLUDE</div>
-                <div className={styles.SetImage}>
-                  {/* <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Pokhara-Valley.jpg?w=1024&ssl=1" className={styles.SetBackGround}></img> */}
-                  <div className={styles.inner_container}>
-                    <h2 className={styles.exclusivesavings}>International airfare,any airport departure taxes, any meals not specified after each itinerary day in the Detailed Itinerary, gratuities to tour leader,hotels en route to or on return from starting or ending city or additional hotel nights that may be necessary due to airline schedule changes or other factors, visa fees, cost of medical immunizations (if any), travel insurance, and other expenses of a personal nature (alcoholic beverages, laundry, etc.)&nbsp;</h2>
-                  </div>
+
+
+                <div className={styles.inner_container}>
+                  <h2 className={styles.exclusivesavings}>International airfare,any airport departure taxes, any meals not specified after each itinerary day in the Detailed Itinerary, gratuities to tour leader,hotels en route to or on return from starting or ending city or additional hotel nights that may be necessary due to airline schedule changes or other factors, visa fees, cost of medical immunizations (if any), travel insurance, and other expenses of a personal nature (alcoholic beverages, laundry, etc.)&nbsp;</h2>
                 </div>
 
 
