@@ -6,6 +6,7 @@ import App from './slider-group';
 import MyGallery from './slider-group';
 import VerticalTimeLine from './vertical-timeline';
 import MyAccordion from './accordian/accordian';
+import { Link } from 'react-router-dom';
 
 const Connect = () => {
 
@@ -196,9 +197,7 @@ const Connect = () => {
 
               </div> */}
 
-              <div className={styles.tab_content}
-              // style="display: block;"
-              >
+              <div className={styles.tab_content} style={{ display: 'block' }}>
                 <div className={styles.table_data}>
                   <table className={styles.table_bordered}>
                     <thead>
@@ -209,9 +208,7 @@ const Connect = () => {
                         <th>Single Supplement Price</th>
                         <th>Status</th>
                         <th>Availability</th>
-                        <th>
-                          Action
-                        </th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -219,29 +216,28 @@ const Connect = () => {
                         <td>22rd March 2024</td>
                         <td>6th April 2024</td>
                         <td>$ 5775 USD</td>
+                        <td style={{ width: 'auto' }}>$ 870 USD</td>
                         <td>
-                          $ 870 USD
-                        </td>
-                        <td>
-                          <img src="https://www.eldertreks.com/images/check.png"
-                          // style="width: auto;"
-                          />&nbsp;&nbsp;
+                          <img src="https://www.eldertreks.com/images/check.png" style={{ width: 'auto' }} />&nbsp;&nbsp;
                         </td>
                         <td>6 Spaces</td>
                         <td>
-                          <a href="contact-us.php" className={styles.btn_blue}>Book Now</a>
+                          <Link to="/bespoke" >
+                            <button>
+                              Book Now
+                            </button>
+                          </Link>
+
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <div class="travel_sts">
-                  <img src="https://www.eldertreks.com/images/check.png"
-
-                  // style="width: auto;"
-                  /> <span> Guaranteed Departures</span>
+                <div className="travel_sts">
+                  <img src="https://www.eldertreks.com/images/check.png" style={{ width: 'auto' }} /> <span>Guaranteed Departures</span>
                 </div>
               </div>
+
               <div className={styles.FourFlex}>
                 {/* <div className={styles.FourAling}>
 

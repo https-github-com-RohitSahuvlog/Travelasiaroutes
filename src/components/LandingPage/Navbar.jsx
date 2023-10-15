@@ -168,11 +168,11 @@ export default function Navbar() {
           <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
         </li>
         <li className="to_drop">
-          <Link to="/"> Small Group Boutique Expeditions </Link>
-          <div className="small_group">
+          <Link to="/travel-groups"> Small Group Boutique Expeditions </Link>
+          {/* <div className="small_group">
             <Link className="small_group_Link" to="#">Asia Pacific</Link>
             <Link className="small_group_Link" to="#">Middle East/ Africa</Link>
-          </div >
+          </div > */}
         </li>
         <li className="to_drop" >
           <Link to="/"> By Destination </Link>
