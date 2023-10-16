@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
-import "./myaccordon.css"
-const SingleAccordian = ({ day, description, activities }) => {
+import "./subaccordian.css"
+const SubAccordian = ({ day, description, activities }) => {
   const [expanded, setExpanded] = useState(false)
 
   return (
@@ -23,4 +23,4 @@ const SingleAccordian = ({ day, description, activities }) => {
   )
 }
 
-export default SingleAccordian
+export default SubAccordian

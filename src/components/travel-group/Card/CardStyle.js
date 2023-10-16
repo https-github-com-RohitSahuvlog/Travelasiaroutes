@@ -9,7 +9,7 @@ export const CardContainer = Styled.div`
     overflow: hidden;
     transition: 0.3s ease-out;
     margin: 20px 0px;
-    height: 350px;
+    height: 380px;
     text-align: center;
 
     &:hover{
@@ -24,7 +24,7 @@ export const CardMediaContainer = Styled.div`
 
 export const CardMedia = Styled.img`
     width: 100%;
-    height: 220px;
+    height: 250px;
     object-fit: cover;
 `;
 
@@ -40,14 +40,15 @@ export const CardCategory = Styled.p`
 
 export const CardTitle = Styled.h3`
     color: #222;
-    font-size: 16px;
-    padding: 15px;
+    font-size: 1rem;
+    padding: 5px;
     text-transform: uppercase;
+    font-weight: 700;
+    margin:10px;
 `;
 
 export const CardDesc = Styled.p`
     color: #333;
-    font-size: 15px;
-    padding: 0 15px;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
+     font-weight: 700;
 `;

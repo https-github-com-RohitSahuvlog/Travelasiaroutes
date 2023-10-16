@@ -18,7 +18,7 @@ const Card = ({ products }) => {
 
 	return (
 		<CardContainer>
-			<Link to={"/connect"}>
+			<Link to={products.link}>
 				<CardMediaContainer>
 					<CardMedia src={products.thumbnail} atl={products.title} />
 					<CardCategory>{products.title}</CardCategory>

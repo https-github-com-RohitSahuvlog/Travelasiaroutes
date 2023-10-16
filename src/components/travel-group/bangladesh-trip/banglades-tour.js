@@ -1,14 +1,15 @@
 import React from 'react'
 import { useRef, useEffect } from 'react'
-import ScrollHighlightNabbar from './ScrollHighlightNabbar/ScrollHighlightNabbar'
-import styles from "./Connect.module.css";
-import App from './slider-group';
-import MyGallery from './slider-group';
-import VerticalTimeLine from './vertical-timeline';
-import MyAccordion from './accordian/accordian';
+import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
+import styles from "./banglades-tour.module.css";
+import MyGallery from '../SliderImage/slider-image-group';
+import MyAccordion from '../accordian/accordian';
+import { BangladeshImages } from "./banglades-image-data";
 import { Link } from 'react-router-dom';
+import { BangladeshAccData } from "./banglades-accordian-data";
 
-const Connect = () => {
+
+const BangladeshTrip = () => {
 
   const section1Ref = useRef();
   const section2Ref = useRef();
@@ -44,7 +45,7 @@ const Connect = () => {
     if (ref && ref.current) {
       window.scrollTo({
         top: ref.current.offsetTop,
-        behavior: 'smooth', // Add smooth scrolling behavior
+        behavior: 'smooth',
       });
     }
   };
@@ -55,16 +56,18 @@ const Connect = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title} > NEPAL ADVENTURE</h1>
-          <div className={styles.Italic}>Nepal Unveiled: Embark on Epic Adventures</div>
-          <div className={styles.GoButton}><button className={styles.ButtonFirst}>Start Planning</button></div>
+          <h1 className={styles.Title} >Discover the Charms of Bangladesh</h1>
+          <div className={styles.Italic}>Bangladesh Unveiled: Embark on Epic Adventures</div>
+          <div className={styles.GoButton}>
+            <Link to="/bespoke"  >
+              <button className={styles.ButtonFirst}>Start Planning</button>
+            </Link></div>
         </div>
       </div>
 
 
 
       <div className={styles.Capp}>
-        {/* <div><img src="https://www.geoex.com/app/uploads/2019/07/antarctica-crabeater-seal-geoex.jpg"></img></div> */}
         <div className={styles.Flex}>
           <div>
             <ScrollHighlightNabbar scrollToSection={scrollToSection} navHeader={navHeader} />
@@ -79,7 +82,13 @@ const Connect = () => {
                 <div className={styles.FirstDiv}>
 
 
-                  <img className={styles.ThirdPic} src="https://aidiaasia.org/images/contents/2WqLt-nepal-india-china.jpg"></img>
+                  {/* <img className={styles.ThirdPic} src="https://aidiaasia.org/images/contents/2WqLt-nepal-india-china.jpg"></img> */}
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717262.2146401946!2d83.30794318296394!3d27.751361831250854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sin!4v1697392287483!5m2!1sen!2sin"
+                    width="100%" height="350"
+                    // style="border:0"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade
+                   "
+                  ></iframe>
 
                   <div className={styles.tripfeedbackquote}>
                     <p>A tiny Himalayan country where sherpas trudge the mountain paths and prayer flags crisscross the sky, their fluttering Buddhist mantras snatched on the breeze</p>
@@ -112,8 +121,7 @@ const Connect = () => {
                   <h2 className={styles.SetText}>The Paraglide Nepal</h2>
                   <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Paraglide, Trek in Himalayas)</h5>
                 </div>
-                {/* <MyAccordion /> */}
-                <MyAccordion />
+                <MyAccordion AccordianData={BangladeshAccData} />
                 <h2 className={styles.SetText} >Highlights</h2>
                 <div className={styles.SetFlexProperty}>
                   <div className={styles.SetDataLeft}>
@@ -143,59 +151,15 @@ const Connect = () => {
                   </div>
                 </div>
 
-                {/* <div className={styles.SettingHeadingRatio}>
-                  <div className={styles.SetTextRatio}>TRIP COST DOES NOT INCLUDE</div>
-                  <div className={styles.SetImage}>
-                    <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Pokhara-Valley.jpg?w=1024&ssl=1" className={styles.SetBackGround}></img>
-                    <div className={styles.inner_container}>
-                      <h2 className={styles.exclusivesavings}>International airfare,any airport departure taxes, any meals not specified after each itinerary day in the Detailed Itinerary, gratuities to tour leader,hotels en route to or on return from starting or ending city or additional hotel nights that may be necessary due to airline schedule changes or other factors, visa fees, cost of medical immunizations (if any), travel insurance, and other expenses of a personal nature (alcoholic beverages, laundry, etc.)&nbsp;</h2>
-                    </div>
-                  </div>
-
-                  <div className={styles.EnterData}>
-                    <div className={styles.PutData}>
-                      <div className={styles.DataHeading}>
-                        *Facts and Inclusions:
-                      </div>
-                      <div className={styles.HeadingContent}>
-                        <ul>
-                          <li>Total trip duration: 15 days</li>
-                          <li>Trip starts and finishes in Kathmandu, immersing you in the heart of Nepal.</li>
-                          <li>This expedition takes place in March, offering comfortable weather ranging from approximately 45°F to 80°F.</li>
-                          <li>Altitude levels vary from 800 meters to 2250 meters, ensuring diverse landscapes throughout your journey.</li>
-                          <li>Expect bumpy and extended (5-6 hours) rides due to road conditions.</li>
-                          <li>Prepare for climbs with up to 1000 steps to reach certain destinations.</li>
-                          <li>Toilets: Clean western-style toilets available at accommodations, restaurants, and sites, but squat toilets may be encountered during drives.</li>
-                          <li>Experience a thrilling 2-day hike/trek in the Himalayas within the Annapurna valley, navigating rocky terrains, paved paths, and ascending after conquering hundreds of steps.</li>
-                          <li>Travel with a small group, limited to a maximum of 10 travelers, led by an experienced tour leader.</li>
-                          <li>Accommodations include 10 nights in comfortable hotels, 1 night in a standard guest house in a monastery with shared bathrooms, 1 night in a local lodge in the Himalayas with private bathrooms, and 2 nights in a comfortable forest lodge with private bathrooms.</li>
-                          <li>All accommodations are carefully chosen for their location, services, cleanliness, and private bathrooms.</li>
-                          <li>This comprehensive package covers all internal/domestic flights, ensuring a hassle-free journey.</li>
-                          <li>Enjoy delicious meals as all your dining needs are included.</li>
-                          <li>Explore Nepal through various cultural adventures, including walking tours, hiking, rugged off-road travel, and even paragliding.</li>
-                          <li>This tour falls within the Level 2-4 experience range, involving individual hikes of up to 2 hours with gentle slopes, walks through towns or cities lasting 1 or more hours, explorations of archaeological sites for 2-3 hours, and the ability to climb 3-4 flights of stairs and walk at least 2 miles with ease.</li>
-                          <li>Benefit from the services of a knowledgeable tour leader and local tour experts throughout your journey.</li>
-                          <li>Gratuities for local guides, restaurants, and porters are included, ensuring a seamless and respectful experience.</li>
-                          <li>Indulge in a 1-hour Nepalese trekker massage, a soothing treat for body and soul.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div> */}
-
-
-
               </div>
 
             </div>
 
             <div className={styles.section} ref={section3Ref} id={styles.section3}>
-              {/* <div className={styles.SettingHeadingRatio}>
+              <div className={styles.SettingHeadingRatio}>
                 <div className={styles.SetText}>DATES & PRICES</div>
 
-              </div> */}
+              </div>
 
               <div className={styles.tab_content} style={{ display: 'block' }}>
                 <div className={styles.table_data}>
@@ -217,13 +181,35 @@ const Connect = () => {
                         <td>6th April 2024</td>
                         <td>$ 5775 USD</td>
                         <td style={{ width: 'auto' }}>$ 870 USD</td>
-                        <td>
-                          <img src="https://www.eldertreks.com/images/check.png" style={{ width: 'auto' }} />&nbsp;&nbsp;
+                        <td style={{ padding: '5px' }}>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="50"
+                            height="50"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle cx="12" cy="12" r="7" fill="#4BB543" />
+                            <path
+                              d="M6,12 L9,16 L18,7"
+                              fill="none"
+                              stroke="#ffffff"
+                              strokeWidth="2"
+                            >
+                              <animate
+                                attributeName="stroke-dasharray"
+                                from="0 28 28"
+                                to="28 28 28"
+                                dur="2s"
+                                repeatCount="indefinite"
+                              />
+                            </path>
+                          </svg>
+
                         </td>
                         <td>6 Spaces</td>
                         <td>
-                          <Link to="/bespoke" >
-                            <button>
+                          <Link to="/bespoke"  >
+                            <button className={styles.btn_booknow}>
                               Book Now
                             </button>
                           </Link>
@@ -238,8 +224,8 @@ const Connect = () => {
                 </div>
               </div>
 
-              <div className={styles.FourFlex}>
-                {/* <div className={styles.FourAling}>
+              {/* <div className={styles.FourFlex}> */}
+              {/* <div className={styles.FourAling}>
 
                   <h3 className={styles.FourSubHeading}>Dates</h3>
                   <p className={styles.FourPara}>Departures offered November–March; request itinerary for specific dates.</p>
@@ -247,7 +233,7 @@ const Connect = () => {
                   <h3 className={styles.FourSubHeading}>Pricing</h3>
                   <p className={styles.FourPara}>12 days (with 9-night cruise): From $870  per person </p>
                 </div> */}
-                {/* <div>
+              {/* <div>
                   <h3 className={styles.FourAling}>Inclusions</h3>
                   <ul className={styles.SetDataLeft}>
                     <li>Expertise of MidAsia travel specialists</li>
@@ -265,7 +251,7 @@ const Connect = () => {
                 </div> */}
 
 
-              </div>
+              {/* </div> */}
 
 
               <div className={styles.SettingHeadingRatio}>
@@ -314,7 +300,7 @@ const Connect = () => {
             <div className={styles.section} ref={section4Ref} id={styles.section4}>
 
 
-              <MyGallery />
+              <MyGallery JapanImages={BangladeshImages} />
               <div className={styles.LastFourContent}>
                 <div>
                   <h4 className={styles.ContentSubHeading}>A JOURNEY BUILT JUST FOR YOU</h4>
@@ -330,4 +316,4 @@ const Connect = () => {
   )
 }
 
-export default Connect
+export default BangladeshTrip

@@ -163,6 +163,16 @@
   border-left: none;
 }
 
+.local_li {
+  /* list-style: none; */
+}
+
+.local_li>i {
+  margin: 5px;
+}
+
+
+
 .menulist {
   list-style: none;
 }

@@ -4,19 +4,31 @@ import { createGlobalStyle } from 'styled-components';
 import Card from "./Card/Card";
 const TravelGroups = () => {
   const data = [
-    { thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/104733483266635338.jpg", title: "NEPAL ADVENTURES", description: "Nepal Unveiled: Embark on Epic Adventures" },
-    // { thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/1143620516535.jpg", title: "Splendors of Egypt", description: "THE SECRETS OF BANGLADESH, It’s Culture & Wildlife- Yes, it is Adventure!!" },
-    // { thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/image_manager__teaser_girls_in_laos_costume_credit_visoot_-_stock753617940.jpg", description: "LANDLOCKED LAOS, The GOLDEN TRIANGLE & TEMPLES OF ANGKOR WAT" }
+    {
+      link: "japan",
+      thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/104733483266635338.jpg", title: "NEPAL ADVENTURES", description: "Nepal Unveiled: Embark on Epic Adventures"
+    },
+    // { link:"japan",
+    // thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/1143620516535.jpg", title: "Splendors of Egypt", description: "THE SECRETS OF BANGLADESH, It’s Culture & Wildlife- Yes, it is Adventure!!" },
+    // { link:"japan",
+    // thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/image_manager__teaser_girls_in_laos_costume_credit_visoot_-_stock753617940.jpg", description: "LANDLOCKED LAOS, The GOLDEN TRIANGLE & TEMPLES OF ANGKOR WAT" }
+    {
+      link: "bangladesh",
+      thumbnail: "https://airlinebd.com/wp-content/uploads/2021/06/Bangladesh-Tourist-Spots.jpg",
+      title: "Discover the Charms of Bangladesh",
+      description: "Embark on an unforgettable journey to Bangladesh, a land of rich culture, diverse wildlife, and incredible adventures. Explore the hidden treasures of this beautiful country and immerse yourself in the unique charm of Bangladesh."
+    }
+
   ]
 
   const GlobalStyle = createGlobalStyle`
 
   .container{
-    width: 90%;
+    width: 80%;
     max-width: 1100px;
     margin:auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 
     @media only screen and (max-width: 768px){

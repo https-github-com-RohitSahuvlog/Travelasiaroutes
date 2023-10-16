@@ -1,8 +1,4 @@
-import React from "react";
-import "react-image-gallery/styles/css/image-gallery.css";
-import ImageGallery from "react-image-gallery";
-
-const images = [
+export const JapanImages = [
     {
         original: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Swayambhunath-Stupa-Nepal.jpg?w=800&ssl=1",
         thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Swayambhunath-Stupa-Nepal.jpg?w=800&ssl=1",
@@ -41,16 +37,3 @@ const images = [
         thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Bhote-Koshi-River-Nepal.jpg?w=942&ssl=1",
     },
 ];
-
-function MyGallery() {
-
-    const galleryOptions = {
-        disableFullscreen: true,
-        showNav: false,
-        showPlayButton: false,
-    };
-    return <div className="w-[100%] h-auto "> <ImageGallery items={images}  {...galleryOptions} />
-    </div>;
-}
-
-export default MyGallery;

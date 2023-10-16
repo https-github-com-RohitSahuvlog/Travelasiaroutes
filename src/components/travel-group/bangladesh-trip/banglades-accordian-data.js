@@ -1,5 +1,5 @@
 
-export const DummyData = [
+export const BangladeshAccData = [
     {
         "day": 1,
         "description": "Arrival in Kathmandu",

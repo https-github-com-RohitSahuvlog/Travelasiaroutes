@@ -50,7 +50,6 @@ const Footer = () => {
               >
                 <ul >
                   <li className={styles.local_li}>
-                    <i className="fa fa-map-marker"></i>
                     <span>
                       Office Branch/DMC - Delhi B/176-Greenfields,Delhi-NCR,121003
                     </span>
@@ -60,7 +59,6 @@ const Footer = () => {
               <div className={`${styles["col-md-3"]} ${styles.location_new}`}>
                 <ul>
                   <li className={styles.local_li}>
-                    <i className="fa fa-map-marker"></i>
                     <span>
                       Office Branch/DMC - Bangkok Phaya thai Plaza,BTS Phaya Thai,
                       Ratchathewi, Bangkok 10400, Thailand
@@ -68,18 +66,17 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className={`${styles["col-md-3"]} ${styles.location_new}`}>
+              {/* <div className={`${styles["col-md-3"]} ${styles.location_new}`}>
                 <ul>
                   <li className={styles.local_li}>
                     <i className="fa fa-map-marker"></i>
                     <span></span>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div className={`${styles["col-md-3"]} ${styles.location_new}`}>
                 <ul className={styles.loca_box}>
                   <li className={styles.local_li}>
-                    <i className="fa fa-map-marker"></i>
                     <span>
                       Office Branch/DMC - Muscat Darsait, PO Box 1057, PC 114,
                       Muscat, Sultanate of Oman

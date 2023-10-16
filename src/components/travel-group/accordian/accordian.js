@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
-import "./myaccordon.css"
-import { DummyData } from './jsondata';
-import SingleAccordian from './Question';
+import "./subaccordian.css";
+import SubAccordian from './subaccordian';
 
-const MyAccordion = () => {
+const MyAccordion = ({ AccordianData }) => {
+  console.log(AccordianData)
   return (
     <main>
       <div className='container'>
         <section className='info'>
-          {DummyData.map((question) => (
+          {AccordianData.map((question) => (
             <>
-              <SingleAccordian key={question.id} {...question} />
+              <SubAccordian key={question.id} {...question} />
 
             </>
           ))}
