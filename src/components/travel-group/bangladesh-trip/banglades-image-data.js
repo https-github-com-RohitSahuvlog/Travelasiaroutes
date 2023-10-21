@@ -1,39 +1,39 @@
 export const BangladeshImages = [
     {
-        original: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Swayambhunath-Stupa-Nepal.jpg?w=800&ssl=1",
-        thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Swayambhunath-Stupa-Nepal.jpg?w=800&ssl=1",
+        original: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18174406/bangladesh-places-to-visit-FEATURE-compressed.jpg",
+        thumbnail: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18174406/bangladesh-places-to-visit-FEATURE-compressed.jpg",
     },
     {
-        original: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Pashupatinath-Temple-Nepal.jpg?w=800&ssl=1",
-        thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Pashupatinath-Temple-Nepal.jpg?w=800&ssl=1",
+        original: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175847/Bangladesh-4.jpg",
+        thumbnail: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175847/Bangladesh-4.jpg",
     },
     {
-        original: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Hanuman-Dhoka-Temple-Kathmandu-Nepal.jpg?w=800&ssl=1",
-        thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Hanuman-Dhoka-Temple-Kathmandu-Nepal.jpg?w=800&ssl=1",
+        original: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175851/Bangladesh-5.jpg",
+        thumbnail: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175851/Bangladesh-5.jpg",
     },
     {
-        original: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Lumbini-Nepal.jpg?w=800&ssl=1",
-        thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/08/Lumbini-Nepal.jpg?w=800&ssl=1",
+        original: "https://static.javatpoint.com/tourist-places/images/tourist-places-in-bangladesh5.png",
+        thumbnail: "https://static.javatpoint.com/tourist-places/images/tourist-places-in-bangladesh5.png",
     },
     {
-        original: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Changunarayan-Temple-Nepal.jpg?w=1200&ssl=1",
-        thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Changunarayan-Temple-Nepal.jpg?w=1200&ssl=1",
+        original: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175855/Bangladesh-6.jpg",
+        thumbnail: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175855/Bangladesh-6.jpg",
     },
 
     {
-        original: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2022/02/Chitwan-National-Park-Nepal2.jpg?w=1200&ssl=1",
-        thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2022/02/Chitwan-National-Park-Nepal2.jpg?w=1200&ssl=1",
+        original: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175901/Bangladesh-7.jpg",
+        thumbnail: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175901/Bangladesh-7.jpg",
     },
     {
-        original: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Lake-Phewa-Nepal2.jpg?w=1050&ssl=1",
-        thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Lake-Phewa-Nepal2.jpg?w=1050&ssl=1",
+        original: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175906/Bangladesh-8.jpg",
+        thumbnail: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175906/Bangladesh-8.jpg",
     },
     {
-        original: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Siddha-Gufa-Cave-Nepal.jpg?w=1024&ssl=1",
-        thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Siddha-Gufa-Cave-Nepal.jpg?w=1024&ssl=1",
+        original: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175911/Bangladesh-9.jpg",
+        thumbnail: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175911/Bangladesh-9.jpg",
     },
     {
-        original: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Bhote-Koshi-River-Nepal.jpg?w=942&ssl=1",
-        thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Bhote-Koshi-River-Nepal.jpg?w=942&ssl=1",
+        original: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175915/Bangladesh-10.jpg",
+        thumbnail: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/18175915/Bangladesh-10.jpg",
     },
 ];

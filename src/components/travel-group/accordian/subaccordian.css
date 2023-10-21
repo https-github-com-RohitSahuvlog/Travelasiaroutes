@@ -102,11 +102,13 @@ main {
 @media screen and (min-width: 992px) {}
 
 .question {
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     border: 2px solid var(--clr-grey-special);
     margin-bottom: 1rem;
     border-radius: var(--radius);
     box-shadow: var(--light-shadow);
+    text-align: left;
+    font-size: 1.2rem;
 }
 
 .question h4 {

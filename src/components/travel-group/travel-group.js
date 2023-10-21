@@ -17,6 +17,12 @@ const TravelGroups = () => {
       thumbnail: "https://airlinebd.com/wp-content/uploads/2021/06/Bangladesh-Tourist-Spots.jpg",
       title: "Discover the Charms of Bangladesh",
       description: "Embark on an unforgettable journey to Bangladesh, a land of rich culture, diverse wildlife, and incredible adventures. Explore the hidden treasures of this beautiful country and immerse yourself in the unique charm of Bangladesh."
+    },
+    {
+      link: "laos",
+      thumbnail: "https://luxdev.lu/files/media/news/2022-09-12-2/B79I25341.jpeg",
+      title: "Discover the Charms of Bangladesh",
+      description: "Embark on an unforgettable journey to Bangladesh, a land of rich culture, diverse wildlife, and incredible adventures. Explore the hidden treasures of this beautiful country and immerse yourself in the unique charm of Bangladesh."
     }
 
   ]

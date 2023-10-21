@@ -300,7 +300,7 @@ const JapanTrip = () => {
             <div className={styles.section} ref={section4Ref} id={styles.section4}>
 
 
-              <MyGallery JapanImages={JapanImages} />
+              <MyGallery Images={JapanImages} />
               <div className={styles.LastFourContent}>
                 <div>
                   <h4 className={styles.ContentSubHeading}>A JOURNEY BUILT JUST FOR YOU</h4>

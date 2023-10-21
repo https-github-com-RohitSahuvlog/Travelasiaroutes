@@ -1,15 +1,15 @@
 import React from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
-import styles from "./banglades-tour.module.css";
+import styles from "./laos-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
-import { BangladeshImages } from "./banglades-image-data";
+import { LaosImages } from "./laos-image-data";
 import { Link } from 'react-router-dom';
-import { BangladeshAccData } from "./banglades-accordian-data";
+import { LaosAccData } from "./laos-accordian-data";
 
 
-const BangladeshTrip = () => {
+const LaosTrip = () => {
 
   const section1Ref = useRef();
   const section2Ref = useRef();
@@ -56,8 +56,8 @@ const BangladeshTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title} >Discover the Charms of Bangladesh</h1>
-          <div className={styles.Italic}>Bangladesh Unveiled: Embark on Epic Adventures</div>
+          <h1 className={styles.Title} >Exploring the Mystique of Laos</h1>
+          <div className={styles.Italic}>Laos Revealed: Embark on Epic Expeditions</div>
           <div className={styles.GoButton}>
             <Link to="/bespoke"  >
               <button className={styles.ButtonFirst}>Start Planning</button>
@@ -83,7 +83,7 @@ const BangladeshTrip = () => {
 
 
                   {/* <img className={styles.ThirdPic} src="https://aidiaasia.org/images/contents/2WqLt-nepal-india-china.jpg"></img> */}
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717262.2146401946!2d83.30794318296394!3d27.751361831250854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sin!4v1697392287483!5m2!1sen!2sin"
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7765175.305048344!2d98.56277562271175!3d18.13673810944553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31149057b0824589%3A0xec592481f99cd81!2sLaos!5e0!3m2!1sen!2sin!4v1697866095345!5m2!1sen!2sin"
                     width="100%" height="350"
                     // style="border:0"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade
@@ -91,18 +91,20 @@ const BangladeshTrip = () => {
                   ></iframe>
 
                   <div className={styles.tripfeedbackquote}>
-                    <p> Nestled away in a forgotten corner of the subcontinent, Bangladesh has spent the years since gaining independence quietly removed from the well-trodden tourist trails.</p>
+                    <p> A fascinating journey exploring three countries, with the mighty Mekong River as your guide through Thailand, Laos and Cambodia.</p>
                     <br />
                     <br />
                     <p>
-                      It is a nation overshadowed by the ornate monumental splendor of its Indian neighbor, often passed over by all but the most intrepid of travelers. However, Bangladesh is nothing short of a revelation, one of Asia's most surprising destinations.
+                      Follow the Mekong River through Thailand, Laos, and Cambodia on this captivating 15-day journey. It's a top-to-tail exploration of Laos, where you'll discover its myriad waterfalls, caves, mountains, and river villages. We kickstart this adventure, known for its hidden charms, in the bustling Thai capital of Bangkok, where we'll be there to greet you upon your arrival.
+
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.SecondDiv}>
                   <p>
-                    The people you encounter here are some of the friendliest and warmest souls you will ever meet, and the country itself is graced with an incredible diversity of natural and cultural treasures waiting to be uncovered. From the unique landscapes of the Sundarbans to the mysterious charm of the Hill Tracts, Bangladesh boasts a captivating mix of flora, fauna, and indigenous tribes that defy its relatively small size. Not to forget the verdant hills around Srimangal, producing some of the finest teas in the world. Lost Buddhist kingdoms, haunting ship graveyards, and a capital city that is among the fastest-growing in the region, Bangladesh truly stands as one of the Indian subcontinent's most refreshing and fascinating destinations, waiting to be discovered by those seeking the extraordinary.it has largely eluded the attention of tourists, overshadowed by the ornate grandeur of its neighboring giant, India. Yet, beyond the veil of obscurity, Bangladesh reveals itself as one of Asia's most remarkable destinations, filled with surprises waiting to be unveiled. Its people, renowned for their warmth and hospitality, beckon visitors to explore a land of extraordinary natural beauty and rich cultural diversity.
+                    From there, we'll whisk you away to Chiang Rai in northern Thailand to uncover the secrets of the Golden Triangle of Southeast Asia. Afterward, embark on a two-day cruise along the Mekong River from the Thai/Lao border to the enchanting Luang Prabang.
+                    This 2-day journey down the majestic Mekong River culminates in a captivating arrival in Luang Prabang, a city that enchants even the most seasoned travelers with its gleaming temple roofs, French provincial architecture, and diverse inhabitants. Moving south, we delve into the lush jungles of the Bolaven Plateau, immersing ourselves in authentic coffee culture and surrounded by some of the most alluring scenery in Asia, including volcanoes and sparkling waterfalls. This off-the-beaten-track adventure concludes in the serene 4000 islands, where time seems to stand still, allowing you to leisurely explore villages by bicycle or tuk-tuk. By the time we reach Cambodia, we will have become fully in tune with the Mekong, making our way to Kratie in the northeast, famous for its stunning sunset views. Here, we delve into Cambodia's modern history and, of course, no visit to this country would be complete without thorough exploration of the incredible temples surrounding Angkor Wat. This journey promises to be a once-in-a-lifetime experience, filled with hidden gems, natural wonders, and cultural treasures..
                   </p>
                 </div>
               </div>
@@ -114,31 +116,27 @@ const BangladeshTrip = () => {
                   <h2 className={styles.SetText}>Discover the Beauty of Bangladesh</h2>
                   <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Adventure)</h5>
                 </div>
-                <MyAccordion AccordianData={BangladeshAccData} />
+                <MyAccordion AccordianData={LaosAccData} />
                 <h2 className={styles.SetText} >Highlights</h2>
                 <div className={styles.SetFlexProperty}>
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li> Immerse yourself in the cultural and historical wonders of Bangladesh by visiting all three UNESCO World Heritage Sites.</li>
-                      <li> Experience the vibrant life and rich culture of the Ganges Delta, a land of unique charm and vitality.</li>
-                      <li> Embark on a picturesque adventure as you navigate floating markets, bazaars, schools, and brick factories while exploring the intricate network of rivers and canals in Barisal.</li>
-                      <li> Embark on a three-day expedition into the mystical Sundarbans, the largest mangrove forest on Earth, and witness the mesmerizing wildlife it harbors.</li>
-                      <li> Step back in time aboard a century-old paddle wheel steamer known as the Rocket, and traverse the waterways of Bangladesh.</li>
-                      <li> Wander through the ancient streets of Bagerhat, a UNESCO World Heritage city from the 15th century, and visit architectural marvels like the 60 Dome Mosque.</li>
-                      <li> Explore the thriving silk industry in Rajshahi, known for producing the finest quality silk products.</li>
-                      <li> Discover the tranquil beauty of Sompur Mahabihara, an 8th-century Buddhist monastery and another UNESCO World Heritage Site.</li>
+                      <li>Board a private boat for a two-day cruise down the Mekong River.</li>
+                      <li>Travel into the Golden Triangle, offering stunning views over the Mekong River and into Laos and Burma.</li>
+                      <li>Immerse yourself in the cultural and historical wonders of Bangladesh by visiting all three UNESCO World Heritage Sites.</li>
+                      <li>Experience the vibrant life and rich culture of the Ganges Delta, a land of unique charm and vitality.</li>
+                      <li>Offer alms to the hundreds of saffron-robed Buddhist Monks.</li>
+                      <li>Explore the UNESCO best-preserved city in Southeast Asia.</li>
                     </ul>
                   </div>
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Explore the rich historical city of Gaur, the ancient capital of Bengal, and marvel at its beautiful mosques and cultural heritage.</li>
-                      <li>Visit tribal villages, including a Santal tribal village, to experience their unique way of life and traditions.</li>
-                      <li> Behold the breathtaking beauty of Kantaji Temple, adorned with intricate terracotta plaques, making it one of Bangladesh's most beautiful temples.</li>
-                      <li> Spend three days in Srimangal, the tea capital of Bangladesh, amidst endless tea plantations.</li>
-                      <li> Embark on nature treks inside Lawachhara National Park, visit tribal villages, and wander through scenic tea gardens.</li>
-                      <li> Enjoy a full day exploring the charm of Old Dhaka, complete with rickshaw rides through narrow streets and boat rides on Dhaka's bustling river.</li>
-                      <li> Experience the simple and rustic life of farmers on the islands of Meghna and Jamuna rivers.</li>
-                      <li> Take a unique journey on two Bangladeshi trains, offering a glimpse into the local way of life.</li>
+                      <li>Kuang Si Water Falls and The Traditional Baci ceremony.</li>
+                      <li>Visit small local villages known for the traditional cotton weaving, tobacco, and rice farming.</li>
+                      <li>Don Khong, the largest island, and Wat Pu UNESCO Site.</li>
+                      <li>EXPLORE THE GRAND CIRCUIT OF ANGKOR WAT and The Heritage capital of Siem Reap.</li>
+                      <li>The Citadel & Land mine museum.</li>
+                      <li>End with a panoramic tour of Bangkok.</li>
                     </ul>
                   </div>
                 </div>
@@ -255,8 +253,8 @@ const BangladeshTrip = () => {
                         <li>Air-Conditioning Adjustments: On hilly terrains in Chittagong Hill-Tracts, temporary air-conditioning adjustments may be made to reduce engine load.</li>
                         <li>Accommodation Note: While hotels are good and clean, room sizes and deluxe services may vary, given Bangladesh's emerging tourism industry. We select the best available options in collaboration with our local partners.</li>
                       </ul>
-
                     </div>
+
                   </div>
                 </div>
 
@@ -274,7 +272,7 @@ const BangladeshTrip = () => {
             <div className={styles.section} ref={section4Ref} id={styles.section4}>
 
 
-              <MyGallery Images={BangladeshImages} />
+              <MyGallery Images={LaosImages} />
               <div className={styles.LastFourContent}>
                 <div>
                   <h4 className={styles.ContentSubHeading}>A JOURNEY BUILT JUST FOR YOU</h4>
@@ -290,4 +288,4 @@ const BangladeshTrip = () => {
   )
 }
 
-export default BangladeshTrip
+export default LaosTrip;
