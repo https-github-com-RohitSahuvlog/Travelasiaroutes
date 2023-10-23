@@ -12,6 +12,8 @@ import ActivityLevels from "./components/activityLevel/activityLevel";
 import JapanTrip from "./components/travel-group/Japan-trip/japan-tour";
 import BangladeshTrip from "./components/travel-group/bangladesh-trip/banglades-tour";
 import LaosTrip from "./components/travel-group/laos-trip/laos-tour";
+import PhilippinesTrip from "./components/travel-group/philippines/philippine-tour";
+import UzbekistanTrip from "./components/travel-group/uzbekistan/uzbekistan-tour";
 function App() {
   return (
     <div className="App">
@@ -26,6 +28,8 @@ function App() {
         <Route path="/travel-groups/japan" element={<JapanTrip />} />
         <Route path="/travel-groups/bangladesh" element={<BangladeshTrip />} />
         <Route path="/travel-groups/laos" element={<LaosTrip />} />
+        <Route path="/travel-groups/philippines" element={<PhilippinesTrip />} />
+        <Route path="/travel-groups/uzbekistan" element={<UzbekistanTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
       </Routes>
       <Footer />

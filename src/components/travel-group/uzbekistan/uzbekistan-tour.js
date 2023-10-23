@@ -1,15 +1,15 @@
 import React from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
-import styles from "./philippine-tour.module.css";
+import styles from "./uzbekistan-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
-import { LaosImages } from "./philippine-image-data";
+import { LaosImages } from "./uzbekistan-image-data";
 import { Link } from 'react-router-dom';
-import { PhilippinesAccData } from "./philippine-accordian-data";
+import { UzbekistanExpeditionData } from "./uzbekistan-accordian-data";
 
 
-const PhilippinesTrip = () => {
+const UzbekistanTrip = () => {
 
   const section1Ref = useRef();
   const section2Ref = useRef();
@@ -38,7 +38,6 @@ const PhilippinesTrip = () => {
       headerID: "section4"
     },
 
-
   ];
 
   const scrollToSection = (ref) => {
@@ -56,8 +55,8 @@ const PhilippinesTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title} >Exploring the Mystique of the Philippines</h1>
-          <div className={styles.Italic}>Experience the allure of the Philippines, a beloved Asian tourist hotspot.</div>
+          <h1 className={styles.Title} >Exploring the Rich History and Culture of Uzbekistan</h1>
+          <div className={styles.Italic}>Immerse yourself in the beauty and history of Uzbekistan, a Central Asian gem.</div>
           <div className={styles.GoButton}>
             <Link to="/bespoke"  >
               <button className={styles.ButtonFirst}>Start Planning</button>
@@ -91,20 +90,20 @@ const PhilippinesTrip = () => {
                   ></iframe>
 
                   <div className={styles.tripfeedbackquote}>
-                    <p> Throughout your journey, you'll encounter the heartwarming smiles of the Filipino people, known for their hospitality and genuine warmth</p>
+                    <p>Embark on an extraordinary journey through the heart of The Great Silk Road and trace the legendary path of Alexander the Great.</p>
                     <br />
                     <br />
                     <p>
-                      It's not just about the places you'll visit but the connections you'll make with the locals that will make your experience even more memorable.
+                      This 16-day adventure is a captivating fusion of culture, nature, local encounters, luxurious experiences, immersive walking tours, culinary delights, and thrilling adventures.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.SecondDiv}>
                   <p>
-                    The Philippines remains a land of uncharted beauty, and this obscurity is what sets it apart. While the world rushes on, these islands have preserved their unique charm, offering travelers a glimpse into a world where time seems to stand still. It's a place where you can bask in the natural wonders of pristine landscapes, whether you're exploring the emerald-cratered lakes of Luzon or snorkeling amid vibrant corals in Malapascua.
-
-                    This 17-day itinerary is designed to unveil the Philippines' hidden treasures, taking you on a cultural and geographical journey that's sure to leave you with unforgettable memories. Explore a world where serenity meets adventure, and obscurity meets allure, all in one breathtaking destination
+                    Uncover the rich tapestry of civilizations, cultures, and religions that have been profoundly influenced by the centuries-long history of this iconic route. In the timeless landscapes of Uzbekistan and the majestic mountains of Kyrgyzstan, you'll traverse ancient cities that were once visited by nomads and conquerors. You'll marvel at the architectural wonders left behind by the flourishing Islamic civilization and the legacy of the great Empire of Timur.
+                    <br />
+                    Throughout this unforgettable journey, you'll explore mosques, madrassas, and fortresses that tell tales of a bygone era. You'll witness landscapes that range from lush valleys to boundless open steppes and the endless expanse of deserts. This is more than just a trip; it's a multidimensional odyssey that seamlessly weaves culture, nature, local experiences, luxury, walking adventures, and culinary discoveries into a single, unforgettable tapestry of exploration and wonder.
                   </p>
                 </div>
               </div>
@@ -113,32 +112,37 @@ const PhilippinesTrip = () => {
             <div className={styles.section} ref={section2Ref} id={styles.section2} >
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>Discover the Beauty of Philippines</h2>
-                  <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Adventure)</h5>
+                  <h2 className={styles.SetText}>Explore the Wonders of Uzbekistan</h2>
+                  <h5 className={styles.SetTextWith}>(Culture, History, Natural Beauty, Adventure)</h5>
                 </div>
-                <MyAccordion AccordianData={PhilippinesAccData} />
+                <MyAccordion AccordianData={UzbekistanExpeditionData} />
                 <h2 className={styles.SetText} >Highlights</h2>
                 <div className={styles.SetFlexProperty}>
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Discover spectacular mountains, picturesque rice terraces, stunning beaches, and vibrant cities on a 17-day exploration through the heart of the Philippines.</li>
-                      <li>Witness the fusion of the past and present in Manila.</li>
-                      <li>Admire the world's oldest rice terraces in Banaue.</li>
-                      <li>Be intrigued by the curious Hanging Coffins in Echo Valley.</li>
-
+                      <li>Explore the cultural marvels and modern vibrancy of Tashkent, the dynamic capital of Uzbekistan.</li>
+                      <li>Step back in time in Khiva, a well-preserved city encircled by ancient mud city walls.</li>
+                      <li>Immerse yourself in the Khorezm region's rich traditions with a folklore show featuring traditional music and dances.</li>
+                      <li>Wander through the charming old city of Bukhara, a UNESCO World Heritage Site.</li>
+                      <li>Embark on a journey to ancient Khorezm and discover the captivating ruins of Ayaz Kala and Toprak Kala.</li>
+                      <li>Marvel at the grandeur of Registan Square and other architectural wonders in the ancient city of Samarkand.</li>
+                      <li>Experience the vibrant atmosphere of Uzbek bazaars and witness daily life in this enchanting country.</li>
+                      <li>Learn about age-old traditions, including the art of making Samarkand paper from mulberry trees.</li>
                     </ul>
                   </div>
 
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Relax on the beach in sunny El Nido.</li>
-                      <li>Snorkel in the sapphire waters of the South China Sea.</li>
-                      <li>Discover the limestone caves of Sabang.</li>
-                      <li>See fireflies dancing at dusk at the Iwahig River.</li>
-                      <li>Enjoy plenty of free time to travel your way.</li>
-                      <li>Experience an island getaway abounding with natural beauty, stunning landscapes, and welcoming local communities.</li>
+                      <li>Embark on a journey through the dramatic landscapes and nomadic life of Kyrgyzstan.</li>
+                      <li>Witness the breathtaking forested mountains and lush valleys that define Kyrgyzstan's scenery.</li>
+                      <li>Discover the hidden gems of this picturesque land, from blue glacial lakes to serene mountain vistas.</li>
+                      <li>Visit Issyk Kul Lake, a natural wonder and the second-largest salt lake in the world.</li>
+                      <li>Explore the charming town of Karakol, known for its cozy cottages, apple orchards, and cultural sights.</li>
+                      <li>Observe the exotic rural life and witness eagle hunting performances in Bokonbaevo village.</li>
+                      <li>Create your own Kyrgyz felt carpet, connecting with the local craft traditions.</li>
                     </ul>
                   </div>
+
 
 
                 </div>
@@ -231,26 +235,24 @@ const PhilippinesTrip = () => {
                     </div>
                     <div className={styles.HeadingContent}>
                       <ul>
-                        <li>17-day expedition with a maximum of 8 travelers in a group.</li>
-                        <li>A gentle adventurous experience designed for nature lovers.</li>
-                        <li>All domestic airfares during the trip are covered.</li>
-                        <li>The journey starts and finishes in Manila.</li>
-                        <li>All meals included as mentioned in the itinerary.</li>
-                        <li>January is considered the best travel month for the Philippines.</li>
-                        <li>All activities, including boat trips and snorkel gear, are provided.</li>
-                        <li>Airport/hotel/airport transfers in every city.</li>
-                        <li>16 nights of comfortable accommodations in well-located hotels with private bathrooms on a twin-sharing basis.</li>
-                        <li>Services of English-speaking guides and a MiddleAsia Routes Tour-leader throughout the trip.</li>
-                        <li>Porterage at airports and hotels throughout the program.</li>
-                        <li>Entrance fees to all visited historical sites and museums are included.</li>
-                        <li>Water is provided on board every day.</li>
-                        <li>Gratuities to guides, drivers, and porters are covered.</li>
-                        <li>All taxes are included.</li>
-                        <li>Comfort notes: Expect a few rough/dusty roads and long drives through picturesque mountains and valleys.</li>
-                        <li>Activity level 2-3, including hikes, walking through towns or cities, and visiting archaeological sites.</li>
-                        <li>Toilets: Clean western-style toilets available at accommodations, restaurants, and sites, with a few squat toilets available during drives.</li>
+                        <li>Embark on a 16-day expedition with a maximum of 10 travelers and a knowledgeable tour leader.</li>
+                        <li>Discover the wonders of Uzbekistan and Kyrgyzstan, countries with an average elevation of 2,750 meters (9,020 feet).</li>
+                        <li>Your journey begins in Tashkent, Uzbekistan, and concludes in Bishkek, Kyrgyzstan.</li>
+                        <li>Experience this incredible expedition in September, when the weather in Uzbekistan averages between 13°C (55.4°F) and 29.3°C (84.7°F), and Kyrgyzstan averages 11.3°C (55.4°F) to 26.5°C (82.3°F).</li>
+                        <li>While exploring these stunning destinations, be prepared for cooler mountain and desert nights.</li>
+                        <li>Expect some bumpy and long rides, lasting 5-6 hours, due to road conditions.</li>
+                        <li>Many sites may require climbing up to 100-250 steps for access.</li>
+                        <li>Toilets: Western-style facilities at accommodations, restaurants, and sites; squat toilets during drives to remote destinations.</li>
+                        <li>You'll stay in comfortable hotels for 12 nights and experience 3 nights in yurt camps with Western-style toilets.</li>
+                        <li>Enjoy delicious meals throughout your journey, as all meals are included.</li>
+                        <li>Explore cultural wonders with walking tours and rugged off-road adventures.</li>
+                        <li>This tour is a Level 2-3 experience, suitable for those who can walk 1-2 hours, climb stairs, and walk up to 2 miles without issues.</li>
+                        <li>Benefit from the services of a tour leader and local tour experts.</li>
+                        <li>Gratuities for local guides, restaurants, and porters are included.</li>
+                        <li>Your expedition covers all internal and domestic flights, train journeys in Uzbekistan, and airport transfers.</li>
                       </ul>
                     </div>
+
 
                   </div>
                 </div>
@@ -285,4 +287,4 @@ const PhilippinesTrip = () => {
   )
 }
 
-export default PhilippinesTrip;
+export default UzbekistanTrip;

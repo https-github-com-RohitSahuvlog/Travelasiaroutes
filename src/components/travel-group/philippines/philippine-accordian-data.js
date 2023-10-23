@@ -1,138 +1,159 @@
-export const LaosAccData = [
+export const PhilippinesAccData = [
     {
         day: 1,
-        description: "Arrival in Bangkok",
+        description: "Arrival in Manila",
         activities: [
-            "Upon arrival at Bangkok Suvarnabhumi Airport, you will be met by a representative and transferred to your accommodation.",
-            "Your tour leader will meet you at your hotel in the evening to brief you about the whole program.",
-            "Overnight in Bangkok (D)"
+            "You are met upon arrival at Manila International Airport and transferred to your 5* hotel.",
+            "The rest of the day is at leisure before meeting the group and your tour leader for dinner and orientation. (D)"
         ]
     },
     {
         day: 2,
-        description: "Fly to Chiang Rai, The Golden Triangle",
+        description: "The Capital Manila",
         activities: [
-            "After breakfast, return to the airport for a morning flight to Chiang Rai, in northern Thailand.",
-            "Visit a famous viewpoint in the Golden Triangle, offering a view of the Mekong River, Laos, and Burma.",
-            "Explore the Hall of Opium museum and visit the local Night Bazaar.",
-            "Overnight at Golden Triangle, Thailand (B,L,D)"
+            "After breakfast, start exploring Manila City with your local tour guide.",
+            "Visit Intramuros, Fort Santiago, Manila Cathedral, San Agustin church, Rizal Park, downtown Quiapo, and Manila Bay.",
+            "Overnight in Manila (B, L, D)"
         ]
     },
     {
         day: 3,
-        description: "Mekong River Cruise and Pakbeng",
+        description: "Taal Volcano and Tagaytay",
         activities: [
-            "Cross the border by boat to Huay Xai in Laos and get your entry visas on arrival.",
-            "Board a private boat for a two-day cruise down the Mekong River, with scenic jungle views and traditional villages.",
-            "Overnight in Pakbeng, Laos (B,L,D)"
+            "Get a spectacular view of Taal Volcano and Taal Lake from Tagaytay ridge, the country's most popular weekend destination.",
+            "Visit St Joseph Parish Church and see the Las Piñas Bamboo Organ.",
+            "Overnight in Anilao. (B, L, D)"
         ]
     },
     {
         day: 4,
-        description: "Mekong River Cruise and Luang Prabang",
+        description: "Anilao Snorkeling Day",
         activities: [
-            "Continue the cruise towards Luang Prabang, stopping at the Pak Ou Caves along the way.",
-            "Arrive in Luang Prabang, explore the city, and visit temples and historic sites.",
-            "Overnight in Luang Prabang (B,L,D)"
+            "Explore the underwater paradise of Anilao with over 40 dive sites.",
+            "Enjoy snorkeling in shallow coral reefs to see a multitude of marine creatures.",
+            "Overnight in Anilao. (B, L, D)"
         ]
     },
     {
         day: 5,
-        description: "Explore Luang Prabang",
+        description: "Waterfalls, Rainforest, and Laguna",
         activities: [
-            "Join the morning alms-giving ceremony to Buddhist Monks.",
-            "Visit the morning market and enjoy a guided walking tour of Luang Prabang, exploring temples and more.",
-            "Overnight in Luang Prabang (B,L,D)"
+            "Experience the lush mountains and waterfalls of Laguna de Bay.",
+            "Take an adventure through the rainforest, down gorges, and a canoe ride down a river.",
+            "Return to Manila and overnight. (B, L, D)"
         ]
     },
     {
         day: 6,
-        description: "Kuang Si Water Falls and The Baci ceremony",
+        description: "Pinatubo Volcano Off-Roading",
         activities: [
-            "Travel to Kuang Si Falls, a beautiful waterfall in lush jungle surroundings.",
-            "Participate in a traditional Baci ceremony followed by dinner at a local restaurant.",
-            "Overnight in Luang Prabang (B,L,D)"
+            "Explore Mount Pinatubo, known for its explosive history and turquoise crater lake.",
+            "Take an off-road jeep ride across the ash desert and hike into the volcano's crater.",
+            "Visit a village of the Aetas, the indigenous people of the area, and the World War 2 Memorial.",
+            "Overnight in San Jose City. (B, L, D)"
         ]
     },
     {
         day: 7,
-        description: "Luang Prabang to Nong Khiaw",
+        description: "Heritage of the Cordillera: Banaue, Batad, Sagada",
         activities: [
-            "Visit Ban Nayang and learn about traditional weaving, indigo dyeing, and weaving skills.",
-            "Overnight in Nong Khiaw (B,L,D)"
+            "Immerse yourself in the mystique of the Cordillera's nature and people.",
+            "Trek through ancient rice terraces carved into mountainsides, explore the quaint town of Sagada, and explore an extensive cave system.",
+            "Visit the Banaue Rice Terraces and the village of Hapao, with ample stops for picture-taking.",
+            "Overnight in Banaue. (B, L, D)"
         ]
     },
     {
         day: 8,
-        description: "Boat Journey Through Mountains and Villages",
+        description: "Heritage of the Ifugao villages of Batad and Bangaan",
         activities: [
-            "Take a boat cruise up the Nam Ou River, visiting traditional villages and historical sites.",
-            "Cruise back to Nong Khiaw while enjoying the sunset.",
-            "Continue to Luang Prabang via Nong Khiaw.",
-            "Overnight in Luang Prabang (B,L,D)"
+            "Visit the Banaue Museum and the village of Bangaan to learn about the Ifugao tribe's culture and way of life.",
+            "Explore the market and handicraft center in Banaue to see Ifugao craftsmanship.",
+            "Overnight in Bangnaan. (B, L, D)"
         ]
     },
     {
         day: 9,
-        description: "Waterfalls and Bolaven Plateau",
+        description: "Sagada Caves and Hanging Coffins",
         activities: [
-            "Fly to Pakse and visit minority villages, including Katu, Ta Oyh, and Ngaio.",
-            "Explore Tad Phasuam and experience the diverse tribal cultures.",
-            "Overnight in Pakse (B,L,D)"
+            "Drive to Sagada, visiting the Bontoc Museum along the way.",
+            "Visit the Museum of Mountain Culture in Bontoc and explore the ancient burial caves and hanging coffins in Sagada.",
+            "Visit the Ganduyan Museum, which houses a private collection of historical artifacts.",
+            "Overnight in Sagada. (B, L, D)"
         ]
     },
     {
         day: 10,
-        description: "Don Khong and the Wat Phou UNESCO Site",
+        description: "Ilocos Sur and picturesque Vigan, a UNESCO site",
         activities: [
-            "Explore Don Khong, the largest island in the Four Thousand Islands area of Southern Laos.",
-            "Explore by boat and on foot, visiting traditional villages and parts of the Old French Railway.",
-            "Possible sightings of Irrawaddy river dolphins and visit Khong Phapheng Waterfalls.",
-            "Overnight in Pakse (B,L,D)"
+            "Drive to Vigan, visiting the Santa Maria Church on the way.",
+            "Explore the picturesque Vigan, a UNESCO World Heritage site with well-preserved Spanish-era houses.",
+            "Try local delicacies unique to Vigan such as Vigan longganisa and Ilocos empanada.",
+            "Overnight in Vigan. (B, L, D)"
         ]
     },
     {
         day: 11,
-        description: "Heritage Capital Siem Reap",
+        description: "Vigan Discovery Day",
         activities: [
-            "Take a late morning flight to Siem Reap, Cambodia.",
-            "Explore Mechrey village on Tonle Sap Lake and the traditional village of Ampil Peam.",
-            "Overnight in Siem Reap (B,L,D)"
+            "Visit Syquia Mansion, Padre Burgos Museum, Crisologo Museum, Calle Crisologo, and Bantay Church in Vigan.",
+            "Learn about the history and culture of Vigan while exploring its historic sites.",
+            "Overnight in Vigan. (B, L, D)"
         ]
     },
     {
         day: 12,
-        description: "Explore the Grand Circuit of Angkor Wat",
+        description: "Ilocos Norte, the Capital Laoag",
         activities: [
-            "Visit the magnificent Angkor Wat, explore Angkor Thom, and witness the sunset at Pre Rub Temple.",
-            "Enjoy a dinner performance of classical Cambodian dance.",
-            "Overnight in Siem Reap (B,L,D)"
+            "Explore Laoag, the capital of Ilocos Norte, and visit the two-story mansion that was once the holiday home of late President Marcos.",
+            "Visit Paoay and find tranquility by the lake, go to the UNESCO World Heritage-listed Paoay Church.",
+            "Visit Juan Luna Museum, Paoay Church, Santa Monica Church, Laoag Sinking Tower, and the Paoay sand dunes.",
+            "Fly to Manila in the evening. Overnight in Manila. (B, L, D)"
         ]
     },
     {
         day: 13,
-        description: "The Citadel and Landmine Museum",
+        description: "Palawan and Puerto Princesa",
         activities: [
-            "Visit Banteay Srei, explore the Landmine Museum, and have free time for shopping.",
-            "Spend the evening reminiscing about the trip at a farewell dinner.",
-            "Overnight in Siem Reap (B,L,D)"
+            "Take a short flight to south Puerto Princesa, the gateway to the remote islands of the Philippines.",
+            "Explore the beauty of Palawan and tour the Underground River and mangrove gardens.",
+            "Overnight in Puerto Princesa. (B, L, D)"
         ]
     },
     {
         day: 14,
-        description: "Departure/Drive to Airport",
+        description: "Batak Tribe and El Nido",
         activities: [
-            "Take a morning flight to Bangkok and enjoy a panoramic tour of Bangkok with lunch.",
-            "Meet for the final farewell evening.",
-            "Overnight in Bangkok (B,L,D)"
+            "Visit the Batak Visitor Center and meet some of the smallest indigenous people in the world.",
+            "Explore El Nido, a small fishing town in the north of Palawan, famous for its Island Hopping Tours.",
+            "Visit scenic islands in El Nido including Pangalusian Island, Pinagbuyutan Island, and more.",
+            "Overnight in El Nido. (B, L, D)"
         ]
     },
     {
         day: 15,
+        description: "Island Hopping of El Nido",
+        activities: [
+            "Enjoy an Island Hopping Tour in El Nido, exploring its beautiful landscapes, lagoons, beaches, and caves.",
+            "Visit popular sites like Cadugnon Point and Cave, Pinasil Island, and Cathedral Cave.",
+            "Overnight in El Nido. (B, L, D)"
+        ]
+    },
+    {
+        day: 16,
+        description: "Free Time Till Afternoon to be relaxed, Fly to Manila, and Farewell Dinner",
+        activities: [
+            "Spend the morning in El Nido at your leisure, then fly to Manila in the late afternoon.",
+            "Prepare for your next day departure and enjoy a farewell dinner with local music in Manila.",
+            "Overnight in El Nido. (B, L, D)"
+        ]
+    },
+    {
+        day: 17,
         description: "Departure",
         activities: [
-            "After breakfast, you will be transferred to Bangkok International Airport for your departure.",
-            "End of the tour.",
+            "After breakfast, you will be transferred to the hotel with your private vehicle for your flight to home or next destination. (B)",
+            "End of the tour."
         ]
     },
 ];

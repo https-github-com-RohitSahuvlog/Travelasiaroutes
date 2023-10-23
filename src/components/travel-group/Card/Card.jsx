@@ -9,12 +9,12 @@ import {
 } from './CardStyle';
 
 const Card = ({ products }) => {
-	if (products.description.length > 50) {
-		products.description = products.description.substring(0, 50) + '...';
+	if (products.description.length > 80) {
+		products.description = products.description.substring(0, 80) + '...';
 	}
-	if (products.title.length > 25) {
-		products.title = products.title.substring(0, 25) + '...';
-	}
+	// if (products.title.length > 25) {
+	// 	products.title = products.title.substring(0, 105) + '...';
+	// }
 
 	return (
 		<CardContainer>

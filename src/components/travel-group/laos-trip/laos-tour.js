@@ -213,6 +213,12 @@ const LaosTrip = () => {
                 <div className="travel_sts">
                   <img src="https://www.eldertreks.com/images/check.png" style={{ width: 'auto' }} /> <span>Guaranteed Departures</span>
                 </div>
+
+                <Link to="/activitylevel"  >
+                  <button className={styles.btn_booknow}>
+                    Activity-Level
+                  </button>
+                </Link>
               </div>
 
               <div className={styles.SettingHeadingRatio}>
