@@ -80,15 +80,12 @@ const LaosTrip = () => {
 
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
-
-
-                  {/* <img className={styles.ThirdPic} src="https://aidiaasia.org/images/contents/2WqLt-nepal-india-china.jpg"></img> */}
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7765175.305048344!2d98.56277562271175!3d18.13673810944553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31149057b0824589%3A0xec592481f99cd81!2sLaos!5e0!3m2!1sen!2sin!4v1697866095345!5m2!1sen!2sin"
-                    width="100%" height="350"
-                    // style="border:0"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade
-                   "
-                  ></iframe>
+                  <div className={styles.image_container}>
+                    <img className={styles.ThirdPic} src="https://www.drishtiias.com/images/uploads/1592041737_image2.png" alt="Central Asia Map" />
+                    <div className={styles.map} id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7765175.305048344!2d98.56277562271175!3d18.13673810944553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31149057b0824589%3A0xec592481f99cd81!2sLaos!5e0!3m2!1sen!2sin!4v1698035952521!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
 
                   <div className={styles.tripfeedbackquote}>
                     <p> A fascinating journey exploring three countries, with the mighty Mekong River as your guide through Thailand, Laos and Cambodia.</p>

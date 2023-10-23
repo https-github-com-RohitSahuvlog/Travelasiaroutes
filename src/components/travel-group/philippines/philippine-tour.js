@@ -80,16 +80,12 @@ const PhilippinesTrip = () => {
 
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
-
-
-                  {/* <img className={styles.ThirdPic} src="https://aidiaasia.org/images/contents/2WqLt-nepal-india-china.jpg"></img> */}
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979193.521085369!2d118.06773331868727!3d13.103546699114027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9c96176d753%3A0x64d503c3ac909fed!2sGuide%20to%20the%20Philippines!5e0!3m2!1sen!2sin!4v1697971526076!5m2!1sen!2sin"
-                    width="100%" height="350"
-                    // style="border:0"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade
-                   "
-                  ></iframe>
-
+                  <div className={styles.image_container}>
+                    <img className={styles.ThirdPic} src="https://www.drishtiias.com/images/uploads/1571646859_image2.jpg" alt="Central Asia Map" />
+                    <div className={styles.map} id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979193.521085369!2d118.06773331868727!3d13.103546699114027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9c96176d753%3A0x64d503c3ac909fed!2sGuide%20to%20the%20Philippines!5e0!3m2!1sen!2sin!4v1697971526076!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
                   <div className={styles.tripfeedbackquote}>
                     <p> Throughout your journey, you'll encounter the heartwarming smiles of the Filipino people, known for their hospitality and genuine warmth</p>
                     <br />

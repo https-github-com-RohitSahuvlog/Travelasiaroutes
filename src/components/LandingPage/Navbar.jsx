@@ -26,19 +26,16 @@ const style = {
 };
 
 const destinations = [
-  { text: "Armenia", link: "/armenia" },
+  // Countries in Asia
   { text: "Azerbaijan", link: "/azerbaijan" },
   { text: "Bangladesh", link: "/bangladesh" },
   { text: "Bhutan", link: "/bhutan" },
-  { text: "Borneo", link: "/borneo" },
   { text: "Brunei", link: "/brunei" },
   { text: "Cambodia", link: "/cambodia" },
   { text: "China", link: "/china" },
+  { text: "Japan", link: "/japan" },
   { text: "India", link: "/india" },
   { text: "Indonesia", link: "/indonesia" },
-  { text: "Iran", link: "/iran" },
-  { text: "Iraq", link: "/iraq" },
-  { text: "Japan", link: "/japan" },
   { text: "Kazakhstan", link: "/kazakhstan" },
   { text: "Kyrgyzstan", link: "/kyrgyzstan" },
   { text: "Laos", link: "/laos" },
@@ -57,11 +54,14 @@ const destinations = [
   { text: "Thailand", link: "/thailand" },
   { text: "Tibet", link: "/tibet" },
   { text: "Turkmenistan", link: "/turkmenistan" },
-  { text: "UAE", link: "/uae" },
   { text: "Uzbekistan", link: "/uzbekistan" },
   { text: "Vietnam", link: "/vietnam" },
+
+  // Countries in the Middle East
   { text: "Egypt", link: "/egypt" },
+  { text: "Iran", link: "/iran" },
   { text: "Israel", link: "/israel" },
+  { text: "Iraq", link: "/iraq" },
   { text: "Jordan", link: "/jordan" },
   { text: "Lebanon", link: "/lebanon" },
   { text: "Oman", link: "/oman" },
@@ -69,13 +69,12 @@ const destinations = [
   { text: "Saudi Arabia", link: "/saudi-arabia" },
   { text: "United Arab Emirates", link: "/uae" },
   { text: "Yemen", link: "/yemen" },
+
+  // Countries in Africa
   { text: "Algeria", link: "/algeria" },
   { text: "Botswana", link: "/botswana" },
-  { text: "Burkina Faso", link: "/burkina-faso" },
-  { text: "Burundi", link: "/burundi" },
   { text: "Cameroon", link: "/cameroon" },
   { text: "Chad", link: "/chad" },
-  { text: "Comoros", link: "/comoros" },
   { text: "Congo", link: "/congo" },
   { text: "Djibouti", link: "/djibouti" },
   { text: "Eritrea", link: "/eritrea" },
@@ -86,20 +85,17 @@ const destinations = [
   { text: "Mali", link: "/mali" },
   { text: "Mauritius", link: "/mauritius" },
   { text: "Morocco", link: "/morocco" },
-  { text: "Mozambique", link: "/mozambique" },
   { text: "Namibia", link: "/namibia" },
-  { text: "Reunion", link: "/reunion" },
   { text: "Rwanda", link: "/rwanda" },
   { text: "Seychelles", link: "/seychelles" },
-  { text: "Sierra Leone", link: "/sierra-leone" },
   { text: "Somalia", link: "/somalia" },
-  { text: "South Africa", link: "/south-africa" },
   { text: "South Sudan", link: "/south-sudan" },
   { text: "Sudan", link: "/sudan" },
   { text: "Tanzania", link: "/tanzania" },
   { text: "Tunisia", link: "/tunisia" },
   { text: "Uganda", link: "/uganda" }
 ];
+
 
 
 
@@ -169,10 +165,6 @@ export default function Navbar() {
         </li>
         <li className="to_drop">
           <Link to="/travel-groups"> Small Group Boutique Expeditions </Link>
-          {/* <div className="small_group">
-            <Link className="small_group_Link" to="#">Asia Pacific</Link>
-            <Link className="small_group_Link" to="#">Middle East/ Africa</Link>
-          </div > */}
         </li>
         <li className="to_drop" >
           <Link to="/"> By Destination </Link>
@@ -185,11 +177,6 @@ export default function Navbar() {
                 <ul class="all_destinations_ul" >
                   {destinationItems}
                 </ul>
-              </div>
-
-              <div class="regional_destinations_container">
-                {/* <h4 class="regional_destinations_h4">Regional Destinations</h4>
-                <ul className="regional_destinations_ul">{regionalDestinationItems}</ul> */}
               </div>
 
               <div class="all_itineraries_container">
@@ -208,19 +195,6 @@ export default function Navbar() {
               </div>
 
             </div>
-
-
-            {/* <Link to="/">Home</Link>
-            <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
-            <div className="drop-down-item">
-              <p>Small Group Boutique Expeditions</p>
-              <div className="drop-down-menu">
-                <Link to="/asia-pacific">Asia Pacific</Link>
-                <Link to="/middle-east-africa">Middle East/ Africa</Link>
-              </div>
-            </div>
-            <Link to="/">By Destination</Link>
-            <Link to="/our-story">Our Story</Link> */}
           </div>
 
 
@@ -256,7 +230,7 @@ export default function Navbar() {
               <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
             </div>
             <div className="side_nav_link">
-              <Link to="/" >Small Group Boutique Expeditions</Link>
+              <Link to="/travel-groups" >Small Group Boutique Expeditions</Link>
             </div>
             <div className="side_nav_link" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}>
               <Link to="/">By Destination</Link>
@@ -265,15 +239,6 @@ export default function Navbar() {
             <div className="side_nav_link">
               <Link to="/our-story">Our Story</Link>
             </div>
-
-            {/* <ul>
-            <li>
-              <Link to="#">Asia Pacific</Link>
-            </li>
-            <li>
-              <Link to="#">Middle East/ Africa</Link>
-            </li>
-          </ul> */}
 
             <div className="side_nav_link">
               <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
@@ -303,10 +268,6 @@ export default function Navbar() {
                     {sidedestinationItems.slice(Math.ceil(destinationItems.length / 2))}
                   </ul>
                 </div>
-                {/* <div class="sideregional_destinations_container">
-                  <h4 class="sideregional_destinations_h4">Regional Destinations</h4>
-                  <ul className="sidenavregional_ul">{sideregionalDestination}</ul>
-                </div> */}
                 <div class="sideall_itineraries_container">
                   <div class="divvv">
                     <Link to="#">
@@ -321,9 +282,6 @@ export default function Navbar() {
 
                   </div>
                 </div>
-
-
-
               </div>
 
             </div>
