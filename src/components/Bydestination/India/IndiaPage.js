@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./india.module.css";
 import Tap from "./Tap";
 import IndiaCarousal from "./indiacarousel";
 import { useParams } from "react-router-dom";
-import data from "../countrydata"
+// import data from "../countrydata";
+import Axios from "../../../api";
 
 const IndiaPage = () => {
     const { countryname } = useParams();
-    console.log(countryname, "countryname", "data", data)
+    const [countryData, setCountryData] = useState(null);
 
-    const { country, ...remaindata } = data[`${countryname}`]
+    // const { country, ...remaindata } = data[`${countryname}`]
+
+    useEffect(() => {
+        Axios.get(`/api/countries/get-country?country=${countryname}`)
+            .then((response) => {
+                setCountryData(response.data);
+            })
+            .catch((error) => {
+                console.error("Error fetching country data:", error);
+            });
+
+    }, [countryname]);
+    console.log(countryData, "countryname",)
 
     return (
         <>
@@ -29,13 +42,11 @@ const IndiaPage = () => {
 
                         </div>
                         <div>
-
-
                         </div>
                     </div>
                 </div>
 
-                <Tap item={remaindata} />
+                {countryData && <Tap item={countryData} />}
                 <div className={`${styles["bg-blue rounded "]} ${styles.classic}`}>
                     <div className={`${styles["row text-center bs-md:flex items-center"]} ${styles.classicdiv}`}>
                         <div className={`${styles["col-md-8 bs-md:mb-0"]} `}>

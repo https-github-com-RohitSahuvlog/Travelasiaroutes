@@ -9,7 +9,7 @@ const data =
             {
                 "image": "https://www.remotelands.com/remotenew1/dist/images/country/india/city/1/s130109022.jpg",
                 "heading": "   CLASSIC INDIA",
-                "text": "  Explore India’s age-old culture and witness its beauty across its most popular destinations on this 14-day journey. Travel through New Delhi’s bustling Chandni Chowk market, to the steps of the iconic Taj Mahal, into the bushland home of royal tigers, and the banks of the sacred Ganges river, all while staying at some of the country’s most luxurious hotels.",
+                "text": "Explore India’s age-old culture and witness its beauty across its most popular destinations on this 14-day journey. Travel through New Delhi’s bustling Chandni Chowk market, to the steps of the iconic Taj Mahal, into the bushland home of royal tigers, and the banks of the sacred Ganges river, all while staying at some of the country’s most luxurious hotels.",
                 "destination": "INDIA",
                 "duration": "14 days / 13 nights",
                 "priceperperson": "FROM $18, 200"

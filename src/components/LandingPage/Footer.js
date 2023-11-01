@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./footer.module.css";
 // import america from "../images/america.png";
 // import india from "../images/india.png";
@@ -10,25 +10,30 @@ import {
   faTwitter,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
+import Axios from "../../api";
+
 
 const Footer = () => {
+  const [data, setData] = useState({
+    officeBranches: [],
+    contactInfo: [],
+  });
+
+  useEffect(() => {
+    Axios.get("/api/footer/get-footer")
+      .then((response) => {
+        const { data } = response; // Access the 'data' property in the response
+        const { officeBranches, contactInfo } = data;
+        setData({ officeBranches, contactInfo });
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
+
   return (
     <>
       <div className={styles.FooterMain}>
-        {/* <div className={styles.FooterLogo}> */}
-        {/* <h3 className={styles.clientText}>OUR CLIENT</h3> */}
-        {/* <div className={styles.flagimg}> */}
-        {/* <img  className={styles.imgf}  src={india} alt="" />
-          <img className={styles.imgf}  src={america} alt="" />
-          <img className={styles.imgf}  src={canada} alt="" />
-          <img className={styles.imgf}  src={germany} alt="" /> */}
-        {/* <img className={styles.imgf} src='https://midasiaroutes.com/panel/clients/1608019763_6358.jpg' alt="" />
-            <img className={styles.imgf} src="https://midasiaroutes.com/panel/clients/1608019772_8254.jpg" alt="" />
-            <img className={styles.imgf} src="https://midasiaroutes.com/panel/clients/1608019779_6242.jpg" alt="" />
-            <img className={styles.imgf} src="https://midasiaroutes.com/panel/clients/1608019786_3814.jpg" alt="" />
-            <img className={styles.imgf} src="https://midasiaroutes.com/panel/clients/1608287140_4419.png" alt="" /> */}
-        {/* </div> */}
-        {/* </div> */}
         <div className={styles.Container}>
           <div className={styles.Footsec}>
             <div className={`${styles["col-md-12 col-12"]} ${styles.footer_logo}`}>
@@ -43,94 +48,77 @@ const Footer = () => {
             <div className={`${styles["col-md-12 "]} ${styles.contact_us_new}`}>
               <h3 className={styles.H3_use}>OUR OFFICES / ADDRESS <hr className={styles.hrclass} /></h3>
             </div>
+
             <div className={styles.location_title}>
+              {data.officeBranches.map((item, index) => (
 
-              <div
-                className={`${styles["col-md-3"]} ${styles.location_new} ${styles["first-child"]}`}
-              >
-                <ul >
-                  <li className={styles.local_li}>
-                    <span>
-                      Office Branch/DMC - Delhi B/176-Greenfields,Delhi-NCR,121003
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div className={`${styles["col-md-3"]} ${styles.location_new}`}>
-                <ul>
-                  <li className={styles.local_li}>
-                    <span>
-                      Office Branch/DMC - Bangkok Phaya thai Plaza,BTS Phaya Thai,
-                      Ratchathewi, Bangkok 10400, Thailand
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              {/* <div className={`${styles["col-md-3"]} ${styles.location_new}`}>
-                <ul>
-                  <li className={styles.local_li}>
-                    <i className="fa fa-map-marker"></i>
-                    <span></span>
-                  </li>
-                </ul>
-              </div> */}
-              <div className={`${styles["col-md-3"]} ${styles.location_new}`}>
-                <ul className={styles.loca_box}>
-                  <li className={styles.local_li}>
-                    <span>
-                      Office Branch/DMC - Muscat Darsait, PO Box 1057, PC 114,
-                      Muscat, Sultanate of Oman
-                    </span>
-                  </li>
-                </ul>
-              </div>
+                <div key={index} className={`${styles["col-md-3"]} ${styles.location_new}`}>
+                  <ul>
+                    <li className={styles.local_li} >
+                      <span>
+                        {item.location} - {item.address}
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              ))}
+
             </div>
+            {/* </div> */}
             <hr className={styles.hr} />
-            {/* second part */}
-
             <div className={styles.footer_links}>
               <div className={styles.footer_left}>
                 <div className={styles.row}>
                   <div className={styles["col-md-12 col-ms-12 col-xs-12"]}>
                     <div className={styles.footer_about}>
                       <div className={styles.about_location}>
-                        <h3 className={styles.H3_us}>
-                          Contact Us
-                          <hr className={styles.hrclass} />
-                        </h3>
-                        <ul className={styles.menulist}>
-                          <li className={styles.loc_li}>Worldwide: +91-8750976</li>
-                          <li className={styles.loc_li}>USA/CANADA +1 (917) 993-7606</li>
-                          <li className={styles.loc_li}></li>
-                          <li className={styles.loc_li}>sumit@midasiaroutes.com</li>
-                          <li className={styles.loc_li}>sumit@midasiaroutes.com</li>
-                        </ul>
-                        <br />
-                        <div className={styles.social_link}>
-                          <span>
-                            <div className={styles.social_icons}>
-                              <div>
-                                <a href="#" className={styles.icon} title="Facebook">
-                                  <FontAwesomeIcon icon={faFacebook} size="2x" />
-                                </a>
-                              </div>
+                        <div >
+                          <h3 className={styles.H3_us}>officeBranches <hr className={styles.hrclass} /></h3>
+                          {data.contactInfo.map((item, index) => (
 
-                              <div>
-                                <a href="#" className={styles.icon} title="Twitter">
-                                  <FontAwesomeIcon icon={faTwitter} size="2x" />
-                                </a>
-                              </div>
+                            <ul className={styles.menulist} key={index}>
+                              <li className={styles.loc_li}>
+                                {item.label} : {item.number || item.address}
+                              </li>
+                            </ul>
+                          ))}
+                          {data.contactInfo.map((item, index) => (
 
-                              <div>
-                                <a href="#" className={styles.iconinsta} title="Instagram">
-                                  <FontAwesomeIcon icon={faInstagram} size="2x" />
-                                </a>
-                              </div>
-
-                            </div>
-                          </span>
+                            <ul className={styles.menulist} key={index}>
+                              <li className={styles.loc_li}>
+                                {item.address}
+                              </li>
+                            </ul>
+                          ))}
                         </div>
+
                       </div>
+                      <br />
+                      <div className={styles.social_link}>
+                        <span>
+                          <div className={styles.social_icons}>
+                            <div>
+                              <a href="#" className={styles.icon} title="Facebook">
+                                <FontAwesomeIcon icon={faFacebook} size="2x" />
+                              </a>
+                            </div>
+
+                            <div>
+                              <a href="#" className={styles.icon} title="Twitter">
+                                <FontAwesomeIcon icon={faTwitter} size="2x" />
+                              </a>
+                            </div>
+
+                            <div>
+                              <a href="#" className={styles.iconinsta} title="Instagram">
+                                <FontAwesomeIcon icon={faInstagram} size="2x" />
+                              </a>
+                            </div>
+
+                          </div>
+                        </span>
+                      </div>
+                      {/* </div> */}
                     </div>
                   </div>
                 </div>
