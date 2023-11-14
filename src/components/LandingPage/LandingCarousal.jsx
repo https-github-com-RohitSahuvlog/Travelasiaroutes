@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import "../../css/LandingCarousal.css";
+// import "../../css/LandingCarousal.css";
 import { CircularProgress } from "@mui/material";
+import Slider from "../Carousal/slider.js"
 import tanjortemple from "../../images/tanjoretemple.jpg";
 const carousalData = [
   {
@@ -119,24 +120,7 @@ const LandingCarousal = () => {
 
   return (
     <div className="landinglanding-carousal">
-      {carousalData.map((slide, index) => (
-        <Slide
-          key={index}
-          image={slide.image}
-          heading={slide.heading}
-          para={slide.para}
-          isActive={index === activeIndex}
-        />
-      ))}
-      <div className="landingdots">
-        {carousalData.map((_, index) => (
-          <div
-            key={index}
-            className={`landingdot ${index === activeIndex ? "active" : ""}`}
-            onClick={() => handleDotClick(index)}
-          ></div>
-        ))}
-      </div>
+      <Slider carousalData={carousalData} />
     </div>
   );
 };

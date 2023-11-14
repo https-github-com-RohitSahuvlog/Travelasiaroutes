@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
 import styles from "./laos-tour.module.css";
@@ -7,9 +7,20 @@ import MyAccordion from '../accordian/accordian';
 import { LaosImages } from "./laos-image-data";
 import { Link } from 'react-router-dom';
 import { LaosAccData } from "./laos-accordian-data";
+import { Button } from '@mui/material';
+import Modal from '../enuiry-model/model';
 
 
 const LaosTrip = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const section1Ref = useRef();
   const section2Ref = useRef();
@@ -59,9 +70,18 @@ const LaosTrip = () => {
           <h1 className={styles.Title} >Exploring the Mystique of Laos</h1>
           <div className={styles.Italic}>Laos Revealed: Embark on Epic Expeditions</div>
           <div className={styles.GoButton}>
-            <Link to="/bespoke"  >
-              <button className={styles.ButtonFirst}>Start Planning</button>
-            </Link></div>
+            <div className={styles.GoButton}>
+              <Button variant="contained" color="primary" onClick={handleOpen}>
+                Start Planning
+              </Button>
+            </div>
+          </div>
+          <div className={styles['your-component']}>
+            <Modal
+              open={open}
+              handleClose={handleClose}
+            />
+          </div>
         </div>
       </div>
 

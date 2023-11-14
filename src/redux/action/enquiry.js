@@ -1,9 +1,19 @@
-import axios from "axios";
+import Axios from "../../api";
 
 
 export const addEnquiry = async (Data) => {
     try {
-        const response = await axios.post("http://localhost:8000/enquiry/addenquiries", Data);
+        const response = await Axios.post("/enquiry/addenquiries", Data);
+        return response.data;
+    } catch (error) {
+        console.error('Error:', error);
+        throw error;
+    }
+};
+
+export const addFormEnquiry = async (Data) => {
+    try {
+        const response = await Axios.post("/api/enquiryform/submit", Data);
         return response.data;
     } catch (error) {
         console.error('Error:', error);

@@ -133,7 +133,7 @@ const BespokeForm2 = ({ prevClick, handleCountNext }) => {
                       name="youngKids"
                     />
                   }
-                  label="youngKids"
+                  label="Young Kids"
                 />
                 <FormControlLabel
                   control={

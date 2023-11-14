@@ -716,3 +716,27 @@
 .image_container:hover .map {
   display: block;
 }
+
+
+/* YourComponent.module.scss */
+.your-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #e4bd5a;
+
+
+  .button-styles {
+    background: primary;
+  }
+
+  .modal-content {
+    width: 400px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
 import styles from "./philippine-tour.module.css";
@@ -7,9 +7,21 @@ import MyAccordion from '../accordian/accordian';
 import { LaosImages } from "./philippine-image-data";
 import { Link } from 'react-router-dom';
 import { PhilippinesAccData } from "./philippine-accordian-data";
+import { Button } from '@mui/material';
+import Modal from '../enuiry-model/model';
 
 
 const PhilippinesTrip = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
 
   const section1Ref = useRef();
   const section2Ref = useRef();
@@ -59,9 +71,16 @@ const PhilippinesTrip = () => {
           <h1 className={styles.Title} >Exploring the Mystique of the Philippines</h1>
           <div className={styles.Italic}>Experience the allure of the Philippines, a beloved Asian tourist hotspot.</div>
           <div className={styles.GoButton}>
-            <Link to="/bespoke"  >
-              <button className={styles.ButtonFirst}>Start Planning</button>
-            </Link></div>
+            <Button variant="contained" color="primary" onClick={handleOpen}>
+              Start Planning
+            </Button>
+          </div>
+          <div className={styles['your-component']}>
+            <Modal
+              open={open}
+              handleClose={handleClose}
+            />
+          </div>
         </div>
       </div>
 

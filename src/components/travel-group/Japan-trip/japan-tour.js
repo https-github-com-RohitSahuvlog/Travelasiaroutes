@@ -1,15 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
 import styles from "./japan-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
 import { JapanImages } from "./slider-image-data";
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { JapanAccordianData } from "./japan-accordian-data";
+import Axios from '../../../api';
+import { Button } from '@mui/material';
+import Modal from '../enuiry-model/model';
+
+
 
 
 const JapanTrip = () => {
+  const { country } = useParams();
+  const [packageTable, setpackageTable] = useState([]);
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const section1Ref = useRef();
   const section2Ref = useRef();
@@ -45,10 +61,23 @@ const JapanTrip = () => {
     if (ref && ref.current) {
       window.scrollTo({
         top: ref.current.offsetTop,
-        behavior: 'smooth', // Add smooth scrolling behavior
+        behavior: 'smooth',
       });
     }
   };
+
+  const fetchData = async () => {
+    try {
+      const response = await Axios.get(`/api/package/travel-packages/${country}`);
+      setpackageTable(response.data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
 
 
@@ -59,9 +88,16 @@ const JapanTrip = () => {
           <h1 className={styles.Title} > NEPAL ADVENTURE</h1>
           <div className={styles.Italic}>Nepal Unveiled: Embark on Epic Adventures</div>
           <div className={styles.GoButton}>
-            <Link to="/bespoke"  >
-              <button className={styles.ButtonFirst}>Start Planning</button>
-            </Link></div>
+            <Button variant="contained" color="primary" onClick={handleOpen}>
+              Start Planning
+            </Button>
+          </div>
+        </div>
+        <div className={styles['your-component']}>
+          <Modal
+            open={open}
+            handleClose={handleClose}
+          />
         </div>
       </div>
 

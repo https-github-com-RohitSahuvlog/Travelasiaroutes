@@ -1,7 +1,7 @@
 export const UzbekistanExpeditionData = [
     {
         "day": 1,
-        "description": "Arrival in Tashkent(Uzbekistan)",
+        "description": "Arrival in Tashkent (Uzbekistan)",
         "activities": [
             "Arrive in Tashkent, where you are met and transferred to the Tashkent 4*/5* Hotel.",
             "In the evening, gather for a Welcome Dinner and the first Orientation."

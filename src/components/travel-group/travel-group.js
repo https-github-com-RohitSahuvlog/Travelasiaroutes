@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from "./travel-group.module.css";
 import { createGlobalStyle } from 'styled-components';
 import Card from "./Card/Card";
+import { useDispatch, useSelector } from 'react-redux';
+import { setTravelPackages } from '../../redux/action/travel';
+import Axios from '../../api';
 const TravelGroups = () => {
   const data = [
     {
@@ -41,7 +44,6 @@ const TravelGroups = () => {
   ]
 
   const GlobalStyle = createGlobalStyle`
-
   .container{
     width: 80%;
     max-width: 1100px;
@@ -58,6 +60,27 @@ const TravelGroups = () => {
     }
   }
 `;
+  const formData = useSelector((state) => state.travelPackages);
+  const dispatch = useDispatch();
+
+  console.log("formData", formData);
+
+  useEffect(() => {
+    async function fetchItineraryDetails() {
+      try {
+        const response = await Axios.get(`/api/package/travel-packages`);
+        if (response.status === 200) {
+          const itineraryData = response.data;
+          dispatch(setTravelPackages([itineraryData]));
+        }
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+
+    fetchItineraryDetails();
+  }, []);
+  console.log()
   return (
     <div>
       {/* <div className="App"> */}

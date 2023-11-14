@@ -1,11 +1,12 @@
 import axios from "axios";
+import Axios from "../../api";
 
 export const ADD_TRAVEL_FORM = 'ADD_TRAVEL_FORM';
 export const DELETE_TRAVEL_FORM = 'DELETE_TRAVEL_FORM';
 
 export const addTravelForm = async (travelFormData) => {
     try {
-        const response = await axios.post("http://localhost:8000/travel/addtraveldata", travelFormData);
+        const response = await Axios.post("/travel/addtraveldata", travelFormData);
         return response.data;
     } catch (error) {
         console.error('Error:', error);
@@ -20,3 +21,8 @@ export const addTravelForm = async (travelFormData) => {
 //         payload: travelFormId,
 //     };
 // }
+
+export const setTravelPackages = (packages) => ({
+    type: 'SET_TRAVEL_PACKAGES',
+    payload: packages,
+});

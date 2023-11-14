@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
 import styles from "./banglades-tour.module.css";
@@ -7,9 +7,12 @@ import MyAccordion from '../accordian/accordian';
 import { BangladeshImages } from "./banglades-image-data";
 import { Link } from 'react-router-dom';
 import { BangladeshAccData } from "./banglades-accordian-data";
+import { Button } from '@mui/material';
+import Modal from '../enuiry-model/model';
 
 
 const BangladeshTrip = () => {
+  const [open, setOpen] = useState(false);
 
   const section1Ref = useRef();
   const section2Ref = useRef();
@@ -41,6 +44,15 @@ const BangladeshTrip = () => {
 
   ];
 
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   const scrollToSection = (ref) => {
     if (ref && ref.current) {
       window.scrollTo({
@@ -59,9 +71,18 @@ const BangladeshTrip = () => {
           <h1 className={styles.Title} >Discover the Charms of Bangladesh</h1>
           <div className={styles.Italic}>Bangladesh Unveiled: Embark on Epic Adventures</div>
           <div className={styles.GoButton}>
-            <Link to="/bespoke"  >
-              <button className={styles.ButtonFirst}>Start Planning</button>
-            </Link></div>
+            <div className={styles.GoButton}>
+              <Button variant="contained" color="primary" onClick={handleOpen}>
+                Start Planning
+              </Button>
+            </div>
+          </div>
+          <div className={styles['your-component']}>
+            <Modal
+              open={open}
+              handleClose={handleClose}
+            />
+          </div>
         </div>
       </div>
 

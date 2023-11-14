@@ -186,8 +186,6 @@ export default function Navbar() {
                       <h4 class="all_itineraries_h4">
                         <span>All Itineraries</span>
                       </h4>
-                      <p>Browse more than 400 sample itineraries across Asia.
-                      </p>
                     </div>
                   </Link>
 
@@ -275,7 +273,7 @@ export default function Navbar() {
                         <h4 class="all_itineraries_h4">
                           <span>All Itineraries</span>
                         </h4>
-                        <p>Browse more than 400 sample itineraries across Asia.
+                        <p>
                         </p>
                       </div>
                     </Link>

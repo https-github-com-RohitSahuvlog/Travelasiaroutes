@@ -159,7 +159,7 @@ function Occassion({ prevClick, handleCountNext }) {
                 <FormControlLabel
                   value="vocation"
                   control={<Radio />}
-                  label="Vocation"
+                  label="Vacation"
                 />
                 <FormControlLabel
                   value="milestone"

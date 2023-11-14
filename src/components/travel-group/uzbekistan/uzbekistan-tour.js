@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
 import styles from "./uzbekistan-tour.module.css";
@@ -7,9 +7,22 @@ import MyAccordion from '../accordian/accordian';
 import { LaosImages } from "./uzbekistan-image-data";
 import { Link } from 'react-router-dom';
 import { UzbekistanExpeditionData } from "./uzbekistan-accordian-data";
+import { Button } from '@mui/material';
+import Modal from '../enuiry-model/model';
 
 
 const UzbekistanTrip = () => {
+
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
 
   const section1Ref = useRef();
   const section2Ref = useRef();
@@ -58,9 +71,18 @@ const UzbekistanTrip = () => {
           <h1 className={styles.Title} >Exploring the Rich History and Culture of Uzbekistan</h1>
           <div className={styles.Italic}>Immerse yourself in the beauty and history of Uzbekistan, a Central Asian gem.</div>
           <div className={styles.GoButton}>
-            <Link to="/bespoke"  >
-              <button className={styles.ButtonFirst}>Start Planning</button>
-            </Link></div>
+            <div className={styles.GoButton}>
+              <Button variant="contained" color="primary" onClick={handleOpen}>
+                Start Planning
+              </Button>
+            </div>
+          </div>
+          <div className={styles['your-component']}>
+            <Modal
+              open={open}
+              handleClose={handleClose}
+            />
+          </div>
         </div>
       </div>
 

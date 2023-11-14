@@ -83,6 +83,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container {
@@ -92,6 +93,16 @@ main {
     padding: 0.5rem;
     max-width: var(--fixed-width);
     gap: 1rem 2rem;
+}
+
+.btncontainer {
+    width: 90vw;
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    max-width: var(--fixed-width);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
 }
 
 .container h3 {
@@ -144,7 +155,6 @@ main {
     border-radius: 50%;
     color: var(--clr-red-special);
     cursor: pointer;
-    margin-left: 1rem;
     align-self: center;
     min-width: 2rem;
 }
@@ -161,4 +171,21 @@ main {
 
 .activities li {
     margin-bottom: 5px;
+}
+
+.expand-btn {
+    background: transparent;
+    border-color: transparent;
+    width: 5rem;
+    height: 2rem;
+    background: var(--clr-grey-special);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    color: var(--clr-red-special);
+    cursor: pointer;
+    margin-left: 1rem;
+    align-self: center;
+    min-width: 2rem;
 }

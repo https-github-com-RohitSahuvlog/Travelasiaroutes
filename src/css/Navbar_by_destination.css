@@ -1,4 +1,5 @@
 .R_by_destination {
+    width: 100%;
     padding: 1.5vmax;
     /* padding: 20px; */
     background-color: black;
@@ -13,36 +14,29 @@
 
 
 .all_destinations_container {
-    width: 55%;
+    width: 100%;
     /* background-color: yellow; */
 }
 
 .all_destinations_container:hover {
-    width: 55%;
-    /* background-color: #ffffff07; */
+    width: 100%;
     background-image: linear-gradient(to bottom, #ffffff24, black);
-    /* background-image: radial-gradient( #ffffff14, black); */
-    /* background-color: yellow; */
 }
 
 .regional_destinations_container {
     width: 25%;
-    /* background-color: purple; */
 }
 
 .regional_destinations_container:hover {
     background-image: linear-gradient(#ffffff1b, black);
     width: 25%;
-    /* background-color: purple; */
 }
 
 .all_itineraries_container {
-    /* background-color: pink; */
+    width: 30%;
 }
 
 .all_itineraries_container:hover {
-    /* background-color: pink; */
-    /* background-image: linear-gradient( #ffffff14, black); */
     background-image: linear-gradient(#eef95a21, black);
 
 }
