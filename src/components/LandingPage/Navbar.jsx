@@ -143,13 +143,17 @@ export default function Navbar() {
     document.getElementById("responsiveNavbar").style.right = "-150%";
 
   };
+
+  const handleDestinationClick = () => {
+    setShowDestinationDropdown(!showDestinationDropdown);
+  };
   return (
     <div className="navbar">
       {displayLogoInNavbar && <Link to="/"><img src={logo} alt="" className="navbar-logo" /></Link>}
       {displayContactInNavbar && (
         <div className="call-and-home-nav-item">
           <CallIcon />
-          <p>+91 123 456 789 0</p>
+          <p>+91-8750970676</p>
           <p>|</p>
           <Link to="/">
             <HomeIcon />
@@ -167,15 +171,21 @@ export default function Navbar() {
           <Link to="/travel-groups"> Small Group Boutique Expeditions </Link>
         </li>
         <li className="to_drop" >
-          <Link to="/"> By Destination </Link>
+          <Link to="/" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}> By Destination </Link>
 
-          <div id="id_R_by_destination">
+          {!showDestinationDropdown && <div id="id_R_by_destination">
             <div class="R_by_destination">
 
               <div class="all_destinations_container">
                 <h4 class="all_destinations_h4">All Destinations</h4>
                 <ul class="all_destinations_ul" >
-                  {destinationItems}
+                  {destinations.map((destination, index) => (
+                    <div key={index} onClick={handleDestinationClick} className="all_destinations_li">
+                      <Link class="all_destination_Link" to={`country${destination.link}`}>
+                        {destination.text}
+                      </Link>
+                    </div>
+                  ))}
                 </ul>
               </div>
 
@@ -193,7 +203,8 @@ export default function Navbar() {
               </div>
 
             </div>
-          </div>
+          </div>}
+
 
 
         </li>

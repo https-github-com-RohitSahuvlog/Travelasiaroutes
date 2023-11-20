@@ -729,3 +729,32 @@
 .image_container:hover .map {
   display: block;
 }
+
+.travel_sts {
+  display: flex;
+  justify-content: center;
+
+}
+
+.travel_sts>img {
+  margin: 0px 5px;
+}
+
+.checkIcon {
+  font-size: 16px;
+  background-color: rgb(86, 241, 39);
+  width: 20px;
+  color: white;
+  border-radius: 50%;
+  margin-right: 5px;
+  /* Adjust the spacing between the icon and text */
+}
+
+.crossIcon {
+  color: red;
+  font-size: 16px;
+  background-color: rgb(86, 241, 39);
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}

@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url("https://tourtoday.com.bd/wp-content/themes/tour/images/slider.jpg");
+  background-image: url("https://www.redsavannah.com/-/media/countries/laos/wat-xieng-khuan-buddha-park-xx-shstck.jpg?h=810&w=1405&udi=1&cropregion=29,179,1600,864&hash=15C72468E1D730AD30A588BCB4717BA4");
   object-position: top;
   object-fit: cover;
   /* background: none repeat; */
@@ -728,4 +728,33 @@
 
 .image_container:hover .map {
   display: block;
+}
+
+.travel_sts {
+  display: flex;
+  justify-content: center;
+
+}
+
+.travel_sts>img {
+  margin: 0px 5px;
+}
+
+.checkIcon {
+  font-size: 16px;
+  background-color: rgb(86, 241, 39);
+  width: 20px;
+  color: white;
+  border-radius: 50%;
+  margin-right: 5px;
+  /* Adjust the spacing between the icon and text */
+}
+
+.crossIcon {
+  color: red;
+  font-size: 16px;
+  background-color: rgb(86, 241, 39);
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
 }

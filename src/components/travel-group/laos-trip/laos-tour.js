@@ -5,13 +5,24 @@ import styles from "./laos-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
 import { LaosImages } from "./laos-image-data";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { LaosAccData } from "./laos-accordian-data";
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
+import Axios from '../../../api';
+import { useDispatch, useSelector } from 'react-redux';
 
+const getStatusIcon = (status) => {
+  return status ? '✔' : '✖';
+};
+
+const getStatusStyle = (status) => {
+  return status ? styles.checkIcon : styles.crossIcon;
+};
 
 const LaosTrip = () => {
+  const location = useLocation();
+  const [packageTable, setpackageTable] = useState([]);
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -60,6 +71,24 @@ const LaosTrip = () => {
       });
     }
   };
+
+  const fetchData = async (country) => {
+    try {
+      const response = await Axios.get(`/api/package/travel-packages/${country}`);
+      setpackageTable(response.data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+
+  useEffect(() => {
+
+    const pathnameArray = location.pathname.split('/');
+    const countryName = pathnameArray[pathnameArray.length - 1];
+
+    fetchData(countryName);
+  }, [location.pathname]);
 
 
 
@@ -130,7 +159,7 @@ const LaosTrip = () => {
             <div className={styles.section} ref={section2Ref} id={styles.section2} >
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>Discover the Beauty of Bangladesh</h2>
+                  <h2 className={styles.SetText}>Discover the Beauty of Laos</h2>
                   <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Adventure)</h5>
                 </div>
                 <MyAccordion AccordianData={LaosAccData} />
@@ -138,10 +167,10 @@ const LaosTrip = () => {
                 <div className={styles.SetFlexProperty}>
                   <div className={styles.SetDataLeft}>
                     <ul>
+                      <li>“A fascinating journey exploring three countries, with the mighty Mekong River as your guide through Thailand, Laos and Cambodia.”</li>
                       <li>Board a private boat for a two-day cruise down the Mekong River.</li>
                       <li>Travel into the Golden Triangle, offering stunning views over the Mekong River and into Laos and Burma.</li>
-                      <li>Immerse yourself in the cultural and historical wonders of Bangladesh by visiting all three UNESCO World Heritage Sites.</li>
-                      <li>Experience the vibrant life and rich culture of the Ganges Delta, a land of unique charm and vitality.</li>
+
                       <li>Offer alms to the hundreds of saffron-robed Buddhist Monks.</li>
                       <li>Explore the UNESCO best-preserved city in Southeast Asia.</li>
                     </ul>
@@ -185,10 +214,10 @@ const LaosTrip = () => {
                     </thead>
                     <tbody>
                       <tr className={styles.pricingRow}>
-                        <td>22rd March 2024</td>
-                        <td>6th April 2024</td>
-                        <td>$ 5775 USD</td>
-                        <td style={{ width: 'auto' }}>$ 870 USD</td>
+                        <td>{packageTable.startDate}</td>
+                        <td>{packageTable.endDate}</td>
+                        <td>{`$ ${packageTable.price} USD`}</td>
+                        <td style={{ width: 'auto' }}>{`$ ${packageTable.singleSupplementPrice} USD`}</td>
                         <td style={{ padding: '5px' }}>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -212,30 +241,32 @@ const LaosTrip = () => {
                               />
                             </path>
                           </svg>
-
                         </td>
-                        <td>6 Spaces</td>
+                        <td>{`${packageTable.availability} Spaces`}</td>
                         <td>
-                          <Link to="/bespoke"  >
-                            <button className={styles.btn_booknow}>
-                              Book Now
-                            </button>
+                          <Link to="/bespoke">
+                            <button className={styles.btn_booknow}>Book Now</button>
                           </Link>
-
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <div className="travel_sts">
-                  <img src="https://www.eldertreks.com/images/check.png" style={{ width: 'auto' }} /> <span>Guaranteed Departures</span>
+                <div className={styles.travel_sts}>
+                  <span className={getStatusStyle(packageTable.status)}>{getStatusIcon(packageTable.status)}</span>
+                  <span>{packageTable.status ? 'Guaranteed Departures' : 'Not Guaranteed Departures'}</span>
                 </div>
+                <div style={{ display: 'flex', gap: '20px', justifyContent: "center", margin: "10px" }}>
+                  <Link to="/activitylevel">
+                    <button className={`${styles.btn_booknow}`}>
+                      Activity-Level
+                    </button>
+                  </Link>
 
-                <Link to="/activitylevel"  >
-                  <button className={styles.btn_booknow}>
-                    Activity-Level
+                  <button className={`${styles.btn_booknow}`} onClick={handleOpen}>
+                    Start Planning
                   </button>
-                </Link>
+                </div>
               </div>
 
               <div className={styles.SettingHeadingRatio}>
@@ -247,37 +278,27 @@ const LaosTrip = () => {
                     </div>
                     <div className={styles.HeadingContent}>
                       <ul>
-                        <li>Small-Group Expedition: Embark on a 21-day adventure with a maximum of 9 fellow travelers, ensuring an intimate and personalized experience.</li>
-                        <li>Gentle Adventure: This expedition is meticulously crafted for nature, culture, and wildlife enthusiasts seeking a gentle yet adventurous journey.</li>
-                        <li>Inclusive Domestic Airfares: All domestic airfares throughout the trip are covered for your convenience.</li>
-                        <li>Dhaka Start & Finish: Your journey begins and ends in Dhaka, the vibrant capital city, offering a seamless travel experience.</li>
-                        <li>All-Inclusive Dining: Relish local flavors with all meals included as per the itinerary.</li>
-                        <li>Best Travel Seasons: Optimal travel months are January to March and September to November when Bangladesh experiences pleasant weather.</li>
-                        <li>Comprehensive Activities: Enjoy all listed activities and boat trips to explore every facet of Bangladesh.</li>
-                        <li>Effortless Transfers: Seamless airport-to-hotel and hotel-to-airport transfers in every city you visit.</li>
-                        <li>Comfortable Accommodations: Rest in well-located hotels with private bathrooms, offering twin-sharing options. Select from 3-4 star categories and a few 5-star choices in larger cities.</li>
-                        <li>Local Expertise: Benefit from the guidance of local English-speaking guides and a dedicated MiddleAsia Routes Tour-Leader throughout your journey.</li>
-                        <li>Hassle-Free Porterage: Let us handle logistics with porterage services at airports and hotels throughout the program.</li>
-                        <li>Inclusive Entrance Fees: Access all historical sites and museums with included entrance fees.</li>
-                        <li>Hydration on the Go: Stay refreshed with daily access to water on board.</li>
-                        <li>Included Gratuities: Express appreciation with included gratuities for guides, drivers, and porters.</li>
-                        <li>All Taxes Covered: Rest easy knowing that all taxes are included in your package.</li>
-                        <li>Comfortable Exploration: Anticipate scenic drives with some rough or dusty roads. Several drives may take 5-6 hours, offering picturesque routes.</li>
-                        <li>Activity Levels 2-4: Engage in hikes with gentle slopes, town explorations, and archaeological site visits. Expect the ability to climb stairs, walk 2 miles, and handle 3-4 flights of stairs.</li>
-                        <li>Boat Experience: Spend 2 nights on a boat for a unique wildlife adventure.</li>
-                        <li>Rocket Journey: While riding 'The Rocket' isn't guaranteed, enjoy the slim chance of this unique experience. In its absence, traditional ferries and a drive to Bagerhat provide alternatives.</li>
-                        <li>Cultural Dress Code: Respect the local dress code when visiting places of worship, ensuring modest attire. Remove shoes when entering these sites.</li>
-                        <li>Flexibility in Travel: Understand that in a third-world country like Bangladesh, flexibility and patience are essential. Trust our tour-leader and local guide to resolve any issues.</li>
-                        <li>Tiger Sightings: While rare, there's a chance of spotting tigers in Sundarbans, offering an opportunity to witness these nocturnal creatures.</li>
-                        <li>Adaptive Itinerary: The itinerary remains flexible, accommodating changes based on various factors to ensure an inclusive experience.</li>
-                        <li>Boat Accommodations: Accommodations on the Sundarbans boat are basic with shared western-style toilets, providing an authentic experience.</li>
-                        <li>First-Class Train Tickets: When available, enjoy first-class train tickets; second-class tickets are provided if necessary. Alternative car travel with or without air-conditioning is available.</li>
-                        <li>Patience on the Road: Understand that broken roads and heavy traffic in Bangladesh may require patience during the journey.</li>
-                        <li>Air-Conditioning Adjustments: On hilly terrains in Chittagong Hill-Tracts, temporary air-conditioning adjustments may be made to reduce engine load.</li>
-                        <li>Accommodation Note: While hotels are good and clean, room sizes and deluxe services may vary, given Bangladesh's emerging tourism industry. We select the best available options in collaboration with our local partners.</li>
+                        <li className={styles.highlight}>Embark on an intimate journey with a maximum of 8 fellow travelers, ensuring personalized experiences at every turn.</li>
+                        <li className={styles.highlight}>Seamless travel with all domestic airfares covered, ensuring you focus on the adventure, not logistics.</li>
+                        <li className={styles.highlight}>A truly global expedition with inclusive international airfare covering Thailand, Laos, Cambodia, and back to Thailand.</li>
+                        <li className={styles.highlight}>Start and finish your adventure in the vibrant heart of Bangkok, a city that never fails to captivate.</li>
+                        <li className={styles.highlight}>Indulge in culinary delights with all meals included, meticulously curated to complement your extraordinary itinerary.</li>
+                        <li className={styles.highlight}>Experience the magic of Laos in January, where temperatures range from 78°F to 83°F, creating the perfect backdrop for exploration.</li>
+                        <li className={styles.highlight}>Sail through enchanting landscapes with Mekong cruising, adding a touch of serenity to your journey.</li>
+                        <li className={styles.highlight}>Enjoy hassle-free transitions with airport/hotel/airport transfers in every city, making travel a breeze.</li>
+                        <li className={styles.highlight}>Retreat to 14 nights of comfort in carefully selected hotels, offering private bathrooms and twin-sharing options in 3-4 star accommodations, including a sprinkle of luxury in larger cities.</li>
+                        <li className={styles.highlight}>Immerse yourself in the history and culture of each city with inclusive sightseeing, ensuring you don't miss a moment of wonder.</li>
+                        <li className={styles.highlight}>Benefit from the expertise of English-speaking guides and a dedicated MiddleAsia Routes Tour-Leader throughout your journey, adding depth to your travel experience.</li>
+                        <li className={styles.highlight}>Let us handle the heavy lifting with porterage services at airports and hotels throughout the program, leaving you free to savor every moment.</li>
+                        <li className={styles.highlight}>Explore historical sites and museums without worry, as entrance fees are included in your comprehensive package.</li>
+                        <li className={styles.highlight}>Stay refreshed with water on board every day, ensuring you're energized for every new adventure.</li>
+                        <li className={styles.highlight}>Express gratitude effortlessly with included gratuities for guides, drivers, and porters, fostering a culture of appreciation.</li>
+                        <li className={styles.highlight}>Rest easy knowing that all taxes are covered, leaving you to focus solely on creating lasting memories.</li>
+                        <li className={styles.highlight}>Navigate diverse terrains with ease, including some rough/dusty roads and long drives, adding a touch of adventure to your comfortable journey.</li>
+                        <li className={styles.highlight}>Engage in activities with an intensity level of 2-3, from gentle hikes to town explorations and archaeological site visits, catering to various interests and energy levels.</li>
+                        <li className={styles.highlight}>Toilet facilities cater to both comfort and authenticity, with clean Western-style toilets at accommodations/restaurants/sites, and quaint squat toilets along the scenic routes.</li>
                       </ul>
                     </div>
-
                   </div>
                 </div>
 

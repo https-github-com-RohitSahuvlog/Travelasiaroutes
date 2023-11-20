@@ -3,15 +3,11 @@ import styles from "./india.module.css";
 import Tap from "./Tap";
 import IndiaCarousal from "./indiacarousel";
 import { useParams } from "react-router-dom";
-// import data from "../countrydata";
 import Axios from "../../../api";
 
 const IndiaPage = () => {
     const { countryname } = useParams();
     const [countryData, setCountryData] = useState(null);
-
-    // const { country, ...remaindata } = data[`${countryname}`]
-
     useEffect(() => {
         Axios.get(`/api/countries/get-country?country=${countryname}`)
             .then((response) => {
@@ -27,10 +23,8 @@ const IndiaPage = () => {
     return (
         <>
             <div className={styles.mainCon}>
-                <IndiaCarousal />
+                <IndiaCarousal carousalData={countryData?.carousalimages || []} />
                 <h1 className={styles.page_section}>{countryname}</h1>
-
-
                 <div className={styles.tabs_Page}>
                     <div className={styles.container}>
                         <div className={styles.row}>

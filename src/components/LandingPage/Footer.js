@@ -218,7 +218,10 @@ const Footer = () => {
           <div className={styles.copyright_content}>
             <p className={styles.copyP}>
               © 2020 MIDAISAROUTES All Rights Reserved.Designed & Developed by
-              <a href="#" className={styles.designerName}> RohitSahu</a>
+              <a href="https://rohitmern.netlify.app/" target="_blank" rel="noopener noreferrer" className={styles.designerName}>
+                RohitSahu
+              </a>
+
             </p>
           </div>
         </div>

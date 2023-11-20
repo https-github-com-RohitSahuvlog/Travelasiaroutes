@@ -5,18 +5,26 @@ import styles from "./japan-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
 import { JapanImages } from "./slider-image-data";
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { JapanAccordianData } from "./japan-accordian-data";
 import Axios from '../../../api';
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
+import { useDispatch, useSelector } from 'react-redux';
 
 
+const getStatusIcon = (status) => {
+  return status ? '✔' : '✖';
+};
 
+const getStatusStyle = (status) => {
+  return status ? styles.checkIcon : styles.crossIcon;
+};
 
 const JapanTrip = () => {
-  const { country } = useParams();
+  const location = useLocation();
   const [packageTable, setpackageTable] = useState([]);
+  const allPackage = useSelector((state) => state.travelPackages);
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -66,7 +74,7 @@ const JapanTrip = () => {
     }
   };
 
-  const fetchData = async () => {
+  const fetchData = async (country) => {
     try {
       const response = await Axios.get(`/api/package/travel-packages/${country}`);
       setpackageTable(response.data);
@@ -76,10 +84,14 @@ const JapanTrip = () => {
   };
 
   useEffect(() => {
-    fetchData();
-  }, []);
 
+    const pathnameArray = location.pathname.split('/');
+    const countryName = pathnameArray[pathnameArray.length - 1];
 
+    fetchData(countryName);
+  }, [location.pathname]);
+
+  console.log('packageTable:', packageTable);
 
   return (
     <div>
@@ -210,10 +222,10 @@ const JapanTrip = () => {
                     </thead>
                     <tbody>
                       <tr className={styles.pricingRow}>
-                        <td>22rd March 2024</td>
-                        <td>6th April 2024</td>
-                        <td>$ 5775 USD</td>
-                        <td style={{ width: 'auto' }}>$ 870 USD</td>
+                        <td>{packageTable.startDate}</td>
+                        <td>{packageTable.endDate}</td>
+                        <td>{`$ ${packageTable.price} USD`}</td>
+                        <td style={{ width: 'auto' }}>{`$ ${packageTable.singleSupplementPrice} USD`}</td>
                         <td style={{ padding: '5px' }}>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -237,60 +249,33 @@ const JapanTrip = () => {
                               />
                             </path>
                           </svg>
-
                         </td>
-                        <td>6 Spaces</td>
+                        <td>{`${packageTable.availability} Spaces`}</td>
                         <td>
-                          <Link to="/bespoke"  >
-                            <button className={styles.btn_booknow}>
-                              Book Now
-                            </button>
+                          <Link to="/bespoke">
+                            <button className={styles.btn_booknow}>Book Now</button>
                           </Link>
-
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <div className="travel_sts">
-                  <img src="https://www.eldertreks.com/images/check.png" style={{ width: 'auto' }} /> <span>Guaranteed Departures</span>
+                <div className={styles.travel_sts}>
+                  <span className={getStatusStyle(packageTable.status)}>{getStatusIcon(packageTable.status)}</span>
+                  <span>{packageTable.status ? 'Guaranteed Departures' : 'Not Guaranteed Departures'}</span>
                 </div>
-                <Link to="/activitylevel"  >
-                  <button className={styles.btn_booknow}>
-                    Activity-Level
+                <div style={{ display: 'flex', gap: '20px', justifyContent: "center", margin: "10px" }}>
+                  <Link to="/activitylevel">
+                    <button className={`${styles.btn_booknow}`}>
+                      Activity-Level
+                    </button>
+                  </Link>
+
+                  <button className={`${styles.btn_booknow}`} onClick={handleOpen}>
+                    Start Planning
                   </button>
-                </Link>
+                </div>
               </div>
-
-              {/* <div className={styles.FourFlex}> */}
-              {/* <div className={styles.FourAling}>
-
-                  <h3 className={styles.FourSubHeading}>Dates</h3>
-                  <p className={styles.FourPara}>Departures offered November–March; request itinerary for specific dates.</p>
-
-                  <h3 className={styles.FourSubHeading}>Pricing</h3>
-                  <p className={styles.FourPara}>12 days (with 9-night cruise): From $870  per person </p>
-                </div> */}
-              {/* <div>
-                  <h3 className={styles.FourAling}>Inclusions</h3>
-                  <ul className={styles.SetDataLeft}>
-                    <li>Expertise of MidAsia travel specialists</li>
-                    <li>Services of MidAsia in-house air reservations team</li>
-                    <li>All accommodations</li>
-                    <li>All ground transportation and airport transfers</li>
-                    <li>Sightseeing, events, visits, and entrance fees</li>
-                    <li>Shore landings, presentations, and activities per the vessel’s daily program</li>
-                    <li>All meals</li>
-                    <li>Bottled water at included meals and while sightseeing</li>
-                    <li>Services of an expedition leader, lecturers/naturalists, and support staff during voyage</li>
-                    <li>Some gratuities</li>
-                    <li>Emergency evacuation services and secondary medical expense insurance</li>
-                  </ul>
-                </div> */}
-
-
-              {/* </div> */}
-
 
               <div className={styles.SettingHeadingRatio}>
 

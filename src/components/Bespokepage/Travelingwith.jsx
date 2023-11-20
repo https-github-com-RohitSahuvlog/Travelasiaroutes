@@ -9,6 +9,9 @@ import {
   MenuItem,
   Button,
   Grid,
+  InputLabel,
+  TextField,
+  InputAdornment,
 } from "@mui/material";
 
 import "../../css/BespokeTravel.css";
@@ -66,16 +69,16 @@ const BespokeForm2 = ({ prevClick, handleCountNext }) => {
         How long do you want to travel?
       </Typography>
       <FormControl sx={{ width: "70%", marginBottom: 2 }}>
-        <Select
+        <TextField
+          id="travelDuration"
+          name="travelDuration"
+          label="Travel Duration"
+          variant="outlined"
           value={formData.travelDuration}
           onChange={handleSelectChange}
-          name="travelDuration"
-        >
-          <MenuItem value="1 Week">1 Week</MenuItem>
-          <MenuItem value="2 Weeks">2 Weeks</MenuItem>
-          <MenuItem value="3 Weeks">3 Weeks</MenuItem>
-        </Select>
+        />
       </FormControl>
+
     </div>
   ) : null;
 
@@ -184,15 +187,15 @@ const BespokeForm2 = ({ prevClick, handleCountNext }) => {
               What's your budget per person, per day?
             </Typography>
             <FormControl sx={{ width: "70%", marginBottom: 2 }}>
-              <Select
+              <TextField
+                id="budgetPerDay"
+                name="budgetPerDay"
+                type="text"
+                label="Budget"
                 value={formData.budgetPerDay}
                 onChange={handleSelectChange}
-                name="budgetPerDay"
-              >
-                <MenuItem value="$50 - $100">$50 - $100</MenuItem>
-                <MenuItem value="$100 - $200">$100 - $200</MenuItem>
-                <MenuItem value="$200 - $300">$200 - $300</MenuItem>
-              </Select>
+                endAdornment={<InputAdornment position="end">USD</InputAdornment>}
+              />
             </FormControl>
           </div>
         </div>

@@ -1,11 +1,25 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./travel-group.module.css";
 import { createGlobalStyle } from 'styled-components';
 import Card from "./Card/Card";
 import { useDispatch, useSelector } from 'react-redux';
 import { setTravelPackages } from '../../redux/action/travel';
 import Axios from '../../api';
+import Modal from './enuiry-model/model';
+
+
+
+
 const TravelGroups = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   const data = [
     {
       link: "japan",
@@ -83,12 +97,17 @@ const TravelGroups = () => {
   console.log()
   return (
     <div>
-      {/* <div className="App"> */}
       <div className={styles.MainUpper}>
         <div className={styles.MainContent}>
           <h1 className={styles.Title} > LUXURY GROUP TRAVEL</h1>
           <div className={styles.Italic}>For intrepid travelers looking for the best in luxury small group tours</div>
-          <div className={styles.GoButton}><button className={styles.ButtonFirst}>START PLANNING</button></div>
+          <div className={styles.GoButton}><button className={styles.ButtonFirst} onClick={handleOpen}>START PLANNING</button></div>
+        </div>
+        <div className={styles['your-component']}>
+          <Modal
+            open={open}
+            handleClose={handleClose}
+          />
         </div>
       </div>
 

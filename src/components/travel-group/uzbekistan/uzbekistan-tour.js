@@ -5,14 +5,25 @@ import styles from "./uzbekistan-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
 import { LaosImages } from "./uzbekistan-image-data";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { UzbekistanExpeditionData } from "./uzbekistan-accordian-data";
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
+import Axios from '../../../api';
+import { useDispatch, useSelector } from 'react-redux';
+
+const getStatusIcon = (status) => {
+  return status ? '✔' : '✖';
+};
+
+const getStatusStyle = (status) => {
+  return status ? styles.checkIcon : styles.crossIcon;
+};
 
 
 const UzbekistanTrip = () => {
-
+  const location = useLocation();
+  const [packageTable, setpackageTable] = useState([]);
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -62,6 +73,23 @@ const UzbekistanTrip = () => {
     }
   };
 
+  const fetchData = async (country) => {
+    try {
+      const response = await Axios.get(`/api/package/travel-packages/${country}`);
+      setpackageTable(response.data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+
+  useEffect(() => {
+
+    const pathnameArray = location.pathname.split('/');
+    const countryName = pathnameArray[pathnameArray.length - 1];
+
+    fetchData(countryName);
+  }, [location.pathname]);
 
 
   return (
@@ -193,10 +221,10 @@ const UzbekistanTrip = () => {
                     </thead>
                     <tbody>
                       <tr className={styles.pricingRow}>
-                        <td>22rd March 2024</td>
-                        <td>6th April 2024</td>
-                        <td>$ 5775 USD</td>
-                        <td style={{ width: 'auto' }}>$ 870 USD</td>
+                        <td>{packageTable.startDate}</td>
+                        <td>{packageTable.endDate}</td>
+                        <td>{`$ ${packageTable.price} USD`}</td>
+                        <td style={{ width: 'auto' }}>{`$ ${packageTable.singleSupplementPrice} USD`}</td>
                         <td style={{ padding: '5px' }}>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -220,29 +248,32 @@ const UzbekistanTrip = () => {
                               />
                             </path>
                           </svg>
-
                         </td>
-                        <td>6 Spaces</td>
+                        <td>{`${packageTable.availability} Spaces`}</td>
                         <td>
-                          <Link to="/bespoke"  >
-                            <button className={styles.btn_booknow}>
-                              Book Now
-                            </button>
+                          <Link to="/bespoke">
+                            <button className={styles.btn_booknow}>Book Now</button>
                           </Link>
-
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <div className="travel_sts">
-                  <img src="https://www.eldertreks.com/images/check.png" style={{ width: 'auto' }} /> <span>Guaranteed Departures</span>
+                <div className={styles.travel_sts}>
+                  <span className={getStatusStyle(packageTable.status)}>{getStatusIcon(packageTable.status)}</span>
+                  <span>{packageTable.status ? 'Guaranteed Departures' : 'Not Guaranteed Departures'}</span>
                 </div>
-                <Link to="/activitylevel"  >
-                  <button className={styles.btn_booknow}>
-                    Activity-Level
+                <div style={{ display: 'flex', gap: '20px', justifyContent: "center", margin: "10px" }}>
+                  <Link to="/activitylevel">
+                    <button className={`${styles.btn_booknow}`}>
+                      Activity-Level
+                    </button>
+                  </Link>
+
+                  <button className={`${styles.btn_booknow}`} onClick={handleOpen}>
+                    Start Planning
                   </button>
-                </Link>
+                </div>
               </div>
 
               <div className={styles.SettingHeadingRatio}>

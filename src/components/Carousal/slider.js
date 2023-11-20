@@ -13,8 +13,8 @@ const Slide = ({ image, heading, para, isActive }) => (
         }}
     >
         <div className="landingcontent">
-            <h2>{heading}</h2>
-            <p>{para}</p>
+            {heading && <h2>{heading}</h2>}
+            {para && <p>{para}</p>}
         </div>
     </div>
 );

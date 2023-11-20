@@ -148,23 +148,15 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
           </RadioGroup>
         </FormControl>
         <FormControl fullWidth sx={{ maxWidth: "50%", marginBottom: 2 }}>
-          <InputLabel id="group-size-label">
-            How many people are you travelling with?
-          </InputLabel>
-          <Select
-            labelId="group-size-label"
-            id="flexFieldGroupSize"
+
+          <TextField
+            id="group-size"
             name="groupSize"
             label="How many people are you travelling with?"
+            type="number"
             value={BespokeFormData1.groupSize}
             onChange={handleInputChange}
-          >
-            {groupCounts.map((count) => (
-              <MenuItem key={count} value={count}>
-                {count}
-              </MenuItem>
-            ))}
-          </Select>
+          />
         </FormControl>
         <Grid
           container

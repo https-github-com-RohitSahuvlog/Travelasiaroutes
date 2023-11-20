@@ -23,16 +23,16 @@ const Callus = ({ setComponent }) => {
           style={{
             fontWeight: "bold",
           }}>
-          +1 (212) 518-1618
+          +91-8750970676
         </h2>
       </div>
       <div className="right">
-        <p>In our New York City office it’s now 6:22 am.</p>
+        <p>In our Delhi B/176-Greenfields,Delhi-NCR,121003 office it’s now 6:22 am.</p>
         <h2>OFFICE IS CLOSED</h2>
         <h2>NEW YORK OFFICE HOURS (EDT)</h2>
         <h3>
-          <span>09:00 – 18:00</span>
-          <span>Monday – Friday</span>
+          <span>24 HOURS SERVICE</span>
+          <span>All DAYS</span>
         </h3>
       </div>
     </div>

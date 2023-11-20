@@ -8,7 +8,7 @@ const SubAccordian = ({ day, description, activities, isExpanded, onToggle }) =>
     <article className='question'>
       <header>
         <h4 onClick={onToggle} className='question-title'>
-          {day} DAY - {description}
+          {day} DAY - <span dangerouslySetInnerHTML={{ __html: description }} />
         </h4>
         <button className='btn' onClick={onToggle}>
           {isExpanded ? <AiOutlineMinus /> : <AiOutlinePlus />}
@@ -18,7 +18,7 @@ const SubAccordian = ({ day, description, activities, isExpanded, onToggle }) =>
       {isExpanded && (
         <ul className='activities'>
           {activities.map((activity, index) => (
-            <li key={index}>{activity}</li>
+            <div dangerouslySetInnerHTML={{ __html: activity }} />
           ))}
         </ul>
       )}
