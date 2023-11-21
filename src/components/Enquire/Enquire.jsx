@@ -375,7 +375,6 @@ const Enquire = () => {
       ...prevData,
       [name]: type === "checkbox" ? checked : value,
     }));
-    console.log(formData);
   };
 
   const handleDestinationsChange = (event) => {
@@ -388,7 +387,6 @@ const Enquire = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData)
     const errors = validateForm(formData);
 
     if (Object.keys(errors).length === 0) {

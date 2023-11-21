@@ -133,18 +133,18 @@ const Footer = () => {
                       </h3>
                       <ul className={styles.menulist}>
                         <li className={styles.loca_li}>
-                          <a href="#">Home</a>
+                          <a href="/">Home</a>
                         </li>
                         <li className={styles.loca_li}>
-                          <a href="#">
+                          <a href="/bespoke">
                             Bespoke-For your Travel DNA</a>
                         </li>
                         <li className={styles.loca_li}>
-                          <a href="#">Small Group Boutique Expeditions</a>
+                          <a href="/travel-groups">Small Group Boutique Expeditions</a>
                         </li>
-                        <li className={styles.loca_li}>
+                        {/* <li className={styles.loca_li}>
                           <a href="#">By Destination</a>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>

@@ -62,7 +62,6 @@ const BespokeForm2 = ({ prevClick, handleCountNext }) => {
     event.preventDefault();
     handleCountNext({ form2: formData });
   };
-  console.log(formData)
   const renderImportStatement = formData.travelWith.other ? (
     <div>
       <Typography variant="body1" style={{ marginBottom: 15 }}>

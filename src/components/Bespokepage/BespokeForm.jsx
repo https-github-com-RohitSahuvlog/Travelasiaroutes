@@ -24,7 +24,6 @@ const BespokeForm = () => {
       ...prevData,
       ...data,
     }));
-    console.log("handleCountNext", data);
     setCurrentStep(currentStep + 1);
   };
 

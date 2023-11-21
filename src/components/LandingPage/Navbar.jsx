@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../css/Navbar.css";
 import "../../css/Navbar_by_destination.css";
 import { Link } from "react-router-dom";
-import logo from "../../images/AssetMidAsia.png";
+import logo from "../../images/AssetMidAsia.svg";
 import CallIcon from "@mui/icons-material/Call";
 import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -149,7 +149,7 @@ export default function Navbar() {
   };
   return (
     <div className="navbar">
-      {displayLogoInNavbar && <Link to="/"><img src={logo} alt="" className="navbar-logo" /></Link>}
+      {displayLogoInNavbar && <Link to="/"><img src={logo} alt="MidAsia logo" className="navbar-logo" /></Link>}
       {displayContactInNavbar && (
         <div className="call-and-home-nav-item">
           <CallIcon />
@@ -230,7 +230,7 @@ export default function Navbar() {
 
         <div className="responsive-navbar" id="responsiveNavbar" >
           <CloseIcon className="close-icon" onClick={closeMenu} />
-          <Link to="/"> <img src={logo} alt="" className="navbar-logo" /> </Link>
+          <Link to="/"> <img src={logo} alt="MidAsia logo" className="navbar-logo" /> </Link>
           {!showDestinationDropdown && <>
             <div className="side_nav_link">
               <Link to="/">Home</Link>

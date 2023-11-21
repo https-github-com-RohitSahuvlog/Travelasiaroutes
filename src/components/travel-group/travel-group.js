@@ -77,7 +77,6 @@ const TravelGroups = () => {
   const formData = useSelector((state) => state.travelPackages);
   const dispatch = useDispatch();
 
-  console.log("formData", formData);
 
   useEffect(() => {
     async function fetchItineraryDetails() {
@@ -94,7 +93,6 @@ const TravelGroups = () => {
 
     fetchItineraryDetails();
   }, []);
-  console.log()
   return (
     <div>
       <div className={styles.MainUpper}>

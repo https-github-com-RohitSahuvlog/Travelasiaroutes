@@ -18,7 +18,6 @@ const IndiaPage = () => {
             });
 
     }, [countryname]);
-    console.log(countryData, "countryname",)
 
     return (
         <>

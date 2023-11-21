@@ -182,15 +182,14 @@ const About = () => {
                         </h3>
                         <p>
                             <span className={styles.about_p2}>You’ll get to engage with local people throughout each adventure.Typical experiences include village walks, shopping at local markets, visiting children at their school, and Home-Hosted meals with local families.</span>
-                            <br />
-                            <br />
+
                         </p>
 
 
                     </div>
-                    <div className={`styles[ " pl-30  " ] ${styles.why_about_inner}`}>
-                        <h3 className={styles.about_h3_green}>
-                            <span >Our lodgings to enhance your Dream adventure</span>
+                    <div className={`styles[ "pl-30" ] ${styles.why_about_inner}`}>
+                        <h3 >
+                            <span className={styles.about_h3}  >Our lodgings to enhance your Dream adventure</span>
                         </h3>
                         <p>
                             <span className={styles.about_p2}>Our accommodations are chosen to reflect the spirit of our surroundings, from smaller family-run hotels, historic Paradores to comfy tented camps to the city luxurious hotels. The larger hotels closer to city centers are used. Wherever you stay, you’re assured a restful night’s sleep for the next day of discoveries</span>

@@ -18,19 +18,19 @@ body {
 }
 
 .bespoke-travel-content {
-  max-width: 920px;
+  max-width: 95%;
   margin: 0 auto;
 }
 
 .bespoke-travel-title {
-  max-width: 470px;
+  max-width: 100%;
   margin: 15px auto;
   border-bottom: 1px solid #fff;
   padding-bottom: 15px 5px;
   text-align: center;
   color: #fff;
 
-  font-size: 24px !important;
+  font-size: 2rem !important;
   font-family: Lora, serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -38,7 +38,7 @@ body {
 
 .bespoke-travel-description {
   color: #fff;
-  font-size: 17px;
+  font-size: 1.1rem;
   text-align: justify;
   font-weight: 400;
 }

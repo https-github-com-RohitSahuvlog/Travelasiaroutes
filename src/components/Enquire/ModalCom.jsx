@@ -4,7 +4,7 @@ import Enquire from "./Enquire";
 import Callus from "./Callus";
 import Findus from "./Findus";
 import CloseIcon from "@mui/icons-material/Close";
-import logo from "../../images/Assetmidsvg.svg";
+import logo from "../../images/AssetMidAsia.svg";
 import { Link } from "react-router-dom";
 
 function ModalCom({ handleClose }) {

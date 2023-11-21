@@ -104,7 +104,6 @@ export default function SliderComponent() {
       setCounter(text.length - 1);
     }
     setMyText(text[counter]);
-    console.log(myText);
   };
   const nextSlide = () => {
     if (counter < text.length - 1) {
@@ -113,7 +112,6 @@ export default function SliderComponent() {
       setCounter(0);
     }
     setMyText(text[counter]);
-    console.log(myText);
   };
 
   return (

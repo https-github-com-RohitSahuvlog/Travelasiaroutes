@@ -33,7 +33,6 @@ function Occassion({ prevClick, handleCountNext }) {
   const handleTravelOccasionChange = (event) => {
     const selectedOccasion = event.target.value;
     setTravelOccasion(event.target.value);
-    console.log(selectedOccasion)
     if (selectedOccasion !== "other") {
       setOtherOccasionText("");
     }
@@ -89,7 +88,6 @@ function Occassion({ prevClick, handleCountNext }) {
     const selectedExperiences = experiences.includes("OtherExperience")
       ? [...experiences, otherExperienceText]
       : experiences;
-    console.log("experiencesOther:", otherExperienceText, selectedExperiences)
 
     const selectedAccommodations = accommodationType.includes("OtherAccommodation")
       ? [...accommodationType, otherAccommodation]
@@ -99,8 +97,6 @@ function Occassion({ prevClick, handleCountNext }) {
       experiences: selectedExperiences,
       accommodationType: selectedAccommodations,
     };
-    console.log("Form Data:", formData);
-    console.log(accommodationType)
     handleCountNext({ form3: formData });
 
   };
