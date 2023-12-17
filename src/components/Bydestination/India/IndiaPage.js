@@ -40,7 +40,7 @@ const IndiaPage = () => {
                 </div>
 
                 {countryData && <Tap item={countryData} />}
-                <div className={`${styles["bg-blue rounded "]} ${styles.classic}`}>
+                {/* <div className={`${styles["bg-blue rounded "]} ${styles.classic}`}>
                     <div className={`${styles["row text-center bs-md:flex items-center"]} ${styles.classicdiv}`}>
                         <div className={`${styles["col-md-8 bs-md:mb-0"]} `}>
                             <h2 className={styles.h3}>CLASSIC INDIA STARTING AT $18,200 PER PERSON</h2>
@@ -51,7 +51,7 @@ const IndiaPage = () => {
 
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

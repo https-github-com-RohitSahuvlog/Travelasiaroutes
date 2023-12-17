@@ -38,22 +38,22 @@ export const CardCategory = Styled.p`
     position: absolute;
     bottom: 5px;
     background-color: rgba(0,0,0,0.5);
+     text-align:left;
+
 `;
 
 export const CardTitle = Styled.h3`
     color: #222;
     font-size: 1rem;
-    padding: 5px;
+    padding: 2px;
     font-weight: 700;
-    margin:10px;
-    text-align: justify;
+    margin:5px;
+    text-align:center;
 `;
 
 export const CardDesc = Styled.p`
     color: #333;
-    font-size: 1.3rem;
-    font-weight: 700;
-    text-align: justify;
-    padding: 5px;
-    margin:10px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align:left;
 `;

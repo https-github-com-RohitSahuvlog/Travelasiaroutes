@@ -98,19 +98,19 @@ const Footer = () => {
                         <span>
                           <div className={styles.social_icons}>
                             <div>
-                              <a href="#" className={styles.icon} title="Facebook">
+                              <a href="https://www.facebook.com/midasia/" className={styles.icon} title="Facebook" target="_blank">
                                 <FontAwesomeIcon icon={faFacebook} size="2x" />
                               </a>
                             </div>
 
                             <div>
-                              <a href="#" className={styles.icon} title="Twitter">
+                              <a href="#" className={styles.icon} title="Twitter" target="_blank">
                                 <FontAwesomeIcon icon={faTwitter} size="2x" />
                               </a>
                             </div>
 
                             <div>
-                              <a href="#" className={styles.iconinsta} title="Instagram">
+                              <a href="https://www.instagram.com/travel.with.midasiaroutes/" className={styles.iconinsta} title="Instagram" target="_blank">
                                 <FontAwesomeIcon icon={faInstagram} size="2x" />
                               </a>
                             </div>

@@ -2,10 +2,18 @@
 import styles from "./india.module.css";
 import * as React from 'react';
 import { Theme, useTheme } from '@mui/material/styles';
+import { useNavigate } from "react-router-dom";
 
 
 const Itineraries = ({ itineryheading, listing }) => {
+    const navigate = useNavigate();
+    let country = itineryheading.split(" ")[0]
+    console.log(country)
+    const handleSeeItineraryClick = () => {
 
+        country = country.toLowerCase();
+        navigate(`/classic/${country}`);
+    };
     return (
         <>
             <div>
@@ -68,7 +76,7 @@ const Itineraries = ({ itineryheading, listing }) => {
                                                 </dl>
                                             </div>
                                             <div className="w-full h-full flex justify-center items-center text-center">
-                                                <div className={`${styles["btn btn-sm btn-outline-gold "]} ${styles.bttn}`}>SEE ITINERARY</div>
+                                                <div className={`${styles["btn btn-sm btn-outline-gold "]} ${styles.bttn}`} onClick={handleSeeItineraryClick}>SEE ITINERARY</div>
                                             </div>
                                         </div>
                                     </div>

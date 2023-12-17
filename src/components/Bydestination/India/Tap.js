@@ -7,7 +7,7 @@ const Tap = ({ item }) => {
     const [component, setComponent] = useState("overview");
 
     return (
-        <div className="w-[100%] color-[#3C3D3D] bg-white">
+        <div className="w-[100%] color-[#3C3D3D] bg-white my-2">
             <div className={styles.buttons_container}>
                 <button
                     onClick={() => setComponent("overview")}

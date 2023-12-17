@@ -87,9 +87,9 @@ h1 {
   overflow-x: scroll;
 }
 
-.App {
+/* .App {
   background-image: url("../src/images//mapbackground.png");
-}
+} */
 
 @media screen and (max-width: 600px) {
   html {

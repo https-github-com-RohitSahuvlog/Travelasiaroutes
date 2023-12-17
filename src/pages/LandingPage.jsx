@@ -1,7 +1,6 @@
 import React from "react";
 
 import styled from "@emotion/styled";
-import image from "../images/mapbackground.png";
 import LandingCarousal from "../components/LandingPage/LandingCarousal";
 import AboutUsSection from "../components/LandingPage/AboutUsSection";
 import AwardSection from "../components/LandingPage/AwardSection";
@@ -14,7 +13,7 @@ import Footer from "../components/LandingPage/Footer";
 import data from "../components/Testinomial/data.json";
 import Testimonial from "../components/Testinomial/Testimonial";
 const Landingpage = styled.div`
-  background-image: url(${image});
+
 `;
 
 export default function LandingPage() {

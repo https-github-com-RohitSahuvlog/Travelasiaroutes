@@ -4,7 +4,7 @@ import tanjortemple from "../../images/tanjoretemple.jpg";
 const carousalData = [
   {
     image: `${tanjortemple}`,
-    heading: "Pioneering Excellence Across MEA.",
+    heading: "Pioneering Excellence Across Middle East and Asia",
     para: "Crafting Extraordinary Journeys",
   },
   {
@@ -34,14 +34,14 @@ const carousalData = [
   {
     image:
       "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288331/nvmspnna9rszpq4sq0ex.jpg",
-    heading: "",
-    para: "",
+    heading: "Native-Led Voyages",
+    para: "Exclusive Itineraries Curated by Destination Natives",
   },
   {
     image:
       "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288334/hg3vbjtsbqqwxbra8cx6.jpg",
-    heading: "",
-    para: "",
+    heading: "Intimate Boutique Escapes",
+    para: "Pioneering Excellence Across Middle East and Asia",
   },
 ];
 

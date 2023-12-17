@@ -18,7 +18,11 @@ import {
   FormGroup,
 } from "@mui/material";
 import styles from "../../css/tripDetails.module.css";
-import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import dayjs from 'dayjs';
 
 const destinations = [
   // Countries in Asia
@@ -92,17 +96,17 @@ const destinations = [
 ];
 
 
-const groupCounts = [1, 2, 3, 4, 5];
 
 const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
-  const navigate = useNavigate();
   const [BespokeFormData1, setBespokeFormData1] = useState({
     destination: "",
     travelDates: "",
     groupSize: "",
+    startDate: null, // Add start date to state
+    endDate: null,
   });
+  const [showDatePickers, setShowDatePickers] = useState(false);
 
-  const location = useLocation();
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setBespokeFormData1({
@@ -116,29 +120,43 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
     handleCountNext({ form1: BespokeFormData1 });
   };
 
+  const handleDateChange = (dateType, date) => {
+    let formattedDate;
+    if (dayjs.isDayjs(date)) {
+      formattedDate = date.format("MM/DD/YYYY");
+    } else {
+      formattedDate = dayjs(date).format("MM/DD/YYYY");
+    }
+    setBespokeFormData1({
+      ...BespokeFormData1,
+      [dateType]: formattedDate,
+    });
+  };
+
+  const handleCheckboxChange = (event) => {
+    const isChecked = event.target.checked;
+    const optionValue = event.target.value;
+    console.log(`Checking ${optionValue}`, event.target.checked);
+
+    setShowDatePickers(isChecked);
+
+    // if (!isChecked && optionValue === "flexible") {
+    //   setBespokeFormData1({
+    //     ...BespokeFormData1,
+    //     startDate: null,
+    //     endDate: null,
+    //   });
+    // }
+  };
+
   const handleDestinationChange = (event) => {
     const selectedDestination = event.target.value;
     setBespokeFormData1({
       ...BespokeFormData1,
       destination: selectedDestination,
     });
-    localStorage.setItem("selectedDestination", selectedDestination);
-    navigate(`/country${destinations.find((d) => d.value === selectedDestination)?.link}`, {
-      state: { destination: selectedDestination },
-    });;
   }
-
-
-  useEffect(() => {
-
-    const selectedDestination = localStorage.getItem("selectedDestination");
-    if (selectedDestination) {
-      setBespokeFormData1((prevData) => ({
-        ...prevData,
-        destination: selectedDestination,
-      }));
-    }
-  }, []);
+  console.log("BespokeFormData1", BespokeFormData1)
 
   return (
     <form onSubmit={handleSubmit} sx={{ justifyContent: "center" }}>
@@ -154,7 +172,7 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
           Advisor will be in touch shortly to confirm your trip details.
         </Typography>
 
-        <FormControl fullWidth sx={{ maxWidth: "50%", marginBottom: 2 }}>
+        <FormControl fullWidth sx={{ maxWidth: "50%", margin: 2 }}>
           <InputLabel id="destination-label">
             Where do you want to go?
           </InputLabel>
@@ -193,18 +211,37 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
           <RadioGroup
             row
             name="travelDates"
-            value={BespokeFormData1.travelDates}
-            onChange={handleInputChange}
             sx={{ justifyContent: "center" }}
           >
-            <FormControlLabel
-              value="I know my dates"
-              control={<Radio />}
-              label="I know my dates"
-            />
+            <FormGroup fullWidth sx={{ maxWidth: "100%", marginBottom: 2 }}>
+              <FormControlLabel
+                value="I know my dates"
+                label="I know my dates"
+                control={<Radio onChange={handleCheckboxChange} />}
+              />
+              {showDatePickers && (<LocalizationProvider dateAdapter={AdapterDayjs}>
+                <DemoContainer components={['DatePicker']}>
+                  <DatePicker
+                    label="Start Date"
+                    value={BespokeFormData1.startDate}
+                    format="DD/MM/YYYY"
+                    onChange={(date) => handleDateChange("startDate", date)}
+                  />
+                </DemoContainer>
+                <DemoContainer components={['DatePicker']}>
+                  <DatePicker
+                    label="End Date"
+                    value={BespokeFormData1.endDate}
+                    format="DD/MM/YYYY"
+                    onChange={(date) => handleDateChange("endDate", date)}
+                  />
+                </DemoContainer>
+              </LocalizationProvider>)
+              }
+            </FormGroup>
             <FormControlLabel
               value="I'm flexible with my dates"
-              control={<Radio />}
+              control={<Radio onChange={() => setShowDatePickers(false)} />}
               label="I'm flexible with my dates"
             />
           </RadioGroup>

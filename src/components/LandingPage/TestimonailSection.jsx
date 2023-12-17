@@ -49,8 +49,11 @@ const carousalData = [
 export default function TestimonailSection() {
   return (
     <div className="testimonial-section">
-      <h2 style={{ borderBottom: "3px solid   #e4bd5a" }}>Why Travel with us ?</h2>
+      <h2 style={{ borderBottom: "3px solid   #e4bd5a" }}>Journeys That Flow At Your Pace </h2>
       {/* <span className="about-us-section-underline"></span> */}
+      <p>
+        For Passionate Travellers and Nature Lovers.
+      </p>
 
       <div className="scrollable-section">
         {carousalData.map((carousal) => {

@@ -175,6 +175,7 @@
 
 .menulist {
   list-style: none;
+  display: inline-block;
 }
 
 .Footsec {

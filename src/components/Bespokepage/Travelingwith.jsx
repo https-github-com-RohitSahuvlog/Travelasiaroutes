@@ -186,15 +186,17 @@ const BespokeForm2 = ({ prevClick, handleCountNext }) => {
               What's your budget per person, per day?
             </Typography>
             <FormControl sx={{ width: "70%", marginBottom: 2 }}>
-              <TextField
-                id="budgetPerDay"
-                name="budgetPerDay"
-                type="text"
-                label="Budget"
+              <Select
                 value={formData.budgetPerDay}
+                label="Bugest"
                 onChange={handleSelectChange}
-                endAdornment={<InputAdornment position="end">USD</InputAdornment>}
-              />
+                name="budgetPerDay"
+              >
+                <MenuItem value="$500 - $750">$500 - $750</MenuItem>
+                <MenuItem value="$750 - $1250">$750 - $1250</MenuItem>
+                <MenuItem value="$1250 - $1500">$1250 - $1500</MenuItem>
+                <MenuItem value="1500+">$1500+</MenuItem>
+              </Select>
             </FormControl>
           </div>
         </div>

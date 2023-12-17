@@ -14,6 +14,7 @@ import BangladeshTrip from "./components/travel-group/bangladesh-trip/banglades-
 import LaosTrip from "./components/travel-group/laos-trip/laos-tour";
 import PhilippinesTrip from "./components/travel-group/philippines/philippine-tour";
 import UzbekistanTrip from "./components/travel-group/uzbekistan/uzbekistan-tour";
+import SeeItiniery from "./components/Bydestination/India/see-itiniery";
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/bespoke" element={<BesTravel />} />
         <Route path="/country/:countryname" element={<IndiaPage />} />
+        <Route path="/classic/:countryname" element={<SeeItiniery />} />
         <Route path="/Itineraries" element={<Itineraries />} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/travel-groups" element={<TravelGroups />} />

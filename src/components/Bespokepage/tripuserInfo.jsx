@@ -12,8 +12,11 @@ function TripuserInfo({ prevClick, handleCountNext, formData }) {
         Email: '',
         Phone: '',
         PostalCode: '',
+        Nationality: '',
+        Country: '',
     });
-    const { FirstName, LastName, Email, Phone, PostalCode } = formInfoData;
+    const { FirstName, LastName, Email, Phone, PostalCode, Nationality,
+        Country } = formInfoData;
     // Handle input changes
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -28,6 +31,8 @@ function TripuserInfo({ prevClick, handleCountNext, formData }) {
             Email,
             Phone,
             PostalCode,
+            Nationality,
+            Country,
             form1: formData.form1,
             form2: formData.form2,
             form3: formData.form3,
@@ -101,6 +106,32 @@ function TripuserInfo({ prevClick, handleCountNext, formData }) {
                     />
 
                 </div>
+                <div className="form-control">
+                    <label htmlFor="nationality">Nationality <strong>*</strong></label>
+                    <input
+                        id="nationality"
+                        name="Nationality"
+                        type="text"
+                        className="form-input"
+                        value={Nationality}
+                        onChange={handleInputChange}
+                        required
+                    />
+                </div>
+
+                <div className="form-control">
+                    <label htmlFor="country">Country <strong>*</strong></label>
+                    <input
+                        id="country"
+                        name="Country"
+                        type="text"
+                        className="form-input"
+                        value={Country}
+                        onChange={handleInputChange}
+                        required
+                    />
+                </div>
+
 
                 <Grid
                     container
@@ -137,6 +168,8 @@ const mapFormDataToSchema = (formData) => {
         Email,
         Phone,
         PostalCode,
+        Nationality,
+        Country,
         form1,
         form2,
         form3,
@@ -168,6 +201,8 @@ const mapFormDataToSchema = (formData) => {
         email: Email,
         phone: Phone,
         postalCode: PostalCode,
+        nationality: Nationality,
+        country: Country,
     };
 
     return {
