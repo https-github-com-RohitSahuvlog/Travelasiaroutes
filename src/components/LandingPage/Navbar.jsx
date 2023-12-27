@@ -174,14 +174,14 @@ export default function Navbar() {
           <Link to="/" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}> By Destination </Link>
 
           {!showDestinationDropdown && <div id="id_R_by_destination">
-            <div class="R_by_destination">
+            <div className="R_by_destination">
 
-              <div class="all_destinations_container">
-                <h4 class="all_destinations_h4">All Destinations</h4>
-                <ul class="all_destinations_ul" >
+              <div className="all_destinations_container">
+                <h4 className="all_destinations_h4">All Destinations</h4>
+                <ul className="all_destinations_ul" >
                   {destinations.map((destination, index) => (
                     <div key={index} onClick={handleDestinationClick} className="all_destinations_li">
-                      <Link class="all_destination_Link" to={`country${destination.link}`}>
+                      <Link className="all_destination_Link" to={`country${destination.link}`}>
                         {destination.text}
                       </Link>
                     </div>
@@ -189,11 +189,11 @@ export default function Navbar() {
                 </ul>
               </div>
 
-              <div class="all_itineraries_container">
-                <div class="divvv">
+              <div className="all_itineraries_container">
+                <div className="divvv">
                   <Link to="#">
-                    <div class="img_B_D">
-                      <h4 class="all_itineraries_h4">
+                    <div className="img_B_D">
+                      <h4 className="all_itineraries_h4">
                         <span>All Itineraries</span>
                       </h4>
                     </div>
@@ -266,22 +266,22 @@ export default function Navbar() {
 
           {showDestinationDropdown && (
             <div >
-              <div class="side_by_destination">
-                <h4 class="side_destinations_h4">All Destinations</h4>
+              <div className="side_by_destination">
+                <h4 className="side_destinations_h4">All Destinations</h4>
 
-                <div class="side_destinations_container">
-                  <ul class="side_destinations_ul" >
+                <div className="side_destinations_container">
+                  <ul className="side_destinations_ul" >
                     {sidedestinationItems.slice(0, Math.ceil(destinationItems.length / 2))}
                   </ul>
-                  <ul class="side_destinations_ul" >
+                  <ul className="side_destinations_ul" >
                     {sidedestinationItems.slice(Math.ceil(destinationItems.length / 2))}
                   </ul>
                 </div>
-                <div class="sideall_itineraries_container">
-                  <div class="divvv">
+                <div className="sideall_itineraries_container">
+                  <div className="divvv">
                     <Link to="#">
-                      <div class="img_B_D">
-                        <h4 class="all_itineraries_h4">
+                      <div className="img_B_D">
+                        <h4 className="all_itineraries_h4">
                           <span>All Itineraries</span>
                         </h4>
                         <p>

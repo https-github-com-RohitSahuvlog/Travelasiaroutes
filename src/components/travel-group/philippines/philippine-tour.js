@@ -260,7 +260,7 @@ const PhilippinesTrip = () => {
                 <div style={{ display: 'flex', gap: '20px', justifyContent: "center", margin: "10px" }}>
                   <Link to="/activitylevel">
                     <button className={`${styles.btn_booknow}`}>
-                      Activity-Level
+                      Activity-Level{" "}({packageTable.activity_level})
                     </button>
                   </Link>
 

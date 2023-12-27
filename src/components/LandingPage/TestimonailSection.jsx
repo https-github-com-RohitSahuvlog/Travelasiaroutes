@@ -51,7 +51,7 @@ export default function TestimonailSection() {
     <div className="testimonial-section">
       <h2 style={{ borderBottom: "3px solid   #e4bd5a" }}>Journeys That Flow At Your Pace </h2>
       {/* <span className="about-us-section-underline"></span> */}
-      <p>
+      <p className="about-us-section-underline">
         For Passionate Travellers and Nature Lovers.
       </p>
 

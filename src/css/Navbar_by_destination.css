@@ -225,12 +225,9 @@
     display: block;
     font-size: 1.5vmax;
     color: white;
-    width: 62%;
     background-color: #fed86fa3 !important;
-    /* margin: 10px 0; */
     margin: 1vmax 0;
     padding: 0.1vmax 0.2vmax;
-    /* border-radius: 5px; */
     border-radius: 0.2vmax;
 }
 

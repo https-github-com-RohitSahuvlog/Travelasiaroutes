@@ -241,8 +241,9 @@
 .close-icon {
   cursor: pointer;
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 2%;
+  left: 2%;
+  color: #e4bd5a;
 }
 
 .responsive-navbar ul li {

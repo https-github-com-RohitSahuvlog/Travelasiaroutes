@@ -9,7 +9,7 @@ export const CardContainer = Styled.div`
     overflow: hidden;
     transition: 0.3s ease-out;
     margin: 20px 0px;
-    text-align: center;
+     text-align:left;
     background-color: #f5f5f5;
     &:hover{
         box-shadow: 0 1px 5px rgba(0,0,0,0.1);
@@ -30,7 +30,7 @@ export const CardMedia = Styled.img`
     transform: scale(1.1);
   }
 `;
-export const CardCategory = Styled.p`
+export const CardCategory = Styled.h6`
     color: white;
     font-size: 14px;
     font-weight: bold;
@@ -42,18 +42,19 @@ export const CardCategory = Styled.p`
 
 `;
 
-export const CardTitle = Styled.h3`
+export const CardTitle = Styled.h6`
     color: #222;
     font-size: 1rem;
     padding: 2px;
     font-weight: 700;
     margin:5px;
-    text-align:center;
+  text-align:left;
 `;
 
-export const CardDesc = Styled.p`
+export const CardDesc = Styled.h5`
     color: #333;
     font-size: 1rem;
     font-weight: 400;
     text-align:left;
+    margin:5px;
 `;

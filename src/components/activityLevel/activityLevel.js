@@ -4,7 +4,7 @@ import "./activity.css";
 function ActivityLevels() {
   return (
     <div className="complete-page">
-      <div class="container-box">
+      <div className="container-box">
         <div className="container-text-title">
           <h2>Activity Levels</h2>
         </div>
