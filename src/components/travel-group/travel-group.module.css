@@ -116,7 +116,7 @@
 
 .MainDiv {
 
-  height: 100px;
+  height: 80px;
   max-width: 1380px;
   width: 100%;
   padding-right: 25px;
@@ -224,12 +224,6 @@
   .GridData {
     display: grid;
     grid-template-columns: repeat(2, 410px);
-    /* gap:10px; */
-    /* border: 1px solid black;
-      height:800px;
-      width: 100%;
-      display: grid;
-      grid-template-rows: repeat(1,450px); */
   }
 
   .EntityOne>div {
@@ -250,12 +244,6 @@
   .GridData {
     display: grid;
     grid-template-columns: repeat(1, 85%);
-    /* gap:10px; */
-    /* border: 1px solid black;
-      height:800px;
-      width: 100%;
-      display: grid;
-      grid-template-rows: repeat(1,450px); */
   }
 
   .EntityOne>div {

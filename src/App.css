@@ -87,24 +87,10 @@ h1 {
   overflow-x: scroll;
 }
 
-/* .App {
-  background-image: url("../src/images//mapbackground.png");
-} */
-
 @media screen and (max-width: 600px) {
   html {
     font-size: 90%;
   }
-}
-
-@media screen and (max-width: 400px) {
-  /* h2 {
-    font-size: 1.8rem;
-  }
-
-  p {
-    font-size: 12px;
-  } */
 }
 
 iframe#webpack-dev-server-client-overlay {

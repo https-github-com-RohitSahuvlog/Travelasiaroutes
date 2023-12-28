@@ -254,67 +254,7 @@ const About = () => {
                     </div>
 
                 </div>
-                {/* <div className={` ${styles.section_title} styles[" text-center "]`}>
-                    <div className={styles.about_row3}>
-                        <div className={`styles[" col-lg-6 col-md-6 col-xs-12 "]`}>
-                            <div className={`styles[ " pl-30 " ] ${styles.why_about_inner}`}>
-                                <h3>
-                                    <span className={styles.about_h3}>Access & Safety</span>
-                                </h3>
-                                <p>
-                                    <span className={styles.about_p2}>How do you best explore rapidly changing and remote places while limiting the inherent risk? What should you consider regarding your personal needs and a company’s capacity to address problems? We carefully address these important questions with our comprehensive risk-management program. We constantly compare ourselves to the highest travel safety standards and urge you to do the same.</span>
-                                </p>
 
-                            </div>
-                            <div className={`styles[ " pl-30 " ] ${styles.why_about_inner}`}>
-                                <h3>
-                                    <span className={styles.about_h3}>Travel with Integrity</span>
-                                </h3>
-                                <p>
-                                    <span className={styles.about_p2}>We do not travel as escapists. We explore other countries and cultures appreciating their different perspectives, carefully weighing where to invest and build relationships. We are clear on what assurances, financial and otherwise, to provide. And if giving back is important to you, we’re delighted to steer you in the right direction.</span>
-                                </p>
-
-                            </div>
-                        </div>
-                        <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.about_row2} `}>
-                            <img className={styles.img} src="https://midasiaroutes.com/images/pages/a61765007947.jpg" />
-                            <img className={styles.img} src="https://midasiaroutes.com/images/pages/a8851045282.jpg" />
-                        </div>
-
-                    </div>
-                </div> */}
-                {/* <div className={` ${styles.section_title} styles[" text-center "]`}> */}
-
-                {/* <div className={styles.about_row2}>
-                        <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.about_row2} `}>
-                            <img className={styles.img3} src="https://midasiaroutes.com/images/pages/a111340678087.jpg" />
-                        </div>
-                        <div className={`styles[" col-lg-6 col-md-6 col-xs-12 "]`}>
-                            <div className={`styles[ " pl-30 " ] ${styles.why_about_inner}`}>
-                                <h3>
-                                    <span className={styles.about_h3}>Quality</span>
-                                </h3>
-                                <p>
-                                    <span className={styles.about_p2}>We are committed to creating a journey that meets your expectations and we’re persnickety about details large and small: creative trip design; enriching leaders; top-notch accommodations; the right daily activities, permits, vehicles, and restaurants; and more.</span>
-                                </p>
-                                <p>
-                                    <span className={styles.about_p2}>In fact, Midasia Routes is one of the few companies with an in-house air reservations/support team. We’re dedicated to dotting every I and crossing every t.</span>
-                                </p>
-                            </div>
-                            <div className={`styles[ " pl-30 " ] ${styles.why_about_inner}`}>
-                                <h3>
-                                    <span className={styles.about_h3}>Innovation</span>
-                                </h3>
-                                <p>
-                                    <span className={styles.about_p2}>Since we launched the business more than three decades ago, Midasia Routes’s mission has been to provide our guests with experiences that would be challenging or impossible to create on one’s own.</span>
-                                </p>
-                                <p>
-                                    <span className={styles.about_p2}>From our roots pioneering travel to the far reaches of the planet, we have incessantly searched for new delights and remarkable ways to experience time-honored destinations.</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div> */}
-                {/* </div> */}
             </div>
         </div>
     )

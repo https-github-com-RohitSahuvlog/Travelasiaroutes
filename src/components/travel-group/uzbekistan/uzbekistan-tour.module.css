@@ -635,12 +635,6 @@
 }
 
 @media (max-width: 650px) {
-
-  /* .table-data table,
-  .table-data thead,
-  .table-data tbody,
-  .table-data th,
-  .table-data td, */
   .table_bordered {
     display: flex;
   }

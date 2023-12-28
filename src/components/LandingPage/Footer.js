@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./footer.module.css";
-// import america from "../images/america.png";
-// import india from "../images/india.png";
-// import canada from "../images/canada.png";
-// import germany from "../images/germany.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
