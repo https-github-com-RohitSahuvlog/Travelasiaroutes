@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import {
-  Container,
   Paper,
   Typography,
   TextField,
-  Button,
   Select,
   MenuItem,
   FormControl,
@@ -14,7 +12,6 @@ import {
   FormControlLabel,
   FormLabel,
   Grid,
-  Checkbox,
   FormGroup,
 } from "@mui/material";
 import styles from "../../css/tripDetails.module.css";
@@ -117,6 +114,7 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    localStorage.setItem('BespokeFormData1', JSON.stringify(BespokeFormData1));
     handleCountNext({ form1: BespokeFormData1 });
   };
 
@@ -136,17 +134,7 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
   const handleCheckboxChange = (event) => {
     const isChecked = event.target.checked;
     const optionValue = event.target.value;
-    console.log(`Checking ${optionValue}`, event.target.checked);
-
     setShowDatePickers(isChecked);
-
-    // if (!isChecked && optionValue === "flexible") {
-    //   setBespokeFormData1({
-    //     ...BespokeFormData1,
-    //     startDate: null,
-    //     endDate: null,
-    //   });
-    // }
   };
 
   const handleDestinationChange = (event) => {
@@ -156,7 +144,13 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
       destination: selectedDestination,
     });
   }
-  console.log("BespokeFormData1", BespokeFormData1)
+
+  useEffect(() => {
+    const storedFormData = JSON.parse(localStorage.getItem('BespokeFormData1'));
+    if (storedFormData) {
+      setBespokeFormData1(storedFormData);
+    }
+  }, []);
 
   return (
     <form onSubmit={handleSubmit} sx={{ justifyContent: "center" }}>
@@ -186,7 +180,6 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
             onChange={handleDestinationChange}
           >
             {destinations.map((destination) => (
-
               <MenuItem key={destination.value} value={destination.value} className={styles.custom_menu_item} >
 
                 {destination.label}

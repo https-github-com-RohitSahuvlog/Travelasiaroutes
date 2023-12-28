@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Container,
   Typography,
@@ -57,9 +57,6 @@ function Occassion({ prevClick, handleCountNext }) {
         if (!experiences.includes(prevExperiences)) {
           return [...prevExperiences, value];
         }
-        // else if (!event.target.checked) {
-        //   return prevExperiences.filter((exp) => exp !== value);
-        // }
       });
 
 
@@ -85,6 +82,7 @@ function Occassion({ prevClick, handleCountNext }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    saveFormDataToLocalStorage();
     const selectedExperiences = experiences.includes("OtherExperience")
       ? [...experiences, otherExperienceText]
       : experiences;
@@ -100,6 +98,37 @@ function Occassion({ prevClick, handleCountNext }) {
     handleCountNext({ form3: formData });
 
   };
+
+  const saveFormDataToLocalStorage = () => {
+    const formData = {
+      travelOccasion,
+      experiences,
+      otherOccasion,
+      otherExperienceText,
+      otherAccommodation,
+      accommodationType,
+      otherOccasionText,
+      experiencesOther,
+      isOtherExperienceChecked,
+    };
+    localStorage.setItem("OccassionFormData", JSON.stringify(formData));
+  };
+
+  useEffect(() => {
+    const storedFormData = JSON.parse(localStorage.getItem("OccassionFormData"));
+    if (storedFormData) {
+      setTravelOccasion(storedFormData.travelOccasion || "none");
+      setExperiences(storedFormData.experiences || []);
+      setOtherOccasion(storedFormData.otherOccasion || []);
+      setOtherExperienceText(storedFormData.otherExperienceText || "");
+      setOtherAccommodation(storedFormData.otherAccommodation || "");
+      setAccommodationType(storedFormData.accommodationType || []);
+      setOtherOccasionText(storedFormData.otherOccasionText || "");
+      setexperiencesOther(storedFormData.experiencesOther || "");
+      setIsOtherExperienceChecked(storedFormData.isOtherExperienceChecked || false);
+    }
+  }, []);
+
   return (
     <form onSubmit={handleSubmit}>
       <Box className={styles.subcontent}>

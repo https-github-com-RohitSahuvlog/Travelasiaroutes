@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../../css/LandingCarousal.css";
 import { CircularProgress } from "@mui/material";
-import tanjortemple from "../../images/tanjoretemple.jpg";
 
 const Slide = ({ image, heading, para, isActive }) => (
     <div

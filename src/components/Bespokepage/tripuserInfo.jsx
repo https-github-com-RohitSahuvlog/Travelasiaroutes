@@ -1,12 +1,12 @@
 // Form.js
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../css/tripuserinfo.css'; // Import your CSS file
 import { Grid } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import { addTravelForm } from '../../redux/action/travel';
 function TripuserInfo({ prevClick, handleCountNext, formData }) {
     const dispatch = useDispatch();
-    const [formInfoData, setformInfoData] = useState({
+    const initialFormData = JSON.parse(localStorage.getItem("TripuserInfoFormData")) || {
         FirstName: '',
         LastName: '',
         Email: '',
@@ -14,7 +14,9 @@ function TripuserInfo({ prevClick, handleCountNext, formData }) {
         PostalCode: '',
         Nationality: '',
         Country: '',
-    });
+    };
+    const [formInfoData, setformInfoData] = useState(initialFormData)
+
     const { FirstName, LastName, Email, Phone, PostalCode, Nationality,
         Country } = formInfoData;
     // Handle input changes
@@ -41,6 +43,11 @@ function TripuserInfo({ prevClick, handleCountNext, formData }) {
         handleCountNext();
 
     };
+
+    useEffect(() => {
+        localStorage.setItem("TripuserInfoFormData", JSON.stringify(formInfoData));
+    }, [formInfoData]);
+
     return (
         <div className="form-container">
             <div className="form-header">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Typography,
   FormControl,
@@ -61,7 +61,16 @@ const BespokeForm2 = ({ prevClick, handleCountNext }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     handleCountNext({ form2: formData });
+    localStorage.setItem('BespokeFormData2', JSON.stringify(formData));
   };
+
+  useEffect(() => {
+    const storedFormData = JSON.parse(localStorage.getItem('BespokeFormData2'));
+
+    if (storedFormData) {
+      setFormData(storedFormData);
+    }
+  }, []);
   const renderImportStatement = formData.travelWith.other ? (
     <div>
       <Typography variant="body1" style={{ marginBottom: 15 }}>
