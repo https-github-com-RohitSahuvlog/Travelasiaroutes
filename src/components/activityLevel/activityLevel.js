@@ -16,7 +16,7 @@ function ActivityLevels() {
       <div className="subcontainer">
         <div className="l-sub">
           <div className="container-text-subtitle">
-            <h3>Easygoing – Level 1</h3>
+            <h3>Easygoing – Level 0-1</h3>
           </div>
           <hr />
           <div className="container-text">

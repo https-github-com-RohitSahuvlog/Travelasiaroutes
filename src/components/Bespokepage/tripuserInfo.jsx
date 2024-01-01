@@ -41,6 +41,10 @@ function TripuserInfo({ prevClick, handleCountNext, formData }) {
         });
         addTravelForm(mappedData)
         handleCountNext();
+        localStorage.removeItem("TripuserInfoFormData")
+        localStorage.removeItem("BespokeFormData1");
+        localStorage.removeItem("BespokeFormData2");
+        localStorage.removeItem("OccassionFormData");
 
     };
 

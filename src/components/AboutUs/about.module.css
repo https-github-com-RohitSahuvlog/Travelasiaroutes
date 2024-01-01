@@ -178,7 +178,7 @@
 .about_row3 {
     display: flex;
     width: 100%;
-    gap: 20px;
+    line-height: 2;
 
 }
 
@@ -267,7 +267,6 @@
 }
 
 .about_row2 {
-    margin: 3% 0;
     width: 100%;
 }
 

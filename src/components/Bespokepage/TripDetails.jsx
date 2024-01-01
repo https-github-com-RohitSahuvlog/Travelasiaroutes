@@ -120,10 +120,17 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
 
   const handleDateChange = (dateType, date) => {
     let formattedDate;
+
     if (dayjs.isDayjs(date)) {
-      formattedDate = date.format("MM/DD/YYYY");
+      // If it's already a dayjs object, use it directly
+      formattedDate = date;
+    } else if (date instanceof Date) {
+      // If it's a JavaScript Date object, convert it to dayjs
+      formattedDate = dayjs(date);
     } else {
-      formattedDate = dayjs(date).format("MM/DD/YYYY");
+      // Handle other cases or throw an error based on your use case
+      console.error("Invalid date format");
+      return;
     }
     setBespokeFormData1({
       ...BespokeFormData1,
@@ -216,7 +223,7 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
                 <DemoContainer components={['DatePicker']}>
                   <DatePicker
                     label="Start Date"
-                    value={BespokeFormData1.startDate}
+                    value={BespokeFormData1.startDate || ""}
                     format="DD/MM/YYYY"
                     onChange={(date) => handleDateChange("startDate", date)}
                   />
@@ -224,7 +231,7 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
                 <DemoContainer components={['DatePicker']}>
                   <DatePicker
                     label="End Date"
-                    value={BespokeFormData1.endDate}
+                    value={BespokeFormData1.endDate || ""}
                     format="DD/MM/YYYY"
                     onChange={(date) => handleDateChange("endDate", date)}
                   />

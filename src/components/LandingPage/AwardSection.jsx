@@ -5,15 +5,12 @@ export default function AwardSection() {
     <div className="award-section">
       <div className="awards">
         <h3>Travel Leisure</h3>
-        <p>4 time winners</p>
       </div>
       <div className="awards">
-        <h3>Conde Ne's Traveles</h3>
-        <p>6 time winners</p>
+        <h3>Travel Luxury Asia</h3>
       </div>
       <div className="awards">
-        <h3>Robb Report</h3>
-        <p>4 time winners</p>
+        <h3>Middle East Expert</h3>
       </div>
     </div>
   );
