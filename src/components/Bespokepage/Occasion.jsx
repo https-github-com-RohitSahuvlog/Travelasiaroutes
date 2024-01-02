@@ -129,6 +129,10 @@ function Occassion({ prevClick, handleCountNext }) {
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <form onSubmit={handleSubmit}>
       <Box className={styles.subcontent}>

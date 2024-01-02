@@ -4,6 +4,9 @@ import styles from "./about.module.css";
 
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div>
             <div className={styles.about_contaner}>

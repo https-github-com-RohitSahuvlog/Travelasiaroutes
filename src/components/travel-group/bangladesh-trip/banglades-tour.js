@@ -92,7 +92,12 @@ const BangladeshTrip = () => {
     fetchData(countryName);
   }, [location.pathname]);
 
-  console.log(packageTable)
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, []);
 
   return (
     <div>

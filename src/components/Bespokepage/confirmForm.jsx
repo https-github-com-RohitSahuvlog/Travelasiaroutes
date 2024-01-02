@@ -1,8 +1,11 @@
 import { Box } from '@mui/material';
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from "../../css/confirmForm.module.css";
 
 const ConfirmForm = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <Box className={styles.subcontent}>
             <Box sx={{ maxWidth: "600px", color: "#494949" }}>

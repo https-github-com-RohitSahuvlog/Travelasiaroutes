@@ -90,6 +90,10 @@ const BespokeForm2 = ({ prevClick, handleCountNext }) => {
     </div>
   ) : null;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <form

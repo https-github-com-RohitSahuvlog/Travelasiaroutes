@@ -52,6 +52,10 @@ function TripuserInfo({ prevClick, handleCountNext, formData }) {
         localStorage.setItem("TripuserInfoFormData", JSON.stringify(formInfoData));
     }, [formInfoData]);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="form-container">
             <div className="form-header">

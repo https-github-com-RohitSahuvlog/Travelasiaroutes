@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import styled from "@emotion/styled";
 import LandingCarousal from "../components/LandingPage/LandingCarousal";
@@ -17,6 +17,10 @@ const Landingpage = styled.div`
 `;
 
 export default function LandingPage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Landingpage className="Landingpage">
       <LandingCarousal />

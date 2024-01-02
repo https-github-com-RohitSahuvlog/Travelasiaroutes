@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
-import styles from "./philippine-tour.module.css";
+import styles from "./India-unseen-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
-import { LaosImages } from "./philippine-image-data";
+import { Images } from "./India-unseen-image-data";
 import { Link, useLocation } from 'react-router-dom';
-import { PhilippinesAccData } from "./philippine-accordian-data";
+import { IndiaTripAccData } from "./India-unseen-accordian-data";
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
 import Axios from '../../../api';
-import { useDispatch, useSelector } from 'react-redux';
 
 const getStatusIcon = (status) => {
   return status ? '✔' : '✖';
@@ -21,7 +20,7 @@ const getStatusStyle = (status) => {
 };
 
 
-const PhilippinesTrip = () => {
+const IndiaUnseenTrip = () => {
   const location = useLocation();
   const [packageTable, setpackageTable] = useState([]);
   const [open, setOpen] = useState(false);
@@ -99,12 +98,19 @@ const PhilippinesTrip = () => {
     });
   }, []);
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, []);
+
   return (
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title} >Exploring the Mystique of the Philippines</h1>
-          <div className={styles.Italic}>Experience the allure of the Philippines, a beloved Asian tourist hotspot.</div>
+          <h1 className={styles.Title}>Discover India's Hidden Wonders</h1>
+          <div className={styles.Italic}>India's Unseen Charms Await.</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>
               Start Planning
@@ -135,26 +141,29 @@ const PhilippinesTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://www.drishtiias.com/images/uploads/1571646859_image2.jpg" alt="Central Asia Map" />
+                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1704087016/nepal-bhutan-tibet-tourist-map-small_iy2kno.jpg" alt="Central Asia Map" />
                     <div className={styles.map} id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979193.521085369!2d118.06773331868727!3d13.103546699114027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9c96176d753%3A0x64d503c3ac909fed!2sGuide%20to%20the%20Philippines!5e0!3m2!1sen!2sin!4v1697971526076!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15307174.479021687!2d81.90591966264314!3d20.501997562087155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20Tibet%2C%20Bhutan%2C%20and%20Nepal!5e0!3m2!1sen!2sin!4v1704087166034!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   </div>
                   <div className={styles.tripfeedbackquote}>
-                    <p> Throughout your journey, you'll encounter the heartwarming smiles of the Filipino people, known for their hospitality and genuine warmth</p>
-                    <br />
-                    <br />
                     <p>
-                      It's not just about the places you'll visit but the connections you'll make with the locals that will make your experience even more memorable.
+                      Discover the rich tapestry of India,<strong> "The Land of Diversity</strong>," where over 1.3 billion people contribute to a cultural mosaic. From the towering peaks of the Himalayas to the sun-kissed beaches of the Indian Ocean, India's vast expanse showcases a unity in diversity.
+                      <br />
+                      <br />
+                      <br />
+                      Explore the iconic Golden Triangle Tour, visiting Delhi, Agra, and Jaipur, where historic monuments like the Taj Mahal and Amber Fort reflect architectural brilliance and cultural richness.</p>
+                    <p>
+
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.SecondDiv}>
                   <p>
-                    The Philippines remains a land of uncharted beauty, and this obscurity is what sets it apart. While the world rushes on, these islands have preserved their unique charm, offering travelers a glimpse into a world where time seems to stand still. It's a place where you can bask in the natural wonders of pristine landscapes, whether you're exploring the emerald-cratered lakes of Luzon or snorkeling amid vibrant corals in Malapascua.
+                    UNESCO World Heritage Sites like the Qutub Minar, Ajanta and Ellora Caves, and Fatehpur Sikri stand testament to India's rich cultural heritage. Marvel at the intricate temples of Khajuraho and experience the stories of Mughal dynasties in Rajasthan palaces. India's islands, including the Andaman and Nicobar Islands and Lakshadweep, offer tropical paradises with vibrant marine life.
 
-                    This 17-day itinerary is designed to unveil the Philippines' hidden treasures, taking you on a cultural and geographical journey that's sure to leave you with unforgettable memories. Explore a world where serenity meets adventure, and obscurity meets allure, all in one breathtaking destination
+                    Indulge in holistic wellness with renowned yoga retreats in Rishikesh or ayurvedic treatments amidst the lush greenery of Kerala. Relish the culinary symphony, from spicy curries to aromatic biryanis and delectable sweets. The best time to visit is from October to March, ensuring a pleasant experience whether exploring historical sites, trekking in the Himalayas, or savoring vibrant street food. India, a treasure trove of experiences, awaits discovery in every corner, from Rajasthan's palaces to Varanasi's ghats and Kerala's backwaters.
                   </p>
                 </div>
               </div>
@@ -163,35 +172,37 @@ const PhilippinesTrip = () => {
             <div className={styles.section} ref={section2Ref} id={styles.section2} >
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>Discover the Beauty of Philippines</h2>
+                  <h2 className={styles.SetText}>Discover the Beauty of Explore India</h2>
                   <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Adventure)</h5>
                 </div>
-                <MyAccordion AccordianData={PhilippinesAccData} />
+                <MyAccordion AccordianData={IndiaTripAccData} />
                 <h2 className={styles.SetText} >Highlights</h2>
                 <div className={styles.SetFlexProperty}>
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Discover spectacular mountains, picturesque rice terraces, stunning beaches, and vibrant cities on a 17-day exploration through the heart of the Philippines.</li>
-                      <li>Witness the fusion of the past and present in Manila.</li>
-                      <li>Admire the world's oldest rice terraces in Banaue.</li>
-                      <li>Be intrigued by the curious Hanging Coffins in Echo Valley.</li>
+                      <li>So many of India's best bits lie off the main routes, in small towns and villages where the ruling 'Panchayat' discuss business in the shade of a banyan tree, ploughs are still pulled by oxen, and it's not unusual to have your journey delayed by a brightly turbaned goatherd and his stock.</li>
+                      <li>To experience the rural way of life, stay in a homestay, where you can meet the family, eat with them, and share stories. Over a pre-dinner drink with the owners of Shahpura Bagh, which is halfway between Udaipur and Jaipur in Rajasthan, you may get the chance to hear about India's history from people who have not only lived through it but were involved in key events.</li>
+                      <li>In Kerala, one of the best homestays is Dewalokam, in Kodikulam, 70 km (43 miles) from Cochin. The hosts Jose and Sinta ensure everyone feels at home and has a wonderful stay in their eight-bedroom ancestral home. Being an organic farm, the food is fantastic. Walk through the spice plantations, cycle around the village, learn about beekeeping, cook with the chef, or just relax in the pool or with a yoga lesson.</li>
+                      <li>When the ladies and gentlemen of the Raj needed to escape the heat of the plains, they would head up to the hill stations of Darjeeling or Shimla aboard the narrow gauge 'toy trains'. These trains still trundle their way around the hills, winding through tunnels hewn out of the mountainside and towns where they travel so close to the shops that you could reach out and help yourself.</li>
+                      <li>As the trains take a somewhat leisurely pace, you may find it preferable to travel part way by train and meet your driver for the remainder of the journey. However, for those with time, the slow speed will allow you to adjust to the more laid-back pace of life in the Himalaya.</li>
+                      <li>A religiously diverse country, India has a correspondingly large number of festivals, the most celebrated being Diwali and Holi, although you may well stumble across a local festival on your journey.</li>
 
                     </ul>
                   </div>
 
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Relax on the beach in sunny El Nido.</li>
-                      <li>Snorkel in the sapphire waters of the South China Sea.</li>
-                      <li>Discover the limestone caves of Sabang.</li>
-                      <li>See fireflies dancing at dusk at the Iwahig River.</li>
-                      <li>Enjoy plenty of free time to travel your way.</li>
-                      <li>Experience an island getaway abounding with natural beauty, stunning landscapes, and welcoming local communities.</li>
+
+                      <li>Diwali falls in October or November and celebrates the victory of good over evil, light over darkness. As different parts of the country celebrate different Gods — Kali in Bengal, Lakshmi in Gujarat, for instance — you could find your experience of Diwali differs from that of others and makes for an interesting comparison. Wherever you are, you'll see lots of candles and hear plenty of firecrackers being set off in celebration.</li>
+                      <li>A rambunctious festival, Holi is characterized by the throwing of colored powders and water, with streets and people transformed into vibrant rainbows. Be prepared to get involved if you're visiting India at this time — no one escapes. Many hotels will have their own celebrations, which we would recommend as being fun but much more restrained.</li>
+                      <li>If you would like to be in India for one of the festivals, I would advise planning well in advance because the best hotels all get booked many months in advance.</li>
+                      <li>Most trips to India will start or end in one of the country's main cities. While these can be a sensory shock for a first-time visitor, there is much to be gained from a night or two in an Indian city. One of our favorites is Mumbai.</li>
+                      <li>A city of two halves, Mumbai showcases India's burgeoning global power, as well as its poverty. The collision of the two can be seen everywhere, and exploring the Dharavi slum with a local will show you a world often ignored by all but its inhabitants. While the hardship of life in the slum is obvious, you can also be struck by the dignity, resilience, and entrepreneurship of the people — it’s a truly fascinating and friendly place.</li>
+                      <li>Contrasting this with afternoon tea in the Taj Mahal Palace hotel, a tour of the city's grand architecture, or a tour of the Bollywood studios will leave you with a distinct impression of the city's disparate halves, and how seamlessly these fit together to create such a memorable city.</li>
                     </ul>
                   </div>
-
-
                 </div>
+
 
 
               </div>
@@ -280,30 +291,23 @@ const PhilippinesTrip = () => {
                 <div className={styles.EnterData}>
                   <div className={styles.PutData}>
                     <div className={styles.DataHeading}>
-                      *Facts and Inclusions
+                      *Facts and Inclusions Related to India
                     </div>
                     <div className={styles.HeadingContent}>
                       <ul>
-                        <li>17-day expedition with a maximum of 8 travelers in a group.</li>
-                        <li>A gentle adventurous experience designed for nature lovers.</li>
-                        <li>All domestic airfares during the trip are covered.</li>
-                        <li>The journey starts and finishes in Manila.</li>
-                        <li>All meals included as mentioned in the itinerary.</li>
-                        <li>January is considered the best travel month for the Philippines.</li>
-                        <li>All activities, including boat trips and snorkel gear, are provided.</li>
-                        <li>Airport/hotel/airport transfers in every city.</li>
-                        <li>16 nights of comfortable accommodations in well-located hotels with private bathrooms on a twin-sharing basis.</li>
-                        <li>Services of English-speaking guides and a MiddleAsia Routes Tour-leader throughout the trip.</li>
-                        <li>Porterage at airports and hotels throughout the program.</li>
-                        <li>Entrance fees to all visited historical sites and museums are included.</li>
-                        <li>Water is provided on board every day.</li>
-                        <li>Gratuities to guides, drivers, and porters are covered.</li>
-                        <li>All taxes are included.</li>
-                        <li>Comfort notes: Expect a few rough/dusty roads and long drives through picturesque mountains and valleys.</li>
-                        <li>Activity level 2-3, including hikes, walking through towns or cities, and visiting archaeological sites.</li>
-                        <li>Toilets: Clean western-style toilets available at accommodations, restaurants, and sites, with a few squat toilets available during drives.</li>
+                        <li>Private comfortable deluxe transportation</li>
+                        <li>All necessary travel permits and visas</li>
+                        <li>All International and Domestic flights between India, Nepal, Tibet, and Bhutan (Economy Class)</li>
+                        <li>English-speaking local guide throughout the journey</li>
+                        <li>Comfortable accommodation, best possible available throughout the journey</li>
+                        <li>Sightseeing and monastery entrance fees as per the itinerary</li>
+                        <li>Bhutan Sustainable Development Fee (SDF): US$ 200 per night/person (Effective from 20 June 2022)</li>
+                        <li>Meal plan: Full Board Basis (B.-Breakfast, L.- Lunch, D.- Dinner): Breakfast and Dinner at the hotel, Lunch en-route.</li>
+                        <li>Flights (Delhi to Lhasa, Kathmandu to Lhasa and return & Kathmandu to Paro and return)</li>
+                        <li>Tibet Group Visa and Bhutan Visa Clearance</li>
                       </ul>
                     </div>
+
 
                   </div>
                 </div>
@@ -322,7 +326,7 @@ const PhilippinesTrip = () => {
             <div className={styles.section} ref={section4Ref} id={styles.section4}>
 
 
-              <MyGallery Images={LaosImages} />
+              <MyGallery Images={Images} />
               <div className={styles.LastFourContent}>
                 <div>
                   <h4 className={styles.ContentSubHeading}>A JOURNEY BUILT JUST FOR YOU</h4>
@@ -338,4 +342,4 @@ const PhilippinesTrip = () => {
   )
 }
 
-export default PhilippinesTrip;
+export default IndiaUnseenTrip;

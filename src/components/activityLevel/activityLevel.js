@@ -2,6 +2,9 @@ import React from "react";
 import "./activity.css";
 
 function ActivityLevels() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="complete-page">
       <div className="container-box">

@@ -17,6 +17,13 @@ const SeeItiniery = () => {
 
     }, [countryname]);
 
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }, []);
+
     return (
         <div className={styles.container}>
             <div className={styles.pageSection}>

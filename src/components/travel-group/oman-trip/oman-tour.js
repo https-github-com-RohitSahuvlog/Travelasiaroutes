@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
-import styles from "./philippine-tour.module.css";
+import styles from "./oman-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
-import { LaosImages } from "./philippine-image-data";
+import { Images } from "./oman-image-data";
 import { Link, useLocation } from 'react-router-dom';
-import { PhilippinesAccData } from "./philippine-accordian-data";
+import { OmanTripAccData } from "./oman-accordian-data";
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
 import Axios from '../../../api';
-import { useDispatch, useSelector } from 'react-redux';
 
 const getStatusIcon = (status) => {
   return status ? '✔' : '✖';
@@ -21,7 +20,7 @@ const getStatusStyle = (status) => {
 };
 
 
-const PhilippinesTrip = () => {
+const OmanTrip = () => {
   const location = useLocation();
   const [packageTable, setpackageTable] = useState([]);
   const [open, setOpen] = useState(false);
@@ -85,7 +84,6 @@ const PhilippinesTrip = () => {
 
 
   useEffect(() => {
-
     const pathnameArray = location.pathname.split('/');
     const countryName = pathnameArray[pathnameArray.length - 1];
 
@@ -93,18 +91,16 @@ const PhilippinesTrip = () => {
   }, [location.pathname]);
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    window.scrollTo(0, 0);
   }, []);
+
 
   return (
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title} >Exploring the Mystique of the Philippines</h1>
-          <div className={styles.Italic}>Experience the allure of the Philippines, a beloved Asian tourist hotspot.</div>
+          <h1 className={styles.Title}>Unexpected Oman</h1>
+          <div className={styles.Italic}>The land of Frankincense & Golden Sands.</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>
               Start Planning
@@ -118,8 +114,6 @@ const PhilippinesTrip = () => {
           </div>
         </div>
       </div>
-
-
 
       <div className={styles.Capp}>
         <div className={styles.Flex}>
@@ -135,26 +129,30 @@ const PhilippinesTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://www.drishtiias.com/images/uploads/1571646859_image2.jpg" alt="Central Asia Map" />
+                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1704166281/12001067131044_bnfolo.png" alt="Central Asia Map" />
                     <div className={styles.map} id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979193.521085369!2d118.06773331868727!3d13.103546699114027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9c96176d753%3A0x64d503c3ac909fed!2sGuide%20to%20the%20Philippines!5e0!3m2!1sen!2sin!4v1697971526076!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58670948.53432763!2d-17.58548450000002!3d26.16443850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef6f5d4fb3f8b55%3A0x7f2ace0ed866fae3!2sMusandam%20Oman!5e0!3m2!1sen!2sin!4v1704168573126!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   </div>
                   <div className={styles.tripfeedbackquote}>
-                    <p> Throughout your journey, you'll encounter the heartwarming smiles of the Filipino people, known for their hospitality and genuine warmth</p>
-                    <br />
-                    <br />
                     <p>
-                      It's not just about the places you'll visit but the connections you'll make with the locals that will make your experience even more memorable.
+                      <strong>Explore a land of vibrant souks, nesting sea turtles and stunning scenic beauty.</strong>
+
+                      The pacific nation of Oman surprises travelers with its desert beauty, soaring mountains, and pristine beaches.
+                      <br />
+                      We’ve designed this Oman itinerary to unveil the country’s unforeseen mysteries.
+                    </p>
+                    <p>
+                      Led by a knowledgeable Oman tour guide, you get to know Muscat and its splendid Islamic architecture before tracing the Arabian Sea south to old port towns, lush date plantations, and Oman beaches known for nesting sea turtles
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.SecondDiv}>
                   <p>
-                    The Philippines remains a land of uncharted beauty, and this obscurity is what sets it apart. While the world rushes on, these islands have preserved their unique charm, offering travelers a glimpse into a world where time seems to stand still. It's a place where you can bask in the natural wonders of pristine landscapes, whether you're exploring the emerald-cratered lakes of Luzon or snorkeling amid vibrant corals in Malapascua.
 
-                    This 17-day itinerary is designed to unveil the Philippines' hidden treasures, taking you on a cultural and geographical journey that's sure to leave you with unforgettable memories. Explore a world where serenity meets adventure, and obscurity meets allure, all in one breathtaking destination
+                    Then it’s inland to gorgeous more arid landscapes, where you overnight amid soaring sand dunes and visit forest-clad gorges and cliff-top towns.
+                    Venture across the mesmerizing Sultanate of Oman, a hidden gem of the Middle East. Enjoy camel rides and encounter Bedouin tribes in the rolling dunes of the Wahiba Sands. Take in Oman's fascinating heritage: walk through ancient Arabia's frankincense trade sites and souqs overflowing with fabrics and handicrafts. Drive up to the terrace-style orchards of Al Jebel Al Akhdar Mountains and Prophet Job's Tomb. Visit abandoned villages, embark on a sunset cruise, and spend a night in a Bedouin-style tent. See the best of Oman - in just 2 weeks.
                   </p>
                 </div>
               </div>
@@ -163,37 +161,40 @@ const PhilippinesTrip = () => {
             <div className={styles.section} ref={section2Ref} id={styles.section2} >
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>Discover the Beauty of Philippines</h2>
+                  <h2 className={styles.SetText}>Discover the Beauty of Explore Oman</h2>
                   <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Adventure)</h5>
                 </div>
-                <MyAccordion AccordianData={PhilippinesAccData} />
+                <MyAccordion AccordianData={OmanTripAccData} />
                 <h2 className={styles.SetText} >Highlights</h2>
                 <div className={styles.SetFlexProperty}>
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Discover spectacular mountains, picturesque rice terraces, stunning beaches, and vibrant cities on a 17-day exploration through the heart of the Philippines.</li>
-                      <li>Witness the fusion of the past and present in Manila.</li>
-                      <li>Admire the world's oldest rice terraces in Banaue.</li>
-                      <li>Be intrigued by the curious Hanging Coffins in Echo Valley.</li>
+                      <li>A private, tailor-made tour of stunning Oman that’s off the tourist radar.</li>
+                      <li>Oman's fascinating heritage: walk through ancient Arabia's frankincense trade sites.</li>
+                      <li>Revel in starlit dunes, oases, coastlines, and Islamic architecture.</li>
+                      <li>Camping On Another Planet: The Empty Quarter-Rub’ al Khali.</li>
+                      <li>Royal Opera House and Sultan Qaboos Grand Mosque (one of the largest mosques in the Middle East).</li>
+                      <li>Amble through quaint villages, fertile farmlands, and Muscat museums.</li>
+                      <li>Experience thrilling Oman souks, markets, and forts.</li>
+                      <li>Meet Bedouins and learn about their lifestyle.</li>
 
                     </ul>
                   </div>
 
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Relax on the beach in sunny El Nido.</li>
-                      <li>Snorkel in the sapphire waters of the South China Sea.</li>
-                      <li>Discover the limestone caves of Sabang.</li>
-                      <li>See fireflies dancing at dusk at the Iwahig River.</li>
-                      <li>Enjoy plenty of free time to travel your way.</li>
-                      <li>Experience an island getaway abounding with natural beauty, stunning landscapes, and welcoming local communities.</li>
+                      <li>Visit bright angling harbors and old exchanging ports, meet a neighborhood classicist.</li>
+                      <li>Explore brilliant sand ridges by camel and 4WD vehicle.</li>
+
+                      <li>Roam the tight back streets of Oman's conventional markets, appreciate a private dhow voyage.</li>
+                      <li>Explore the precipice embracing towns, richly terraced gardens, and memorable strongholds of the Hajar Mountains.</li>
+                      <li>Visit the Nizwa Goat Market.</li>
+                      <li>Cross the rolling dunes of Wahiba Sands on camel and sleep in a Bedouin tent.</li>
+                      <li>DESERT CRUISING AND TURTLES OF OMAN.</li>
+                      <li>Visit Oman's most exquisite mosque, made to accommodate up to 20,000 worshippers.</li>
                     </ul>
                   </div>
-
-
                 </div>
-
-
               </div>
 
             </div>
@@ -280,30 +281,34 @@ const PhilippinesTrip = () => {
                 <div className={styles.EnterData}>
                   <div className={styles.PutData}>
                     <div className={styles.DataHeading}>
-                      *Facts and Inclusions
+                      *Facts and Inclusions Related to India
                     </div>
                     <div className={styles.HeadingContent}>
                       <ul>
-                        <li>17-day expedition with a maximum of 8 travelers in a group.</li>
-                        <li>A gentle adventurous experience designed for nature lovers.</li>
-                        <li>All domestic airfares during the trip are covered.</li>
-                        <li>The journey starts and finishes in Manila.</li>
+                        <li>14 days expedition with a maximum of 8 travelers in a group.</li>
+                        <li>This expedition is a gently adventurous experience designed for history, Arab culture, nature, and adventure lovers.</li>
+                        <li>All domestic Airfares during the trip.</li>
+                        <li>Start & finish in Muscat.</li>
                         <li>All meals included as mentioned in the itinerary.</li>
-                        <li>January is considered the best travel month for the Philippines.</li>
-                        <li>All activities, including boat trips and snorkel gear, are provided.</li>
+                        <li>Temperatures-Oman has a reliably warm climate and can be visited any time, avoiding the scorching summer months between June and August. The weather is most pleasant from October through to April.</li>
+                        <li>Nights in Mountains and Deserts might be 10 degrees cooler than normal temperatures in the cities.</li>
+                        <li>All activities, boat trips.</li>
                         <li>Airport/hotel/airport transfers in every city.</li>
-                        <li>16 nights of comfortable accommodations in well-located hotels with private bathrooms on a twin-sharing basis.</li>
+                        <li>Accommodation-11 Nights Comfortable Accommodations in well-located hotels with private bathrooms on a twin-sharing basis as per the program (Mostly 4*/5* stars categories where options are available), 1 night in modified Bedouin tents with twin beds and private bathrooms; 1 night in simple tented camps in Empty Quarter with shared bathrooms.</li>
                         <li>Services of English-speaking guides and a MiddleAsia Routes Tour-leader throughout the trip.</li>
                         <li>Porterage at airports and hotels throughout the program.</li>
-                        <li>Entrance fees to all visited historical sites and museums are included.</li>
-                        <li>Water is provided on board every day.</li>
-                        <li>Gratuities to guides, drivers, and porters are covered.</li>
-                        <li>All taxes are included.</li>
-                        <li>Comfort notes: Expect a few rough/dusty roads and long drives through picturesque mountains and valleys.</li>
-                        <li>Activity level 2-3, including hikes, walking through towns or cities, and visiting archaeological sites.</li>
-                        <li>Toilets: Clean western-style toilets available at accommodations, restaurants, and sites, with a few squat toilets available during drives.</li>
+                        <li>Entrance fees to all visited historical sites and museums.</li>
+                        <li>Water on board every day.</li>
+                        <li>Gratuities to guides, drivers, and porters.</li>
+                        <li>All taxes.</li>
+                        <li><strong>COMFORT NOTES</strong>-Few rough/dusty roads and long drives. Few drives in the trip are around (5-6 hours) but very picturesque through the mountains and valleys. Few off-road adventure drives, like mountains, wadis, oasis, and desert crossing.</li>
+                        <li><strong>Transportation</strong>-Travel is partially by comfortable Minibus, 4-wheel-drive Land Cruisers & traditional dhows. Roads can be rough, and some off-roading may be required. (Each Land Cruiser is used for 3 travelers only, so all 3 travelers can enjoy window seats.)</li>
+                        <li><strong>Activity level 2</strong> (This may include hikes of 1 hour, which may have gentle slopes. Walking through towns or cities for 1 or more hours. Archeological sites for 2-3 hours. Should be able to climb 1-2 flights of stairs and walk at least 2 miles with no problem.)</li>
+                        <li><strong>Toilets</strong>-There are clean western-style toilets available at your accommodations/restaurants/sites, but on the way while driving to our destination, very few squat toilets are available. Most of the time, we try to stop at western-style toilets.</li>
                       </ul>
+
                     </div>
+
 
                   </div>
                 </div>
@@ -322,7 +327,7 @@ const PhilippinesTrip = () => {
             <div className={styles.section} ref={section4Ref} id={styles.section4}>
 
 
-              <MyGallery Images={LaosImages} />
+              <MyGallery Images={Images} />
               <div className={styles.LastFourContent}>
                 <div>
                   <h4 className={styles.ContentSubHeading}>A JOURNEY BUILT JUST FOR YOU</h4>
@@ -338,4 +343,4 @@ const PhilippinesTrip = () => {
   )
 }
 
-export default PhilippinesTrip;
+export default OmanTrip;

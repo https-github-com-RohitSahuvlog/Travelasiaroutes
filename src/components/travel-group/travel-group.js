@@ -53,7 +53,26 @@ const TravelGroups = () => {
       "title": "Exploring the Rich History and Culture of Uzbekistan",
       "description": "Immerse yourself in the beauty and history of Uzbekistan, a Central Asian gem."
 
+    },
+    {
+      link: "3eyeshimalayas",
+      thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/37E16EE8-27A0-4B09-A7D4-761147AB1B1B870110290.jpeg",
+      title: "Explore Tibet, Bhutan, and Nepal",
+      description: "Uncover the charm of Tibet, Bhutan, and Nepal. Dive into rich cultures, ancient traditions, and stunning landscapes. Plus, discover the allure of the Philippines. Your unforgettable journey begins here!"
+    },
+    {
+      link: "india-unseen",
+      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704100298/346657AB-0E75-4F62-A2F1-FB3199A56C791296070453_jfbzfa.jpg",
+      title: "India's Unseen Legends",
+      description: "Embark on a mesmerizing odyssey through the unseen legends of India",
+    },
+    {
+      link: "Oman",
+      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704125530/1573728245_oman.png_p6odjy.png",
+      title: "Sultanate of Oman ",
+      description: "Embark on a mesmerizing odyssey through the unseen legends of Oman",
     }
+
 
   ]
 

@@ -15,6 +15,9 @@ import LaosTrip from "./components/travel-group/laos-trip/laos-tour";
 import PhilippinesTrip from "./components/travel-group/philippines/philippine-tour";
 import UzbekistanTrip from "./components/travel-group/uzbekistan/uzbekistan-tour";
 import SeeItiniery from "./components/Bydestination/India/see-itiniery";
+import HimalayasTrip from "./components/travel-group/3eyeshimalayas/3eyeshimalayas-tour";
+import IndiaUnseenTrip from "./components/travel-group/India-unseen/India-unseen-tour";
+import OmanTrip from "./components/travel-group/oman-trip/oman-tour";
 function App() {
   return (
     <div className="App">
@@ -31,6 +34,9 @@ function App() {
         <Route path="/travel-groups/bangladesh" element={<BangladeshTrip />} />
         <Route path="/travel-groups/laos" element={<LaosTrip />} />
         <Route path="/travel-groups/philippines" element={<PhilippinesTrip />} />
+        <Route path="/travel-groups/3eyeshimalayas" element={<HimalayasTrip />} />
+        <Route path="/travel-groups/india-unseen" element={<IndiaUnseenTrip />} />
+        <Route path="/travel-groups/oman" element={<OmanTrip />} />
         <Route path="/travel-groups/uzbekistan" element={<UzbekistanTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
       </Routes>

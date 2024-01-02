@@ -159,6 +159,10 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <form onSubmit={handleSubmit} sx={{ justifyContent: "center" }}>
       <Paper elevation={3} sx={{ padding: 3 }} className="bespoke-form-content">

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../css/BespokeTravel.css"; // Import the CSS file
 import BespokeForm from "./BespokeForm";
 
 const BespokeTravel = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="bespoke-travel-container">
