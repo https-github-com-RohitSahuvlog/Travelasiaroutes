@@ -67,12 +67,23 @@ const TravelGroups = () => {
       description: "Embark on a mesmerizing odyssey through the unseen legends of India",
     },
     {
-      link: "Oman",
+      link: "oman",
       thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704125530/1573728245_oman.png_p6odjy.png",
       title: "Sultanate of Oman ",
       description: "Embark on a mesmerizing odyssey through the unseen legends of Oman",
+    },
+    {
+      link: "jordan",
+      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704171456/aygpo6wg7hxajhm3glsq.jpg",
+      title: "Sultanate of Jordan ",
+      description: "In the footsteps of Lawrence of Arabia",
+    },
+    {
+      link: "iran",
+      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704251364/533dc820eab8eae14a0c7560_r4rcjr.jpg",
+      title: "Sultanate of Iran ",
+      description: "In the footsteps of Lawrence of Iran",
     }
-
 
   ]
 
