@@ -83,6 +83,12 @@ const TravelGroups = () => {
       thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704251364/533dc820eab8eae14a0c7560_r4rcjr.jpg",
       title: "Sultanate of Iran ",
       description: "In the footsteps of Lawrence of Iran",
+    },
+    {
+      link: "saudi-arabia",
+      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704258953/0UZhVeo5-Saudi-tourism_odswhp.jpg",
+      title: "Explore Saudi Arabia's Rich Heritage",
+      description: "Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.",
     }
 
   ]

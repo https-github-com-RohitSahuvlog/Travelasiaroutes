@@ -281,7 +281,7 @@ const OmanTrip = () => {
                 <div className={styles.EnterData}>
                   <div className={styles.PutData}>
                     <div className={styles.DataHeading}>
-                      *Facts and Inclusions Related to India
+                      *Facts and Inclusions
                     </div>
                     <div className={styles.HeadingContent}>
                       <ul>

@@ -20,6 +20,7 @@ import IndiaUnseenTrip from "./components/travel-group/India-unseen/India-unseen
 import OmanTrip from "./components/travel-group/oman-trip/oman-tour";
 import JordanTrip from "./components/travel-group/Jordan-trip/Jordan-tour";
 import IranTrip from "./components/travel-group/Iran-trip/Iran-tour";
+import SaudiArabiaTrip from "./components/travel-group/Saudi-arabia-trip/Saudi-arabia-tour";
 function App() {
   return (
     <div className="App">
@@ -41,6 +42,7 @@ function App() {
         <Route path="/travel-groups/oman" element={<OmanTrip />} />
         <Route path="/travel-groups/jordan" element={<JordanTrip />} />
         <Route path="/travel-groups/iran" element={<IranTrip />} />
+        <Route path="/travel-groups/saudi-arabia" element={<SaudiArabiaTrip />} />
         <Route path="/travel-groups/uzbekistan" element={<UzbekistanTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
       </Routes>

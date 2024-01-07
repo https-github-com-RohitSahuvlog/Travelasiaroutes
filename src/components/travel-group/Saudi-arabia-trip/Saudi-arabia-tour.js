@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
-import styles from "./Iran-tour.module.css";
+import styles from "./Saudi-arabia-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
-import { Images } from "./Iran-image-data";
+import { Images } from "./Saudi-arabia-image-data";
 import { Link, useLocation } from 'react-router-dom';
-import { IranTripAccData } from "./Iran-accordian-data";
+import { SaudiArabiaTripAccData } from "./Saudi-arabia-accordian-data";
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
 import Axios from '../../../api';
@@ -20,7 +20,7 @@ const getStatusStyle = (status) => {
 };
 
 
-const IranTrip = () => {
+const SaudiArabiaTrip = () => {
   const location = useLocation();
   const [packageTable, setpackageTable] = useState([]);
   const [open, setOpen] = useState(false);
@@ -99,8 +99,8 @@ const IranTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title}>Explore Iran's Rich Heritage</h1>
-          <div className={styles.Italic}>A Tapestry of Ancient Wonders, Cultural Splendor, and Heartwarming Hospitality.</div>
+          <h1 className={styles.Title}>Explore Saudi Arabia's Rich Heritage</h1>
+          <div className={styles.Italic}>Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>
               Start Planning
@@ -129,15 +129,20 @@ const IranTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1704255260/11880832200_s05nod.png" alt="Central Asia Map" />
+                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1704259298/fullsizeoutput_572683118_juvkho.jpg" alt="Central Asia Map" />
 
                     <div className={styles.map} id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6631105.202887078!2d42.21457547499999!3d35.75463060000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e058b3a72c6eb%3A0x1d79be3d9cf716f6!2sIran%20Tourism!5e0!3m2!1sen!2sin!4v1704255442003!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15248869.961202316!2d21.81252975!3d21.077907999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e9eb43f335098f%3A0x17459dc363651bb9!2sMountain%20Side%20Picture%20Taking%20Location!5e0!3m2!1sen!2sin!4v1704259344562!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   </div>
                   <div className={styles.tripfeedbackquote}>
                     <p>
-                      Everywhere you look in Iran, there are reminders of the rich history and vibrant traditions of the Persian Empire, from the remains of King Darius’ palace at Persepolis to the Zoroastrian ‘Towers of Silence’ in Yazd. Our Iran tours and holidays highlight some of the finest ancient architecture found anywhere in the world. Isfahan was described as “half the world” and with its stunning mosques, bridges and squares it’s not difficult to see why. Other architectural highlights include the intricately carved domes and madrasas of Shiraz and the ingenious wind towers of Yazd. With 21, it is home to the most UNESCO World Heritage Sites for Culture in the Middle East.
+                      Embark on an awe-inspiring journey through the Kingdom of Saudi Arabia, where nature's artistry and ancient wonders paint a breathtaking canvas. Discover dramatic landscapes that will leave you spellbound, from the striking rock formations in Al Ula's desert to the sweeping vistas at the Edge of the World and the panoramic cityscape from the Sky Bridge in Riyadh.
+                      <br />
+                      <br />
+                      Amidst the glimmering modernity, Saudi Arabia cherishes its cherished past, preserving old towns that stand as testaments to the kingdom's rich heritage.
+
+
 
                     </p>
                   </div>
@@ -145,9 +150,12 @@ const IranTrip = () => {
 
                 <div className={styles.SecondDiv}>
                   <p>
-                    Contrary to the media perception of Iran, the country has always been outward-looking and has a long history of learning and poetry. Visiting the tomb of Hafez in Shiraz you will find old and young gathered to pay tribute and to read his words of love and wine. Travellers on our Iran tours are invariably overwhelmed by the friendliness and hospitality of the people, and it is the one thing our guests comment on again and again – how welcome they were made to feel. This is a country with a strong cultural heart and a long tradition of Persian hospitality.
+                    Wander through traditional mud-brick villages, lovingly protected and nestled within the historical districts of cities like Riy Jeddah, and Al Ula, offering a glimpse into the nation's storied history.
+                    Be captivated by the allure of the Red Sea, a sparkling gem along Saudi Arabia's extensive coastlines. While the Persian Gulf holds the kingdom's precious oil reserves, the Red Sea beckons with its pristine beauty and offers an aquatic playground for snorkeling, diving, fishing, and water sports, just a stone's throw away from vibrant Jeddah.
 
-                    Iran’s capital of Tehran is a bustling contemporary city with luxury retail outlets, fashionable restaurants and modern skyscrapers, while the ancient cities of Shiraz, Yazd and Isfahan offer a more traditional Persian experience, with their winding streets, coffee shops, peaceful gardens and impressive mosques. Iran is a very youthful country, with over 65% of the population being under 35, and in the cities, you will find locals pushing the dress code as far as they can. In the countryside meanwhile, you will find a more conservative but equally welcoming Iran.
+                    Delve into the mysteries of the ancient Nabataean civilization at Hegra, a lesser-known UNESCO World Heritage Site akin to Petra. Here, you can immerse yourself in well-preserved monumental tombs, inscriptions, and cave drawings that offer a glimpse into the enigmatic past of this once-thriving civilization, all without the crowds.
+
+                    Prepare to be entranced by the wonders that Saudi Arabia unfolds before you, an experience that will ignite your imagination and leave you with cherished memories of this captivating land.
                   </p>
                 </div>
               </div>
@@ -156,43 +164,38 @@ const IranTrip = () => {
             <div className={styles.section} ref={section2Ref} id={styles.section2} >
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>Discover the Beauty of Explore Iran</h2>
+                  <h2 className={styles.SetText}>Discover the Beauty of Explore Saudi Arabia</h2>
                   <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Adventure)</h5>
                 </div>
-                <MyAccordion AccordianData={IranTripAccData} />
+                <MyAccordion AccordianData={SaudiArabiaTripAccData} />
                 <h2 className={styles.SetText} >Highlights</h2>
                 <div className={styles.SetFlexProperty}>
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Embark on an adventure through the deep and pristine Rig-Jen desert, untouched by humans until recent years.</li>
-                      <li>Discover why Rig-Jen desert was abandoned throughout history, unraveling its mysteries.</li>
-                      <li>Witness the transformation of a remote village, where people brought water and civilization against all odds.</li>
+                      <li>Embark on an adventure through the deep and pristine Rub' al Khali desert, untouched by humans until recent years.</li>
+                      <li>Discover the historical significance of Saudi Arabia's deserts, unraveling their mysteries.</li>
+                      <li>Witness the transformation of remote villages, where people adapted to the harsh desert environment.</li>
                       <li>Explore the beginnings of different desert civilizations, traversing old and abandoned routes.</li>
                       <li>Visit beautiful villages with unique histories and captivating stories.</li>
-                      <li>Immerse yourself in the main cities of Iranian civilization: Isfahan, Shiraz, Yazd & Kashan.</li>
-                      <li>Explore 13 UNESCO World Heritage Sites, including:</li>
-                      <li>Nasir ol Molk Mosque</li>
-                      <li>Eram Garden (UNESCO)</li>
-
-
+                      <li>Immerse yourself in the main cities of Saudi Arabian civilization.</li>
+                      <li>Explore UNESCO World Heritage Sites, including:</li>
+                      <li>Al-Hijr Archaeological Site (Madain Salih)</li>
+                      <li>Historic Jeddah (UNESCO)</li>
                     </ul>
                   </div>
 
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Tomb of Saadi & Hafez</li>
-                      <li>Persepolis (UNESCO)</li>
-                      <li>Naqsh-e Jahan (UNESCO)</li>
-                      <li>Congregational Mosque (UNESCO)</li>
-                      <li>Abayneh Village</li>
-                      <li>Golestan Complex (UNESCO)</li>
-                      <li>Visit the National Jewels Museum to witness Iran's rich cultural and historical treasures.</li>
-                      <li>Experience a stay in Yazd, declared by UNESCO as the second most historic city in the world.</li>
-                      <li>Stroll over the famous bridges of Isfahan, marveling at their architectural beauty.</li>
-                      <li>Encounter the warmth and friendliness of the Iranian people throughout your journey.</li>
+                      <li>Masmak Fortress in Riyadh</li>
+                      <li>Ad Diriyah - Historic City (UNESCO)</li>
+                      <li>Visit the National Museum in Riyadh to discover Saudi Arabia's rich cultural and historical treasures.</li>
+                      <li>Experience a stay in Al Ula, known for its unique rock formations and archaeological sites.</li>
+                      <li>Explore modern developments in cities like Riyadh and Jeddah.</li>
+                      <li>Encounter the hospitality and friendliness of the Saudi Arabian people throughout your journey.</li>
                     </ul>
                   </div>
                 </div>
+
               </div>
 
             </div>
@@ -283,30 +286,28 @@ const IranTrip = () => {
                     </div>
                     <div className={styles.HeadingContent}>
                       <ul>
-                        <li><strong>Duration:</strong> 13 days</li>
-                        <li><strong>Group Size:</strong> Maximum 10 travelers</li>
-                        <li><strong>Experience:</strong> Gentle adventure designed for history, Persian culture, nature, and adventure lovers</li>
-                        <li><strong>Starting Point:</strong> Tehran</li>
-                        <li><strong>Ending Point:</strong> Tehran</li>
-                        <li><strong>Inclusions:</strong></li>
-                        <li>All domestic airfares during the trip</li>
-                        <li>All meals as mentioned in the itinerary</li>
-                        <li>Visa assistance for Iran</li>
-                        <li>Temperatures: Best time to visit during spring and autumn</li>
-                        <li>All activities, transportation, and entry tickets</li>
-                        <li>Airport/hotel/airport transfers in every city</li>
-                        <li>Accommodation: 12 nights in well-located hotels with private bathrooms, 1 night in a modified Bedouin camp</li>
-                        <li>Services of English-speaking guides and a MiddleAsia Routes Tour-leader throughout the trip</li>
-                        <li>Porterage at airports and hotels throughout the program</li>
-                        <li>Entrance fees to all visited historical sites and museums</li>
-                        <li>Water on board every day</li>
-                        <li>Gratuities to guides, drivers, and porters</li>
-                        <li>All taxes</li>
-                        <li><strong>Comfort Notes:</strong> Few rough/dusty roads, long drives, and scenic routes</li>
-                        <li><strong>Transportation:</strong> Mostly by comfortable minibus; 4-wheel drive land cruisers and camels in specific locations</li>
-                        <li><strong>Activity Level:</strong> 2-3 (Includes hikes, walks in towns, archaeological sites, ability to climb stairs, and walk 2 miles with no problem)</li>
-                        <li><strong>Toilets:</strong> Western-style toilets available at accommodations/restaurants/sites; squat toilets during drives with efforts to find the best clean toilets</li>
+                        <li>8-day expedition with a maximum of 6 travelers, offering an intimate group experience.</li>
+                        <li>Gentle adventurous experience designed for history, Arab culture, nature, and adventure enthusiasts.</li>
+                        <li>All domestic airfares included throughout the trip for seamless travel.</li>
+                        <li>Start your journey in Riyadh and conclude in Jeddah, exploring key cultural and historical landmarks.</li>
+                        <li>All meals provided as per the itinerary, showcasing authentic Saudi Arabian cuisine.</li>
+                        <li>Enjoy Saudi Arabia's reliably warm climate, ideal for travel from November to March.</li>
+                        <li>Accommodations: 7 nights in well-located hotels (mostly 4*/5* stars), 1 night in modified Bedouin tents, and 1 night in simple tented camps in the Empty Quarter.</li>
+                        <li>Engage in various activities, including boat trips, to enrich your travel experience.</li>
+                        <li>Airport/hotel/airport transfers provided in every city for convenience.</li>
+                        <li>Services of English-speaking guides and a MiddleAsia Routes Tour-leader throughout the trip.</li>
+                        <li>Porterage services at airports and hotels throughout the program.</li>
+                        <li>Entrance fees included for all visited historical sites and museums.</li>
+                        <li>Water provided on board every day to keep you hydrated during your journey.</li>
+                        <li>Gratuities included for guides, drivers, and porters.</li>
+                        <li>All taxes covered for a hassle-free travel experience.</li>
+                        <li>Comfort Notes: Expect some rough/dusty roads, long drives, and off-road adventures through picturesque landscapes.</li>
+                        <li>Transportation: Travel partially by comfortable Minibus, 4-wheel drive Land Cruisers, and traditional dhows.</li>
+                        <li>Activity Level 2: Suitable for various activities, including hikes, walks, and exploration of archaeological sites.</li>
+                        <li>Toilets: Clean western-style toilets available at accommodations/restaurants/sites, with occasional squat toilets during drives.</li>
                       </ul>
+
+
 
                     </div>
 
@@ -344,4 +345,4 @@ const IranTrip = () => {
   )
 }
 
-export default IranTrip;
+export default SaudiArabiaTrip;
