@@ -204,10 +204,16 @@ const OmanTrip = () => {
                 <div className={styles.SetText}>DATES & PRICES</div>
 
               </div>
-
-              <div className={styles.tab_content} style={{ display: 'block' }}>
-                <div className={styles.table_data}>
-                  <table className={styles.table_bordered}>
+              <div className={styles.tab_content
+              } style={
+                {
+                  display: 'block'
+                }
+              }>
+                <div className={styles.table_data
+                }>
+                  <table className={styles.table_bordered
+                  }>
                     <thead>
                       <tr>
                         <th>Start Date</th>
@@ -220,57 +226,85 @@ const OmanTrip = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className={styles.pricingRow}>
-                        <td>{packageTable.startDate}</td>
-                        <td>{packageTable.endDate}</td>
-                        <td>{`$ ${packageTable.price} USD`}</td>
-                        <td style={{ width: 'auto' }}>{`$ ${packageTable.singleSupplementPrice} USD`}</td>
-                        <td style={{ padding: '5px' }}>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="50"
-                            height="50"
-                            viewBox="0 0 24 24"
-                          >
-                            <circle cx="12" cy="12" r="7" fill="#4BB543" />
-                            <path
-                              d="M6,12 L9,16 L18,7"
-                              fill="none"
-                              stroke="#ffffff"
-                              strokeWidth="2"
-                            >
-                              <animate
-                                attributeName="stroke-dasharray"
-                                from="0 28 28"
-                                to="28 28 28"
-                                dur="2s"
-                                repeatCount="indefinite"
-                              />
-                            </path>
-                          </svg>
-                        </td>
-                        <td>{`${packageTable.availability} Spaces`}</td>
-                        <td>
-                          <Link to="/bespoke">
-                            <button className={styles.btn_booknow}>Book Now</button>
-                          </Link>
-                        </td>
-                      </tr>
+                      {packageTable.packDetails && packageTable.packDetails.map((detail) => (
+                        <tr key={detail._id
+                        } className={styles.pricingRow
+                        }>
+                          <td>{new Date(detail.startDate).toLocaleDateString('en-GB')
+                          }</td>
+                          <td>{new Date(detail.endDate).toLocaleDateString('en-GB')
+                          }</td>
+                          <td>{`$ ${detail.price
+                            } USD`
+                          }</td>
+                          <td style={
+                            {
+                              width: 'auto'
+                            }
+                          }>{`$ ${detail.singleSupplementPrice
+                            } USD`
+                            }</td>
+                          <td style={
+                            {
+                              padding: '5px'
+                            }
+                          }>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                              <circle cx="12" cy="12" r="7" fill="#4BB543" />
+                              <path
+                                d="M6,12 L9,16 L18,7"
+                                fill="none"
+                                stroke="#ffffff"
+                                strokeWidth="2"
+                              >
+                                <animate
+                                  attributeName="stroke-dasharray"
+                                  from="0 28 28"
+                                  to="28 28 28"
+                                  dur="2s"
+                                  repeatCount="indefinite"
+                                />
+                              </path>
+                            </svg>
+                          </td>
+                          <td>{`${detail.availability
+                            } Spaces`
+                          }</td>
+                          <td>
+                            <Link to="/bespoke">
+                              <button className={styles.btn_booknow
+                              }>Book Now</button>
+                            </Link>
+                          </td>
+                        </tr>
+                      ))
+                      }
                     </tbody>
                   </table>
                 </div>
-                <div className={styles.travel_sts}>
+                { /* <div className={styles.travel_sts}>
                   <span className={getStatusStyle(packageTable.status)}>{getStatusIcon(packageTable.status)}</span>
                   <span>{packageTable.status ? 'Guaranteed Departures' : 'Not Guaranteed Departures'}</span>
-                </div>
-                <div style={{ display: 'flex', gap: '20px', justifyContent: "center", margin: "10px" }}>
+                </div> */}
+                <div style={
+                  {
+                    display: 'flex', gap: '20px', justifyContent: 'center', margin: '10px'
+                  }
+                }>
                   <Link to="/activitylevel">
-                    <button className={`${styles.btn_booknow}`}>
-                      Activity-Level{" "}({packageTable.activity_level})
+                    <button className={`${styles.btn_booknow
+                      }`
+                    }>
+                      Activity-Level {
+                        " "
+                      }({packageTable.activity_level
+                      })
                     </button>
                   </Link>
-
-                  <button className={`${styles.btn_booknow}`} onClick={handleOpen}>
+                  <button className={`${styles.btn_booknow
+                    }`
+                  } onClick={handleOpen
+                  }>
                     Start Planning
                   </button>
                 </div>

@@ -33,7 +33,7 @@ function App() {
         <Route path="/Itineraries" element={<Itineraries />} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/travel-groups" element={<TravelGroups />} />
-        <Route path="/travel-groups/japan" element={<JapanTrip />} />
+        <Route path="/travel-groups/nepal" element={<JapanTrip />} />
         <Route path="/travel-groups/bangladesh" element={<BangladeshTrip />} />
         <Route path="/travel-groups/laos" element={<LaosTrip />} />
         <Route path="/travel-groups/philippines" element={<PhilippinesTrip />} />

@@ -6,7 +6,7 @@ import Card from "../travel-group/Card/Card";
 
 const data = [
   {
-    link: "/travel-groups/japan",
+    link: "/travel-groups/nepal",
     thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/104733483266635338.jpg", title: "Nepal Adventures", description: "Nepal Unveiled : Embark on Epic Adventures"
   },
   // { link:"japan",
