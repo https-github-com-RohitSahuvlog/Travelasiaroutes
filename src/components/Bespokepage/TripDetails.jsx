@@ -99,8 +99,8 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
     destination: "",
     travelDates: "",
     groupSize: "",
-    startDate: null, // Add start date to state
-    endDate: null,
+    startDate: "",
+    endDate: "",
   });
   const [showDatePickers, setShowDatePickers] = useState(false);
 
@@ -120,15 +120,11 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
 
   const handleDateChange = (dateType, date) => {
     let formattedDate;
-
     if (dayjs.isDayjs(date)) {
-      // If it's already a dayjs object, use it directly
       formattedDate = date;
     } else if (date instanceof Date) {
-      // If it's a JavaScript Date object, convert it to dayjs
       formattedDate = dayjs(date);
     } else {
-      // Handle other cases or throw an error based on your use case
       console.error("Invalid date format");
       return;
     }
@@ -154,14 +150,21 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
 
   useEffect(() => {
     const storedFormData = JSON.parse(localStorage.getItem('BespokeFormData1'));
+
     if (storedFormData) {
-      setBespokeFormData1(storedFormData);
+      if (dayjs(storedFormData.startDate).isValid() && dayjs(storedFormData.endDate).isValid()) {
+        setBespokeFormData1(storedFormData);
+      } else {
+        console.error("Invalid stored date format");
+      }
     }
   }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  console.log("BespokeFormData1", BespokeFormData1)
 
   return (
     <form onSubmit={handleSubmit} sx={{ justifyContent: "center" }}>
@@ -214,7 +217,6 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
           </FormLabel>
           <RadioGroup
             row
-            name="travelDates"
             sx={{ justifyContent: "center" }}
           >
             <FormGroup fullWidth sx={{ maxWidth: "100%", marginBottom: 2 }}>
@@ -227,7 +229,7 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
                 <DemoContainer components={['DatePicker']}>
                   <DatePicker
                     label="Start Date"
-                    value={BespokeFormData1.startDate || ""}
+                    value={BespokeFormData1.startDate || null}
                     format="DD/MM/YYYY"
                     onChange={(date) => handleDateChange("startDate", date)}
                   />
@@ -235,7 +237,7 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
                 <DemoContainer components={['DatePicker']}>
                   <DatePicker
                     label="End Date"
-                    value={BespokeFormData1.endDate || ""}
+                    value={BespokeFormData1.endDate || null}
                     format="DD/MM/YYYY"
                     onChange={(date) => handleDateChange("endDate", date)}
                   />

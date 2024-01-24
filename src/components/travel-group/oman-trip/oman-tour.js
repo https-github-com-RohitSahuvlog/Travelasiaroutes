@@ -226,7 +226,7 @@ const OmanTrip = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {packageTable.packDetails && packageTable.packDetails.map((detail) => (
+                      {packageTable && packageTable.map((detail) => (
                         <tr key={detail._id
                         } className={styles.pricingRow
                         }>

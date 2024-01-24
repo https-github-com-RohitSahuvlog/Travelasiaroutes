@@ -42,13 +42,11 @@ const Itineraries = ({ itineryheading, listing }) => {
                                             </a>
                                         </div>
                                         <div className={`${styles["col-12 col-sm-3 col-md-4 mb-6 md:mb-0"]} ${styles.rowMid}`}>
-                                            <h2 className={styles.heading}>
-                                                {ele.heading}
+                                            <h2 className={`${styles.heading}`} title={ele.heading}>
+                                                {ele.heading.slice(0, 80)}{ele.heading.length > 80 ? '...' : ''}
                                             </h2>
-                                            <div className={styles["text-small my-6 hidden md:block"]}>
-                                                <p className={styles.ptext}>
-                                                    {ele.text}
-                                                </p>
+                                            <div className={`${styles["text-small my-6 hidden md:block"]} ${styles.ptext}`} title={ele.text}>
+                                                {ele.text.slice(0, 150)}{ele.text.length > 150 ? '...' : ''}
                                             </div>
                                             <div className={styles["font-heading-book text-xsmall hidden md:block"]}>
 

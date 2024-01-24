@@ -158,14 +158,6 @@ const TravelGroups = () => {
       </div>
 
 
-      <div className={styles.MainDiv}>
-
-        <div className={styles.ItalicData}>Let our experts guide you to your perfect trip</div>
-        {/* <div className="MainData"><span>CALL</span> <span>888-570-7108</span> <span>–OR–</span> <span><button>INQUIRE ONLINE</button></span></div> */}
-
-      </div>
-
-
       <div className={styles.HomeHead}>
         <div className={styles.HomeHeadingData}>
           <h2>

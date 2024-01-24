@@ -192,7 +192,8 @@ const mapFormDataToSchema = (formData) => {
 
     const travelForm = {
         destination: form1.destination,
-        travelDates: form1.travelDates === "I'm flexible with my dates" ? "I know my dates" : form1.travelDates,
+        startDate: form1.startDate,
+        endDate: form1.endDate,
         groupSize: form1.groupSize,
         travelWith: {
             solo: form2.travelWith.solo,

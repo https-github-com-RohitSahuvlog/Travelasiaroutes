@@ -4,16 +4,22 @@ import Tap from "./Tap";
 import IndiaCarousal from "./indiacarousel";
 import { useParams } from "react-router-dom";
 import Axios from "../../../api";
+import { useNavigate } from "react-router-dom";
 
 const IndiaPage = () => {
     const { countryname } = useParams();
+    const navigate = useNavigate();
     const [countryData, setCountryData] = useState(null);
     useEffect(() => {
         Axios.get(`/api/countries/get-country?country=${countryname}`)
             .then((response) => {
+                if (response.status === 404) {
+                    navigate("/bespoke")
+                }
                 setCountryData(response.data);
             })
             .catch((error) => {
+                navigate("/bespoke")
                 console.error("Error fetching country data:", error);
             });
 
@@ -44,18 +50,7 @@ const IndiaPage = () => {
                 </div>
 
                 {countryData && <Tap item={countryData} />}
-                {/* <div className={`${styles["bg-blue rounded "]} ${styles.classic}`}>
-                    <div className={`${styles["row text-center bs-md:flex items-center"]} ${styles.classicdiv}`}>
-                        <div className={`${styles["col-md-8 bs-md:mb-0"]} `}>
-                            <h2 className={styles.h3}>CLASSIC INDIA STARTING AT $18,200 PER PERSON</h2>
-                        </div>
-                        <div className={styles["col-md-4 static"]}>
 
-                            <a className={`${styles["btn btn-sm btn-outline-gold mt-1"]} ${styles.bttn1}`}>SEE ITINERARY</a>
-
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </>
     )

@@ -233,7 +233,7 @@ const JapanTrip = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {packageTable.packDetails && packageTable.packDetails.map((detail) => (
+                      {packageTable && packageTable.map((detail) => (
                         <tr key={detail._id} className={styles.pricingRow}>
                           <td>{new Date(detail.startDate).toLocaleDateString('en-GB')}</td>
                           <td>{new Date(detail.endDate).toLocaleDateString('en-GB')}</td>

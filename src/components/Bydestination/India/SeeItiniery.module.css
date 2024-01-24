@@ -5,11 +5,11 @@
     justify-content: center;
     align-items: center;
     margin: 6rem;
-    background-image: url("../../../images/mapbackground.png");
+    /* background-image: url("../../../images/mapbackground.png"); */
 }
 
 .pageSection {
-    max-width: 600px;
+    max-width: 85%;
     margin: auto;
 }
 

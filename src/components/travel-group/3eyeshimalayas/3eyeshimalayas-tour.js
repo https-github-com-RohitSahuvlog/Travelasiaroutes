@@ -98,6 +98,7 @@ const HimalayasTrip = () => {
     });
   }, []);
 
+  console.log("packageTable", packageTable)
 
   return (
     <div>
@@ -237,7 +238,7 @@ const HimalayasTrip = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {packageTable.packDetails && packageTable.packDetails.map((detail) => (
+                      {packageTable && packageTable.map((detail) => (
                         <tr key={detail._id
                         } className={styles.pricingRow
                         }>
