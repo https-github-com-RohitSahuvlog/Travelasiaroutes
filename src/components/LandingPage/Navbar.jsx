@@ -152,8 +152,10 @@ export default function Navbar() {
       {displayLogoInNavbar && <Link to="/"><img src={logo} alt="MidAsia logo" className="navbar-logo" /></Link>}
       {displayContactInNavbar && (
         <div className="call-and-home-nav-item">
-          <CallIcon />
-          <p>+91-8750970676</p>
+          <a className="call-and-home-nav-item d-flex align-items-center text-white" href="tel:+918750970676">
+            <CallIcon />
+            <p className="mb-0 ml-2">+91-8750970676</p>
+          </a>
           <p>|</p>
           <Link to="/">
             <HomeIcon />
