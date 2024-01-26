@@ -59,13 +59,13 @@ const data = [
   {
     link: "/travel-groups/jordan",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704171456/aygpo6wg7hxajhm3glsq.jpg",
-    title: "Sultanate of Jordan ",
+    title: "Jordan ",
     description: "In the footsteps of Lawrence of Arabia",
   },
   {
     link: "/travel-groups/iran",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704251364/533dc820eab8eae14a0c7560_r4rcjr.jpg",
-    title: "Sultanate of Iran ",
+    title: "Iran ",
     description: "In the footsteps of Lawrence of Iran",
   },
   {
