@@ -1,4 +1,4 @@
-import react from "react"
+import react, { useEffect } from "react"
 import { IoDiamondOutline } from "react-icons/io5"
 import styles from "./about.module.css";
 
