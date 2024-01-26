@@ -298,7 +298,7 @@ const BangladeshTrip = () => {
                     }>
                       Activity-Level {
                         " "
-                      }({packageTable.activity_level
+                      }({packageTable[0].activity_level
                       })
                     </button>
                   </Link>
