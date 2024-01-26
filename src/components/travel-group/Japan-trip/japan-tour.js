@@ -276,7 +276,7 @@ const JapanTrip = () => {
                 <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', margin: '10px' }}>
                   <Link to="/activitylevel">
                     <button className={`${styles.btn_booknow}`}>
-                      Activity-Level {" "}({packageTable[0].activity_level})
+                      Activity-Level {" "}({packageTable.length > 0 ? packageTable[0].activity_level : 0})
                     </button>
                   </Link>
                   <button className={`${styles.btn_booknow}`} onClick={handleOpen}>

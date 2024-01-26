@@ -292,7 +292,7 @@ const JordanTrip = () => {
                     }>
                       Activity-Level {
                         " "
-                      }({packageTable[0].activity_level
+                      }({packageTable.length > 0 ? packageTable.length > 0 ? packageTable[0].activity_level : 0 : 0
                       })
                     </button>
                   </Link>
