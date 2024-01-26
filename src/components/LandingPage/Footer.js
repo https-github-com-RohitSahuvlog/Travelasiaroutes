@@ -74,7 +74,7 @@ const Footer = () => {
 
                             <ul className={styles.menulist} key={index}>
                               <li className={styles.loc_li}>
-                                {item.label} : {item.number || item.address}
+                                {item.label} : <a href={`tel:${item.number}`}>{item.number || item.address}</a>
                               </li>
                             </ul>
                           ))}
@@ -82,7 +82,9 @@ const Footer = () => {
 
                             <ul className={styles.menulist} key={index}>
                               <li className={styles.loc_li}>
-                                {item.address}
+                                <a href={`mailto:${item.address}`}>
+                                  {item.address}
+                                </a>
                               </li>
                             </ul>
                           ))}
@@ -213,7 +215,7 @@ const Footer = () => {
           </div>
           <div className={styles.copyright_content}>
             <p className={styles.copyP}>
-              © 2020 MIDAISAROUTES All Rights Reserved.Designed & Developed by
+              © 2020 MIDAISAROUTES All Rights Reserved.Designed & Developed by {" "}
               <a href="https://rohitmern.netlify.app/" target="_blank" rel="noopener noreferrer" className={styles.designerName}>
                 RohitSahu
               </a>
