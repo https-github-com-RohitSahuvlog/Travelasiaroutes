@@ -22,7 +22,7 @@ const TravelGroups = () => {
   };
   const data = [
     {
-      link: "japan",
+      link: "nepal",
       thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/104733483266635338.jpg", title: "Nepal Adventures", description: "Nepal Unveiled : Embark on Epic Adventures"
     },
     // { link:"japan",
