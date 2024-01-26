@@ -151,20 +151,18 @@ const BespokeForm1 = ({ setCurrentStep1, setFormData1, handleCountNext }) => {
   useEffect(() => {
     const storedFormData = JSON.parse(localStorage.getItem('BespokeFormData1'));
 
-    if (storedFormData) {
-      if (dayjs(storedFormData.startDate).isValid() && dayjs(storedFormData.endDate).isValid()) {
-        setBespokeFormData1(storedFormData);
-      } else {
-        console.error("Invalid stored date format");
-      }
-    }
+    // if (storedFormData) {
+    //   if (dayjs(storedFormData.startDate).isValid() && dayjs(storedFormData.endDate).isValid()) {
+    //     setBespokeFormData1(storedFormData);
+    //   } else {
+    //     console.error("Invalid stored date format");
+    //   }
+    // }
   }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  console.log("BespokeFormData1", BespokeFormData1)
 
   return (
     <form onSubmit={handleSubmit} sx={{ justifyContent: "center" }}>
