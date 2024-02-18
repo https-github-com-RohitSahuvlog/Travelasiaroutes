@@ -10,13 +10,15 @@ const videoUrls = [
 export default function ScrollVideoSection() {
   return (
     <div className="scroll-video-section">
-      <h2 style={{ borderBottom: "3px solid   #e4bd5a" }}>
-        Travel Inspiration : Discover, Dream, Wander, Repeat.
-      </h2>
-      <p>
-        Unearth your inner wanderer, let the world's beauty be your muse. Seek
-        adventure, create stories, and find inspiration in every corner.
-      </p>
+
+      <div className="main-title text-center">
+        <h2 className="title">Travel Inspiration : Discover, Dream, Wander, Repeat. </h2>
+        <p className="paragraph">
+          Unearth your inner wanderer, let the world's beauty be your muse. Seek
+          adventure, create stories, and find inspiration in every corner.
+        </p>
+      </div>
+
       <div className="scrollable-section">
         {videoUrls.map((url, index) => (
           <video key={index} src={url} controls className="video-section-video"></video>

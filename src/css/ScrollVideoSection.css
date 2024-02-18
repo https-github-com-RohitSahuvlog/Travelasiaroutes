@@ -1,12 +1,10 @@
 .scroll-video-section {
-  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem 2rem;
-  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
 }
 
 .scroll-video-section p {
@@ -47,4 +45,59 @@
 
 .right-arrow {
   right: 10px;
+}
+
+.main-title {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.main-title .title {
+  font-style: normal;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+}
+
+.main-title .paragraph {
+  color: #181a20;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial-section {
+    text-align: center;
+  }
+
+  .main-title .title {
+    font-style: normal;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+
+  .main-title .paragraph {
+    color: #181a20;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 991.98px) {
+
+  .main-title {
+    margin-bottom: 30px;
+  }
+
+  .main-title .paragraph {
+    color: #181a20;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+  }
 }

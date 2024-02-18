@@ -16,7 +16,14 @@
 .navbar-logo {
   width: 100%;
   height: auto;
-  margin-left: -1%;
+  font-size: 1.3rem;
+  color: #e4bd5a;
+}
+
+.sidedivheader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .call-and-home-nav-item {
@@ -188,7 +195,7 @@
   position: fixed;
   top: 0%;
   right: -150%;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   max-width: 400px;
   height: 100vh;
   z-index: 999;
@@ -233,17 +240,26 @@
   position: relative;
   background: 0 0;
   border: none;
-  /* font-size: .85rem; */
   line-height: 1.666;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .close-icon {
   cursor: pointer;
   position: absolute;
-  top: 2%;
   left: 2%;
+  color: #fff;
+  background-color: #e4bd5a;
+  border-radius: 50%;
+  padding: 0.5%;
+
+}
+
+.close-icon:hover {
   color: #e4bd5a;
+  background-color: #fff;
+
 }
 
 .responsive-navbar ul li {

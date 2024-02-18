@@ -49,11 +49,12 @@ const carousalData = [
 export default function TestimonailSection() {
   return (
     <div className="testimonial-section">
-      <h2 style={{ borderBottom: "3px solid   #e4bd5a" }}>Journeys That Flow At Your Pace </h2>
-      {/* <span className="about-us-section-underline"></span> */}
-      <p className="about-us-section-underline">
-        For Passionate Travellers and Nature Lovers.
-      </p>
+      <div className="main-title text-center">
+        <h2 className="title">Journeys That Flow At Your Pace </h2>
+        <p className="paragraph">
+          For Passionate Travellers and Nature Lovers.
+        </p>
+      </div>
 
       <div className="scrollable-section">
         {carousalData.map((carousal) => {

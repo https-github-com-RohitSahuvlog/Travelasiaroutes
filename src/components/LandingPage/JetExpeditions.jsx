@@ -1,6 +1,5 @@
 import React from "react";
 import "../../css/JetExpeditions.css";
-import ExpeditionCrousal from "./ExpeditionCrousal";
 import { createGlobalStyle } from 'styled-components';
 import Card from "../travel-group/Card/Card";
 
@@ -100,13 +99,14 @@ export default function JetExpeditions() {
 `;
   return (
     <div className="jet-expeditions-section">
-      <h2 className="jetheading" style={{ borderBottom: "3px solid   #e4bd5a" }}>Our Signature Small Group Expeditions
-      </h2>
-      <span className="about-us-section-underline"></span>
-      <p>
-        Embark on a Once-in-a-Lifetime Journey – Highly Recommended for Passionate Travelers and Nature Lovers
-      </p>
-      {/* <ExpeditionCrousal /> */}
+
+      <div className="main-title text-center">
+        <h2 className="title">Our Signature Small Group Expeditions </h2>
+        <p className="paragraph">
+          Embark on a Once-in-a-Lifetime Journey – Highly Recommended for Passionate Travelers and Nature Lovers
+        </p>
+      </div>
+
       <div className="containerTop" >
         <GlobalStyle />
         <div className="containerchild">

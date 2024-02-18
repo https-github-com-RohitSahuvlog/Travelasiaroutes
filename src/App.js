@@ -21,6 +21,7 @@ import OmanTrip from "./components/travel-group/oman-trip/oman-tour";
 import JordanTrip from "./components/travel-group/Jordan-trip/Jordan-tour";
 import IranTrip from "./components/travel-group/Iran-trip/Iran-tour";
 import SaudiArabiaTrip from "./components/travel-group/Saudi-arabia-trip/Saudi-arabia-tour";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 function App() {
   return (
     <div className="App">
@@ -47,7 +48,8 @@ function App() {
         <Route path="/activitylevel" element={<ActivityLevels />} />
       </Routes>
       <Footer />
-    </div>
+      <ScrollToTopButton />
+    </div >
   );
 }
 

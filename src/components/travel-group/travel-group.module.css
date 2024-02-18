@@ -11,6 +11,7 @@
   justify-content: center;
   text-align: center;
   background-image: url("https://www.geoex.com/app/uploads/2019/10/group-travel-safari-tanzania.jpg");
+  background-position: center;
 }
 
 
@@ -98,9 +99,9 @@
 .TitleSet {
   margin: 20px 0px;
   line-height: 1.1;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 1.5px;
 
 
 }
@@ -221,6 +222,22 @@
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 700px) {
+  .MainUpper {
+    padding: 0%;
+    margin: 0%;
+    /* border: 1px solid black; */
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("https://www.geoex.com/app/uploads/2019/10/group-travel-safari-tanzania.jpg");
+    background-position: 20% 50%;
+  }
+
   .GridData {
     display: grid;
     grid-template-columns: repeat(2, 410px);
@@ -231,16 +248,32 @@
     height: 30px;
     margin: 20px 100px;
     text-align: Center;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .Title {
-    font-size: 4.375rem;
+    font-size: 2.375rem;
   }
 
 }
 
 @media only screen and (max-width: 700px) and (min-width: 300px) {
+  .MainUpper {
+    padding: 0%;
+    margin: 0%;
+    /* border: 1px solid black; */
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("https://www.geoex.com/app/uploads/2019/10/group-travel-safari-tanzania.jpg");
+    background-position: 20% 50%;
+  }
+
   .GridData {
     display: grid;
     grid-template-columns: repeat(1, 85%);

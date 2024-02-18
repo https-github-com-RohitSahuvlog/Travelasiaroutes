@@ -2,9 +2,9 @@
   margin: 0.2rem 0;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
+  padding: 2rem 1rem;
 }
 
 .jet-expeditions-section p {
@@ -22,4 +22,53 @@
   .jet-expeditions-section {
     text-align: center;
   }
+
+  .main-title .title {
+    font-style: normal;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .main-title .paragraph {
+    color: #181a20;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.main-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991.98px) {
+
+  .main-title {
+    margin-bottom: 20px;
+  }
+
+  .main-title .paragraph {
+    color: #181a20;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.main-title .title {
+  font-style: normal;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.main-title .paragraph {
+  color: #181a20;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+
 }

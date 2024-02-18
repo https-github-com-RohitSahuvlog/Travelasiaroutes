@@ -235,3 +235,17 @@
     font-weight: bolder;
     margin-left: 0.3vmax;
 }
+
+/* .hsidebar-header .sidebar-close-icon:hover {
+    background-color: #eb6753;
+    color: #fff;
+} */
+
+.hsidebar-header {
+    background: rgba(235, 103, 83, 0.07);
+}
+
+.sidebar-close-icon {
+    background-color: #eb6753;
+    color: #fff;
+}

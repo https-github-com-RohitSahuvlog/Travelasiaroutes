@@ -150,9 +150,9 @@ const TravelGroups = () => {
         <div className={styles.AddContent}>
           <h2 className={styles.TitleSet} > LUXURY SMALL GROUP TRAVEL TOURS </h2>
           <div className={styles.ParaSet}>
-            <p>Personal attention is an essential part of all GeoEx small group trips. Get one-on-one guidance from our destination experts, access our in-house flight-booking service, add a trip extension tailored to your specific interests, and converse with our superb guides while traveling.</p>
+            <p>Personal attention is an essential part of all <strong>MidAsiaRoutes</strong> small group trips. Get one-on-one guidance from our destination experts, access our in-house flight-booking service, add a trip extension tailored to your specific interests, and converse with our superb guides while traveling.</p>
             <br></br>
-            <p>Our luxury group tours go far beyond the basic to get deeper into the country, its people, wild places, and customs. Intimate group sizes between 10-12 travelers (rarely up to 16) allow us to arrange private access to many sites, accept invitations to share authentic experiences, and stay in top-notch accommodations, which wouldn’t be possible with larger groups. We are committed to delivering a superior small group travel experience from connecting with a destination expert to returning home with new friends and stories.</p>
+            <p>Our luxury group tours go far beyond the basic to get deeper into the country, its people, wild places, and customs. Intimate group sizes between 6-8 travelers (rarely up to 10) allow us to arrange private access to many sites, accept invitations to share authentic experiences, and stay in top-notch accommodations, which wouldn’t be possible with larger groups. We are committed to delivering a superior small group travel experience from connecting with a destination expert to returning home with new friends and stories.</p>
           </div>
         </div>
       </div>

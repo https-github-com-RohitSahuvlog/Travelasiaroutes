@@ -1,14 +1,15 @@
-import React, { useState } from "react";
-import "../../css/Navbar.css";
-import "../../css/Navbar_by_destination.css";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/AssetMidAsia.svg";
+import { Box, Button, Modal } from "@mui/material";
 import CallIcon from "@mui/icons-material/Call";
 import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import logo from "../../images/AssetMidAsia.svg";
 import ModalCom from "../Enquire/ModalCom";
-import { Box, Button, Modal } from "@mui/material";
+import "../../css/Navbar.css";
+import "../../css/Navbar_by_destination.css";
+
 
 
 const style = {
@@ -99,20 +100,7 @@ const destinations = [
 
 
 
-const destinationItems = destinations.map((destination, index) => (
-  <div className="all_destinations_li" key={index}>
-    <Link className="all_destination_Link" to={`country${destination.link}`}>{destination.text}</Link>
-  </div>
-));
 
-
-const sidedestinationItems = destinations.map((destination, index) => (
-  <Link className="side_destination_Link" to={`country${destination.link}`} key={index}>
-    <div className="side_destinations_li" >
-      {destination.text}
-    </div>
-  </Link>
-));
 
 
 
@@ -147,9 +135,25 @@ export default function Navbar() {
   const handleDestinationClick = () => {
     setShowDestinationDropdown(!showDestinationDropdown);
   };
+
+  const destinationItems = destinations.map((destination, index) => (
+    <div className="all_destinations_li" key={index} onClick={() => { setShowDestinationDropdown(false); closeMenu(); }}>
+      <Link className="all_destination_Link" to={`country${destination.link}`}>{destination.text}</Link>
+    </div>
+  ));
+
+
+  const sidedestinationItems = destinations.map((destination, index) => (
+    <Link className="side_destination_Link" to={`country${destination.link}`} key={index}>
+      <div className="side_destinations_li" onClick={() => { setShowDestinationDropdown(false); closeMenu(); }} >
+        {destination.text}
+      </div>
+    </Link>
+  ));
+
   return (
     <div className="navbar">
-      {displayLogoInNavbar && <Link to="/"><img src={logo} alt="MidAsia logo" className="navbar-logo" /></Link>}
+      {displayLogoInNavbar && <Link to="/"><img src={logo} alt="MidAsia logo" className="navbar-logo img-fluid" /></Link>}
       {displayContactInNavbar && (
         <div className="call-and-home-nav-item">
           <a className="call-and-home-nav-item d-flex align-items-center text-white" href="tel:+918750970676">
@@ -231,16 +235,23 @@ export default function Navbar() {
         <MenuIcon className="menu-icon" onClick={openMenu} />
 
         <div className="responsive-navbar" id="responsiveNavbar" >
-          <CloseIcon className="close-icon" onClick={closeMenu} />
-          <Link to="/"> <img src={logo} alt="MidAsia logo" className="navbar-logo" /> </Link>
+          <div className="flex sidedivheader">
+            <div> <CloseIcon className="close-icon" onClick={closeMenu} /></div>
+            <div>
+              <h3 className="navbar-logo">Welcome to MidAsia Routes</h3>
+            </div>
+
+          </div>
+
+
           {!showDestinationDropdown && <>
-            <div className="side_nav_link">
+            <div className="side_nav_link" onClick={() => { setShowDestinationDropdown(false); closeMenu(); }}>
               <Link to="/">Home</Link>
             </div>
-            <div className="side_nav_link">
+            <div className="side_nav_link" onClick={() => { setShowDestinationDropdown(false); closeMenu(); }}>
               <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
             </div>
-            <div className="side_nav_link">
+            <div className="side_nav_link" onClick={() => { setShowDestinationDropdown(false); closeMenu(); }}>
               <Link to="/travel-groups" >Small Group Boutique Expeditions</Link>
             </div>
             <div className="side_nav_link" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}>

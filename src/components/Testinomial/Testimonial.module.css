@@ -1,9 +1,14 @@
+.maintestinomial {
+  background-color: #f7f7f7;
+  padding: 20px 0px;
+}
+
 .section-three-main-div {
   display: grid;
   grid-template-rows: 1fr 50px;
   justify-items: center;
   row-gap: 1rem;
-  background-color: rgb(250, 251, 253);
+
 
 
 }
