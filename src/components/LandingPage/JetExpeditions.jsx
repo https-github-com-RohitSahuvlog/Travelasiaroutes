@@ -3,6 +3,28 @@ import "../../css/JetExpeditions.css";
 import { createGlobalStyle } from 'styled-components';
 import Card from "../travel-group/Card/Card";
 
+const GlobalStyle = createGlobalStyle`
+
+  .containerchild{
+    width: 90%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+     @media only screen and (max-width: 580px){
+     grid-template-columns: repeat(1, 1fr);
+    }
+    @media only screen and (min-width: 580px){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (min-width: 1000px){
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+  }
+`;
+
 const data = [
   {
     link: "/travel-groups/nepal",
@@ -72,31 +94,17 @@ const data = [
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704258953/0UZhVeo5-Saudi-tourism_odswhp.jpg",
     title: "Explore Saudi Arabia's Rich Heritage",
     description: "Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.",
+  },
+  {
+    link: "/travel-groups/northern-india",
+    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1710656540/0B9B7F39-B3D4-4C73-86E0-CD96FA993CB61417108072_vwqapu.jpg",
+    title: "Northern India (A Spiritual Journey through Himalayas)",
+    description: "A Spiritual Journey in India (Story of unseen Gems)",
   }
 
 ]
 export default function JetExpeditions() {
-  const GlobalStyle = createGlobalStyle`
 
-  .containerchild{
-    width: 90%;
-    margin:auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-
-     @media only screen and (max-width: 580px){
-     grid-template-columns: repeat(1, 1fr);
-    }
-    @media only screen and (min-width: 580px){
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media only screen and (min-width: 1000px){
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-  }
-`;
   return (
     <div className="jet-expeditions-section">
 

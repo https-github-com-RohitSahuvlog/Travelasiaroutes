@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "../../css/LandingCarousal.css";
 import { CircularProgress } from "@mui/material";
 
-const Slide = ({ image, heading, para, isActive }) => (
+const Slide = ({ image, heading, para, isActive, isLoading }) => (
     <div
         className={`landingslide-section ${isActive ? "active" : ""}`}
         style={{
@@ -12,8 +12,16 @@ const Slide = ({ image, heading, para, isActive }) => (
         }}
     >
         <div className="landingcontent">
-            {heading && <h2>{heading}</h2>}
-            {para && <p>{para}</p>}
+            {!isLoading ? (
+                <div className="shimmer-placeholder">
+                    <div className="shimmer"></div>
+                </div>
+            ) : (
+                <React.Fragment>
+                    {heading && <h2>{heading}</h2>}
+                    {para && <p>{para}</p>}
+                </React.Fragment>
+            )}
         </div>
     </div>
 );
@@ -82,6 +90,7 @@ const Slider = ({ carousalData }) => {
                     heading={slide.heading}
                     para={slide.para}
                     isActive={index === activeIndex}
+                    isLoading={imagesLoaded}
                 />
             ))}
             <div className="landingdots">

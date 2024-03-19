@@ -57,12 +57,13 @@ export default function TestimonailSection() {
       </div>
 
       <div className="scrollable-section">
-        {carousalData.map((carousal) => {
+        {carousalData.map((carousal, index) => {
           return (
             <Card
+              key={index}
               image={carousal.image}
               name={carousal.heading}
-              para={carousal.para}
+
             />
           );
         })}

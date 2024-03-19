@@ -22,6 +22,7 @@ import JordanTrip from "./components/travel-group/Jordan-trip/Jordan-tour";
 import IranTrip from "./components/travel-group/Iran-trip/Iran-tour";
 import SaudiArabiaTrip from "./components/travel-group/Saudi-arabia-trip/Saudi-arabia-tour";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import NorthernIndiaTrip from "./components/travel-group/northern-india/northern-india-tour";
 function App() {
   return (
     <div className="App">
@@ -45,6 +46,7 @@ function App() {
         <Route path="/travel-groups/iran" element={<IranTrip />} />
         <Route path="/travel-groups/saudi-arabia" element={<SaudiArabiaTrip />} />
         <Route path="/travel-groups/uzbekistan" element={<UzbekistanTrip />} />
+        <Route path="/travel-groups/northern-india" element={<NorthernIndiaTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
       </Routes>
       <Footer />

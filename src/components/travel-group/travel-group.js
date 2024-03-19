@@ -89,6 +89,12 @@ const TravelGroups = () => {
       thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704258953/0UZhVeo5-Saudi-tourism_odswhp.jpg",
       title: "Explore Saudi Arabia's Rich Heritage",
       description: "Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.",
+    },
+    {
+      link: "northern-india",
+      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1710656540/0B9B7F39-B3D4-4C73-86E0-CD96FA993CB61417108072_vwqapu.jpg",
+      title: "Northern India (A Spiritual Journey through Himalayas)",
+      description: "A Spiritual Journey in India (Story of unseen Gems)",
     }
 
   ]
