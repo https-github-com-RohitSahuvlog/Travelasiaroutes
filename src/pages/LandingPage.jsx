@@ -29,7 +29,6 @@ export default function LandingPage() {
       <AboutUsSection />
       <TestimonailSection />
       <JetExpeditions />
-      <Newsletter />
       <ScrollVideoSection />
       <Testimonial testimonialData={data} />
       {/* <Footer /> */}
