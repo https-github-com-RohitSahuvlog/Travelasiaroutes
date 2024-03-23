@@ -1,3 +1,10 @@
+
+.footer{
+  width: 100%;
+  background-color: black;
+  padding: 3rem 2rem;
+}
+
 .FooterMain {
   width: 100%;
   background-image: url("https://talentcorner.in/wp-content/uploads/2019/07/bgimage.jpg");

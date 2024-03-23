@@ -7,6 +7,8 @@ import {
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 import Axios from "../../api";
+import "../../css/Footer.css"
+import minLogo from "../../images/minLogo.png"
 
 
 const Footer = () => {
@@ -27,16 +29,74 @@ const Footer = () => {
       });
   }, []);
 
+  console.log(data.contactInfo);
+
   return (
     <>
-      <div className={styles.FooterMain}>
+        <footer className="footer">
+          <div className="footer-top">
+            <div className="footer-top-col">
+              <img src={minLogo} alt="" />
+              <h3>Mid Asia Routes</h3>
+            </div>
+            <div className="footer-top-col">
+              <h3>Important Links</h3>
+              <a href="#">Home</a>
+              <a href="#">Bespoke-For your Travel DNA</a>
+              <a href="#">Small Group Boutique Expeditions</a>
+            </div>
+            <div className="footer-top-col">
+              <h3>Our Office Address</h3>
+              {data.officeBranches.map((curElem) => (
+                  <li>{curElem.address}</li>
+              ))}
+            </div>
+          </div>
+          <div className="footer-middle">
+            <div className="footer-middle-left">
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+              <a href="">Site Maps</a>
+              <a href="">Booking Forms</a>
+            </div>
+            <div className="footer-middle-right">
+              <a href="https://www.facebook.com/midasia/" className="social-icons"  title="Facebook" target="_blank">
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </a>
+              <a href="https://www.facebook.com/midasia/" className="social-icons"  title="Facebook" target="_blank">
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+              <a href="https://www.facebook.com/midasia/" className="social-icons"  title="Facebook" target="_blank">
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </a>
+            </div>
+          </div>
+          <div className="footer-bottom-second">
+            <h3>Contact Via :</h3>
+            {
+              data.contactInfo.map((elem) => (
+                <div className="row">
+                  <h3>{elem.label}</h3>
+                  <p>{elem.number}</p>
+                  <p>{elem.address}</p>
+                </div>
+              ))
+            }
+          </div>
+          <div className="footer-bottom">
+            <h3>Mid Asia Routes | Copyright 2024 </h3>
+          </div>
+        </footer>
+
+
+      {/* <div className={styles.FooterMain}>
         <div className={styles.Container}>
           <div className={styles.Footsec}>
             <div className={`${styles["col-md-12 col-12"]} ${styles.footer_logo}`}>
               <div className={styles.footer_about}>
                 <div className={styles.about_logo}>
                   <a href="#">
-                    {/* <img className={styles.img} src="https://midasiaroutes.com/images/footer_logo.png" alt="Image" /> */}
+                     <img className={styles.img} src="https://midasiaroutes.com/images/footer_logo.png" alt="Image" />
                   </a>
                 </div>
               </div>
@@ -60,7 +120,7 @@ const Footer = () => {
               ))}
 
             </div>
-            {/* </div> */}
+             </div> 
             <hr className={styles.hr} />
             <div className={styles.footer_links}>
               <div className={styles.footer_left}>
@@ -116,7 +176,6 @@ const Footer = () => {
                           </div>
                         </span>
                       </div>
-                      {/* </div> */}
                     </div>
                   </div>
                 </div>
@@ -140,13 +199,13 @@ const Footer = () => {
                         <li className={styles.loca_li}>
                           <a href="/travel-groups">Small Group Boutique Expeditions</a>
                         </li>
-                        {/* <li className={styles.loca_li}>
+                         <li className={styles.loca_li}>
                           <a href="#">By Destination</a>
-                        </li> */}
+                        </li> 
                       </ul>
                     </div>
                   </div>
-                  {/* <div className={`${styles["col-md-4 col-sm-4 col-xs-12"]}`}>
+                  <div className={`${styles["col-md-4 col-sm-4 col-xs-12"]}`}>
                     <div className={styles.footer_links_list}>
                       <h3 className={styles.H3_us}>
                         Our Geography
@@ -162,7 +221,7 @@ const Footer = () => {
 
                       </ul>
                     </div>
-                  </div> */}
+                  </div> 
                   <div className={`${styles["col-md-4 col-sm-4 col-xs-12"]}`}>
                     <div className={styles.footer_links_list}>
                       <h3 className={styles.H3_us}>
@@ -191,9 +250,6 @@ const Footer = () => {
           </div>
 
         </div>
-
-        {/* <FooterUpper></FooterUpper> */}
-      </div >
       <div className={styles.copyright}>
         <div className={styles.container_fluid}>
           <div className={styles.payment_content}>
@@ -223,7 +279,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
