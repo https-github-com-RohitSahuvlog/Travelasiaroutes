@@ -63,7 +63,7 @@ export default function TestimonailSection() {
               key={index}
               image={carousal.image}
               name={carousal.heading}
-
+              para={carousal.para}
             />
           );
         })}
