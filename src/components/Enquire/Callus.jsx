@@ -28,7 +28,6 @@ const Callus = ({ setComponent }) => {
       </div>
       <div className="right">
         <p>In our Delhi B/176-Greenfields,Delhi-NCR,121003 office it’s now 6:22 am.</p>
-        <h2>OFFICE IS CLOSED</h2>
         <h2>NEW YORK OFFICE HOURS (EDT)</h2>
         <h3>
           <span>24 HOURS SERVICE</span>

@@ -1,8 +1,7 @@
-
-.footer{
+.footer {
   width: 100%;
-  background-color: black;
   padding: 3rem 2rem;
+  font-size: 18px !important;
 }
 
 .FooterMain {
@@ -10,6 +9,7 @@
   background-image: url("https://talentcorner.in/wp-content/uploads/2019/07/bgimage.jpg");
   background-size: cover;
   background-position: center;
+  color: white;
 }
 
 
@@ -21,27 +21,22 @@
 .FooterLogo {
   width: 100%;
   height: 100px;
-  background-color: #0d0d0d;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 18px;
   margin-bottom: -30px;
   padding: 20px 0px;
 }
 
 .clientText {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   margin-right: 30px;
-  font-family: "Tinos-Italic" !important;
 }
 
 .location_title {
-  /* Styles for the location title */
-  font-size: 25px;
+  /* font-size: 25px; */
   color: #fff;
-  font-style: italic;
 }
 
 .flagimg {
@@ -77,7 +72,7 @@
 }
 
 .H3_use {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: #fff;
   font-weight: 800;
   margin-bottom: 15px;
@@ -88,7 +83,7 @@
 }
 
 .H3_us {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   color: #fff;
   font-weight: 500;
   margin-bottom: 15px;
@@ -114,36 +109,32 @@
   border-left: 1px solid #ffffff;
   width: 400px;
   color: #ffffff;
-  font-size: 15px;
   /* font-style: italic; */
   padding: 0 0 0 30px;
 }
 
 .local_li {
   padding-left: 15px;
-  font-size: 15px;
   color: #fff;
   margin-bottom: 15px;
   display: list-item;
   line-height: 30px;
   margin-right: 2px;
   cursor: pointer;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
 .loca_li {
-  font-size: 15px;
   color: #fff;
   margin-bottom: 15px;
   display: list-item;
   line-height: 30px;
   /* font-style: italic; */
   cursor: pointer;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
 .loc_li {
-  font-size: 15px;
   height: 20px;
   color: #fff;
   margin-bottom: 19px;
@@ -152,7 +143,7 @@
   /* font-style: italic; */
   font-weight: 400;
   cursor: pointer;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
 .loc_li>a :hover {
@@ -216,7 +207,6 @@
 
 .footer_left {
   width: 35%;
-  padding: 0px 30px;
   float: left;
 }
 
@@ -227,8 +217,6 @@
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -239,11 +227,10 @@
   margin-bottom: 40px;
   position: relative;
   padding-bottom: 10px;
-  font-size: 21px;
+  /* font-size: 21px; */
   font-weight: 500;
   margin-top: 0;
   line-height: 1.5;
-  font-family: "Tinos-Italic" !important;
 }
 
 
@@ -253,10 +240,10 @@
 
 
 .copyright {
-  padding: 10px 0px;
   z-index: 1;
   background: rgba(0, 0, 0, 0.99);
   color: #ffffff;
+  padding: 15px;
 }
 
 .container_fluid {
@@ -303,7 +290,6 @@
 }
 
 .copyright_content {
-  margin: 0px;
   width: 65%;
   text-align: left;
   float: left;
@@ -317,23 +303,15 @@
   margin-bottom: 0;
   display: inline-block;
   color: #fff;
-  font-size: 15px;
 }
 
 .copyP {
-  font-family: "Tinos-Italic" !important;
-  font-size: 20px;
   font-weight: 500 !important;
-  line-height: 30px;
-  margin-bottom: 15px;
+
   color: #ffffff !important;
-  letter-spacing: 1px !important;
-  margin: 0 0 10px;
-  font-style: italic;
 }
 
 .designerName {
-  font-size: 1.1rem;
   color: #ffc63f;
 }
 
@@ -345,7 +323,6 @@
     margin-top: -4%;
     width: 95%;
     display: grid;
-    font-size: 19px;
   }
 
   .Footsec {
@@ -356,7 +333,6 @@
   }
 
   .FooterLogo {
-    font-size: 12px;
     width: 100%;
     text-align: center;
   }
@@ -388,7 +364,7 @@
     /* Styles for each location item */
     width: 100%;
     color: #ffffff;
-    font-size: 15px;
+
     /* font-style: italic; */
     margin: 0 0 15px;
     padding: 0 0 0 30px;
@@ -406,7 +382,6 @@
 
   .container_fluid {
     width: 100%;
-    display: grid;
     margin: auto;
   }
 
@@ -426,8 +401,7 @@
 
   .copyP {
     width: 100%;
-    font-family: "Tinos-Italic" !important;
-    font-size: 15px;
+
     font-weight: 500 !important;
     margin-bottom: 15px;
     color: #ffffff !important;
@@ -438,12 +412,10 @@
 
   .footer_left {
     width: 50%;
-    padding: 10px;
   }
 
   .footer_right {
     width: 80%;
-    padding: 20px;
   }
 
   .row {
@@ -464,7 +436,6 @@
     margin-top: -4%;
     width: 95%;
     display: grid;
-    font-size: 19px;
   }
 
   .Footsec {
@@ -474,13 +445,10 @@
     /* height: 1450px; */
   }
 
-  .clientText {
-    font-size: 1.3rem;
-  }
+  .clientText {}
 
   .FooterLogo {
     width: 100%;
-    font-size: 1.3rem;
   }
 
   .flagimg {
@@ -499,7 +467,6 @@
     width: 100%;
     height: 120px;
     color: #ffffff;
-    font-size: 16px;
     /* font-style: italic; */
     margin: 0 0 15px;
     padding: 0 0 0 30px;
@@ -537,8 +504,7 @@
 
   .copyP {
     width: 100%;
-    font-family: "Tinos-Italic" !important;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: 500 !important;
     /* line-height: 30px; */
     margin-bottom: 15px;
@@ -568,16 +534,16 @@
 }
 
 .social_icons {
-  width: 60%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
 .iconinsta {
   width: 100px;
-  font-size: 20px;
+  /* font-size: 20px; */
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -586,7 +552,7 @@
 
 .icon {
   width: 100px;
-  font-size: 20px;
+  /* font-size: 20px; */
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -608,11 +574,11 @@
   top: -30px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #333;
+  /* background-color: #333; */
   color: #fff;
   padding: 5px 10px;
   border-radius: 4px;
-  font-size: 14px;
+  /* font-size: 14px; */
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;

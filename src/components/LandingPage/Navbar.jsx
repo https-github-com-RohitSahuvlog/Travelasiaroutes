@@ -5,7 +5,7 @@ import CallIcon from "@mui/icons-material/Call";
 import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import logo from "../../images/AssetMidAsia.svg";
+import logo from "../../images/logo.svg";
 import ModalCom from "../Enquire/ModalCom";
 import "../../css/Navbar.css";
 import "../../css/Navbar_by_destination.css";
@@ -107,21 +107,9 @@ const destinations = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [displayContactInNavbar, setDisplayContactInNavbar] = useState(false);
-  const [displayLogoInNavbar, setDisplayLogoInNavbar] = useState(true);
   const [showDestinationDropdown, setShowDestinationDropdown] = useState(false);
-  const [showBespokeDropdown, setShowBespokeDropdown] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  document.addEventListener("scroll", () => {
-    if (window.scrollY >= 70) {
-      setDisplayContactInNavbar(true);
-      setDisplayLogoInNavbar(false);
-    } else if (window.scrollY < 70) {
-      setDisplayContactInNavbar(false);
-      setDisplayLogoInNavbar(true);
-    }
-  });
 
   const openMenu = () => {
     setShowDestinationDropdown(false);
@@ -153,19 +141,14 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      {displayLogoInNavbar && <Link to="/"><img src={logo} alt="MidAsia logo" className="navbar-logo img-fluid" /></Link>}
-      {displayContactInNavbar && (
-        <div className="call-and-home-nav-item">
-          <a className="call-and-home-nav-item d-flex align-items-center text-white" href="tel:+918750970676">
-            <CallIcon />
-            <p className="mb-0 ml-2">+91-8750970676</p>
-          </a>
-          <p>|</p>
-          <Link to="/">
-            <HomeIcon />
-          </Link>
-        </div>
-      )}
+      <div className="call-and-home-nav-item">
+        <Link to="/"><img src={logo} alt="MidAsia logo" className="navbar-logo img-fluid" /></Link>
+        <a className="call-and-home-nav-item d-flex align-items-center text-white" href="tel:+918750970676">
+          <CallIcon />
+        </a>
+        {/* <p>|</p> */}
+
+      </div>
       <div className="nav-items">
         <li className="to_drop"  >
           <Link to="/">Home</Link>

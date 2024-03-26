@@ -23,6 +23,8 @@ import IranTrip from "./components/travel-group/Iran-trip/Iran-tour";
 import SaudiArabiaTrip from "./components/travel-group/Saudi-arabia-trip/Saudi-arabia-tour";
 import NorthernIndiaTrip from "./components/travel-group/northern-india/northern-india-tour";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import GoldenTriangleTrip from "./components/travel-group/golden-triangle/golden-triangle-tour";
+import LaosCombodiaTrip from "./components/travel-group/laos-combodia/laos-combodia-tour";
 function App() {
   return (
     <div className="App">
@@ -47,6 +49,8 @@ function App() {
         <Route path="/travel-groups/saudi-arabia" element={<SaudiArabiaTrip />} />
         <Route path="/travel-groups/uzbekistan" element={<UzbekistanTrip />} />
         <Route path="/travel-groups/northern-india" element={<NorthernIndiaTrip />} />
+        <Route path="/travel-groups/golden-triangle" element={<GoldenTriangleTrip />} />
+        <Route path="/travel-groups/laos-combodia" element={< LaosCombodiaTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
       </Routes>
       <Footer />

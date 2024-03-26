@@ -16,14 +16,18 @@
 
 .Logo_design {
   width: 100%;
-  background-color: black;
   height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(10px); */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-  padding: 40px 0px;
-
+  padding: 40px 10px;
+  position: relative;
+  left: 0%;
+  color: white;
+  z-index: 0;
 }
 
 .buttons_container>button:hover {

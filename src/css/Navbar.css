@@ -6,20 +6,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: var(--black); */
-  background-color: rgba(0, 0, 0, 0.435);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   color: white;
   font-size: 14px;
   z-index: 1000;
   margin-bottom: 200px;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* background: linear-gradient(to left, #87cfeb3f, #ffffff28); */
 }
 
 .navbar-logo {
-  width: 75%;
-  height: auto;
+  width: 200px;
+  height: 50px;
   font-size: 1.3rem;
-  color: #e4bd5a;
 }
 
 .sidedivheader {
@@ -267,6 +266,7 @@
 
 .call-and-home-nav-item {
   font-size: 1rem;
+  display: flex;
 }
 
 @media screen and (min-width: 920px) {
@@ -275,9 +275,10 @@
   }
 
   .navbar-logo {
-    width: 90%;
-    /* height: 40px; */
+    width: 200px;
+    height: 50px;
     margin-left: -1%;
+
   }
 
 }

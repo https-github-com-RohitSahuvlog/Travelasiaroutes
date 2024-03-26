@@ -18,23 +18,27 @@
 }
 
 .Title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
   margin: 0;
   line-height: 1.1;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   text-shadow: 0 3px 5px #000;
+  backdrop-filter: blur(7px);
+  padding: 5px 5px;
 }
 
 .Italic {
   font-weight: 400;
-  font-size: 2.375rem;
-  line-height: 1.7;
+  font-size: 2rem;
+  line-height: 1.2;
   text-align: center;
   color: #fff;
   text-shadow: 0 3px 5px #000;
+  backdrop-filter: blur(7px);
+  padding: 0px 5px;
 }
 
 .GoButton {

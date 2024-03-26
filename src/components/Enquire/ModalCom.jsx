@@ -4,7 +4,7 @@ import Enquire from "./Enquire";
 import Callus from "./Callus";
 import Findus from "./Findus";
 import CloseIcon from "@mui/icons-material/Close";
-import logo from "../../images/AssetMidAsia.svg";
+import logo from "../../images/logo.svg";
 import { Link } from "react-router-dom";
 
 function ModalCom({ handleClose }) {
@@ -13,21 +13,24 @@ function ModalCom({ handleClose }) {
   return (
     <div
       style={{
-        textAlign: "center",
+        textAlign: "center"
       }}>
-      <CloseIcon
-        sx={{
-          position: "absolute",
-          right: 1,
-          top: 0,
-          cursor: "pointer",
-          color: "grey",
-          fontSize: "30px"
-        }}
-        onClick={handleClose}
-      />
+
       <div className="Logo_design">
         <Link to="/"><img src={logo} alt="" className="navbar-logo" /></Link>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            color: "black",
+            cursor: "pointer",
+          }}
+          onClick={handleClose}
+        >
+          <span >Close</span>
+          {/* <CloseIcon fontSize="15px" marginLeft="5px" /> */}
+
+        </div>
       </div>
 
       <div className="main_container">

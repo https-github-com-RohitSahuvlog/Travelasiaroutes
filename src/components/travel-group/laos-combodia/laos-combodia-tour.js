@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
-import styles from "./northern-india-tour.module.css";
+import styles from "./laos-combodia-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
-import { Images } from "./northern-india-image-data";
+import { Images } from "./laos-combodia-image-data";
 import { Link, useLocation } from 'react-router-dom';
-import { NorthernTripAccData } from "./northern-india-accordian-data";
+import { LaosCombodiaData } from "./laos-combodia-accordian-data";
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
 import Axios from '../../../api';
@@ -20,7 +20,7 @@ const getStatusStyle = (status) => {
 };
 
 
-const NorthernIndiaTrip = () => {
+const LaosCombodiaTrip = () => {
   const location = useLocation();
   const [packageTable, setpackageTable] = useState([]);
   const [open, setOpen] = useState(false);
@@ -99,8 +99,8 @@ const NorthernIndiaTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title}>Unexpected Northern India</h1>
-          <div className={styles.Italic}>The land of Frankincense & Golden Sands.</div>
+          <h1 className={styles.Title}>Exploring the Mystique of the Golden Triangle</h1>
+          <div className={styles.Italic}>Journey through the Riches of Frankincense & Golden Sands</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>
               Start Planning
@@ -138,20 +138,22 @@ const NorthernIndiaTrip = () => {
                   </div>
                   <div className={styles.tripfeedbackquote}>
                     <p>
-                      Embark on an extraordinary exploration of Himalayas, a region recently unveiled to tourism, and delve into its enigmatic allure on this exclusive journey. Traverse the pristine mountains surrounding Kashmir, immersing yourself in the natural splendor while sharing tea with local villagers and discovering the vibrant floating market of Lake Dal.
+                      Explore the Mystique of Laos: Delve into the heart of Southeast Asia's hidden treasure with our Laos Expedition. This immersive journey offers a glimpse into a nation untouched by mass tourism, where every corner reveals a story of natural wonder and cultural richness.
                     </p>
                     <p>
-                      Explore the legendary "Seat of Solomon" and uncover the mystical tales that shroud this mythical site.
+                      Traverse mist-veiled mountains, meandering rivers, and lush countryside as you uncover the untouched beauty of Laos. From serene villages nestled amidst verdant landscapes to the mighty Mekong River, nature takes center stage, inviting you to discover its secrets.
+                      Venture beyond the tourist trail and embark on unforgettable adventures in Laos. Whether trekking through remote wilderness, exploring ancient temples, or cruising along the Mekong Delta, every moment promises discovery and adventure.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.SecondDiv}>
                   <p>
+                    Enjoy privileged access to hidden gems and lesser-known attractions, curated to provide you with an authentic and unforgettable Laotian experience. From intimate encounters with local communities to behind-the-scenes explorations, our expedition offers a truly immersive journey into the heart of Laos.
 
-                    Journey onwards to Dharamsala, home to the spiritual community of the Dalai Lama, where profound spirituality permeates the air, offering a glimpse into the essence of Tibetan culture. Marvel at the resplendent Sikh Golden Temple in Amritsar, a symbol of Sikhism's enduring spirit and devotion.
+                    Travel with confidence under the expert guidance of seasoned professionals who are passionate about sharing their knowledge and love for Laos. Benefit from insider insights, personalized recommendations, and unparalleled service throughout your expedition.
 
-                    Prepare for a spectacle at the Wagah border ceremony, where the vibrant pageantry of tradition unfolds against a backdrop of national pride and unity. Throughout your adventure, savor a culinary tapestry of Tibetan, Indian, and Kashmiri flavors, indulging in classic dishes that tantalize the taste buds and enrich the cultural experience.
+                    Join us on this extraordinary journey and uncover the hidden treasures of Laos, where adventure, culture, and natural beauty converge to create an unforgettable travel experience
                   </p>
                 </div>
               </div>
@@ -160,37 +162,30 @@ const NorthernIndiaTrip = () => {
             <div className={styles.section} ref={section2Ref} id={styles.section2} >
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>Discover the Beauty of Explore Northern India</h2>
-                  <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Adventure)</h5>
+                  <h2 className={styles.SetText}>Explore the Rich Heritage of the Golden Triangle</h2>
+                  <h5 className={styles.SetTextWith}>(History, Culture, Architecture)</h5>
                 </div>
-                <MyAccordion AccordianData={NorthernTripAccData} />
+                <MyAccordion AccordianData={LaosCombodiaData} />
                 <h2 className={styles.SetText} >Highlights</h2>
                 <div className={styles.SetFlexProperty}>
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Enigmatic Kashmir Unveiled: Embark on an exclusive journey to Kashmir, a region recently opened to tourism, where mysteries await exploration amidst breathtaking landscapes and rich cultural tapestries.</li>
-                      <li>Pristine Mountain Hikes: Traverse the pristine mountains surrounding Srinagar, immersing yourself in the untouched beauty of nature while embarking on invigorating hikes through picturesque terrain.</li>
-                      <li>Tea with Local Villagers: Delight in the warmth of Kashmiri hospitality as you share tea with local villagers, gaining insights into their traditions, stories, and way of life amidst the tranquil beauty of the region.</li>
-                      <li>Vibrant Floating Market: Experience the vibrant ambiance of Lake Dal's floating market, where colorful boats adorned with a plethora of goods create a mesmerizing spectacle against the backdrop of serene waters.</li>
-                      <li>Exploration of the "Seat of Solomon": Uncover the ancient mysteries surrounding the mythical "Seat of Solomon," delving into the legends and lore that have shrouded this iconic site for centuries.</li>
-                      <li>Spiritual Retreat in Dharamsala: Immerse yourself in the deep spirituality of Dharamsala, the abode of the Dalai Lama's community, where tranquility and enlightenment await amidst serene surroundings.</li>
-                      <li>Visit bright angling harbors and old exchanging ports, meet a neighborhood classicist.</li>
-
+                      <li>Experience the Majestic Golden Temple Complex: Explore the sprawling complex surrounding the Golden Temple, encompassing stunning architectural marvels, serene gardens, and historical monuments.</li>
+                      <li>Marvel at the Harmandir Sahib Architecture: Admire the exquisite architecture of Harmandir Sahib, characterized by its gleaming golden domes, intricate marble work, and ornate gilded details.</li>
+                      <li>Take a Holy Dip in the Amrit Sarovar: Purify your soul by taking a symbolic dip in the sacred waters of the Amrit Sarovar (Pool of Nectar), believed to possess healing and spiritual properties.</li>
+                      <li>Discover Sikh History at the Sikh Museum: Delve into the rich history and heritage of Sikhism at the Sikh Museum located within the Golden Temple complex, featuring exhibits, artifacts, and multimedia presentations.</li>
+                      <li>Attend the Palki Sahib Ceremony: Witness the grand procession of the Guru Granth Sahib (Sikh holy scripture) during the Palki Sahib ceremony, where the sacred text is carried in a palanquin adorned with precious decorations.</li>
+                      <li>Experience the Community Spirit at the Langar Hall: Participate in the communal dining experience at the Langar Hall, where volunteers serve free meals to thousands of visitors every day, promoting inclusivity and unity.</li>
                     </ul>
                   </div>
-
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Explore brilliant sand ridges by camel and 4WD vehicle.</li>
-                      <li>Roam the tight back streets of Oman's conventional markets, appreciate a private dhow voyage.</li>
-                      <li>Explore the precipice embracing towns, richly terraced gardens, and memorable strongholds of the Hajar Mountains.</li>
-                      <li>Visit the Nizwa Goat Market.</li>
-                      <li>Cross the rolling dunes of Wahiba Sands on camel and sleep in a Bedouin tent.</li>
-                      <li>DESERT CRUISING AND TURTLES OF OMAN.</li>
-                      <li>Visit Oman's most exquisite mosque, made to accommodate up to 20,000 worshippers.</li>
-                      <li>Magnificent Sikh Golden Temple: Behold the resplendent beauty of the Sikh Golden Temple in Amritsar, a testament to Sikhism's enduring faith and architectural grandeur.</li>
-                      <li>Spectacular Wagah Border Ceremony: Witness the vibrant pageantry of the Wagah border ceremony, an electrifying display of national pride and unity that captivates the senses and stirs the soul.</li>
-                      <li>Culinary Delights: Indulge in a gastronomic journey through classic Tibetan, Indian, and Kashmiri cuisine, savoring the flavors of traditional dishes that tantalize the palate and celebrate the rich culinary heritage of the region.</li>
+                      <li>Enjoy Devotional Music at the Darbar Sahib: Immerse yourself in the soul-stirring hymns and devotional music performed by professional musicians at the Darbar Sahib (Court of the Lord), fostering a sense of spiritual upliftment and harmony.</li>
+                      <li>Observe Sikh Traditions and Customs: Gain insight into Sikh customs and traditions by observing rituals such as Ardas (prayer), Sukhasan (bedtime prayer), and Hukamnama (divine command) at various times throughout the day.</li>
+                      <li>Participate in Seva (Selfless Service): Engage in acts of Seva (selfless service) by volunteering in various tasks within the Golden Temple complex, such as cooking, serving food, cleaning utensils, or assisting pilgrims, embodying the Sikh principles of humility and service.</li>
+                      <li>Explore the Heritage Street: Stroll along the vibrant Heritage Street leading to the Golden Temple, lined with colorful shops, eateries, and stalls selling religious artifacts, handicrafts, and traditional Sikh attire.</li>
+                      <li>Witness the Akhand Path Ceremony: Attend the continuous recitation of the Guru Granth Sahib known as the Akhand Path, held in the sanctum sanctorum of the Golden Temple, creating an atmosphere of reverence and devotion.</li>
+                      <li>Experience the Festive Atmosphere: Visit the Golden Temple during festive occasions such as Gurpurabs (Sikh festivals) and Baisakhi (harvest festival), witnessing elaborate decorations, processions, and special prayers conducted with fervent enthusiasm.</li>
                     </ul>
                   </div>
                 </div>
@@ -314,22 +309,24 @@ const NorthernIndiaTrip = () => {
                     </div>
                     <div className={styles.HeadingContent}>
                       <ul>
-                        <ul>
-                          <li>Expert leadership of a Midasia Tour leader (Group Trip), local guides, drivers, and other staff</li>
-                          <li>Services of MIDASIA ROUTES in-house air reservations team</li>
-                          <li>Total trip duration of 14 days</li>
-                          <li>Trip starts in Delhi and finishes in Delhi</li>
-                          <li>Expedition limited to a maximum of 6 travelers and a Tour leader</li>
-                          <li>All accommodations as mentioned in the itinerary. Accommodations are carefully selected based on location, services, cleanliness, and with private bathrooms</li>
-                          <li>All ground transportation and baggage handling from meeting until departure</li>
-                          <li>Sightseeing, events, visits, and entrance fees</li>
-                          <li>Bottled water/Soft drinks included at meals and during sightseeing</li>
-                          <li>All meals as mentioned in the itinerary</li>
-                          <li>All activities as indicated in the detailed itinerary</li>
-                          <li>Toilets: Clean western-style toilets available at accommodations/restaurants/sites. Squat toilets available during drives to destinations</li>
-                          <li>All internal/domestic flights</li>
-                          <li>All gratuities for local drivers, guides, restaurants, porters, except MIDASIA ROUTES Trip Leader</li>
-                        </ul>
+                        <li>Maximum 6 travelers</li>
+                        <li>All domestic Airfares during the trip</li>
+                        <li>International airfare from Bangkok to Chiang Rai</li>
+                        <li>Start in Bangkok & finish in Cambodia (Siem Reap)</li>
+                        <li>All meals included as mentioned in itinerary</li>
+                        <li>This Expedition runs in January and in February - Average Weather in February in Laos/Cambodia: Daily high temperatures from 78°F to 83°F, rarely falling below 71°F or exceeding 89°F. Daily low temperatures are around 58°F, rarely falling below 50°F or exceeding 64°F</li>
+                        <li>All Mekong cruising</li>
+                        <li>Airport/hotel/airport transfers in every city</li>
+                        <li>Comfortable Accommodations in hotels with private bathrooms on twin sharing basis as per the program (based on 3-4 stars categories and few 5* hotels in larger cities)</li>
+                        <li>Sightseeing in each city as per the itinerary</li>
+                        <li>Services of English speaking guides and a Midasia Routes Tour-leader throughout the trip</li>
+                        <li>Porterage at airports and hotels throughout program</li>
+                        <li>Entrance fees to all visited historical sites and museums</li>
+                        <li>Water on board every day</li>
+                        <li>Gratuities to guides, drivers, and porters</li>
+                        <li>All taxes</li>
+                        <li>COMFORT NOTES: Some rough/dusty roads and long drives</li>
+                        <li>Activity level 2-3. This may include hikes of couple of hours, which may have gentle slopes. Walking through towns or cities for 1 or more hours. Archeological sites for 2-3 hours. Should be able to climb 3-4 flights of stairs and walk at least 2 miles with no problem</li>
                       </ul>
 
                     </div>
@@ -368,4 +365,4 @@ const NorthernIndiaTrip = () => {
   )
 }
 
-export default NorthernIndiaTrip;
+export default LaosCombodiaTrip;
