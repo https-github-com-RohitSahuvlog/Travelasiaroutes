@@ -10,8 +10,10 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url("https://www.geoex.com/app/uploads/2019/10/group-travel-safari-tanzania.jpg");
-  background-position: center;
+  background-image: url("https://res.cloudinary.com/dxhoawdbh/image/upload/v1711518207/82ba7453-0ece-45cd-b139-3fabe77a1922_fy8osv.jpg");
+  /* background-position: center; */
+  /* object-position: center; */
+  background-size: cover
 }
 
 
@@ -235,7 +237,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-image: url("https://www.geoex.com/app/uploads/2019/10/group-travel-safari-tanzania.jpg");
+    background-image: url("https://res.cloudinary.com/dxhoawdbh/image/upload/v1711518207/82ba7453-0ece-45cd-b139-3fabe77a1922_fy8osv.jpg");
     background-position: 20% 50%;
   }
 
@@ -271,7 +273,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-image: url("https://www.geoex.com/app/uploads/2019/10/group-travel-safari-tanzania.jpg");
+    background-image: url("https://res.cloudinary.com/dxhoawdbh/image/upload/v1711518207/82ba7453-0ece-45cd-b139-3fabe77a1922_fy8osv.jpg");
     background-position: 20% 50%;
   }
 
