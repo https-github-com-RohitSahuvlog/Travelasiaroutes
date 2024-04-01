@@ -5,10 +5,11 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url("https://res.cloudinary.com/dxhoawdbh/image/upload/v1704125530/1573728245_oman.png_p6odjy.png");
-  /* object-position: top; */
+  background-image: url("https://res.cloudinary.com/dxhoawdbh/image/upload/v1711945628/PTI04_14_2021_000077B_1618395916936_1618395935813_gyyc78.jpg");
+  object-position: top;
   object-fit: cover;
-  /* background: none repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -701,7 +702,7 @@
   background-color: #e4bd5a;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;

@@ -25,6 +25,7 @@ import NorthernIndiaTrip from "./components/travel-group/northern-india/northern
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import GoldenTriangleTrip from "./components/travel-group/golden-triangle/golden-triangle-tour";
 import LaosCombodiaTrip from "./components/travel-group/laos-combodia/laos-combodia-tour";
+import IndiaKumbhTrip from "./components/travel-group/india-kumbh-trip/india-kumbh-tour";
 function App() {
   return (
     <div className="App">
@@ -51,6 +52,7 @@ function App() {
         <Route path="/travel-groups/northern-india" element={<NorthernIndiaTrip />} />
         <Route path="/travel-groups/golden-triangle" element={<GoldenTriangleTrip />} />
         <Route path="/travel-groups/laos-combodia" element={< LaosCombodiaTrip />} />
+        <Route path="/travel-groups/india-kumbh" element={< IndiaKumbhTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
       </Routes>
       <Footer />

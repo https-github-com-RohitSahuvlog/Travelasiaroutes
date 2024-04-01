@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url("https://res.cloudinary.com/dxhoawdbh/image/upload/c_scale,w_1260/v1711344545/cambodia-laos-theme-pic2_delwpy.jpg");
+  background-image: url("https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888886/85-Siem-Reap_800x400_1_ky5pmj.jpg");
   object-position: top !important;
   background-size: cover
 }
@@ -700,7 +700,7 @@
   background-color: #e4bd5a;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;

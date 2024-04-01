@@ -99,8 +99,8 @@ const LaosCombodiaTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title}>Exploring the Mystique of the Golden Triangle</h1>
-          <div className={styles.Italic}>Journey through the Riches of Frankincense & Golden Sands</div>
+          <h1 className={styles.Title}>Unveiling the Charms of Laos</h1>
+          <div className={styles.Italic}>Embark on a Journey through the Enchanting Land of Serenity and Splendor</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>
               Start Planning
@@ -129,10 +129,10 @@ const LaosCombodiaTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1711194926/North_India_qqcsr8.jpg
+                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1711889224/indochin-map_hoa0jq.jpg
                     " alt="Central Asia Map" />
                     <div className={styles.map} id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448254.5440711953!2d76.94918402777469!3d28.630103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd1c1d68decf%3A0x4b77bb526ec7a6e7!2sNorthern%20India%20Tourism!5e0!3m2!1sen!2sin!4v1711195062888!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.5274535612925!2d107.10599157509563!3d14.046001886377226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316b97e319132a23%3A0x6682c89180f5137!2z4Z6P4Z-G4Z6U4Z6T4Z-L4Z6A4Z6T4Z-S4Z6R4Z674Z6Z4Z6T4Z624Z6CIOGegOGemOGfkuGeluGeu-Geh-Getg!5e0!3m2!1sen!2sin!4v1711889073185!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
                   </div>
@@ -142,13 +142,14 @@ const LaosCombodiaTrip = () => {
                     </p>
                     <p>
                       Traverse mist-veiled mountains, meandering rivers, and lush countryside as you uncover the untouched beauty of Laos. From serene villages nestled amidst verdant landscapes to the mighty Mekong River, nature takes center stage, inviting you to discover its secrets.
-                      Venture beyond the tourist trail and embark on unforgettable adventures in Laos. Whether trekking through remote wilderness, exploring ancient temples, or cruising along the Mekong Delta, every moment promises discovery and adventure.
+
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.SecondDiv}>
                   <p>
+                    Venture beyond the tourist trail and embark on unforgettable adventures in Laos. Whether trekking through remote wilderness, exploring ancient temples, or cruising along the Mekong Delta, every moment promises discovery and adventure.
                     Enjoy privileged access to hidden gems and lesser-known attractions, curated to provide you with an authentic and unforgettable Laotian experience. From intimate encounters with local communities to behind-the-scenes explorations, our expedition offers a truly immersive journey into the heart of Laos.
 
                     Travel with confidence under the expert guidance of seasoned professionals who are passionate about sharing their knowledge and love for Laos. Benefit from insider insights, personalized recommendations, and unparalleled service throughout your expedition.
@@ -162,7 +163,7 @@ const LaosCombodiaTrip = () => {
             <div className={styles.section} ref={section2Ref} id={styles.section2} >
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>Explore the Rich Heritage of the Golden Triangle</h2>
+                  <h2 className={styles.SetText}>Explore the Rich Heritage of the Laos</h2>
                   <h5 className={styles.SetTextWith}>(History, Culture, Architecture)</h5>
                 </div>
                 <MyAccordion AccordianData={LaosCombodiaData} />
@@ -170,22 +171,31 @@ const LaosCombodiaTrip = () => {
                 <div className={styles.SetFlexProperty}>
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Experience the Majestic Golden Temple Complex: Explore the sprawling complex surrounding the Golden Temple, encompassing stunning architectural marvels, serene gardens, and historical monuments.</li>
-                      <li>Marvel at the Harmandir Sahib Architecture: Admire the exquisite architecture of Harmandir Sahib, characterized by its gleaming golden domes, intricate marble work, and ornate gilded details.</li>
-                      <li>Take a Holy Dip in the Amrit Sarovar: Purify your soul by taking a symbolic dip in the sacred waters of the Amrit Sarovar (Pool of Nectar), believed to possess healing and spiritual properties.</li>
-                      <li>Discover Sikh History at the Sikh Museum: Delve into the rich history and heritage of Sikhism at the Sikh Museum located within the Golden Temple complex, featuring exhibits, artifacts, and multimedia presentations.</li>
-                      <li>Attend the Palki Sahib Ceremony: Witness the grand procession of the Guru Granth Sahib (Sikh holy scripture) during the Palki Sahib ceremony, where the sacred text is carried in a palanquin adorned with precious decorations.</li>
-                      <li>Experience the Community Spirit at the Langar Hall: Participate in the communal dining experience at the Langar Hall, where volunteers serve free meals to thousands of visitors every day, promoting inclusivity and unity.</li>
+                      <li>Explore the bustling streets of Bangkok and experience the vibrant culture of Thailand.</li>
+                      <li>Discover the Golden Triangle in Chiang Rai and learn about the region's opium history at the Hall of Opium museum.</li>
+                      <li>Cruise along the scenic Mekong River and witness rural life along its banks.</li>
+                      <li>Visit Luang Prabang, a UNESCO World Heritage Site known for its stunning architecture and cultural heritage.</li>
+                      <li>Participate in the traditional alms-giving ceremony and explore ancient temples in Luang Prabang.</li>
+                      <li>Experience the natural beauty of Kuang Si Waterfalls and take part in a traditional Baci ceremony.</li>
+                      <li>Trek through lush mountain trails and visit remote villages to learn about local customs and traditions.</li>
+                      <li>Embark on a scenic boat cruise down the Nam Ou River and explore the picturesque town of Nong Khiaw.</li>
+                      <li>Discover the capital city of Vientiane and visit iconic landmarks such as Pha That Luang and Wat Sisaket.</li>
+                      <li>Explore the Bolaven Plateau in Pakse and visit minority villages to learn about their way of life.</li>
+
+
                     </ul>
                   </div>
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Enjoy Devotional Music at the Darbar Sahib: Immerse yourself in the soul-stirring hymns and devotional music performed by professional musicians at the Darbar Sahib (Court of the Lord), fostering a sense of spiritual upliftment and harmony.</li>
-                      <li>Observe Sikh Traditions and Customs: Gain insight into Sikh customs and traditions by observing rituals such as Ardas (prayer), Sukhasan (bedtime prayer), and Hukamnama (divine command) at various times throughout the day.</li>
-                      <li>Participate in Seva (Selfless Service): Engage in acts of Seva (selfless service) by volunteering in various tasks within the Golden Temple complex, such as cooking, serving food, cleaning utensils, or assisting pilgrims, embodying the Sikh principles of humility and service.</li>
-                      <li>Explore the Heritage Street: Stroll along the vibrant Heritage Street leading to the Golden Temple, lined with colorful shops, eateries, and stalls selling religious artifacts, handicrafts, and traditional Sikh attire.</li>
-                      <li>Witness the Akhand Path Ceremony: Attend the continuous recitation of the Guru Granth Sahib known as the Akhand Path, held in the sanctum sanctorum of the Golden Temple, creating an atmosphere of reverence and devotion.</li>
-                      <li>Experience the Festive Atmosphere: Visit the Golden Temple during festive occasions such as Gurpurabs (Sikh festivals) and Baisakhi (harvest festival), witnessing elaborate decorations, processions, and special prayers conducted with fervent enthusiasm.</li>
+                      <li>Experience the tranquility of Don Khong island and visit the UNESCO World Heritage site Wat Phou.</li>
+                      <li>Explore the majestic temples of Angkor Wat and Angkor Thom in Siem Reap.</li>
+                      <li>Cruise through the floating village of Kompong Phluk and witness daily life on Tonle Sap Lake.</li>
+                      <li>Discover the rich history and culture of Cambodia's capital city, Phnom Penh.</li>
+                      <li>Experience the vibrant street food scene and bustling markets of Phnom Penh.</li>
+                      <li>Relax on the pristine beaches of Sihanoukville and enjoy water activities such as snorkeling and diving.</li>
+                      <li>Explore the peaceful countryside of Kampot and visit local farms and pepper plantations.</li>
+                      <li>Discover the ancient temple complex of Preah Vihear, perched atop a cliff overlooking Cambodia and Thailand.</li>
+                      <li>Experience the traditional Khmer dance performances and indulge in delicious Cambodian cuisine.</li>
                     </ul>
                   </div>
                 </div>
@@ -312,9 +322,9 @@ const LaosCombodiaTrip = () => {
                         <li>Maximum 6 travelers</li>
                         <li>All domestic Airfares during the trip</li>
                         <li>International airfare from Bangkok to Chiang Rai</li>
-                        <li>Start in Bangkok & finish in Cambodia (Siem Reap)</li>
+                        <li>Start in Bangkok & finish in Combodia (Siem Reap)</li>
                         <li>All meals included as mentioned in itinerary</li>
-                        <li>This Expedition runs in January and in February - Average Weather in February in Laos/Cambodia: Daily high temperatures from 78°F to 83°F, rarely falling below 71°F or exceeding 89°F. Daily low temperatures are around 58°F, rarely falling below 50°F or exceeding 64°F</li>
+                        <li>This Expedition runs in January and in February - Average Weather in February in Laos/Combodia- Daily high temperatures from 78°F to 83°F, rarely falling below 71°F or exceeding 89°F. Daily low temperatures are around 58°F, rarely falling below 50°F or exceeding 64°F</li>
                         <li>All Mekong cruising</li>
                         <li>Airport/hotel/airport transfers in every city</li>
                         <li>Comfortable Accommodations in hotels with private bathrooms on twin sharing basis as per the program (based on 3-4 stars categories and few 5* hotels in larger cities)</li>
@@ -323,10 +333,9 @@ const LaosCombodiaTrip = () => {
                         <li>Porterage at airports and hotels throughout program</li>
                         <li>Entrance fees to all visited historical sites and museums</li>
                         <li>Water on board every day</li>
-                        <li>Gratuities to guides, drivers, and porters</li>
+                        <li>Gratuities to guides, drivers and porters</li>
                         <li>All taxes</li>
-                        <li>COMFORT NOTES: Some rough/dusty roads and long drives</li>
-                        <li>Activity level 2-3. This may include hikes of couple of hours, which may have gentle slopes. Walking through towns or cities for 1 or more hours. Archeological sites for 2-3 hours. Should be able to climb 3-4 flights of stairs and walk at least 2 miles with no problem</li>
+                        <li>COMFORT NOTES-Some rough/dusty roads and long drives. Activity level 2-3. This may include hikes of couple of hours, which may have gentle slopes. Walking through towns or cities for 1 or more hours. Archeological sites for 2-3 hours. Should be able to climb 3-4 flights of stairs and walk at least 2 miles with no problem</li>
                       </ul>
 
                     </div>

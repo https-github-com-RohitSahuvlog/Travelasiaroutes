@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { useRef, useEffect } from 'react'
 import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabbar'
-import styles from "./Jordan-tour.module.css";
+import styles from "./india-kumbh-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
-import { Images } from "./Jordan-image-data";
+import { Images } from "./india-kumbh-image-data";
 import { Link, useLocation } from 'react-router-dom';
-import { JordanTripAccData } from "./Jordan-accordian-data";
+import { IndiaKumbhTripAccData } from "./india-kumbh-data";
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
 import Axios from '../../../api';
@@ -20,7 +20,7 @@ const getStatusStyle = (status) => {
 };
 
 
-const JordanTrip = () => {
+const IndiaKumbhTrip = () => {
   const location = useLocation();
   const [packageTable, setpackageTable] = useState([]);
   const [open, setOpen] = useState(false);
@@ -99,8 +99,8 @@ const JordanTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title}>Discover Jordan's Wonders</h1>
-          <div className={styles.Italic}>A Tapestry of History, Desert Grandeur, and Warm Hospitality.</div>
+          <h1 className={styles.Title}>Sacred Journey: Discovering India's Kumbh Mela</h1>
+          <div className={styles.Italic}>Explore India's sacred Kumbh Mela: engage with sadhus, boat rides, and spiritual wonders await.</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>
               Start Planning
@@ -129,17 +129,18 @@ const JordanTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1704172926/118245144230_myrdar.png" alt="Central Asia Map" />
+                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1711946359/94521E12-90FA-4DCA-A0EF-77658D5C0CBC29469204_uhrakx.jpg" alt="Central Asia Map" />
                     <div className={styles.map} id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58670948.53432763!2d-17.58548450000002!3d26.16443850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef6f5d4fb3f8b55%3A0x7f2ace0ed866fae3!2sMusandam%20Oman!5e0!3m2!1sen!2sin!4v1704168573126!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618758.5103347427!2d77.37141169397695!3d27.657208648604982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acad16d98ab95%3A0x43d73eb6d5b82c5!2sTriveni%20Sangam%2C%20Prayagraj!5e0!3m2!1sen!2sin!4v1711946463745!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                     </div>
                   </div>
                   <div className={styles.tripfeedbackquote}>
                     <p>
-                      A land rich in natural wonders and sites so ancient, that by comparison, the Crusader forts guarding the old trade routes are considered recent additions.
+                      Embark on a transformative journey through India, immersing yourself in the sacred atmosphere of the Kumbh Mela festival, a monumental gathering of pilgrims that occurs only once every 12 years. Join an exclusive private tented camp for three nights, situated right amidst the vibrant pulse of the Kumbh Mela grounds. Here, you'll have the rare opportunity to engage with revered sadhus (holy men) and spiritual leaders, enriched by guest lectures from Lakshmi Singh, a disciple of Advaita Vedanta Hinduism.
                       <br />
                       <br />
-                      Moses is said to have led his people through the parched Jordanian deserts. Alexander the Great paved the way for Hellenistic cities and culture, while the Natabeans carved grandiose buildings, temples and tombs out of the red Petra sandstone. Later still, Jordan became an important trading center of the Roman Empire and lavish backdrop for some of history’s most enthralling tales. Remarkably, the landscape has changed little in the last 2,000 years.
+                      Before delving into the immersive experience of the Kumbh Mela, our journey takes us through a tapestry of cultural marvels. Explore the World Heritage-listed medieval city of Hampi, steeped in history and architectural splendor. Traverse the former princely state of Hyderabad, where Hinduism and Islam intertwine, offering insights into a rich tapestry of cultural heritage. Then, venture to the enchanting city of Varanasi, where ancient traditions come to life against a backdrop of timeless spirituality.
 
                     </p>
                   </div>
@@ -148,8 +149,19 @@ const JordanTrip = () => {
                 <div className={styles.SecondDiv}>
                   <p>
 
+                    Experience the essence of India through a series of unforgettable highlights:
 
-                    The seven hills of Amman are an enchanting mixture of ancient and modern. More cosmopolitan than most other Middle Eastern capitals, Amman’s cafés, restaurants, museums and shops sit cheek-by-jowl with the remains of civilizations long past. The most impressive relic is the restored Roman Theatre; while the ancient Citadel, still towers above the city. Outside the capital awaits the spectacular, well-preserved Greco-Roman remains at Jerash. Chock-a-block with temples, forums and columns; some have even compared it to Pompeii. Further south you’ll find Biblical sights like Mt Nebo, associated with the last days of Moses and famous for its dazzling views across the Jordan Valley and the Dead Sea. Along the Kings Highway the striking silhouettes of the fortified towns and castles recall the bloodthirsty days of the Crusades. Yet these national treasures all serve as a precursor to the undisputed jewel in Jordan’s tourism crown – the lost city of Petra. Recognized as a world-wonder, this vast, unique city, carved into the sheer rock is an awe-inspiring experience.
+                    Drift along the sacred Ganges River in Varanasi as the sun casts its golden hues upon the waters, witnessing pilgrims engage in morning prayers along the ghats, a truly mesmerizing sight.
+
+                    Embark on a thought-provoking journey through the mystical alleyways of Varanasi after dark, exploring the intricate connections between life, death, and spiritual rebirth in this holiest of cities.
+
+                    Engage in enlightening conversations with revered spiritual leaders and holy figures at our private camp within the Kumbh Mela grounds, gaining unique insights into India's profound spiritual traditions.
+
+                    Benefit from the expertise of our knowledgeable guides who provide insider perspectives on India's living traditions, offering deeper understanding and appreciation of the country's rich cultural heritage.
+
+                    Wander through the atmospheric ruins of Hampi, a UNESCO World Heritage Site, where ancient temples and grandiose architecture transport you back in time to the medieval glory of the Vijayanagara Empire.
+
+                    Immerse yourself in the bustling markets of Hyderabad, where the vibrant tapestry of Hindu and Islamic influences weaves through the colorful streets, offering a sensory feast of sights, sounds, and flavors.
                   </p>
                 </div>
               </div>
@@ -158,35 +170,31 @@ const JordanTrip = () => {
             <div className={styles.section} ref={section2Ref} id={styles.section2} >
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>Discover the Beauty of Explore Jordan</h2>
+                  <h2 className={styles.SetText}>Discover the Beauty of Explore Kumbh Mela</h2>
                   <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Adventure)</h5>
                 </div>
-                <MyAccordion AccordianData={JordanTripAccData} />
+                <MyAccordion AccordianData={IndiaKumbhTripAccData} />
                 <h2 className={styles.SetText} >Highlights</h2>
                 <div className={styles.SetFlexProperty}>
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Petra - Fabled Petra, an amazing lost city hidden in a desert canyon for 2,000 years</li>
-                      <li>Jerash - Walk through and touch history at the Roman and Crusader ruins</li>
-                      <li>Wadi Rum - Explore the majestic desert of Wadi Rum, the spectacular haunt of T. E. Lawrence</li>
-                      <li>Aqaba - Explore the only Jordanian city at the Red Sea</li>
-                      <li>Dead Sea - Float in the salty waters of the Dead Sea at the lowest point on earth</li>
-                      <li>Visit the amazing ancient rose-red city of Petra, one of the Seven Wonders of the World "UNESCO World Heritage Site"</li>
-                      <li>Cruise and Snorkel in the warm Red Sea and have a float in the salty Dead Sea</li>
-                      <li>Visit Jerash, home of the Roman chariot racing and gladiators</li>
-                      <li>Fantastic two-day exploration of Wadi Rum with friendly Bedouin guides</li>
+                      <li>The Kumbh Mela is the largest peaceful gathering of people on Earth.</li>
+                      <li>It is held at four sacred locations, rotating every three years.</li>
+                      <li>The event is based on the Hindu myth of the Samudra Manthan (Churning of the Ocean).</li>
+                      <li>Millions of pilgrims bathe in the holy rivers to cleanse their sins and attain moksha (liberation).</li>
+                      <li>The festival is a convergence of various sects, showcasing the diversity of Hinduism.</li>
+                      <li>Temporary cities are erected to accommodate the massive influx of devotees.</li>
+                      <li>It is a platform for spiritual discourse, with sages and scholars sharing wisdom.</li>
                     </ul>
                   </div>
 
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Travel by 4x4 jeep, with some beautiful short hikes</li>
-                      <li>See the beautiful architecture of obelisks, temples, sacrificial altars, and colonnaded streets of the ruined Roman city</li>
-                      <li>Visit Mount Nebo, the memorial of Moses</li>
-                      <li>Spend a day at beautiful Aqaba city</li>
-                      <li>Early Christian mosaics at Madaba</li>
-                      <li>Private Cruising on Red Sea</li>
-                      <li>Jerash, a spectacular Roman city</li>
+                      <li>The Kumbh Mela has been inscribed on UNESCO's Representative List of Intangible Cultural Heritage.</li>
+                      <li>Massive processions and rituals captivate the senses, offering a glimpse into ancient traditions.</li>
+                      <li>The event promotes environmental awareness, emphasizing the importance of river conservation.</li>
+                      <li>Security measures ensure the safety of millions, with extensive crowd management strategies.</li>
+                      <li>It is a testament to India's rich heritage and tradition, attracting visitors from across the globe.</li>
                     </ul>
                   </div>
                 </div>
@@ -314,33 +322,20 @@ const JordanTrip = () => {
                     </div>
                     <div className={styles.HeadingContent}>
                       <ul>
-                        <ul>
-                          <li>12 Days Expedition with maximum 8 travelers in a group</li>
-                          <li>Gentle adventurous experience designed for history, culture, and nature lovers</li>
-                          <li>Start & finish in Amman</li>
-                          <li>All meals included as mentioned in the itinerary</li>
-                          <li>Best travel months: March to May, October, and November</li>
-                          <li>Average Weather in April in Jordan: Daily high temperatures increase by 9°F, from 66°F to 75°F, rarely falling below 54°F or exceeding 82°F. Daily low temperatures increase by 7°F, from 47°F to 53°F, rarely falling below 40°F or exceeding 62°F</li>
-                          <li>All activities, boat trips including snorkel gears</li>
-                          <li>Airport/hotel/airport transfers in every city</li>
-                          <li>12 Nights Comfortable Accommodations in well-located hotels with private bathrooms on twin sharing basis as per the program (based on 4*/5*stars categories)</li>
-                          <li>Services of English speaking guides and a MiddleAsia Routes Tour-leader throughout the trip</li>
-                          <li>Porterage at airports and hotels throughout the program</li>
-                          <li>Entrance fees to all visited historical sites and museums</li>
-                          <li>Short horseback ride at Petra during the first visit</li>
-                          <li>Camel Ride in Wadi Rum</li>
-                          <li>1-hour Traditional massage</li>
-                          <li>Water on board every day</li>
-                          <li>Gratuities to guides, drivers, and porters</li>
-                          <li>All taxes</li>
-                          <li>Comfort Notes - Few rough/dusty roads and long drives. The drives in the</li>
-                          <li>Activity level 2-3 (This may include hikes of 1 hour, which may have gentle slopes. Walking through towns or cities for 1 or more hours. Archaeological sites for 2-3 hours. Should be able to climb 3-4 flights of stairs and walk at least 2 miles with no problem)</li>
-                          <li>Toilets - There are clean western style toilets available at your accommodations/restaurants/sites but on the way while drives to our destination, few squat toilets are available</li>
-                          <li>Few hikes/walks are on this trip on trails with rugged and rocky terrain</li>
-                          <li>Note - Accommodation - Jordan is a very beautiful destination, the hotels in this trip are good and clean, and most of the hotels we choose are 4* or 5* properties with good location and services, for example, Intercontinental Hotel in Amman, Petra Movenpick Resort, Wadi Rum Night Camp in Wadi Rum, Dead Sea Resort, or similar</li>
-                        </ul>
-
+                        <li>The Kumbh Mela is one of the largest religious gatherings in the world.</li>
+                        <li>It is held at four different locations in India: Prayagraj, Haridwar, Nashik, and Ujjain.</li>
+                        <li>According to Hindu mythology, the Kumbh Mela is celebrated every 12 years.</li>
+                        <li>Pilgrims gather to bathe in the sacred rivers, believed to cleanse sins and bestow blessings.</li>
+                        <li>The festival attracts millions of devotees, Sadhus (holy men), and tourists from around the globe.</li>
+                        <li>Temporary tented cities are set up to accommodate the massive influx of pilgrims.</li>
+                        <li>The event is known for its vibrant cultural performances, religious rituals, and spiritual discourses.</li>
+                        <li>Security measures are stringent to ensure the safety of all attendees.</li>
+                        <li>Medical facilities and aid stations are established to provide healthcare services to pilgrims.</li>
+                        <li>The Kumbh Mela is recognized by UNESCO as an intangible cultural heritage of humanity.</li>
+                        <li>It is a significant economic event for the local communities, boosting tourism and commerce.</li>
+                        <li>The Kumbh Mela is a symbol of India's rich religious and cultural diversity.</li>
                       </ul>
+
 
                     </div>
 
@@ -378,4 +373,4 @@ const JordanTrip = () => {
   )
 }
 
-export default JordanTrip;
+export default IndiaKumbhTrip;
