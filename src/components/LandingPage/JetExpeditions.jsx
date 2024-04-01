@@ -100,7 +100,26 @@ const data = [
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1710656540/0B9B7F39-B3D4-4C73-86E0-CD96FA993CB61417108072_vwqapu.jpg",
     title: "Northern India (A Spiritual Journey through Himalayas)",
     description: "A Spiritual Journey in India (Story of unseen Gems)",
+  },
+  {
+    link: "/travel-groups/golden-triangle",
+    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711201433/61241721_kepayv.jpg",
+    title: "Exploring the Mystique of the Golden Triangle",
+    description: "Journey through the Riches of Frankincense & Golden Sands",
+  },
+  {
+    link: "/travel-groups/laos-combodia",
+    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711257216/2AE71DED-1C67-4722-90A5-1695735C645A1232473463_bfuo3m.jpg",
+    title: "Unveiling the Charms of Laos",
+    description: "Embark on a Journey through the Enchanting Land of Serenity and Splendor",
+  },
+  {
+    link: "/travel-groups/india-kumbh",
+    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711944832/kumbh-mela-2025_qjfgi8.jpg",
+    title: "Sacred Journey: Discovering India's Kumbh Mela",
+    description: "Explore India's sacred Kumbh Mela: engage with sadhus, boat rides, and spiritual wonders await.",
   }
+
 
 ]
 export default function JetExpeditions() {
