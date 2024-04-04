@@ -2,14 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import Slider from "../Carousal/slider.js"
 // import tanjortemple from "../../images/tanjoretemple.jpg";
 const carousalData = [
-  // {
-  //   image: `${tanjortemple}`,
-  //   heading: "Pioneering Excellence Across Middle East and Asia",
-  //   para: "Crafting Extraordinary Journeys",
-  // },
+
   {
     image:
-      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693292014/ebbk0kkna8wvvm6ajysj.jpg",
+      "https://res.cloudinary.com/dxhoawdbh/image/upload/v1712292544/Ibrahim-Roza_vmbwim.jpg",
     heading: "Unlocking Your Travel DNA",
     para: "Tailoring Experiences Just for You.",
   },

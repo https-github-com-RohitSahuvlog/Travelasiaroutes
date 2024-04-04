@@ -10,8 +10,8 @@
   /* background-color: black; */
   height: 80vh;
   padding: 20px;
-  background-image: url("https://www.geoex.com/app/uploads/2019/07/antarctica-crabeater-seal-geoex.jpg");
   /*   overflow-x: scroll; */
+  background: lightgray;
 }
 
 .navlink {

@@ -21,7 +21,7 @@ const Card = ({ products }) => {
 			<Link to={products.link}>
 				<CardMediaContainer>
 					<CardMedia src={products.thumbnail} atl={products.title} />
-					<CardCategory>{products.title}</CardCategory>
+					<CardCategory>{products.region}</CardCategory>
 				</CardMediaContainer>
 				<CardTitle>{products.title}</CardTitle>
 				<CardDesc>{products.description}</CardDesc>
