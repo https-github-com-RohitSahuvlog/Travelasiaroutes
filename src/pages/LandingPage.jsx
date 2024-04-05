@@ -7,9 +7,7 @@ import AwardSection from "../components/LandingPage/AwardSection";
 import TravelVlog from "../components/LandingPage/TravelVlog";
 import TestimonailSection from "../components/LandingPage/TestimonailSection";
 import JetExpeditions from "../components/LandingPage/JetExpeditions";
-import Newsletter from "../components/LandingPage/Newsletter";
 import ScrollVideoSection from "../components/LandingPage/ScrollVideoSection";
-import Footer from "../components/LandingPage/Footer";
 import data from "../components/Testinomial/data.json";
 import Testimonial from "../components/Testinomial/Testimonial";
 const Landingpage = styled.div`

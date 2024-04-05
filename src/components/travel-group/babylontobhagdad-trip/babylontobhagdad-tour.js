@@ -245,7 +245,7 @@ const BabyLonToBhagdadTrip = () => {
                         }>
                           <td>{new Date(detail.startDate).toLocaleDateString('en-GB')
                           }</td>
-                          <td>{new Date(detail.startDate).toLocaleDateString('en-GB')
+                          <td>{new Date(detail.endDate).toLocaleDateString('en-GB')
                           }</td>
                           <td>{`$ ${detail.price
                             } USD`

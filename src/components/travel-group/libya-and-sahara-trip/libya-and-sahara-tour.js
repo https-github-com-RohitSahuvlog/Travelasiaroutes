@@ -4,9 +4,9 @@ import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabba
 import styles from "./egypt-and-nile-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
-import { Images } from "./egypt-and-nile-image-data";
+import { Images } from "./libya-and-sahara-image-data";
 import { Link, useLocation } from 'react-router-dom';
-import { EgyptAndNileTripAccData } from "./egypt-and-nile-data";
+import { EgyptAndNileTripAccData } from "./libya-and-sahara-data";
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
 import Axios from '../../../api';
