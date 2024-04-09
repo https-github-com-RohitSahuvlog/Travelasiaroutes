@@ -102,7 +102,7 @@ const UzbekistanTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title} >Exploring the Rich History and Culture of Uzbekistan</h1>
+          <h1 className={styles.Title} >Uzbekistan & Kyrgyzstan</h1>
           <div className={styles.Italic}>Immerse yourself in the beauty and history of Uzbekistan, a Central Asian gem.</div>
           <div className={styles.GoButton}>
             <div className={styles.GoButton}>

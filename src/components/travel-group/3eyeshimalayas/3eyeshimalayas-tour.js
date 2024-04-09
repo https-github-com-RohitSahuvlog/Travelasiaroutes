@@ -104,7 +104,7 @@ const HimalayasTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title} >Explore Tibet, Bhutan, and Nepal</h1>
+          <h1 className={styles.Title} >3 Eyes of Himalayas- Best of Tibet, Bhutan and Nepal</h1>
           <div className={styles.Italic}>Discover the allure of this unique Himalayan experience..</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>
@@ -162,7 +162,7 @@ const HimalayasTrip = () => {
             <div className={styles.section} ref={section2Ref} id={styles.section2} >
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>Discover the Beauty of Explore Tibet, Bhutan, and Nepal</h2>
+                  <h2 className={styles.SetText}>Discover the Beauty of 3 Eyes of Himalayas- Best of Tibet, Bhutan and Nepal</h2>
                   <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Adventure)</h5>
                 </div>
                 <MyAccordion AccordianData={HimalayasTripAccData} />

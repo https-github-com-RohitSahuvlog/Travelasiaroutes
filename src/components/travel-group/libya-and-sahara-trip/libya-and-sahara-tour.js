@@ -89,7 +89,7 @@ const EgyptAndNileTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title}>Echoes of the Nile: Exploring Egypt's Timeless Treasures</h1>
+          <h1 className={styles.Title}>Egypt and The Nile</h1>
           <div className={styles.Italic}>Embark on a captivating journey through time, from the ancient wonders of Babylon to the modern marvels of Baghdad</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>

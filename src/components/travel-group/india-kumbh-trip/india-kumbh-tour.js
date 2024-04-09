@@ -99,7 +99,7 @@ const IndiaKumbhTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title}>Sacred Journey: Discovering India's Kumbh Mela</h1>
+          <h1 className={styles.Title}>India's Kumbh Mela Festival</h1>
           <div className={styles.Italic}>Explore India's sacred Kumbh Mela: engage with sadhus, boat rides, and spiritual wonders await.</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>

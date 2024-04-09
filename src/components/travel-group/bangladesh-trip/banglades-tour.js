@@ -103,7 +103,7 @@ const BangladeshTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title} >Discover the Charms of Bangladesh</h1>
+          <h1 className={styles.Title} >Glories of Bangladesh</h1>
           <div className={styles.Italic}>Bangladesh Unveiled: Embark on Epic Adventures</div>
           <div className={styles.GoButton}>
             <div className={styles.GoButton}>

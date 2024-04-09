@@ -30,7 +30,7 @@ const data = [
     link: "/travel-groups/nepal",
     thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/104733483266635338.jpg",
     region: "Asia–Pacific",
-    title: "Nepal Adventures", description: "Nepal Unveiled : Embark on Epic Adventures"
+    title: "Best of Nepal", description: "Nepal Unveiled : Embark on Epic Adventures"
   },
   // { link:"japan",
   // thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/1143620516535.jpg", title: "Splendors of Egypt", description: "THE SECRETS OF BANGLADESH, It’s Culture & Wildlife- Yes, it is Adventure!!" },
@@ -40,28 +40,28 @@ const data = [
     link: "/travel-groups/bangladesh",
     thumbnail: "https://airlinebd.com/wp-content/uploads/2021/06/Bangladesh-Tourist-Spots.jpg",
     region: "Asia–Pacific",
-    title: "Discover the Charms of Bangladesh",
+    title: "Glories of Bangladesh",
     description: "Explore the hidden treasures of this beautiful country and immerse yourself in the unique charm of Bangladesh."
   },
   {
     link: "/travel-groups/laos",
     thumbnail: "https://luxdev.lu/files/media/news/2022-09-12-2/B79I25341.jpeg",
     region: "Asia–Pacific",
-    title: " Exploring the Mystique of Laos",
+    title: " Landlocked Laos and Combodia",
     description: "Laos Revealed: Embark on Epic Expeditions"
   },
   {
     link: "/travel-groups/philippines",
     thumbnail: "https://i.guim.co.uk/img/media/8e466cc4459e7dbbcd6160f594ebbee833307daf/209_392_3791_2275/master/3791.jpg?width=620&dpr=2&s=none",
     region: "Asia–Pacific",
-    title: "Discovering the Enchantment of the Philippine",
+    title: "Island of Philippines",
     description: "Experience the allure of the Philippines, a beloved Asian tourist hotspot."
   },
   {
     "link": "/travel-groups/uzbekistan",
     "thumbnail": "https://lp-cms-production.imgix.net/2023-07/GettyImages-641704192.jpg?auto=format&w=1440&h=810&fit=crop&q=75",
     region: "Asia–Pacific",
-    "title": "Exploring the Rich History and Culture of Uzbekistan",
+    "title": "Uzbekistan & Kyrgyzstan",
     "description": "Immerse yourself in the beauty and history of Uzbekistan, a Central Asian gem."
 
   },
@@ -69,7 +69,7 @@ const data = [
     link: "/travel-groups/3eyeshimalayas",
     thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/37E16EE8-27A0-4B09-A7D4-761147AB1B1B870110290.jpeg",
     region: "Asia–Pacific",
-    title: "Explore Tibet, Bhutan, and Nepal",
+    title: "3 Eyes of Himalayas- Best of Tibet, Bhutan and Nepal",
     description: "Uncover the charm of Tibet, Bhutan, and Nepal. Dive into rich cultures, ancient traditions, and stunning landscapes. Plus, discover the allure of the Philippines. Your unforgettable journey begins here!"
   },
   {
@@ -83,14 +83,14 @@ const data = [
     link: "/travel-groups/oman",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704125530/1573728245_oman.png_p6odjy.png",
     region: "MiddleEast",
-    title: "Sultanate of Oman ",
+    title: "Unexpected Oman-The Land of Frankincense",
     description: "Embark on a mesmerizing odyssey through the unseen legends of Oman",
   },
   {
     link: "/travel-groups/jordan",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704171456/aygpo6wg7hxajhm3glsq.jpg",
     region: "MiddleEast",
-    title: "Jordan ",
+    title: "Gems of Jordan",
     description: "In the footsteps of Lawrence of Arabia",
   },
   {
@@ -104,7 +104,7 @@ const data = [
     link: "/travel-groups/saudi-arabia",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704258953/0UZhVeo5-Saudi-tourism_odswhp.jpg",
     region: "MiddleEast",
-    title: "Explore Saudi Arabia's Rich Heritage",
+    title: "Beyond Borders- A Journey through Saudi Arabia",
     description: "Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.",
   },
   {
@@ -125,28 +125,28 @@ const data = [
     link: "/travel-groups/laos-combodia",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711257216/2AE71DED-1C67-4722-90A5-1695735C645A1232473463_bfuo3m.jpg",
     region: "Asia–Pacific",
-    title: "Unveiling the Charms of Laos",
+    title: "Landlocked Laos & Life along Mekong with Combodia Extension (2026)",
     description: "Embark on a Journey through the Enchanting Land of Serenity and Splendor",
   },
   {
     link: "/travel-groups/india-kumbh",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711944832/kumbh-mela-2025_qjfgi8.jpg",
     region: "Asia–Pacific",
-    title: "Sacred Journey: Discovering India's Kumbh Mela",
+    title: "India's Kumbh Mela Festival",
     description: "Explore India's sacred Kumbh Mela: engage with sadhus, boat rides, and spiritual wonders await.",
   },
   {
     link: "/travel-groups/babylon-baghdad",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711949461/JMJPDK56U5DGNBJX3GXTUN4QMI_hzhgka.jpg",
     region: "MiddleEast",
-    title: "Mesopotamia Odyssey: From Babylon to Baghdad",
+    title: "The Journey to Cradle of Civilisation (Babylon to Baghdad)- ",
     description: "Embark on a captivating journey through time, from the ancient wonders of Babylon to the modern marvels of Baghdad",
   },
   {
     link: "/travel-groups/egypt-and-nile",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1712254046/0e_iokr1b.jpg",
     region: "MiddleEast",
-    title: "Echoes of the Nile: Exploring Egypt's Timeless Treasures",
+    title: "Egypt and The Nile",
     description: "Join us on an unforgettable expedition along the legendary Nile River, as we unravel the mysteries of ancient Egypt's iconic landmarks and immerse ourselves in the vibrant culture of modern-day Cairo.",
   }
 

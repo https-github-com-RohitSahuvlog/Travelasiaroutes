@@ -99,7 +99,7 @@ const SaudiArabiaTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title}>Explore Saudi Arabia's Rich Heritage</h1>
+          <h1 className={styles.Title}>Beyond Borders- A Journey through Saudi Arabia</h1>
           <div className={styles.Italic}>Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>

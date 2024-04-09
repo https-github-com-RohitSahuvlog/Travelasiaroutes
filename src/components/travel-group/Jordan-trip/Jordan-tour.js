@@ -139,7 +139,7 @@ const JordanTrip = () => {
                       A land rich in natural wonders and sites so ancient, that by comparison, the Crusader forts guarding the old trade routes are considered recent additions.
                       <br />
                       <br />
-                      Moses is said to have led his people through the parched Jordanian deserts. Alexander the Great paved the way for Hellenistic cities and culture, while the Natabeans carved grandiose buildings, temples and tombs out of the red Petra sandstone. Later still, Jordan became an important trading center of the Roman Empire and lavish backdrop for some of history’s most enthralling tales. Remarkably, the landscape has changed little in the last 2,000 years.
+                      Moses is said to have led his people through the parched Jordanian deserts. Alexander the Great paved the way for Hellenistic cities and culture, while the Natabeans carved grandiose buildings, temples and tombs out of the red Petra sandstone. Later still, Gems of Jordanbecame an important trading center of the Roman Empire and lavish backdrop for some of history’s most enthralling tales. Remarkably, the landscape has changed little in the last 2,000 years.
 
                     </p>
                   </div>
@@ -149,7 +149,7 @@ const JordanTrip = () => {
                   <p>
 
 
-                    The seven hills of Amman are an enchanting mixture of ancient and modern. More cosmopolitan than most other Middle Eastern capitals, Amman’s cafés, restaurants, museums and shops sit cheek-by-jowl with the remains of civilizations long past. The most impressive relic is the restored Roman Theatre; while the ancient Citadel, still towers above the city. Outside the capital awaits the spectacular, well-preserved Greco-Roman remains at Jerash. Chock-a-block with temples, forums and columns; some have even compared it to Pompeii. Further south you’ll find Biblical sights like Mt Nebo, associated with the last days of Moses and famous for its dazzling views across the Jordan Valley and the Dead Sea. Along the Kings Highway the striking silhouettes of the fortified towns and castles recall the bloodthirsty days of the Crusades. Yet these national treasures all serve as a precursor to the undisputed jewel in Jordan’s tourism crown – the lost city of Petra. Recognized as a world-wonder, this vast, unique city, carved into the sheer rock is an awe-inspiring experience.
+                    The seven hills of Amman are an enchanting mixture of ancient and modern. More cosmopolitan than most other Middle Eastern capitals, Amman’s cafés, restaurants, museums and shops sit cheek-by-jowl with the remains of civilizations long past. The most impressive relic is the restored Roman Theatre; while the ancient Citadel, still towers above the city. Outside the capital awaits the spectacular, well-preserved Greco-Roman remains at Jerash. Chock-a-block with temples, forums and columns; some have even compared it to Pompeii. Further south you’ll find Biblical sights like Mt Nebo, associated with the last days of Moses and famous for its dazzling views across the Gems of JordanValley and the Dead Sea. Along the Kings Highway the striking silhouettes of the fortified towns and castles recall the bloodthirsty days of the Crusades. Yet these national treasures all serve as a precursor to the undisputed jewel in Jordan’s tourism crown – the lost city of Petra. Recognized as a world-wonder, this vast, unique city, carved into the sheer rock is an awe-inspiring experience.
                   </p>
                 </div>
               </div>
@@ -337,7 +337,7 @@ const JordanTrip = () => {
                           <li>Activity level 2-3 (This may include hikes of 1 hour, which may have gentle slopes. Walking through towns or cities for 1 or more hours. Archaeological sites for 2-3 hours. Should be able to climb 3-4 flights of stairs and walk at least 2 miles with no problem)</li>
                           <li>Toilets - There are clean western style toilets available at your accommodations/restaurants/sites but on the way while drives to our destination, few squat toilets are available</li>
                           <li>Few hikes/walks are on this trip on trails with rugged and rocky terrain</li>
-                          <li>Note - Accommodation - Jordan is a very beautiful destination, the hotels in this trip are good and clean, and most of the hotels we choose are 4* or 5* properties with good location and services, for example, Intercontinental Hotel in Amman, Petra Movenpick Resort, Wadi Rum Night Camp in Wadi Rum, Dead Sea Resort, or similar</li>
+                          <li>Note - Accommodation - Gems of Jordanis a very beautiful destination, the hotels in this trip are good and clean, and most of the hotels we choose are 4* or 5* properties with good location and services, for example, Intercontinental Hotel in Amman, Petra Movenpick Resort, Wadi Rum Night Camp in Wadi Rum, Dead Sea Resort, or similar</li>
                         </ul>
 
                       </ul>

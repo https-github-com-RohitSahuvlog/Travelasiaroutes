@@ -12,7 +12,7 @@ export const JordanTripAccData = [
         day: 2,
         description: "<strong>Welcome to Amman</strong>",
         activities: [
-            "<p>Amman, the capital of Jordan, is a fascinating city of contrasts – a unique blend of old and new, ideally situated on a hilly area between the desert and the fertile Jordan Valley.</p>",
+            "<p>Amman, the capital of Jordan, is a fascinating city of contrasts – a unique blend of old and new, ideally situated on a hilly area between the desert and the fertile Gems of JordanValley.</p>",
             "<p>In the morning, start the tour with Jebel al-Qala’a (the Citadel), with its remains of the Roman Temple of Hercules, Umayyad Palace, and excellent views over downtown. Continue to the impressive Roman Theater, the largest in Jordan, and explore the city further, including Rainbow Street and Jabal Al Weibdah for a walk through its alleys. Transfer back to your location.</p>",
             "<p>Overnight in Amman (B, L, D)</p>"
         ]
@@ -22,7 +22,7 @@ export const JordanTripAccData = [
         day: 3,
         description: "<strong>Amman/ Ajlun/ Jerash</strong>",
         activities: [
-            "<p>Today, Jerash will be our first stop – the Greco-Roman city known as the ‘Pompeii of the East’. Explore the site, including the colonnaded street, amphitheater, and more. Drive through the beautiful Dibeen Forest on the way to Ajloun Castle, a splendid sight with fascinating architecture and stunning views of the Jordan Valley. Return back to Amman.</p>",
+            "<p>Today, Jerash will be our first stop – the Greco-Roman city known as the ‘Pompeii of the East’. Explore the site, including the colonnaded street, amphitheater, and more. Drive through the beautiful Dibeen Forest on the way to Ajloun Castle, a splendid sight with fascinating architecture and stunning views of the Gems of JordanValley. Return back to Amman.</p>",
             "<p>Overnight in Amman (B, L, D)</p>"
         ]
     },

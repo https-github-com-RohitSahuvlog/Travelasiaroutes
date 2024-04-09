@@ -99,7 +99,7 @@ const LaosCombodiaTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title}>Unveiling the Charms of Laos</h1>
+          <h1 className={styles.Title}>Landlocked Laos & Life along Mekong with Combodia Extension (2026)</h1>
           <div className={styles.Italic}>Embark on a Journey through the Enchanting Land of Serenity and Splendor</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>

@@ -102,7 +102,7 @@ const LaosTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title} >Exploring the Mystique of Laos</h1>
+          <h1 className={styles.Title} >Landlocked Laos and Combodia</h1>
           <div className={styles.Italic}>Laos Revealed: Embark on Epic Expeditions</div>
           <div className={styles.GoButton}>
             <div className={styles.GoButton}>

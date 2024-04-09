@@ -99,7 +99,7 @@ const BabyLonToBhagdadTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title}>Mesopotamia Odyssey: From Babylon to Baghdad</h1>
+          <h1 className={styles.Title}>The Journey to Cradle of Civilisation (Babylon to Baghdad)- </h1>
           <div className={styles.Italic}>Embark on a captivating journey through time, from the ancient wonders of Babylon to the modern marvels of Baghdad</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>
