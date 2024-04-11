@@ -243,10 +243,18 @@ const BabyLonToBhagdadTrip = () => {
                         <tr key={detail._id
                         } className={styles.pricingRow
                         }>
-                          <td>{new Date(detail.startDate).toLocaleDateString('en-GB')
-                          }</td>
-                          <td>{new Date(detail.endDate).toLocaleDateString('en-GB')
-                          }</td>
+                          {
+                            !detail.flexiablechecked && (<><td>{new Date(detail.startDate).toLocaleDateString('en-GB')
+                            }</td>
+                              <td>{new Date(detail.endDate).toLocaleDateString('en-GB')
+                              }</td></>)
+                          }
+                          {
+                            detail.flexiablechecked && (<>
+                              <td>{detail.flexiabledate}</td>
+                              <td>{detail.flexiabledate}</td>
+                            </>)
+                          }
                           <td>{`$ ${detail.price
                             } USD`
                           }</td>
