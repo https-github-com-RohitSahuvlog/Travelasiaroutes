@@ -318,7 +318,7 @@
     display: flex;
     justify-content: center;
     left: -1%;
-    top: 50%;
+    bottom: 0%;
   }
 }
 
@@ -362,30 +362,5 @@
     position: absolute;
     right: -1%;
     top: 50%;
-  }
-
-  .slides img {
-    width: 90%;
-    height: 100%;
-    border-radius: 30px 2px 30px 2px;
-  }
-
-  .slides-text p {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-align: justify;
-  }
-
-  .slides-text a {
-    margin-top: 2rem;
-    font-size: 10px;
-  }
-
-  .slides-text h2 {
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
   }
 }
