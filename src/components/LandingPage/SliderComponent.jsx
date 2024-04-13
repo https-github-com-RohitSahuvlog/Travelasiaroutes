@@ -4,10 +4,8 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import styled from "styled-components";
 
 const Frame = styled.div`
-   background-color: #f7f7f7;
-  border-radius: 16px;
   position: relative;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+  margin-top: 50px;
 `;
 
 export default function SliderComponent() {
@@ -89,22 +87,27 @@ export default function SliderComponent() {
 
   return (
     <Frame className="slider-component">
-      <div className="previous-btn" onClick={previousSlide}>
-        <FaChevronLeft />
-      </div>
-      <div className="slides">
-        <div className="slidesimage">
-          <img src={myText.image} alt={myText.imageTitle} />
+
+      <div className="NewAbout_aboutContent__kZs2M">
+        <div className="previous-btn" onClick={previousSlide}>
+          <FaChevronLeft />
         </div>
-        <div className="slides-text">
-          <h2>{myText.heading}</h2>
-          <h4>{myText.job}</h4>
-          <p>{myText.para}</p>
+        <div id="heroImg" className="NewAbout_imgCont__Y_fwz">
+          <img alt="about" fetchPriority="high" width="300" height="400" decoding="async" data-nimg="1"
+            className="NewAbout_black_white__d1w4b" style={{ color: 'transparent' }}
+            srcSet={myText.image}
+            src={myText.image} />
+        </div>
+        <div className="NewAbout_section2Content__9gvQg">
+          <h3 className="NewAbout_section2Txt__G3n8n">{myText.heading}</h3>
+          <p className="NewAbout_section2par__XgbEk">{myText.para}</p>
+
+        </div>
+        <div className="next-btn" onClick={nextSlide}>
+          <FaChevronRight />
         </div>
       </div>
-      <div className="next-btn" onClick={nextSlide}>
-        <FaChevronRight />
-      </div>
+
     </Frame>
   );
 }
