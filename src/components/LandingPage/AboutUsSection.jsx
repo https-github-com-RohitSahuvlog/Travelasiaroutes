@@ -7,7 +7,7 @@ export default function AboutUsSection() {
   return (
     <div className="about-us-section">
       <div className="about-us-sectionright">
-        <h2 style={{ borderBottom: "3px solid   #e4bd5a" }}>Mid Asia Journey</h2>
+        <h2 style={{ borderBottom: "3px solid   #e4bd5a" }}>MidAsia Routes Journey</h2>
         <div className="about-us-section-para-portion">
           <div className="about-us-section-para-portion-left">
             <p>
