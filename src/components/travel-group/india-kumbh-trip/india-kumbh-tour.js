@@ -129,9 +129,8 @@ const IndiaKumbhTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1711946359/94521E12-90FA-4DCA-A0EF-77658D5C0CBC29469204_uhrakx.jpg" alt="Central Asia Map" />
-                    <div className={styles.map} id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618758.5103347427!2d77.37141169397695!3d27.657208648604982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acad16d98ab95%3A0x43d73eb6d5b82c5!2sTriveni%20Sangam%2C%20Prayagraj!5e0!3m2!1sen!2sin!4v1711946463745!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618758.5103347427!2d77.37141169397695!3d27.657208648604982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acad16d98ab95%3A0x43d73eb6d5b82c5!2sTriveni%20Sangam%2C%20Prayagraj!5e0!3m2!1sen!2sin!4v1711946463745!5m2!1sen!2sin" width="450" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
                   </div>

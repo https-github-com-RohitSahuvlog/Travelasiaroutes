@@ -136,9 +136,8 @@ const HimalayasTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1704087016/nepal-bhutan-tibet-tourist-map-small_iy2kno.jpg" alt="Central Asia Map" />
-                    <div className={styles.map} id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15307174.479021687!2d81.90591966264314!3d20.501997562087155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20Tibet%2C%20Bhutan%2C%20and%20Nepal!5e0!3m2!1sen!2sin!4v1704087166034!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15307174.479021687!2d81.90591966264314!3d20.501997562087155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20Tibet%2C%20Bhutan%2C%20and%20Nepal!5e0!3m2!1sen!2sin!4v1704087166034!5m2!1sen!2sin" width="450" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   </div>
                   <div className={styles.tripfeedbackquote}>

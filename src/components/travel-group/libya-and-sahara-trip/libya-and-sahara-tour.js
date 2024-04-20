@@ -119,10 +119,9 @@ const EgyptAndNileTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1712255378/193adc47134748663c2011f11fc13e701000972398_s31x40.jpg" alt="Central Asia Map" />
-                    <div className={styles.map} id="map">
+                    <div id="map">
 
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691315.447833254!2d29.195612835362276!3d25.378010497778707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15577f67a0a74193%3A0x9deda9d2a3b16f2c!2sBaghdad%2C%20Baghdad%20Governorate%2C%20Iraq!5e0!3m2!1sen!2sin!4v1712171410637!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691315.447833254!2d29.195612835362276!3d25.378010497778707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15577f67a0a74193%3A0x9deda9d2a3b16f2c!2sBaghdad%2C%20Baghdad%20Governorate%2C%20Iraq!5e0!3m2!1sen!2sin!4v1712171410637!5m2!1sen!2sin" width="450" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
                   </div>

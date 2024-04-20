@@ -129,10 +129,8 @@ const SaudiArabiaTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1704259298/fullsizeoutput_572683118_juvkho.jpg" alt="Central Asia Map" />
-
-                    <div className={styles.map} id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15248869.961202316!2d21.81252975!3d21.077907999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e9eb43f335098f%3A0x17459dc363651bb9!2sMountain%20Side%20Picture%20Taking%20Location!5e0!3m2!1sen!2sin!4v1704259344562!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15248869.961202316!2d21.81252975!3d21.077907999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e9eb43f335098f%3A0x17459dc363651bb9!2sMountain%20Side%20Picture%20Taking%20Location!5e0!3m2!1sen!2sin!4v1704259344562!5m2!1sen!2sin" width="450" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   </div>
                   <div className={styles.tripfeedbackquote}>

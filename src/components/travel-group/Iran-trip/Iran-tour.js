@@ -129,10 +129,8 @@ const IranTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1704255260/11880832200_s05nod.png" alt="Central Asia Map" />
-
-                    <div className={styles.map} id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6631105.202887078!2d42.21457547499999!3d35.75463060000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e058b3a72c6eb%3A0x1d79be3d9cf716f6!2sIran%20Tourism!5e0!3m2!1sen!2sin!4v1704255442003!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6631105.202887078!2d42.21457547499999!3d35.75463060000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e058b3a72c6eb%3A0x1d79be3d9cf716f6!2sIran%20Tourism!5e0!3m2!1sen!2sin!4v1704255442003!5m2!1sen!2sin" width="450" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   </div>
                   <div className={styles.tripfeedbackquote}>

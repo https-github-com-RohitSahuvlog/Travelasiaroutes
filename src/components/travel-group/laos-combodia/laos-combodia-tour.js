@@ -129,10 +129,9 @@ const LaosCombodiaTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1711889224/indochin-map_hoa0jq.jpg
-                    " alt="Central Asia Map" />
-                    <div className={styles.map} id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.5274535612925!2d107.10599157509563!3d14.046001886377226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316b97e319132a23%3A0x6682c89180f5137!2z4Z6P4Z-G4Z6U4Z6T4Z-L4Z6A4Z6T4Z-S4Z6R4Z674Z6Z4Z6T4Z624Z6CIOGegOGemOGfkuGeluGeu-Geh-Getg!5e0!3m2!1sen!2sin!4v1711889073185!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.5274535612925!2d107.10599157509563!3d14.046001886377226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316b97e319132a23%3A0x6682c89180f5137!2z4Z6P4Z-G4Z6U4Z6T4Z-L4Z6A4Z6T4Z-S4Z6R4Z674Z6Z4Z6T4Z624Z6CIOGegOGemOGfkuGeluGeu-Geh-Getg!5e0!3m2!1sen!2sin!4v1711889073185!5m2!1sen!2sin" width="450" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
                   </div>

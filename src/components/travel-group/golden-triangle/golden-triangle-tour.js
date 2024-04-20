@@ -129,10 +129,8 @@ const GoldenTriangleTrip = () => {
               <div className={styles.SectionThreeMain}>
                 <div className={styles.FirstDiv}>
                   <div className={styles.image_container}>
-                    <img className={styles.ThirdPic} src="https://res.cloudinary.com/dxhoawdbh/image/upload/v1711194926/North_India_qqcsr8.jpg
-                    " alt="Central Asia Map" />
-                    <div className={styles.map} id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448254.5440711953!2d76.94918402777469!3d28.630103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd1c1d68decf%3A0x4b77bb526ec7a6e7!2sNorthern%20India%20Tourism!5e0!3m2!1sen!2sin!4v1711195062888!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448254.5440711953!2d76.94918402777469!3d28.630103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd1c1d68decf%3A0x4b77bb526ec7a6e7!2sNorthern%20India%20Tourism!5e0!3m2!1sen!2sin!4v1711195062888!5m2!1sen!2sin" width="450" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
                   </div>
