@@ -23,7 +23,7 @@ const TravelGroups = () => {
   const data = [
     {
       link: "nepal",
-      thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/104733483266635338.jpg",
+      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711857437/m130327002_iciujf.jpg",
       region: "Asia–Pacific",
       title: "Best of Nepal", description: "Nepal Unveiled : Embark on Epic Adventures"
     },
@@ -59,7 +59,7 @@ const TravelGroups = () => {
     },
     {
       link: "3eyeshimalayas",
-      thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/37E16EE8-27A0-4B09-A7D4-761147AB1B1B870110290.jpeg",
+      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711857300/m160822019_u66yv0.jpg",
       region: "Asia–Pacific",
       title: "3 Eyes of Himalayas- Best of Tibet, Bhutan and Nepal",
       description: "Uncover the charm of Tibet, Bhutan, and Nepal. Dive into rich cultures, ancient traditions, and stunning landscapes. Plus, discover the allure of the Philippines. Your unforgettable journey begins here!"
