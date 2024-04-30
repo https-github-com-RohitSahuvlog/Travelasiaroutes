@@ -42,6 +42,21 @@ export const BangladeshAccData = [
         ]
     },
     {
+        "day": 7,
+        "description": "<strong>Discover Rajshahi's Cultural Gems</strong>",
+        "activities": [
+            "<p className='activity'>Explore the vibrant city of Rajshahi, known for its rich cultural heritage and historical significance. Begin your day with a visit to the Varendra Research Museum, the oldest museum in Bangladesh, boasting a remarkable collection of archaeological artifacts. Delve into the region's silk industry with a fascinating tour of a local silk factory in Rajshahi, where you'll learn about the intricate production process of Rajshahi Silk. Cap off your day with a visit to a showroom, where you can purchase high-quality silk items as souvenirs to remember your time in this culturally rich city. Overnight stay in Khulna</p>"
+        ]
+    },
+    {
+        "day": 8,
+        "description": "<strong>Unveil the Treasures of Bagha, Puthia, and Natore</strong>",
+        "activities": [
+            "<p className='activity'>Embark on a journey to explore the historical treasures of Bagha, Puthia, and Natore. Begin your day by visiting the magnificent Bagha Mosque, renowned for its impressive architecture and historical significance. Continue your exploration in Puthia, where you'll marvel at the ancient temples and palaces that reflect the region's rich architectural heritage. Explore Natore and delve into the history of Rani Bhabani's palace, a site of great historical importance. Conclude your day with a return journey to Rajshahi, where you can unwind and reflect on the day's experiences. Overnight stay in Rajshahi.</p>"
+        ]
+    },
+
+    {
         "day": 9,
         "description": "<strong>Khulna - Rajshahi by Train, Silk Factory</strong>",
         "activities": [

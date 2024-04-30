@@ -257,7 +257,7 @@ const JapanTrip = () => {
                               </path>
                             </svg>
                           </td>
-                          <td>{`${detail.availability} Spaces`}</td>
+                          <td>{`${detail.availability} `}</td>
                           <td>
                             <Link to="/bespoke">
                               <button className={styles.btn_booknow}>Book Now</button>

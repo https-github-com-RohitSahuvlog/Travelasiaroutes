@@ -37,7 +37,7 @@ export const IranTripAccData = [
         "day": 5,
         "description": "<strong>The UNESCO Site Naqsh-e Jahan Square - Imam Square</strong>",
         "activities": [
-            "<p>Your exploration continues in Imam Square. This 17th-century site is one of the largest public spaces in the world. Here in the square, you’ll visit the 17th-century Shah Mosque, revered as a masterpiece of Islamic architecture and easily recognized by its magnificent tile-work and soaring cupola and minarets...</p>",
+            "<p>Your exploration continues in Imam Square. This 17th-century site is one of the largest public  in the world. Here in the square, you’ll visit the 17th-century Shah Mosque, revered as a masterpiece of Islamic architecture and easily recognized by its magnificent tile-work and soaring cupola and minarets...</p>",
             "<p>You’ll end your exploration of the square by visiting the Qeisarieh Bazaar. With hundreds of local vendors that specialize in traditional arts and crafts, it’s a wonderful place to shop for pottery, enamel, jewelry, and delicately inlaid board games...</p>",
             "<p>Overnight in Isfahan(B, L, D)</p>"
         ]

@@ -23,9 +23,10 @@ const TravelGroups = () => {
   const data = [
     {
       link: "nepal",
-      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711857437/m130327002_iciujf.jpg",
+      thumbnail: "https://www.himalayaguides.com/wp-content/uploads/mountain-flight-nepal-everest.jpg",
       region: "Asia–Pacific",
-      title: "Best of Nepal", description: "Nepal Unveiled : Embark on Epic Adventures"
+      title: "Best of Nepal",
+      description: "Nepal Unveiled : Embark on Epic Adventures"
     },
 
     {
@@ -63,13 +64,6 @@ const TravelGroups = () => {
       region: "Asia–Pacific",
       title: "3 Eyes of Himalayas- Best of Tibet, Bhutan and Nepal",
       description: "Uncover the charm of Tibet, Bhutan, and Nepal. Dive into rich cultures, ancient traditions, and stunning landscapes. Plus, discover the allure of the Philippines. Your unforgettable journey begins here!"
-    },
-    {
-      link: "india-unseen",
-      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704100298/346657AB-0E75-4F62-A2F1-FB3199A56C791296070453_jfbzfa.jpg",
-      region: "Asia–Pacific",
-      title: "India's Unseen Legends",
-      description: "Embark on a mesmerizing odyssey through the unseen legends of India",
     },
     {
       link: "oman",

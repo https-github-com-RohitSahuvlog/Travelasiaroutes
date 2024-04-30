@@ -168,7 +168,7 @@ const EgyptAndNileTrip = () => {
             <div className={styles.section} ref={section2Ref} id={styles.section2} >
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>Discover the Beauty of Explore Egypt</h2>
+                  <h2 className={styles.SetText}>Discover the Beauty of Egypt</h2>
                   <h5 className={styles.SetTextWith}>(Culture, Nature, Wildlife, Adventure)</h5>
                 </div>
                 <MyAccordion AccordianData={EgyptAndNileTripAccData} />
@@ -287,7 +287,7 @@ const EgyptAndNileTrip = () => {
                             </svg>
                           </td>
                           <td>{`${detail.availability
-                            } Spaces`
+                            } `
                           }</td>
                           <td>
                             <Link to="/bespoke">

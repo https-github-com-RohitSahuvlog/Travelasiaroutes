@@ -276,7 +276,7 @@ const BangladeshTrip = () => {
                             </svg>
                           </td>
                           <td>{`${detail.availability
-                            } Spaces`
+                            } `
                           }</td>
                           <td>
                             <Link to="/bespoke">

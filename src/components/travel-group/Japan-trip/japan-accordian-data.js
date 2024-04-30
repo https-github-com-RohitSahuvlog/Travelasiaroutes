@@ -20,6 +20,13 @@ export const JapanAccordianData = [
         ]
     },
     {
+        "day": 2,
+        "description": "Explore Kathmandu Valley and Cultural Heritage",
+        "activities": [
+            "<p className='activity'>Embark on a full day exploration of Kathmandu Valley, home to an array of cultural and historical treasures. Visit renowned UNESCO World Heritage Sites, including the sacred Pashupatinath Temple, the iconic Boudhanath Stupa, and the ancient Swayambhunath Stupa, also known as the Monkey Temple. Explore the vibrant city of Patan and its Durbar Square, adorned with exquisite Newari architecture and intricate woodcarvings.</p>"
+        ]
+    },
+    {
         "day": 4,
         "description": "Kathmandu, Dhulikhel, and Hike to Namobudha Monastery",
         "activities": [

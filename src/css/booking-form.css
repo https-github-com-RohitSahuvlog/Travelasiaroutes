@@ -1,0 +1,100 @@
+.travel_form {
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* Smooth background transition on hover */
+}
+
+.travel_form:hover {
+    /* background-color: #e0e0e0; */
+    /* Lighter shade on hover for better interaction */
+}
+
+.form_section {
+    margin-bottom: 30px;
+}
+
+.form_field {
+    margin-bottom: 30px;
+}
+
+.travel_form .form-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form_field label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form_field input,
+.form_field select,
+.form_field textarea {
+    width: calc(100% - 40px);
+    /* handle various padding and border issues */
+    padding: 15px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.form_field input:focus,
+.form_field select:focus,
+.form_field textarea:focus {
+    border: 2px solid #0056b3;
+}
+
+.form_field textarea {
+    height: 120px;
+}
+
+.form_ctrl {
+    text-align: center;
+    padding: 10px;
+}
+
+.btn {
+    width: auto;
+    /* Rather than full width, align better for user perspective */
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.5;
+    transition: background-color 0.3s;
+    /* Add transition for smoother hover effect */
+}
+
+.btn:hover {
+    background-color: #003366;
+}
+
+.form-aligncheckbox>label {
+    display: flex;
+    align-items: center;
+    /* better alignment for checkboxes */
+    padding-left: 10px;
+}
+
+.is-required label:after {
+    content: ' *';
+    color: red;
+}
+
+@media (max-width: 768px) {
+
+    .form_field input,
+    .form_field select,
+    .form_field textarea {
+        width: 90%;
+        /* allow for small margins on small screens */
+    }
+}

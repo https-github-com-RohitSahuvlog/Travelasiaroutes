@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
 const data = [
   {
     link: "/travel-groups/nepal",
-    thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/104733483266635338.jpg",
+    thumbnail: "https://www.himalayaguides.com/wp-content/uploads/mountain-flight-nepal-everest.jpg",
     region: "Asia–Pacific",
     title: "Best of Nepal", description: "Nepal Unveiled : Embark on Epic Adventures"
   },
@@ -67,17 +67,10 @@ const data = [
   },
   {
     link: "/travel-groups/3eyeshimalayas",
-    thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/37E16EE8-27A0-4B09-A7D4-761147AB1B1B870110290.jpeg",
+    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711857300/m160822019_u66yv0.jpg",
     region: "Asia–Pacific",
     title: "3 Eyes of Himalayas- Best of Tibet, Bhutan and Nepal",
     description: "Uncover the charm of Tibet, Bhutan, and Nepal. Dive into rich cultures, ancient traditions, and stunning landscapes. Plus, discover the allure of the Philippines. Your unforgettable journey begins here!"
-  },
-  {
-    link: "/travel-groups/india-unseen",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704100298/346657AB-0E75-4F62-A2F1-FB3199A56C791296070453_jfbzfa.jpg",
-    region: "Asia–Pacific",
-    title: "India's Unseen Legends",
-    description: "Embark on a mesmerizing odyssey through the unseen legends of India",
   },
   {
     link: "/travel-groups/oman",

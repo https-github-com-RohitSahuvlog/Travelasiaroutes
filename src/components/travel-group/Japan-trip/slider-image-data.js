@@ -33,7 +33,7 @@ export const JapanImages = [
         thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Siddha-Gufa-Cave-Nepal.jpg?w=1024&ssl=1",
     },
     {
-        original: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Bhote-Koshi-River-Nepal.jpg?w=942&ssl=1",
+        original: "",
         thumbnail: "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Bhote-Koshi-River-Nepal.jpg?w=942&ssl=1",
     },
 ];

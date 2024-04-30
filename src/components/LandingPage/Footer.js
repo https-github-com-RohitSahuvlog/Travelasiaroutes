@@ -7,6 +7,7 @@ import {
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 import Axios from "../../api";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -146,10 +147,11 @@ const Footer = () => {
                       </h3>
                       <ul className={styles.menulist}>
                         <li className={styles.loca_li}>
-                          <a href="#">Privacy Policy</a>
+                          <Link to="/privacy">Privacy Policy</Link>
+
                         </li>
                         <li className={styles.loca_li}>
-                          <a href="#">Booking Terms & Conditions</a>
+                          <Link to="/booking-terms">Booking Terms & Conditions</Link>
                         </li>
                         <li className={styles.loca_li}>
                           <a href="#">SiteMap</a>
