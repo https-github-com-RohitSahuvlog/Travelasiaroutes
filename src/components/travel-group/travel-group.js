@@ -108,13 +108,6 @@ const TravelGroups = () => {
       description: "Journey through the Riches of Frankincense & Golden Sands",
     },
     {
-      link: "laos-combodia",
-      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711257216/2AE71DED-1C67-4722-90A5-1695735C645A1232473463_bfuo3m.jpg",
-      region: "Asia–Pacific",
-      title: "Landlocked Laos & Life along Mekong with Combodia Extension (2026)",
-      description: "Embark on a Journey through the Enchanting Land of Serenity and Splendor",
-    },
-    {
       link: "india-kumbh",
       thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711944832/kumbh-mela-2025_qjfgi8.jpg",
       region: "Asia–Pacific",
@@ -134,8 +127,14 @@ const TravelGroups = () => {
       region: "MiddleEast",
       title: "Egypt and The Nile",
       description: "Join us on an unforgettable expedition along the legendary Nile River, as we unravel the mysteries of ancient Egypt's iconic landmarks and immerse ourselves in the vibrant culture of modern-day Cairo.",
+    },
+    {
+      link: "landlock-laos-combodia",
+      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711257216/2AE71DED-1C67-4722-90A5-1695735C645A1232473463_bfuo3m.jpg",
+      region: "Asia–Pacific",
+      title: "Landlocked Laos & Life along Mekong with Combodia Extension",
+      description: "(Small Group Journey)- for Mr. Dennis Hoagland and Mrs. Mary Andre- Confirmation No.- DHMA/1113/MR",
     }
-
   ]
 
   const GlobalStyle = createGlobalStyle`

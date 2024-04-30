@@ -23,7 +23,7 @@ import SaudiArabiaTrip from "./components/travel-group/Saudi-arabia-trip/Saudi-a
 import NorthernIndiaTrip from "./components/travel-group/northern-india/northern-india-tour";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import GoldenTriangleTrip from "./components/travel-group/golden-triangle/golden-triangle-tour";
-import LaosCombodiaTrip from "./components/travel-group/laos-combodia/laos-combodia-tour";
+import LaosCombodiaTrip from "./components/travel-group/landlock-laos-combodia/landlock-laos-combodia-tour";
 import IndiaKumbhTrip from "./components/travel-group/india-kumbh-trip/india-kumbh-tour";
 import BabyLonToBhagdadTrip from "./components/travel-group/babylontobhagdad-trip/babylontobhagdad-tour";
 import EgyptAndNileTrip from "./components/travel-group/egypt-and-nile-trip/egypt-and-nile-tour";
@@ -57,7 +57,7 @@ function App() {
         <Route path="/travel-groups/uzbekistan" element={<UzbekistanTrip />} />
         <Route path="/travel-groups/northern-india" element={<NorthernIndiaTrip />} />
         <Route path="/travel-groups/golden-triangle" element={<GoldenTriangleTrip />} />
-        <Route path="/travel-groups/laos-combodia" element={< LaosCombodiaTrip />} />
+        <Route path="/travel-groups/landlock-laos-combodia" element={< LaosCombodiaTrip />} />
         <Route path="/travel-groups/india-kumbh" element={< IndiaKumbhTrip />} />
         <Route path="/travel-groups/babylon-baghdad"
           element={< BabyLonToBhagdadTrip />} />
