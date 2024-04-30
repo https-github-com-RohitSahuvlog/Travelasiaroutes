@@ -153,11 +153,11 @@ const Footer = () => {
                         <li className={styles.loca_li}>
                           <Link to="/booking-terms">Booking Terms & Conditions</Link>
                         </li>
-                        <li className={styles.loca_li}>
+                        {/* <li className={styles.loca_li}>
                           <a href="#">SiteMap</a>
-                        </li>
+                        </li> */}
                         <li className={styles.loca_li}>
-                          <a href="#">Booking Forms</a>
+                          <Link to="/booking-form">Booking Forms</Link>
                         </li>
                       </ul>
                     </div>
