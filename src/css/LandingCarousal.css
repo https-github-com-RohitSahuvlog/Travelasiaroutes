@@ -99,7 +99,7 @@
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0 3px 5px #000;
-  backdrop-filter: blur(7px);
+
   padding: 0px 5px;
 }
 
@@ -174,7 +174,7 @@
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0 3px 5px #000;
-    backdrop-filter: blur(7px);
+
     padding: 0px 5px;
   }
 }
@@ -198,7 +198,7 @@
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0 3px 5px #000;
-    backdrop-filter: blur(7px);
+
     padding: 0px 5px;
   }
 }

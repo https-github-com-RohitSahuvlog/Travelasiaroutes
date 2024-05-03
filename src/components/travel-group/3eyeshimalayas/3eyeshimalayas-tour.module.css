@@ -8,6 +8,7 @@
   background-image: url("https://res.cloudinary.com/dxhoawdbh/image/upload/v1704085025/37E16EE8-27A0-4B09-A7D4-761147AB1B1B870110290_zkq0th.jpg");
   object-position: top;
   object-fit: cover;
+  background-size: cover;
   /* background: none repeat; */
 }
 
@@ -26,7 +27,6 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 0 3px 5px #000;
-  backdrop-filter: blur(7px);
   padding: 5px 5px;
 }
 
@@ -37,7 +37,7 @@
   text-align: center;
   color: #fff;
   text-shadow: 0 3px 5px #000;
-  backdrop-filter: blur(7px);
+
   padding: 5px 5px;
 }
 

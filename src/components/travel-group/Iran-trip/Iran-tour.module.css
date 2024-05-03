@@ -6,8 +6,9 @@
   justify-content: center;
   text-align: center;
   background-image: url("https://res.cloudinary.com/dxhoawdbh/image/upload/v1704254978/Amir_Chakhmaq_Complex_Hadi_Karimi-1500x630-1_dvqv6c.jpg");
-  /* object-position: top; */
-  /* object-fit: cover; */
+  object-position: center;
+  object-fit: cover;
+  background-size: cover;
   /* background: none repeat; */
 }
 
@@ -26,7 +27,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 0 3px 5px #000;
-  backdrop-filter: blur(7px);
+
   padding: 5px 5px;
 }
 
@@ -37,7 +38,7 @@
   text-align: center;
   color: #fff;
   text-shadow: 0 3px 5px #000;
-  backdrop-filter: blur(7px);
+
   padding: 0px 5px;
 }
 

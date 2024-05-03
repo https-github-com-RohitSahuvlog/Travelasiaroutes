@@ -6,9 +6,9 @@
   justify-content: center;
   text-align: center;
   background-image: url("https://media2.thrillophilia.com/images/photos/000/025/416/original/1517482388_philippines-banner.jpg?gravity=center&width=1400&height=642&crop=fill&quality=auto&fetch_format=auto&flags=strip_profile&format=jpg&sign_url=true");
-  object-position: top;
+  object-position: center;
   object-fit: cover;
-  /* background: none repeat; */
+  background-size: cover;
 }
 
 
@@ -26,7 +26,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 0 3px 5px #000;
-  backdrop-filter: blur(7px);
+
   padding: 5px 5px;
 }
 
@@ -37,7 +37,7 @@
   text-align: center;
   color: #fff;
   text-shadow: 0 3px 5px #000;
-  backdrop-filter: blur(7px);
+
   padding: 0px 5px;
 }
 

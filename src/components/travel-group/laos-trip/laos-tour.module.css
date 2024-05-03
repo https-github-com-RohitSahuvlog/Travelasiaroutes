@@ -6,8 +6,9 @@
   justify-content: center;
   text-align: center;
   background-image: url("https://www.redsavannah.com/-/media/countries/laos/wat-xieng-khuan-buddha-park-xx-shstck.jpg?h=810&w=1405&udi=1&cropregion=29,179,1600,864&hash=15C72468E1D730AD30A588BCB4717BA4");
-  object-position: top;
+  object-position: center;
   object-fit: cover;
+  background-size: cover;
   /* background: none repeat; */
 }
 
@@ -27,7 +28,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 0 3px 5px #000;
-  backdrop-filter: blur(7px);
+
   padding: 5px 5px;
 }
 
@@ -38,7 +39,7 @@
   text-align: center;
   color: #fff;
   text-shadow: 0 3px 5px #000;
-  backdrop-filter: blur(7px);
+
   padding: 0px 5px;
 }
 

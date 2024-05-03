@@ -6,9 +6,9 @@
   justify-content: center;
   text-align: center;
   background-image: url("https://www.divergenttravelers.com/wp-content/uploads/edit-2832.jpg");
-  object-position: top;
+  object-position: center;
   object-fit: cover;
-  /* background: none repeat; */
+  background-size: cover;
 }
 
 
