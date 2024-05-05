@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../css/booking-form.css"
+import { addBookingForm } from '../redux/action/enquiry';
 
 const TravelForm = () => {
     // State to manage form data
@@ -28,7 +29,7 @@ const TravelForm = () => {
     // Handler for form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Implement form submission logic here
+        addBookingForm(formData)
         console.log('Form submitted:', formData);
     };
 
