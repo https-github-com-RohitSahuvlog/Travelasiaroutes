@@ -172,7 +172,8 @@
 
 .menulist {
   list-style: none;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
 .Footsec {

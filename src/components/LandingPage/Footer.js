@@ -83,7 +83,7 @@ const Footer = () => {
 
                             <ul className={styles.menulist} key={index}>
                               <li className={styles.loc_li}>
-                                {item.address}
+                                {item.address} <br />
                               </li>
                             </ul>
                           ))}

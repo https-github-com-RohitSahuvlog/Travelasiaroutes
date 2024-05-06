@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Box, Button, Modal } from "@mui/material";
 import CallIcon from "@mui/icons-material/Call";
+import EmailIcon from '@mui/icons-material/Email';
 import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -9,6 +10,7 @@ import logo from "../../images/logo.svg";
 import ModalCom from "../Enquire/ModalCom";
 import "../../css/Navbar.css";
 import "../../css/Navbar_by_destination.css";
+// import Tooltip from "react-tooltip";
 
 
 
@@ -146,7 +148,11 @@ export default function Navbar() {
         <a className="call-and-home-nav-item d-flex align-items-center text-white" href="tel:+918750970676">
           <CallIcon />
         </a>
-        {/* <p>|</p> */}
+        <a href="mailto:sumit.steve@yahoo.com" className="call-and-home-nav-item d-flex align-items-center text-white">
+          <EmailIcon />
+        </a>
+        {/* <div data-tip="msg to show" data-for='toolTip1' data-place='top'>Tooltip</div> */}
+        {/* <Tooltip id="toolTip1" /> */}
 
       </div>
       <div className="nav-items">
