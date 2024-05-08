@@ -30,6 +30,7 @@ import EgyptAndNileTrip from "./components/travel-group/egypt-and-nile-trip/egyp
 import PrivacyPolicy from "./pages/privacy_policy";
 import TermsAndConditions from "./pages/Booking-terms-conditions";
 import TravelForm from "./pages/booking-form";
+import SoutherIraqTrip from "./components/travel-group/SouthernIraq/SouthernIraq-tour";
 function App() {
   return (
     <div className="App">
@@ -66,6 +67,8 @@ function App() {
 
         <Route path="/travel-groups/egypt-and-nile"
           element={< BabyLonToBhagdadTrip />} />
+        <Route path="/travel-groups/southern-lraq"
+          element={< SoutherIraqTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
       </Routes>
       <Footer />

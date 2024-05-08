@@ -141,6 +141,13 @@ const data = [
     region: "MiddleEast",
     title: "Egypt and The Nile",
     description: "Join us on an unforgettable expedition along the legendary Nile River, as we unravel the mysteries of ancient Egypt's iconic landmarks and immerse ourselves in the vibrant culture of modern-day Cairo.",
+  },
+  {
+    link: "/travel-groups/southern-lraq",
+    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1715105625/Iraq-Destination-Final_uom6uk.jpg",
+    region: "Asia–Pacific",
+    title: "EN ROUTE TO BAGHDAD: DELVING INTO SOUTHERN IRAQ",
+    description: "VOYAGE THROUGH THE HEART OF CIVILIZATION",
   }
 
 

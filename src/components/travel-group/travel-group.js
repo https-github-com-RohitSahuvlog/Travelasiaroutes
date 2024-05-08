@@ -134,6 +134,13 @@ const TravelGroups = () => {
       region: "Asia–Pacific",
       title: "Landlocked Laos & Life along Mekong with Combodia Extension",
       description: "(Small Group Journey)- for Mr. Dennis Hoagland and Mrs. Mary Andre- Confirmation No.- DHMA/1113/MR",
+    },
+    {
+      link: "southern-lraq",
+      thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1715105625/Iraq-Destination-Final_uom6uk.jpg",
+      region: "Asia–Pacific",
+      title: "EN ROUTE TO BAGHDAD: DELVING INTO SOUTHERN IRAQ",
+      description: "VOYAGE THROUGH THE HEART OF CIVILIZATION",
     }
   ]
 
