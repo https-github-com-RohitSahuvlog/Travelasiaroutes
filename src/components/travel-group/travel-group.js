@@ -139,8 +139,8 @@ const TravelGroups = () => {
       link: "southern-lraq",
       thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1715105625/Iraq-Destination-Final_uom6uk.jpg",
       region: "Asia–Pacific",
-      title: "EN ROUTE TO BAGHDAD: DELVING INTO SOUTHERN IRAQ",
-      description: "VOYAGE THROUGH THE HEART OF CIVILIZATION",
+      title: "En route to baghdad: delving into southern iraq",
+      description: "Voyage through the heart of civilization",
     }
   ]
 
