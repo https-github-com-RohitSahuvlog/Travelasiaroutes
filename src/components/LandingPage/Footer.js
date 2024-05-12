@@ -186,7 +186,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <a href="https://www.instagram.com/travel.with.midasiaroutes/" className={styles.iconinsta} title="Instagram" target="_blank">
+              <a href="https://www.instagram.com/midasia_routes?igsh=dHBudmYzMTEzNXJj&utm_source=qr" className={styles.iconinsta} title="Instagram" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} size="1.2x" />
               </a>
             </div>
