@@ -80,7 +80,7 @@ const ScrollToTopButton = () => {
                 `}
             </style>
             <a
-                href="https://api.whatsapp.com/send?phone=8750970676&text=Embark%20on%20unforgettable%20adventures%20with%20Midasia%20Routes%20today!"
+                href="https://api.whatsapp.com/send?phone=918750970676&text=Embark%20on%20unforgettable%20adventures%20with%20Midasia%20Routes%20today!"
                 className="whatsapp-btn"
                 target="_blank"
                 rel="noopener noreferrer"

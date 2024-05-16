@@ -31,6 +31,7 @@ import PrivacyPolicy from "./pages/privacy_policy";
 import TermsAndConditions from "./pages/Booking-terms-conditions";
 import TravelForm from "./pages/booking-form";
 import SoutherIraqTrip from "./components/travel-group/SouthernIraq/SouthernIraq-tour";
+import PageError from "./pages/PageError";
 function App() {
   return (
     <div className="App">
@@ -70,6 +71,8 @@ function App() {
         <Route path="/travel-groups/southern-lraq"
           element={< SoutherIraqTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
+
+        <Route path="/pageerror" element={<PageError />} />
       </Routes>
       <Footer />
       < ScrollToTopButton />
