@@ -1,5 +1,5 @@
 import React from 'react'
-import './PageError.css'
+import '../css/PageError.css'
 import { Link } from 'react-router-dom'
 
 const PageError = () => {
