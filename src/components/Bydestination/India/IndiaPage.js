@@ -14,12 +14,12 @@ const IndiaPage = () => {
         Axios.get(`/api/countries/get-country?country=${countryname}`)
             .then((response) => {
                 if (response.status === 404) {
-                    navigate("/pageerror")
+                    navigate("/bespoke")
                 }
                 setCountryData(response.data);
             })
             .catch((error) => {
-                navigate("/pageerror")
+                navigate("/bespoke")
                 console.error("Error fetching country data:", error);
             });
 
