@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Dialog, DialogTitle, DialogContent, Grid, TextField, TextareaAutosize, Button } from '@mui/material';
+import { Dialog, DialogTitle, DialogContent, Grid, TextField, Button } from '@mui/material';
 
 import { toast } from 'react-toastify';
 import { addFormEnquiry } from '../../../redux/action/enquiry';
-
 
 const Modal = ({ open, handleClose }) => {
     const [formData, setFormData] = useState({
@@ -25,6 +24,16 @@ const Modal = ({ open, handleClose }) => {
     };
 
     const handleSubmit = async () => {
+        const { firstName, lastName, email, contactNumber, nationality, age, message } = formData;
+
+        if (!firstName || !lastName || !email || !contactNumber || !nationality || !age || !message) {
+            toast.error('All fields are required', {
+                position: 'top-right',
+                autoClose: 3000,
+            });
+            return;
+        }
+
         try {
             await addFormEnquiry(formData);
             handleClose();
@@ -63,6 +72,7 @@ const Modal = ({ open, handleClose }) => {
                                 value={formData.firstName}
                                 onChange={handleInputChange}
                                 fullWidth
+                                required
                             />
                         </Grid>
                         <Grid item xs={6}>
@@ -72,6 +82,7 @@ const Modal = ({ open, handleClose }) => {
                                 value={formData.lastName}
                                 onChange={handleInputChange}
                                 fullWidth
+                                required
                             />
                         </Grid>
                         <Grid item xs={6}>
@@ -82,6 +93,7 @@ const Modal = ({ open, handleClose }) => {
                                 value={formData.email}
                                 onChange={handleInputChange}
                                 fullWidth
+                                required
                             />
                         </Grid>
                         <Grid item xs={6}>
@@ -92,6 +104,7 @@ const Modal = ({ open, handleClose }) => {
                                 value={formData.contactNumber}
                                 onChange={handleInputChange}
                                 fullWidth
+                                required
                             />
                         </Grid>
                         <Grid item xs={6}>
@@ -101,6 +114,7 @@ const Modal = ({ open, handleClose }) => {
                                 value={formData.nationality}
                                 onChange={handleInputChange}
                                 fullWidth
+                                required
                             />
                         </Grid>
                         <Grid item xs={6}>
@@ -111,6 +125,7 @@ const Modal = ({ open, handleClose }) => {
                                 value={formData.age}
                                 onChange={handleInputChange}
                                 fullWidth
+                                required
                             />
                         </Grid>
                         <Grid item xs={12}>
@@ -122,6 +137,7 @@ const Modal = ({ open, handleClose }) => {
                                 fullWidth
                                 multiline
                                 rows={4}
+                                required
                             />
                         </Grid>
                     </Grid>
