@@ -7,12 +7,10 @@
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(20px);
-  color: white;
   font-size: 14px;
   z-index: 1000;
-  margin-bottom: 200px;
-  background-color: rgba(0, 0, 0, 0.1);
-  /* background: linear-gradient(to left, #87cfeb3f, #ffffff28); */
+  margin-bottom: 250px;
+  background-color: rgb(241, 237, 237);
 }
 
 .navbar-logo {
@@ -32,6 +30,11 @@
   display: -webkit-inline-box;
   align-items: center;
   gap: 0.5rem;
+  color: black !important;
+}
+
+.call-and-home-nav-item>a:hover {
+  color: var(--golden) !important;
 }
 
 .call-and-home-nav-item>p {
@@ -97,6 +100,14 @@
   list-style: none;
   padding: 0.5vmax 0;
   font-size: 1.25vmax;
+}
+
+.to_drop>a {
+  color: black !important;
+}
+
+.to_drop>a:hover {
+  color: var(--golden) !important;
 }
 
 .small_group {

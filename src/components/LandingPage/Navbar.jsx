@@ -145,10 +145,10 @@ export default function Navbar() {
     <div className="navbar">
       <div className="call-and-home-nav-item">
         <Link to="/"><img src={logo} alt="MidAsia logo" className="navbar-logo img-fluid" /></Link>
-        <a className="call-and-home-nav-item d-flex align-items-center text-white" href="tel:+918750970676">
+        <a className="call-and-home-nav-item d-flex align-items-center text-black" href="tel:+918750970676">
           <CallIcon />
         </a>
-        <a href="mailto:sumit.steve@yahoo.com" className="call-and-home-nav-item d-flex align-items-center text-white">
+        <a href="mailto:sumit.steve@yahoo.com" className="call-and-home-nav-item d-flex align-items-center text-black">
           <EmailIcon />
         </a>
         {/* <div data-tip="msg to show" data-for='toolTip1' data-place='top'>Tooltip</div> */}
