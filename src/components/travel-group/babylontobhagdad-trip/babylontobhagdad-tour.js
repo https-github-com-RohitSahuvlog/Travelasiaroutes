@@ -181,30 +181,37 @@ const BabyLonToBhagdadTrip = () => {
                 <div className={styles.SetFlexProperty}>
                   <div className={styles.SetDataLeft}>
                     <ul>
-                      <li>Explore the ancient marvels of Babylon, a name evoking fairytales and mystery.</li>
-                      <li>Experience the vibrant energy of Baghdad, the "Gate of the Gods."</li>
-                      <li>Witness the enduring legacy of human ingenuity and ambition in Babylon's innovations.</li>
-                      <li>Discover the roots of writing, the birth of HTML, and the origins of algebra.</li>
-                      <li>Marvel at the base-60 numeral system, still used to measure time and angles today.</li>
-                      <li>Immerse yourself in the timeless epic of Gilgamesh, a tale that predates the Old Testament.</li>
-                      <li>Follow Gilgamesh's odyssey, his friendship with Enkidu, and encounters with Utanapishtim.</li>
-                      <li>Reflect on the timeless wisdom embedded in Babylonian literature.</li>
-                      <li>Delight in the parallels between Gilgamesh and biblical narratives.</li>
-                      <li>Embrace the journey through time and legend in Mesopotamia, where every step unveils new wonders.</li>
+                      <li>Gaze skyward and marvel at the breathtaking, ancient architecture of Ur, Uruk, and Ctesiphon, where every stone whispers tales of millennia past.
+                        Experience the profound spirituality and devotion of pilgrims at the majestic Shrine of Imam Ali in Najaf, as well as the revered Shrines of Hussein
+                        and Abbas in Karbala. These sacred sites, among the holiest in Islam, beckon with an atmosphere of fervent prayer and deep faith.
+                      </li>
+
+                      <li>Embark on a tranquil motorboat journey through the serene Mesopotamian Marshes, and immerse yourself in the fascinating story of this delicate
+                        ecosystem's revival and the rich tapestry of its unique culture.
+                      </li>
+
+                      <li>Wander through the timeworn passageways of ancient Babylon, and envision the grandeur of the majestic Ishtar Gate, standing tall and awe inspiring, welcoming all who entered the realm of Hammurabi. Let the echoes of history guide your steps as you explore the heart of this
+                        legendary empire.
+                      </li>
                     </ul>
                   </div>
 
                   <div className={styles.SetDataLeft}>
                     <ul>
+                      <li>Marvel at the majestic spiraling ramp of the Malwiyya Tower, also known as the Samarra Minaret, a true masterpiece of Islamic architecture.
+                      </li>
 
+                      <li>This iconic structure stands as a testament to the grandeur and ingenuity of ancient engineering, captivating all who gaze upon its intricate design
+                        and soaring elegance.
+                      </li>
 
-                      <li>Explore the remnants of Nebuchadnezzar's empire, including the iconic Ishtar Gate and the ziggurat of Marduk.</li>
-                      <li>Experience the warmth of Iraqi hospitality in Baghdad's bustling bazaars and delectable cuisine.</li>
-                      <li>Engage with local communities to learn about their traditions and contemporary challenges.</li>
-                      <li>Marvel at the enduring contributions of Mesopotamia to civilization, from writing to mathematics.</li>
-                      <li>Discover the enigma of Babylon, a place where myth meets reality and ancient wonders still stand.</li>
-                      <li>Explore the vibrant streets of modern-day Baghdad, a city teeming with life and resilience.</li>
-                      <li>Marvel at the fusion of past and present in Mesopotamia, where history comes alive with every step.</li>
+                      <li>Marvel at the stunning array of ancient art, with some masterpieces only recently unearthed and meticulously restored, showcased at Baghdad’s
+                        Iraq Museum.
+                      </li>
+
+                      <li>This breathtaking collection offers a glimpse into the rich cultural heritage of Mesopotamia, inviting visitors to journey through
+                        history and admire the timeless beauty of these remarkable artifacts.
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -340,26 +347,39 @@ const BabyLonToBhagdadTrip = () => {
                     </div>
                     <div className={styles.HeadingContent}>
                       <ul>
-                        <li>Expertly guided tours of historic sites</li>
-                        <li>Exploration of the ancient city of Babylon</li>
-                        <li>Visit to the Ishtar Gate and the Hanging Gardens</li>
-                        <li>Insight into the rich history of Mesopotamia</li>
-                        <li>Excursion to the ruins of Ur, birthplace of Abraham</li>
-                        <li>Guided tour of the ancient city of Uruk</li>
-                        <li>Exploration of the ziggurat at Eridu</li>
-                        <li>Visit to the archaeological site of Nippur</li>
-                        <li>Insightful facts about ancient Mesopotamian civilization</li>
-                        <li>Engaging discussions on the contributions of Mesopotamia to human history</li>
-                        <li>Opportunities to learn about ancient languages and writing systems</li>
-                        <li>Exploration of the ancient city of Baghdad</li>
-                        <li>Visit to the National Museum of Iraq</li>
-                        <li>Discovering the rich cultural heritage of modern Iraq</li>
-                        <li>Tasting traditional Iraqi cuisine</li>
-                        <li>Engaging with local artisans and craftsmen</li>
-                        <li>Opportunities for photography and relaxation</li>
-                        <li>Comfortable accommodations throughout the journey</li>
-                        <li>Transportation provided for all included activities</li>
-                        <li>Expert local guides providing insights and commentary</li>
+                        <li>
+                          All accommodations and meals are
+                          included as noted in the itinerary
+                        </li>
+                        This comprehensive package covers all
+                        <li>internal/domestic flights, ensuring a
+                          hassle-free journey.</li>
+                        <li>All ground transportation, including
+                          airport transfers</li>
+                        <li>All sightseeing, events, and visits as
+                          noted in the itinerary</li>
+                        <li>All entrance fees, service charges, and
+                          standard taxes</li>
+                        <li>Services of a Midasia Routes Tour
+                          leader, national guide, drivers, and
+                          other staff</li>
+                        <li>Gratuities for national guide, drivers,
+                          porters, and other staff</li>
+                        <li>Expertise of MidAsia’s Routes
+                          specialists (24/7)</li>
+                        <li>Services of MidAsia’s in-house air
+                          reservations team</li>
+                        <li>Bottled or filtered water at included
+                          meals and while sightseeing</li>
+
+                        <li>
+                          The journey starts in Basra and finishes in Baghdad, immersing you in the heart of Mesopotamia. This expedition takes place in November, offering comfortable weather ranging from approximately 50°F to 80°F.</li>
+                        <li>This Journey falls within the Level 1-3 experience range, involving individual hikes of up to 2 hours with gentle slopes, walks through towns or
+                          cities lasting 1 or more hours, explorations of archaeological sites for 2-3 hours, and the ability to climb 3-4 flights of stairs and walk at least 2
+                          miles with ease.</li>
+                        <li>Expect a few bumpy and extended (4-5 hours) rides due to road conditions.</li>
+                        <li>All accommodations are carefully chosen for their location, services, cleanliness, and private bathrooms.</li>
+                        <li>Toilets: Clean western-style toilets available at accommodations, restaurants, and sites, but squat toilets may be encountered during drives.</li>
                       </ul>
                     </div>
 
