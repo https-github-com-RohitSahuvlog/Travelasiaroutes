@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../css/JetExpeditions.css";
 import { createGlobalStyle } from 'styled-components';
 import Card from "../travel-group/Card/Card";
+import { useSelector } from "react-redux";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -25,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const data = [
+let initialData = [
   {
     link: "/travel-groups/nepal",
     thumbnail: "https://www.himalayaguides.com/wp-content/uploads/mountain-flight-nepal-everest.jpg",
@@ -153,6 +154,21 @@ const data = [
 
 ]
 export default function JetExpeditions() {
+  const itineraryData = useSelector((state) => state.travelPackages.itineraryTripData);
+  const [data, setData] = useState(initialData);
+
+  useEffect(() => {
+    console.log(itineraryData, "itineraryData")
+    const formattedData = itineraryData.map((item) => ({
+      link: `/travel-groups/${item.tripName}`,
+      thumbnail: item.tripImage,
+      region: item.region || "Asia–Pacific",
+      title: item.tripTitle,
+      description: item.tripSubtitle,
+    }));
+
+    setData((prevData) => [...prevData, ...formattedData]);
+  }, [itineraryData]);
 
   return (
     <div className="jet-expeditions-section">

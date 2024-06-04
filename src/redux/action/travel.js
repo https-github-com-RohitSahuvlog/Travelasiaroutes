@@ -26,3 +26,14 @@ export const setTravelPackages = (packages) => ({
     type: 'SET_TRAVEL_PACKAGES',
     payload: packages,
 });
+
+export const getItineraryTrip = async () => {
+    try {
+        const response = await Axios.get("/api/itinerary/trips");
+        return response.data;
+
+    } catch (error) {
+        console.error('Error:', error);
+        throw error;
+    }
+};

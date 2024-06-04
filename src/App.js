@@ -32,7 +32,32 @@ import TermsAndConditions from "./pages/Booking-terms-conditions";
 import TravelForm from "./pages/booking-form";
 import SoutherIraqTrip from "./components/travel-group/SouthernIraq/SouthernIraq-tour";
 import PageError from "./pages/PageError";
+import { useEffect } from "react";
+import { getItineraryTrip } from "./redux/action/travel";
+import { useDispatch } from "react-redux";
+import Trip from "./components/travel-group/Trip/trip-tour";
+
+
 function App() {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getItineraryTrip();
+        console.log(data);
+        dispatch({
+          type: 'SET_ITINERARY_TRIP',
+          payload: data,
+        });
+      } catch (error) {
+        console.error('Error fetching itinerary trip data:', error);
+      }
+    };
+
+    fetchData();
+  }, [dispatch]);
+
   return (
     <div className="App">
       <Navbar />
@@ -51,7 +76,7 @@ function App() {
         <Route path="/travel-groups/bangladesh" element={<BangladeshTrip />} />
         <Route path="/travel-groups/laos" element={<LaosTrip />} />
         <Route path="/travel-groups/philippines" element={<PhilippinesTrip />} />
-        <Route path="/travel-groups/3eyeshimalayas" element={<HimalayasTrip />} />
+        {/* <Route path="/travel-groups/3eyeshimalayas" element={<HimalayasTrip />} /> */}
         <Route path="/travel-groups/oman" element={<OmanTrip />} />
         <Route path="/travel-groups/jordan" element={<JordanTrip />} />
         <Route path="/travel-groups/iran" element={<IranTrip />} />
@@ -71,7 +96,7 @@ function App() {
         <Route path="/travel-groups/southern-lraq"
           element={< SoutherIraqTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
-
+        <Route path="/travel-groups/:itineraryname" element={<Trip />} />
         <Route path="/pageerror" element={<PageError />} />
       </Routes>
       <Footer />
