@@ -15,7 +15,6 @@ import LaosTrip from "./components/travel-group/laos-trip/laos-tour";
 import PhilippinesTrip from "./components/travel-group/philippines/philippine-tour";
 import UzbekistanTrip from "./components/travel-group/uzbekistan/uzbekistan-tour";
 import SeeItiniery from "./components/Bydestination/India/see-itiniery";
-import HimalayasTrip from "./components/travel-group/3eyeshimalayas/3eyeshimalayas-tour";
 import OmanTrip from "./components/travel-group/oman-trip/oman-tour";
 import JordanTrip from "./components/travel-group/Jordan-trip/Jordan-tour";
 import IranTrip from "./components/travel-group/Iran-trip/Iran-tour";
@@ -76,7 +75,6 @@ function App() {
         <Route path="/travel-groups/bangladesh" element={<BangladeshTrip />} />
         <Route path="/travel-groups/laos" element={<LaosTrip />} />
         <Route path="/travel-groups/philippines" element={<PhilippinesTrip />} />
-        {/* <Route path="/travel-groups/3eyeshimalayas" element={<HimalayasTrip />} /> */}
         <Route path="/travel-groups/oman" element={<OmanTrip />} />
         <Route path="/travel-groups/jordan" element={<JordanTrip />} />
         <Route path="/travel-groups/iran" element={<IranTrip />} />

@@ -120,7 +120,7 @@ const initialData = [
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711257216/2AE71DED-1C67-4722-90A5-1695735C645A1232473463_bfuo3m.jpg",
     region: "Asia–Pacific",
     title: "Landlocked Laos & Life along Mekong with Combodia Extension",
-    description: "(Small Group Journey)- for Mr. Dennis Hoagland and Mrs. Mary Andre- Confirmation No.- DHMA/1113/MR",
+    description: "(Small Group Journey)",
   },
   {
     link: "southern-lraq",

@@ -98,8 +98,8 @@ const LaosCombodiaTrip = () => {
     <div>
       <div className={styles.MainUpperr}>
         <div className={styles.MainContent}>
-          <h1 className={styles.Title}>"Landlocked Laos & Life along Mekong with Combodia Extension</h1>
-          <div className={styles.Italic}>(Small Group Journey)- for Mr. Dennis Hoagland and Mrs. Mary Andre- Confirmation No.- DHMA/1113/MR</div>
+          <h1 className={styles.Title}>Landlocked Laos & Life along Mekong with Combodia Extension</h1>
+          <div className={styles.Italic}>(Small Group Journey)</div>
           <div className={styles.GoButton}>
             <Button variant="contained" color="primary" onClick={handleOpen}>
               Start Planning
