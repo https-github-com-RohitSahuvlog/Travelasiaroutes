@@ -29,7 +29,7 @@ const names = [
   "iraq", "jordan", "lebanon", "oman", "palestine", "saudi-arabia", "uae", "yemen", "algeria",
   "botswana", "cameroon", "chad", "congo", "djibouti", "eritrea", "ethiopia", "kenya",
   "madagascar", "malawi", "mali", "mauritius", "morocco", "namibia", "rwanda", "seychelles",
-  "somalia", "south-sudan", "sudan", "tanzania", "tunisia", "uganda"
+  "somalia", "south-sudan", "sudan", "tanzania", "tunisia", "uganda", "Iran", "Iraq"
 ];
 
 

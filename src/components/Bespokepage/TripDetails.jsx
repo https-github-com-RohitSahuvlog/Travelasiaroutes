@@ -89,7 +89,9 @@ const destinations = [
   { value: "sudan", label: "Sudan", link: "/sudan" },
   { value: "tanzania", label: "Tanzania", link: "/tanzania" },
   { value: "tunisia", label: "Tunisia", link: "/tunisia" },
-  { value: "uganda", label: "Uganda", link: "/uganda" }
+  { value: "uganda", label: "Uganda", link: "/uganda" },
+  { value: "iraq", label: "Iraq", link: "/iraq" },
+  { value: "iran", label: "Iran", link: "/iran" }
 ];
 
 
