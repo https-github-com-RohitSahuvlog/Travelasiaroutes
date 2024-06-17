@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 const Itineraries = ({ itineryheading, listing }) => {
     const navigate = useNavigate();
     let country = itineryheading.split(" ")[0]
-    console.log(country)
     const handleSeeItineraryClick = () => {
 
         country = country.toLowerCase();

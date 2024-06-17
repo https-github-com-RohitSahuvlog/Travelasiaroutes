@@ -248,7 +248,7 @@ export default function Navbar() {
             </div>
 
             <div className="side_nav_link">
-              <Link to="/our-story">Our Story</Link>
+              <Link to="/aboutus">Our Story</Link>
             </div>
 
             <div className="side_nav_link">

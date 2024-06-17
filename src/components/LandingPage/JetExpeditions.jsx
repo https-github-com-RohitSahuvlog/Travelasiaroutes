@@ -158,7 +158,6 @@ export default function JetExpeditions() {
   const [data, setData] = useState(initialData);
 
   useEffect(() => {
-    console.log(itineraryData, "itineraryData")
     const formattedData = itineraryData.map((item) => ({
       link: `/travel-groups/${item.tripName}`,
       thumbnail: item.tripImage,

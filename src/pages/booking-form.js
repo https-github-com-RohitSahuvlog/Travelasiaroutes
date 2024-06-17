@@ -30,7 +30,6 @@ const TravelForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         addBookingForm(formData)
-        console.log('Form submitted:', formData);
     };
 
     return (

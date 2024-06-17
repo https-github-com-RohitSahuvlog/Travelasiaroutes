@@ -44,7 +44,6 @@ function App() {
     const fetchData = async () => {
       try {
         const data = await getItineraryTrip();
-        console.log(data);
         dispatch({
           type: 'SET_ITINERARY_TRIP',
           payload: data,

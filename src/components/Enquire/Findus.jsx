@@ -20,7 +20,6 @@ const Findus = () => {
           <p>MidAsia Routes Expeditions Info: +1 (917) 993-7606</p>
         </div>
 
-        <p>Office Hours: 09:00 – 18:00</p>
         <p>
           Email:
           <a href="mailto:sumit@midasiaroutes.com">sumit@midasiaroutes.com</a>
@@ -42,7 +41,6 @@ const Findus = () => {
           <p>Office: +91-8750970676</p>
           <p>Traveling Client Assistance: +1 (917) 993-7606</p>
         </div>
-        <p>Office Hours: 09:00 – 18:00</p>
         <p>
           Email:
           <a href="mailto:sumit@midasiaroutes.com">sumit@midasiaroutes.com</a>

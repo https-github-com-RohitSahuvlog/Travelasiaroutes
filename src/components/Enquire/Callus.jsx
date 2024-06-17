@@ -27,7 +27,7 @@ const Callus = ({ setComponent }) => {
         </h2>
       </div>
       <div className="right">
-        <p>In our Delhi B/176-Greenfields,Delhi-NCR,121003 office it’s now 6:22 am.</p>
+        <p>In our Delhi B/176-Greenfields,Delhi-NCR,121003 office.</p>
         <h2>NEW YORK OFFICE HOURS (EDT)</h2>
         <h3>
           <span>24 HOURS SERVICE</span>

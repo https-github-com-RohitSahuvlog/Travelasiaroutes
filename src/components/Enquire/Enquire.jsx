@@ -22,46 +22,16 @@ const MenuProps = {
 };
 
 const names = [
-  "Aremenia",
-  "Azerbaijan",
-  "Bali",
-  "Bangladesh",
-  "Bhutan",
-  "Brunei",
-  "Cambodia",
-  "China",
-  "Gerogia",
-  "Hong Kong",
-  "India",
-  "Indonesia",
-  "Japan",
-  "Kazakhstan",
-  "Kyrgyzstan",
-  "Coas",
-  "Macao",
-  "Malaysia",
-  "Maldives",
-  "Mongolia",
-  "Myanmar",
-  "Nepal",
-  "Oman",
-  "Papua New Guinea",
-  "Philippines",
-  "Qatar",
-  "Saudi Arabia",
-  "Siberia & Russian Far East",
-  "Singapore",
-  "South Korea",
-  "Sri Lanka",
-  "Taiwan",
-  "Tajikistan",
-  "Thailand",
-  "Tibet",
-  "Turkmenistan",
-  "UAE",
-  "Uzbekistan",
-  "Vietnam",
+  "azerbaijan", "bangladesh", "bhutan", "brunei", "cambodia", "china", "japan", "india", "indonesia",
+  "kazakhstan", "kyrgyzstan", "laos", "malaysia", "maldives", "mongolia", "myanmar", "nepal",
+  "pakistan", "philippines", "singapore", "south-korea", "sri-lanka", "taiwan", "tajikistan",
+  "thailand", "tibet", "turkmenistan", "uzbekistan", "vietnam", "egypt", "iran", "israel",
+  "iraq", "jordan", "lebanon", "oman", "palestine", "saudi-arabia", "uae", "yemen", "algeria",
+  "botswana", "cameroon", "chad", "congo", "djibouti", "eritrea", "ethiopia", "kenya",
+  "madagascar", "malawi", "mali", "mauritius", "morocco", "namibia", "rwanda", "seychelles",
+  "somalia", "south-sudan", "sudan", "tanzania", "tunisia", "uganda"
 ];
+
 
 const countryNames = [
   'Afghanistan',
@@ -852,7 +822,7 @@ const Enquire = () => {
             <textarea
               cols="20"
               rows="6"
-              placeholder="Tell us about your intrests,passions,needs and any other detail relevant to your trip"
+              placeholder="Tell us about your interests, passions, needs, and any other details relevant to your trip."
               name="enquiryDetails"
               value={formData.enquiryDetails}
               onChange={handleChange}

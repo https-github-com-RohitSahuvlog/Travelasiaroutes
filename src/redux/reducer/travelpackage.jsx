@@ -4,7 +4,6 @@ const initialState = {
 };
 
 export const travelPackagesReducer = (state = initialState, action) => {
-    console.log("TravelPackagesReducer", action.payload)
     switch (action.type) {
         case 'SET_TRAVEL_PACKAGES':
             return {
