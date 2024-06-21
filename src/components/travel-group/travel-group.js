@@ -125,7 +125,7 @@ const initialData = [
   {
     link: "southern-lraq",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1715105625/Iraq-Destination-Final_uom6uk.jpg",
-    region: "Asia–Pacific",
+    region: "MiddleEast",
     title: "En route to baghdad: delving into southern iraq",
     description: "Voyage through the heart of civilization",
   }
