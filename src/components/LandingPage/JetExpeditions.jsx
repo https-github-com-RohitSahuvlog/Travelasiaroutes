@@ -66,13 +66,13 @@ let initialData = [
     "description": "Immerse yourself in the beauty and history of Uzbekistan, a Central Asian gem."
 
   },
-  {
-    link: "/travel-groups/3eyeshimalayas",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711857300/m160822019_u66yv0.jpg",
-    region: "Asia–Pacific",
-    title: "3 Eyes of Himalayas- Best of Tibet, Bhutan and Nepal",
-    description: "Uncover the charm of Tibet, Bhutan, and Nepal. Dive into rich cultures, ancient traditions, and stunning landscapes. Plus, discover the allure of the Philippines. Your unforgettable journey begins here!"
-  },
+  // {
+  //   link: "/travel-groups/3eyeshimalayas",
+  //   thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711857300/m160822019_u66yv0.jpg",
+  //   region: "Asia–Pacific",
+  //   title: "3 Eyes of Himalayas- Best of Tibet, Bhutan and Nepal",
+  //   description: "Uncover the charm of Tibet, Bhutan, and Nepal. Dive into rich cultures, ancient traditions, and stunning landscapes. Plus, discover the allure of the Philippines. Your unforgettable journey begins here!"
+  // },
   {
     link: "/travel-groups/oman",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704125530/1573728245_oman.png_p6odjy.png",

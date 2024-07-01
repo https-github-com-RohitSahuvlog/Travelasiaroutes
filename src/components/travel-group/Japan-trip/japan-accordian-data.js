@@ -60,6 +60,17 @@ export const JapanAccordianData = [
         ]
     },
     {
+        "day": 7,
+        "description": "Travel to Lumbini",
+        "activities": [
+            "<p className='activity'>Drive to Lumbini, the birthplace of Lord Buddha.</p>",
+            "<p className='activity'>Visit the sacred Lumbini Garden and explore the Maya Devi Temple.</p>",
+            "<p className='activity'>Discover various monasteries built by different countries in distinct styles.</p>",
+            "<p className='activity'>Enjoy the serene and spiritual atmosphere of the area.</p>",
+            "<p className='activity'>Overnight in Lumbini (B, L, D)</p>"
+        ]
+    },
+    {
         "day": 8,
         "description": "Bandipur Exploration Day",
         "activities": [

@@ -24,8 +24,8 @@ const About = () => {
                         </span>
                     </p>
                     <div className={styles.about_row1}>
-                        <img className={styles.about_row1_img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598295/xgukvb7kjufh6wbyhlhu.jpg" />
-                        <img className={styles.about_row1_img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598322/thplzbzbrusrjjbevgz4.jpg" />
+                        {/* <img className={styles.about_row1_img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598295/xgukvb7kjufh6wbyhlhu.jpg" /> */}
+                        {/* <img className={styles.about_row1_img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598322/thplzbzbrusrjjbevgz4.jpg" /> */}
                     </div>
                 </div>
                 <div className={` ${styles.section_title} styles[" text-center "]`}>
@@ -41,8 +41,8 @@ const About = () => {
                     </p>
                     <div className={styles.about_row}>
                         <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.about_row2} `}>
-                            <img className={styles.img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598343/f0kdeixbzch0vyg0stjy.jpg" />
-                            <img className={styles.img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598347/iopzucjesx4l7pddgcxy.jpg" />
+                            {/* <img className={styles.img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598343/f0kdeixbzch0vyg0stjy.jpg" /> */}
+                            {/* <img className={styles.img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598347/iopzucjesx4l7pddgcxy.jpg" /> */}
                         </div>
                         <div className={`{styles[" col-lg-6 col-md-6 col-xs-12 "]} ${styles.about_row2}`}>
                             <div className={`styles[ " pl-30 " ] ${styles.why_about_inner}`}>
@@ -97,14 +97,14 @@ const About = () => {
                         </div>
                         <div className={`{styles[" col-lg-6 col-md-6 col-xs-12 "]} ${styles.about_row3_img}`}>
                             <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.about_row2} `}>
-                                <img className={styles.img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598476/bzoasty3esxavlt4aicc.jpg" />
-                                <img className={styles.img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598547/d16ixvcaq4dmm5wsls57.jpg" />
+                                {/* <img className={styles.img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598476/bzoasty3esxavlt4aicc.jpg" /> */}
+                                {/* <img className={styles.img} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598547/d16ixvcaq4dmm5wsls57.jpg" /> */}
                             </div>
                         </div>
                     </div>
                     <div className={styles.about_row22}>
                         <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.about_row2} `}>
-                            <img className={styles.img3} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598608/a8mebc4espxkzxnpbsh5.jpg" />
+                            {/* <img className={styles.img3} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598608/a8mebc4espxkzxnpbsh5.jpg" /> */}
                         </div>
                         <div className={`styles[" col-lg-6 col-md-6 col-xs-12 "]`}>
                             <div className={`styles[ " pl-30 " ] ${styles.why_about_inner}`}>
@@ -153,7 +153,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.about_row3} `}>
-                            <img className={styles.img3} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598662/s9tglptlnswxhnyia0bo.jpg" />
+                            {/* <img className={styles.img3} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598662/s9tglptlnswxhnyia0bo.jpg" /> */}
                         </div>
 
                     </div>
@@ -220,7 +220,7 @@ const About = () => {
                         </div>
                         <div className={`{styles[" col-lg-6 col-md-6 col-xs-12 "]} ${styles.about_row3_div}`} >
                             <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.Safetyabout_row2} `}>
-                                <img className={styles.Safetyimg} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598751/abgtk2v1zcy1qz5gihvw.jpg" />
+                                {/* <img className={styles.Safetyimg} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598751/abgtk2v1zcy1qz5gihvw.jpg" /> */}
 
                             </div>
                         </div>
@@ -228,7 +228,7 @@ const About = () => {
 
                     <div className={styles.about_row22}>
                         <div className={` styles[" col-lg-6 col-md-6 col-xs-12 "] ${styles.Qualityabout_row2} `}>
-                            <img className={styles.img3} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598759/fcdodpyym6r2ue483k3t.jpg" />
+                            {/* <img className={styles.img3} src="https://res.cloudinary.com/dg5dkcpkn/image/upload/v1718598759/fcdodpyym6r2ue483k3t.jpg" /> */}
                         </div>
                         <div className={`styles[" col-lg-6 col-md-6 col-xs-12 "]`}>
                             <div className={`styles[ " pl-30 " ] ${styles.why_about_inner}`}>

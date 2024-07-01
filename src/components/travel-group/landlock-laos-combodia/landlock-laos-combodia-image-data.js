@@ -1,7 +1,7 @@
 export const Images = [
     {
-        original: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888790/cambodia_base_image_800x400_ndvjc1.jpg",
-        thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888790/cambodia_base_image_800x400_ndvjc1.jpg",
+        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1719860436/d2jwe8pg66tgn7wysg7a.jpg",
+        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1719860436/d2jwe8pg66tgn7wysg7a.jpg",
     },
     {
         original: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888805/12-days-highlights-of-cambodia-and-laos-tour-with-beach-relaxing01_havvds.jpg",
