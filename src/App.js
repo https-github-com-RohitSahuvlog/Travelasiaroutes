@@ -90,8 +90,6 @@ function App() {
 
         <Route path="/travel-groups/egypt-and-nile"
           element={< BabyLonToBhagdadTrip />} />
-        <Route path="/travel-groups/southern-lraq"
-          element={< SoutherIraqTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
         <Route path="/travel-groups/:itineraryname" element={<Trip />} />
         <Route path="/pageerror" element={<PageError />} />

@@ -121,13 +121,6 @@ const initialData = [
     region: "Asia–Pacific",
     title: "Landlocked Laos & Life along Mekong with Combodia Extension",
     description: "(Small Group Journey)",
-  },
-  {
-    link: "southern-lraq",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1715105625/Iraq-Destination-Final_uom6uk.jpg",
-    region: "MiddleEast",
-    title: "En route to baghdad: delving into southern iraq",
-    description: "Voyage through the heart of civilization",
   }
 ];
 
