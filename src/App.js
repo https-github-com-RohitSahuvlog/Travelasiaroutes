@@ -29,7 +29,6 @@ import EgyptAndNileTrip from "./components/travel-group/egypt-and-nile-trip/egyp
 import PrivacyPolicy from "./pages/privacy_policy";
 import TermsAndConditions from "./pages/Booking-terms-conditions";
 import TravelForm from "./pages/booking-form";
-import SoutherIraqTrip from "./components/travel-group/SouthernIraq/SouthernIraq-tour";
 import PageError from "./pages/PageError";
 import { useEffect } from "react";
 import { getItineraryTrip } from "./redux/action/travel";
