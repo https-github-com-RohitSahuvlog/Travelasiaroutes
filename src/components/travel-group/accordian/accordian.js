@@ -1,21 +1,25 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./subaccordian.css";
 import SubAccordian from './subaccordian';
 
 const MyAccordion = ({ AccordianData }) => {
-  const [expandedStates, setExpandedStates] = useState(
-    AccordianData.map(() => false)
-  );
+  const [expandedStates, setExpandedStates] = useState([])
 
   const handleToggleAll = () => {
     setExpandedStates((prevStates) => prevStates.map((state) => !state));
   };
 
   const handleToggle = (index) => {
+    console.log(`handleToggle: ${index}`);
     setExpandedStates((prevStates) =>
       prevStates.map((state, i) => (i === index ? !state : state))
     );
   };
+  console.log(expandedStates, AccordianData);
+
+  useEffect(() => {
+    setExpandedStates(AccordianData?.map((acc, i) => false));
+  }, [AccordianData]);
 
   return (
     <main>
@@ -30,12 +34,10 @@ const MyAccordion = ({ AccordianData }) => {
 
         <section className='info'>
           {AccordianData.map((question, index) => (
-            <>
-              <SubAccordian key={question.id} {...question}
-                isExpanded={expandedStates[index]}
-                onToggle={() => handleToggle(index)}
-              />
-            </>
+            <SubAccordian key={index} {...question}
+              isExpanded={expandedStates[index]}
+              onToggle={() => handleToggle(index)}
+            />
           ))}
 
         </section>
