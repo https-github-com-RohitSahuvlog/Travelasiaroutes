@@ -9,21 +9,6 @@ import Modal from './enuiry-model/model';
 
 const initialData = [
   {
-    link: "nepal",
-    thumbnail: "https://www.himalayaguides.com/wp-content/uploads/mountain-flight-nepal-everest.jpg",
-    region: "Asia–Pacific",
-    title: "Best of Nepal",
-    description: "Nepal Unveiled : Embark on Epic Adventures"
-  },
-
-  {
-    link: "bangladesh",
-    thumbnail: "https://airlinebd.com/wp-content/uploads/2021/06/Bangladesh-Tourist-Spots.jpg",
-    region: "Asia–Pacific",
-    title: "Glories of Bangladesh",
-    description: "Explore the hidden treasures of this beautiful country and immerse yourself in the unique charm of Bangladesh."
-  },
-  {
     link: "laos",
     thumbnail: "https://luxdev.lu/files/media/news/2022-09-12-2/B79I25341.jpeg",
     region: "Asia–Pacific",
@@ -65,13 +50,6 @@ const initialData = [
     region: "MiddleEast",
     title: "Gems of Jordan",
     description: "In the footsteps of Lawrence of Arabia",
-  },
-  {
-    link: "iran",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704251364/533dc820eab8eae14a0c7560_r4rcjr.jpg",
-    region: "MiddleEast",
-    title: "Iran- The Journey of Persia ",
-    description: "In the footsteps of Lawrence of Iran",
   },
   {
     link: "saudi-arabia",

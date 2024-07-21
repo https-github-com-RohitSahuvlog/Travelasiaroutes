@@ -28,23 +28,6 @@ const GlobalStyle = createGlobalStyle`
 
 let initialData = [
   {
-    link: "/travel-groups/nepal",
-    thumbnail: "https://www.himalayaguides.com/wp-content/uploads/mountain-flight-nepal-everest.jpg",
-    region: "Asia–Pacific",
-    title: "Best of Nepal", description: "Nepal Unveiled : Embark on Epic Adventures"
-  },
-  // { link:"japan",
-  // thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/1143620516535.jpg", title: "Splendors of Egypt", description: "THE SECRETS OF BANGLADESH, It’s Culture & Wildlife- Yes, it is Adventure!!" },
-  // { link:"japan",
-  // thumbnail: "https://midasiaroutes.com/images/tours/thumbnials/image_manager__teaser_girls_in_laos_costume_credit_visoot_-_stock753617940.jpg", description: "LANDLOCKED LAOS, The GOLDEN TRIANGLE & TEMPLES OF ANGKOR WAT" }
-  {
-    link: "/travel-groups/bangladesh",
-    thumbnail: "https://airlinebd.com/wp-content/uploads/2021/06/Bangladesh-Tourist-Spots.jpg",
-    region: "Asia–Pacific",
-    title: "Glories of Bangladesh",
-    description: "Explore the hidden treasures of this beautiful country and immerse yourself in the unique charm of Bangladesh."
-  },
-  {
     link: "/travel-groups/laos",
     thumbnail: "https://luxdev.lu/files/media/news/2022-09-12-2/B79I25341.jpeg",
     region: "Asia–Pacific",
@@ -86,13 +69,6 @@ let initialData = [
     region: "MiddleEast",
     title: "Gems of Jordan",
     description: "In the footsteps of Lawrence of Arabia",
-  },
-  {
-    link: "/travel-groups/iran",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704251364/533dc820eab8eae14a0c7560_r4rcjr.jpg",
-    region: "MiddleEast",
-    title: "Iran ",
-    description: "In the footsteps of Lawrence of Iran",
   },
   {
     link: "/travel-groups/saudi-arabia",

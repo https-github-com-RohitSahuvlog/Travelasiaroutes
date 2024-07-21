@@ -9,15 +9,12 @@ import About from "./components/AboutUs/About";
 import Footer from "./components/LandingPage/Footer";
 import TravelGroups from "./components/travel-group/travel-group";
 import ActivityLevels from "./components/activityLevel/activityLevel";
-import JapanTrip from "./components/travel-group/Japan-trip/japan-tour";
-import BangladeshTrip from "./components/travel-group/bangladesh-trip/banglades-tour";
 import LaosTrip from "./components/travel-group/laos-trip/laos-tour";
 import PhilippinesTrip from "./components/travel-group/philippines/philippine-tour";
 import UzbekistanTrip from "./components/travel-group/uzbekistan/uzbekistan-tour";
 import SeeItiniery from "./components/Bydestination/India/see-itiniery";
 import OmanTrip from "./components/travel-group/oman-trip/oman-tour";
 import JordanTrip from "./components/travel-group/Jordan-trip/Jordan-tour";
-import IranTrip from "./components/travel-group/Iran-trip/Iran-tour";
 import SaudiArabiaTrip from "./components/travel-group/Saudi-arabia-trip/Saudi-arabia-tour";
 import NorthernIndiaTrip from "./components/travel-group/northern-india/northern-india-tour";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
@@ -69,13 +66,10 @@ function App() {
         <Route path="/Itineraries" element={<Itineraries />} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/travel-groups" element={<TravelGroups />} />
-        <Route path="/travel-groups/nepal" element={<JapanTrip />} />
-        <Route path="/travel-groups/bangladesh" element={<BangladeshTrip />} />
         <Route path="/travel-groups/laos" element={<LaosTrip />} />
         <Route path="/travel-groups/philippines" element={<PhilippinesTrip />} />
         <Route path="/travel-groups/oman" element={<OmanTrip />} />
         <Route path="/travel-groups/jordan" element={<JordanTrip />} />
-        <Route path="/travel-groups/iran" element={<IranTrip />} />
         <Route path="/travel-groups/saudi-arabia" element={<SaudiArabiaTrip />} />
         <Route path="/travel-groups/uzbekistan" element={<UzbekistanTrip />} />
         <Route path="/travel-groups/northern-india" element={<NorthernIndiaTrip />} />
