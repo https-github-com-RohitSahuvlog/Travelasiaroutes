@@ -5,7 +5,7 @@ const carousalData = [
 
   {
     image:
-      "https://res.cloudinary.com/dxhoawdbh/image/upload/v1712292544/Ibrahim-Roza_vmbwim.jpg",
+      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721581842/tiftwxyood3l9revbhwa.jpg",
     heading: "Unlocking Your Travel DNA",
     para: "Tailoring Experiences Just for You.",
   },

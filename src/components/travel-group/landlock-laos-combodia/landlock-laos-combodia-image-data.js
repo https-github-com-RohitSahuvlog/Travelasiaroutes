@@ -1,22 +1,40 @@
 export const Images = [
     {
-        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1719860436/d2jwe8pg66tgn7wysg7a.jpg",
-        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1719860436/d2jwe8pg66tgn7wysg7a.jpg",
+        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712224/uvdcvaf7c9rqn8jlnju4.jpg",
+        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712224/uvdcvaf7c9rqn8jlnju4.jpg",
     },
     {
-        original: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888805/12-days-highlights-of-cambodia-and-laos-tour-with-beach-relaxing01_havvds.jpg",
-        thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888805/12-days-highlights-of-cambodia-and-laos-tour-with-beach-relaxing01_havvds.jpg",
+        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712224/bdusztm1tpe4tfnrtaos.jpg",
+        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712224/bdusztm1tpe4tfnrtaos.jpg",
     },
     {
-        original: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888857/16-days-thailand-laos-vietnam-cambodia-highlights-tour880_tl7qxg.jpg",
-        thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888857/16-days-thailand-laos-vietnam-cambodia-highlights-tour880_tl7qxg.jpg",
+        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712226/m0kijl3p5x4rxcvttfmy.jpg",
+        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712226/m0kijl3p5x4rxcvttfmy.jpg",
     },
     {
-        original: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888874/images_rfuu20.jpg",
-        thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888874/images_rfuu20.jpg",
+        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712226/tul1737v9ru6ihgvrhyu.jpg",
+        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712226/tul1737v9ru6ihgvrhyu.jpg",
     },
     {
-        original: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888886/85-Siem-Reap_800x400_1_ky5pmj.jpg",
-        thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888886/85-Siem-Reap_800x400_1_ky5pmj.jpg",
+        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712225/mjdryedvutm7adlfois6.jpg",
+        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712225/mjdryedvutm7adlfois6.jpg",
+    },
+
+
+    {
+        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712226/bz0nlh6uwakjexvdsipr.jpg",
+        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712226/bz0nlh6uwakjexvdsipr.jpg",
+    },
+    {
+        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712234/cxsgxoevkbht1etsmmcy.jpg",
+        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712234/cxsgxoevkbht1etsmmcy.jpg",
+    },
+    {
+        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712235/tuzwdpsbywevcyrbjok0.jpg",
+        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712235/tuzwdpsbywevcyrbjok0.jpg",
+    },
+    {
+        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712225/mjdryedvutm7adlfois6.jpg",
+        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712225/mjdryedvutm7adlfois6.jpg",
     }
 ];
