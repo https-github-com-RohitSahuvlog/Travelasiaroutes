@@ -170,7 +170,7 @@ const Trip = () => {
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
                   <h2 className={styles.SetText}>Explore the Rich Heritage of the {itinerary?.tripName}</h2>
-                  <h5 className={styles.SetTextWith}>(History, Culture, Architecture)</h5>
+                  <h5 className={styles.SetTextWith}>{itinerary?.tripHeadingCulture}</h5>
                 </div>
                 <MyAccordion AccordianData={itinerary?.dayByDay || []} />
                 <h2 className={styles.SetText} >Highlights</h2>

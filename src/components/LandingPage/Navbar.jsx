@@ -10,9 +10,32 @@ import logo from "../../images/logo.svg";
 import ModalCom from "../Enquire/ModalCom";
 import "../../css/Navbar.css";
 import "../../css/Navbar_by_destination.css";
+import styled from "styled-components";
 // import Tooltip from "react-tooltip";
 
 
+
+const SwiperContainer = styled.div`
+    min-height: 40px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+    word-break: break-word;
+    padding: 0 20px;
+    background-color: rgb(95, 207, 128);
+    color: white;
+
+    a{
+      color: white;
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-right: 0.5rem;
+      }
+`;
 
 const style = {
   position: "absolute",
@@ -99,14 +122,6 @@ const destinations = [
   { text: "Uganda", link: "/uganda" }
 ];
 
-
-
-
-
-
-
-
-
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [showDestinationDropdown, setShowDestinationDropdown] = useState(false);
@@ -142,165 +157,185 @@ export default function Navbar() {
   ));
 
   return (
-    <div className="navbar">
-      <div className="call-and-home-nav-item">
-        <Link to="/"><img src={logo} alt="MidAsia logo" className="navbar-logo img-fluid" /></Link>
-        <a className="call-and-home-nav-item d-flex align-items-center text-black" href="tel:+918750970676">
-          <CallIcon />
-        </a>
-        <a href="mailto:sumit.steve@yahoo.com" className="call-and-home-nav-item d-flex align-items-center text-black">
-          <EmailIcon />
-        </a>
-        {/* <div data-tip="msg to show" data-for='toolTip1' data-place='top'>Tooltip</div> */}
-        {/* <Tooltip id="toolTip1" /> */}
+    <>
+      <SwiperContainer>
 
-      </div>
-      <div className="nav-items">
-        <li className="to_drop"  >
-          <Link to="/">Home</Link>
-        </li>
-        <li className="to_drop">
-          <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
-        </li>
-        <li className="to_drop">
-          <Link to="/travel-groups"> Small Group Boutique Expeditions </Link>
-        </li>
-        <li className="to_drop" >
-          <Link to="/" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}> By Destination </Link>
-
-          {!showDestinationDropdown && <div id="id_R_by_destination">
-            <div className="R_by_destination">
-
-              <div className="all_destinations_container">
-                <h4 className="all_destinations_h4">All Destinations</h4>
-                <ul className="all_destinations_ul" >
-                  {destinations.map((destination, index) => (
-                    <div key={index} onClick={handleDestinationClick} className="all_destinations_li">
-                      <Link className="all_destination_Link" to={`country${destination.link}`}>
-                        {destination.text}
-                      </Link>
-                    </div>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="all_itineraries_container">
-                <div className="divvv">
-                  <Link to="#">
-                    <div className="img_B_D">
-                      <h4 className="all_itineraries_h4">
-                        <span>All Itineraries</span>
-                      </h4>
-                    </div>
-                  </Link>
-
-                </div>
-              </div>
-
-            </div>
-          </div>}
-
-
-
-        </li>
-        <li>
-          <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
-          <Modal
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description">
-            <Box
-              sx={style}
-            >
-              <ModalCom handleClose={handleClose} />
-            </Box>
-          </Modal>
-        </li>
-
-
-      </div >
-      <div>
-        <MenuIcon className="menu-icon" onClick={openMenu} />
-
-        <div className="responsive-navbar" id="responsiveNavbar" >
-          <div className="flex sidedivheader">
-            <div> <CloseIcon className="close-icon" onClick={closeMenu} /></div>
-            <div>
-              <h3 className="navbar-logo">Welcome to MidAsia Routes</h3>
-            </div>
-
+        <div className="w-100" style={{ width: "100%", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+          <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
+            Talk to our Travel Expert  :
           </div>
 
+          <div>
+            <a className=" d-flex align-items-center text-black" href="tel:+1(888)449-0977">
+              +1(888)449-0977
+            </a>
+            (USA/Canada)</div>
 
-          {!showDestinationDropdown && <>
-            <div className="side_nav_link" onClick={() => { setShowDestinationDropdown(false); closeMenu(); }}>
-              <Link to="/">Home</Link>
-            </div>
-            <div className="side_nav_link" onClick={() => { setShowDestinationDropdown(false); closeMenu(); }}>
-              <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
-            </div>
-            <div className="side_nav_link" onClick={() => { setShowDestinationDropdown(false); closeMenu(); }}>
-              <Link to="/travel-groups" >Small Group Boutique Expeditions</Link>
-            </div>
-            <div className="side_nav_link" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}>
-              <Link to="/">By Destination</Link>
-            </div>
+          <div>
+            <a className="d-flex align-items-center text-white" href="tel:+918750970676">+918750970676 </a>
+            (International)
+          </div>
 
-            <div className="side_nav_link">
-              <Link to="/aboutus">Our Story</Link>
-            </div>
+        </div>
 
-            <div className="side_nav_link">
-              <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
-              <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description">
-                <Box
-                  sx={style}
-                >
-                  <ModalCom handleClose={handleClose} />
-                </Box>
-              </Modal>
-            </div></>}
+      </SwiperContainer >
+      <div className="navbar">
 
-          {showDestinationDropdown && (
-            <div >
-              <div className="side_by_destination">
-                <h4 className="side_destinations_h4">All Destinations</h4>
 
-                <div className="side_destinations_container">
-                  <ul className="side_destinations_ul" >
-                    {sidedestinationItems.slice(0, Math.ceil(destinationItems.length / 2))}
-                  </ul>
-                  <ul className="side_destinations_ul" >
-                    {sidedestinationItems.slice(Math.ceil(destinationItems.length / 2))}
+        <div className="call-and-home-nav-item">
+          <Link to="/"><img src={logo} alt="MidAsia logo" className="navbar-logo img-fluid" /></Link>
+
+          <a href="mailto:sumit.steve@yahoo.com" className="call-and-home-nav-item d-flex align-items-center text-black">
+            <EmailIcon />
+          </a>
+        </div>
+        <div className="nav-items">
+          <li className="to_drop"  >
+            <Link to="/">Home</Link>
+          </li>
+          <li className="to_drop">
+            <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
+          </li>
+          <li className="to_drop">
+            <Link to="/travel-groups"> Small Group Boutique Expeditions </Link>
+          </li>
+          <li className="to_drop" >
+            <Link to="/" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}> By Destination </Link>
+
+            {!showDestinationDropdown && <div id="id_R_by_destination">
+              <div className="R_by_destination">
+
+                <div className="all_destinations_container">
+                  <h4 className="all_destinations_h4">All Destinations</h4>
+                  <ul className="all_destinations_ul" >
+                    {destinations.map((destination, index) => (
+                      <div key={index} onClick={handleDestinationClick} className="all_destinations_li">
+                        <Link className="all_destination_Link" to={`country${destination.link}`}>
+                          {destination.text}
+                        </Link>
+                      </div>
+                    ))}
                   </ul>
                 </div>
-                <div className="sideall_itineraries_container">
+
+                <div className="all_itineraries_container">
                   <div className="divvv">
                     <Link to="#">
                       <div className="img_B_D">
                         <h4 className="all_itineraries_h4">
                           <span>All Itineraries</span>
                         </h4>
-                        <p>
-                        </p>
                       </div>
                     </Link>
 
                   </div>
                 </div>
+
+              </div>
+            </div>}
+
+
+
+          </li>
+          <li>
+            <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
+            <Modal
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description">
+              <Box
+                sx={style}
+              >
+                <ModalCom handleClose={handleClose} />
+              </Box>
+            </Modal>
+          </li>
+
+
+        </div >
+        <div>
+          <MenuIcon className="menu-icon" onClick={openMenu} />
+
+          <div className="responsive-navbar" id="responsiveNavbar" >
+            <div className="flex sidedivheader">
+              <div> <CloseIcon className="close-icon" onClick={closeMenu} /></div>
+              <div>
+                <h3 className="navbar-logo">Welcome to MidAsia Routes</h3>
               </div>
 
             </div>
-          )}
 
-        </div >
 
+            {!showDestinationDropdown && <>
+              <div className="side_nav_link" onClick={() => { setShowDestinationDropdown(false); closeMenu(); }}>
+                <Link to="/">Home</Link>
+              </div>
+              <div className="side_nav_link" onClick={() => { setShowDestinationDropdown(false); closeMenu(); }}>
+                <Link to="/bespoke">Bespoke-For your Travel DNA</Link>
+              </div>
+              <div className="side_nav_link" onClick={() => { setShowDestinationDropdown(false); closeMenu(); }}>
+                <Link to="/travel-groups" >Small Group Boutique Expeditions</Link>
+              </div>
+              <div className="side_nav_link" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}>
+                <Link to="/">By Destination</Link>
+              </div>
+
+              <div className="side_nav_link">
+                <Link to="/aboutus">Our Story</Link>
+              </div>
+
+              <div className="side_nav_link">
+                <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
+                <Modal
+                  open={open}
+                  onClose={handleClose}
+                  aria-labelledby="modal-modal-title"
+                  aria-describedby="modal-modal-description">
+                  <Box
+                    sx={style}
+                  >
+                    <ModalCom handleClose={handleClose} />
+                  </Box>
+                </Modal>
+              </div></>}
+
+            {showDestinationDropdown && (
+              <div >
+                <div className="side_by_destination">
+                  <h4 className="side_destinations_h4">All Destinations</h4>
+
+                  <div className="side_destinations_container">
+                    <ul className="side_destinations_ul" >
+                      {sidedestinationItems.slice(0, Math.ceil(destinationItems.length / 2))}
+                    </ul>
+                    <ul className="side_destinations_ul" >
+                      {sidedestinationItems.slice(Math.ceil(destinationItems.length / 2))}
+                    </ul>
+                  </div>
+                  <div className="sideall_itineraries_container">
+                    <div className="divvv">
+                      <Link to="#">
+                        <div className="img_B_D">
+                          <h4 className="all_itineraries_h4">
+                            <span>All Itineraries</span>
+                          </h4>
+                          <p>
+                          </p>
+                        </div>
+                      </Link>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            )}
+
+          </div >
+
+        </div>
       </div>
-    </div>
+    </>
   );
 }
