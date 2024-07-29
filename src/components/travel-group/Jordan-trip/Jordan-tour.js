@@ -131,7 +131,7 @@ const JordanTrip = () => {
                   <div className={styles.image_container}>
 
                     <div id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58670948.53432763!2d-17.58548450000002!3d26.16443850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef6f5d4fb3f8b55%3A0x7f2ace0ed866fae3!2sMusandam%20Oman!5e0!3m2!1sen!2sin!4v1704168573126!5m2!1sen!2sin" width="450" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7008966.24016686!2d27.53375066700172!3d30.932877457268713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15006f476664de99%3A0x8d285b0751264e99!2sJordan!5e0!3m2!1sen!2sin!4v1722280393714!5m2!1sen!2sin" idth="450" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   </div>
                   <div className={styles.tripfeedbackquote}>

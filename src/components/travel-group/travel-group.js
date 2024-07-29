@@ -59,20 +59,6 @@ const initialData = [
     description: "Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.",
   },
   {
-    link: "northern-india",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1710656540/0B9B7F39-B3D4-4C73-86E0-CD96FA993CB61417108072_vwqapu.jpg",
-    region: "Asia–Pacific",
-    title: "Northern India (A Spiritual Journey through Himalayas)",
-    description: "A Spiritual Journey in India (Story of unseen Gems)",
-  },
-  {
-    link: "golden-triangle",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711201433/61241721_kepayv.jpg",
-    region: "Asia–Pacific",
-    title: "Golden Triangle Discovery ",
-    description: "Journey through the Riches of Frankincense & Golden Sands",
-  },
-  {
     link: "india-kumbh",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711944832/kumbh-mela-2025_qjfgi8.jpg",
     region: "Asia–Pacific",
@@ -158,7 +144,7 @@ const TravelGroups = () => {
     const formattedData = itineraryData.map((item) => ({
       link: item.tripName,
       thumbnail: item.tripImage,
-      region: item.region || "Asia–Pacific",
+      region: item.tripRegion,
       title: item.tripTitle,
       description: item.tripSubtitle,
     }));
