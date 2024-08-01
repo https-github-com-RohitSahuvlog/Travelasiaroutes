@@ -34,21 +34,6 @@ let initialData = [
     title: " Landlocked Laos and Combodia",
     description: "Laos Revealed: Embark on Epic Expeditions"
   },
-  {
-    link: "/travel-groups/philippines",
-    thumbnail: "https://i.guim.co.uk/img/media/8e466cc4459e7dbbcd6160f594ebbee833307daf/209_392_3791_2275/master/3791.jpg?width=620&dpr=2&s=none",
-    region: "Asia–Pacific",
-    title: "Island of Philippines",
-    description: "Experience the allure of the Philippines, a beloved Asian tourist hotspot."
-  },
-  {
-    "link": "/travel-groups/uzbekistan",
-    "thumbnail": "https://lp-cms-production.imgix.net/2023-07/GettyImages-641704192.jpg?auto=format&w=1440&h=810&fit=crop&q=75",
-    region: "Asia–Pacific",
-    "title": "Uzbekistan & Kyrgyzstan",
-    "description": "Immerse yourself in the beauty and history of Uzbekistan, a Central Asian gem."
-
-  },
   // {
   //   link: "/travel-groups/3eyeshimalayas",
   //   thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711857300/m160822019_u66yv0.jpg",
@@ -64,25 +49,11 @@ let initialData = [
     description: "Embark on a mesmerizing odyssey through the unseen legends of Oman",
   },
   {
-    link: "/travel-groups/jordan",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704171456/aygpo6wg7hxajhm3glsq.jpg",
-    region: "MiddleEast",
-    title: "Gems of Jordan",
-    description: "In the footsteps of Lawrence of Arabia",
-  },
-  {
     link: "/travel-groups/saudi-arabia",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704258953/0UZhVeo5-Saudi-tourism_odswhp.jpg",
     region: "MiddleEast",
     title: "Beyond Borders- A Journey through Saudi Arabia",
     description: "Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.",
-  },
-  {
-    link: "/travel-groups/landlock-laos-combodia",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711257216/2AE71DED-1C67-4722-90A5-1695735C645A1232473463_bfuo3m.jpg",
-    region: "Asia–Pacific",
-    title: "Landlocked Laos & Life along Mekong with Combodia Extension",
-    description: "(Small Group Journey)",
   },
   {
     link: "/travel-groups/india-kumbh",
