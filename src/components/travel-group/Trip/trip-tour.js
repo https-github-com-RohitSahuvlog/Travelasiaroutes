@@ -237,8 +237,8 @@ const Trip = () => {
                           }
                           {
                             detail.flexiablechecked && (<>
-                              <td>{detail.flexiabledate}</td>
-                              <td>{detail.flexiabledate}</td>
+                              <td>{detail?.flexiabledate || "Flexiable date"}</td>
+                              <td>{detail?.flexiabledate || "Flexiable date"}</td>
                             </>)
                           }
                           <td>{`$ ${detail.price

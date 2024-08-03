@@ -1,9 +1,85 @@
 import React, { useState } from 'react';
-import "../css/booking-form.css"
+import styled from 'styled-components';
 import { addBookingForm } from '../redux/action/enquiry';
+import img from "../../src/images/background.jpg"
+
+const Box = styled.div`
+  width: 100%;
+  background-image: url(${img});
+   background-size: cover;
+  background-position: center;
+
+`;
+
+const Form = styled.form`
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 10rem auto;
+`;
+
+const FormSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
+
+const FormField = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
+
+const Label = styled.label`
+  font-size: 1rem;
+  color: #333;
+`;
+
+const Input = styled.input`
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+`;
+
+const TextArea = styled.textarea`
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+`;
+
+const CheckboxLabel = styled.label`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+`;
+
+const Checkbox = styled.input`
+  transform: scale(1.2);
+`;
+
+const Button = styled.button`
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
 
 const TravelForm = () => {
-    // State to manage form data
     const [formData, setFormData] = useState({
         destination: '',
         travelPlans: '',
@@ -17,7 +93,6 @@ const TravelForm = () => {
         news: false,
     });
 
-    // Handler for form field changes
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
         setFormData((prevData) => ({
@@ -26,145 +101,137 @@ const TravelForm = () => {
         }));
     };
 
-    // Handler for form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-        addBookingForm(formData)
+        addBookingForm(formData);
     };
 
     return (
-        <form className="travel_form" onSubmit={handleSubmit}>
-            <div className="form_section">
-                <div className="form_field form-align is-required">
-                    <label htmlFor="destination">Destination</label>
-                    <input
-                        id="destination"
-                        name="destination"
-                        value={formData.destination}
-                        onChange={handleChange}
-                        required
-                    />
-                    {/* Render destination options */}
-                </div>
+        <Box>
+            <Form onSubmit={handleSubmit}>
+                <FormSection>
+                    <FormField>
+                        <Label htmlFor="destination">Destination</Label>
+                        <Input
+                            id="destination"
+                            name="destination"
+                            value={formData.destination}
+                            onChange={handleChange}
+                            required
+                        />
+                    </FormField>
 
-                <div className="form_field form-align is-required">
-                    <label htmlFor="travelPlans">Travel Plans</label>
-                    <textarea
-                        id="travelPlans"
-                        name="travelPlans"
-                        value={formData.travelPlans}
-                        onChange={handleChange}
-                        required
-                    ></textarea>
-                </div>
-            </div>
+                    <FormField>
+                        <Label htmlFor="travelPlans">Travel Plans</Label>
+                        <TextArea
+                            id="travelPlans"
+                            name="travelPlans"
+                            value={formData.travelPlans}
+                            onChange={handleChange}
+                            required
+                        ></TextArea>
+                    </FormField>
+                </FormSection>
 
-            <div className="form_section">
-                <div className="form_field form-align">
-                    <label htmlFor="title">Title</label>
-                    <input
-                        id="title"
-                        name="title"
-                        value={formData.title}
-                        onChange={handleChange}
-                    />
-                    {/* Render title options */}
-                </div>
+                <FormSection>
+                    <FormField>
+                        <Label htmlFor="title">Title</Label>
+                        <Input
+                            id="title"
+                            name="title"
+                            value={formData.title}
+                            onChange={handleChange}
+                        />
+                    </FormField>
 
-                <div className="form_field form-align is-required">
-                    <label htmlFor="firstName">First Name</label>
-                    <input
-                        type="text"
-                        id="firstName"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
+                    <FormField>
+                        <Label htmlFor="firstName">First Name</Label>
+                        <Input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            value={formData.firstName}
+                            onChange={handleChange}
+                            required
+                        />
+                    </FormField>
 
-                <div className="form_field form-align is-required">
-                    <label htmlFor="lastName">Last Name</label>
-                    <input
-                        type="text"
-                        id="lastName"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-            </div>
+                    <FormField>
+                        <Label htmlFor="lastName">Last Name</Label>
+                        <Input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            value={formData.lastName}
+                            onChange={handleChange}
+                            required
+                        />
+                    </FormField>
+                </FormSection>
 
-            <div className="form_section">
-                <div className="form_field form-align is-required">
-                    <label htmlFor="country">Country</label>
-                    <input
-                        type="text"
-                        id="country"
-                        name="country"
-                        value={formData.country}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
+                <FormSection>
+                    <FormField>
+                        <Label htmlFor="country">Country</Label>
+                        <Input
+                            type="text"
+                            id="country"
+                            name="country"
+                            value={formData.country}
+                            onChange={handleChange}
+                            required
+                        />
+                    </FormField>
 
-                <div className="form_field form-align is-required">
-                    <label htmlFor="email">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
+                    <FormField>
+                        <Label htmlFor="email">Email</Label>
+                        <Input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                        />
+                    </FormField>
 
-                <div className="form_field form-align">
-                    <label htmlFor="phone">Phone</label>
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                    />
-                </div>
-            </div>
+                    <FormField>
+                        <Label htmlFor="phone">Phone</Label>
+                        <Input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
+                        />
+                    </FormField>
+                </FormSection>
 
-            <div className="form_section">
-                <div className="form_field form-align">
-                    <label htmlFor="prompted">Prompted By</label>
-                    <input
-                        type="text"
-                        id="prompted"
-                        name="prompted"
-                        value={formData.prompted}
-                        onChange={handleChange}
-                    />
-                </div>
+                <FormSection>
+                    <FormField>
+                        <Label htmlFor="prompted">Prompted By</Label>
+                        <Input
+                            type="text"
+                            id="prompted"
+                            name="prompted"
+                            value={formData.prompted}
+                            onChange={handleChange}
+                        />
+                    </FormField>
 
-                <div className="form_field form-aligncheckbox">
-                    <label>
-                        <input
+                    <CheckboxLabel>
+                        <Checkbox
                             type="checkbox"
                             name="news"
                             checked={formData.news}
                             onChange={handleChange}
                         />
                         Subscribe to newsletter
-                    </label>
-                </div>
-            </div>
+                    </CheckboxLabel>
+                </FormSection>
 
-            {/* Submit button */}
-            <div className="form-ctrl">
-                <button type="submit" className="btn btn--cta js-submit">
-                    Send Enquiry
-                </button>
-            </div>
-        </form>
+                <Button type="submit">Send Enquiry</Button>
+            </Form>
+        </Box>
     );
 };
 
