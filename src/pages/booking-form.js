@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { addBookingForm } from '../redux/action/enquiry';
 import img from "../../src/images/background.jpg"
@@ -106,6 +106,9 @@ const TravelForm = () => {
         addBookingForm(formData);
     };
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <Box>
             <Form onSubmit={handleSubmit}>
