@@ -27,13 +27,6 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 let initialData = [
-  {
-    link: "/travel-groups/laos",
-    thumbnail: "https://luxdev.lu/files/media/news/2022-09-12-2/B79I25341.jpeg",
-    region: "Asia–Pacific",
-    title: " Landlocked Laos and Combodia",
-    description: "Laos Revealed: Embark on Epic Expeditions"
-  },
   // {
   //   link: "/travel-groups/3eyeshimalayas",
   //   thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711857300/m160822019_u66yv0.jpg",
@@ -68,13 +61,6 @@ let initialData = [
     region: "MiddleEast",
     title: "The Journey to Cradle of Civilisation (Babylon to Baghdad)- ",
     description: "Embark on a captivating journey through time, from the ancient wonders of Babylon to the modern marvels of Baghdad",
-  },
-  {
-    link: "/travel-groups/egypt-and-nile",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1712254046/0e_iokr1b.jpg",
-    region: "MiddleEast",
-    title: "Egypt and The Nile",
-    description: "Join us on an unforgettable expedition along the legendary Nile River, as we unravel the mysteries of ancient Egypt's iconic landmarks and immerse ourselves in the vibrant culture of modern-day Cairo.",
   }
 ]
 export default function JetExpeditions() {

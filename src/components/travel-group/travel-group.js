@@ -8,21 +8,7 @@ import Axios from '../../api';
 import Modal from './enuiry-model/model';
 
 const initialData = [
-  {
-    link: "laos",
-    thumbnail: "https://luxdev.lu/files/media/news/2022-09-12-2/B79I25341.jpeg",
-    region: "Asia–Pacific",
-    title: " Landlocked Laos and Combodia",
-    description: "Laos Revealed: Embark on Epic Expeditions"
-  },
 
-  // {
-  //   link: "3eyeshimalayas",
-  //   thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711857300/m160822019_u66yv0.jpg",
-  //   region: "Asia–Pacific",
-  //   title: "3 Eyes of Himalayas- Best of Tibet, Bhutan and Nepal",
-  //   description: "Uncover the charm of Tibet, Bhutan, and Nepal. Dive into rich cultures, ancient traditions, and stunning landscapes. Plus, discover the allure of the Philippines. Your unforgettable journey begins here!"
-  // },
   {
     link: "oman",
     thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704125530/1573728245_oman.png_p6odjy.png",
@@ -50,13 +36,6 @@ const initialData = [
     region: "MiddleEast",
     title: "The Journey to Cradle of Civilisation (Babylon to Baghdad)- ",
     description: "Embark on a captivating journey through time, from the ancient wonders of Babylon to the modern marvels of Baghdad",
-  },
-  {
-    link: "egypt-and-nile",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1712254046/0e_iokr1b.jpg",
-    region: "MiddleEast",
-    title: "Egypt and The Nile",
-    description: "Join us on an unforgettable expedition along the legendary Nile River, as we unravel the mysteries of ancient Egypt's iconic landmarks and immerse ourselves in the vibrant culture of modern-day Cairo.",
   }
 ];
 
