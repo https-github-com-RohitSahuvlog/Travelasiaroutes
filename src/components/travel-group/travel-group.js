@@ -32,7 +32,7 @@ const initialData = [
   },
   {
     link: "babylon-baghdad",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711949461/JMJPDK56U5DGNBJX3GXTUN4QMI_hzhgka.jpg",
+    thumbnail: "https://res.cloudinary.com/dcxwlwsgd/image/upload/v1722760449/WhatsApp_Image_2024-08-04_at_14.02.26_4_f98ffn.jpg",
     region: "MiddleEast",
     title: "The Journey to Cradle of Civilisation (Babylon to Baghdad)- ",
     description: "Embark on a captivating journey through time, from the ancient wonders of Babylon to the modern marvels of Baghdad",
