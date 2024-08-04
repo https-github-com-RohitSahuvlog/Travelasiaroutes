@@ -159,31 +159,36 @@ export default function Navbar() {
   return (
     <>
       <SwiperContainer>
-
-        <div className="w-100" style={{ width: "100%", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+        <div className="w-100" style={{ width: "100%", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "flex" }}>
           <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
             <a className="d-flex" href="mailto:mailto:sumit.steve@yahoo.com">
               sumit.steve@yahoo.com
             </a>
-
-          </div>
-          <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
-            Talk to our Travel Expert  :
           </div>
 
-          <div>
-            <a className=" d-flex align-items-center text-black" href="tel:+1(888)449-0977">
-              +1(888)449-0977
-            </a>
-            (USA/Canada)</div>
 
-          <div>
-            <a className="d-flex align-items-center text-white" href="tel:+918750970676">+918750970676 </a>
-            (International)
+          <div className="w-100" style={{ width: "100%", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+            <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
+
+
+            </div>
+            <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
+              Talk to our Travel Expert  :
+            </div>
+
+            <div>
+              <a className=" d-flex align-items-center text-black" href="tel:+1(888)449-0977">
+                +1(888)449-0977
+              </a>
+              (USA/Canada)</div>
+
+            <div>
+              <a className="d-flex align-items-center text-white" href="tel:+918750970676">+918750970676 </a>
+              (International)
+            </div>
+
           </div>
-
         </div>
-
       </SwiperContainer >
       <div className="navbar">
 
