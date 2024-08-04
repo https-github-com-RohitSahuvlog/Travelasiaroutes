@@ -130,7 +130,7 @@ const LaosCombodiaTrip = () => {
                   <div className={styles.image_container}>
 
                     <div id="map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.5274535612925!2d107.10599157509563!3d14.046001886377226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316b97e319132a23%3A0x6682c89180f5137!2z4Z6P4Z-G4Z6U4Z6T4Z-L4Z6A4Z6T4Z-S4Z6R4Z674Z6Z4Z6T4Z624Z6CIOGegOGemOGfkuGeluGeu-Geh-Getg!5e0!3m2!1sen!2sin!4v1711889073185!5m2!1sen!2sin" width="450" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2496252.865617339!2d99.51119290350546!3d19.79181968011682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31149057b0824589%3A0xec592481f99cd81!2sLaos!5e0!3m2!1sen!2sin!4v1722772976958!5m2!1sen!2sin" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
                   </div>
