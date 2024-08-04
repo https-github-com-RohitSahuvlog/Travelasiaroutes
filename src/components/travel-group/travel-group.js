@@ -8,6 +8,13 @@ import Axios from '../../api';
 import Modal from './enuiry-model/model';
 
 const initialData = [
+  {
+    link: "laos",
+    thumbnail: "https://luxdev.lu/files/media/news/2022-09-12-2/B79I25341.jpeg",
+    region: "Asia–Pacific",
+    title: " Landlocked Laos and Combodia",
+    description: "Laos Revealed: Embark on Epic Expeditions"
+  },
 
   {
     link: "oman",

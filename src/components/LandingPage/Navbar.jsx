@@ -160,11 +160,11 @@ export default function Navbar() {
     <>
       <SwiperContainer>
         <div className="w-100" style={{ width: "100%", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "flex" }}>
-          <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
+          {/* <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
             <a className="d-flex" href="mailto:mailto:sumit.steve@yahoo.com">
               sumit.steve@yahoo.com
             </a>
-          </div>
+          </div> */}
 
 
           <div className="w-100" style={{ width: "100%", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
