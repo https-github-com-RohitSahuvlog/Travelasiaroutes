@@ -169,7 +169,7 @@ const Trip = () => {
             <div className={styles.section} ref={section2Ref} id={styles.section2} >
               <div className={styles.MainHeading} >
                 <div className={styles.SettingHeading}>
-                  <h2 className={styles.SetText}>Explore the Rich Heritage of the {itinerary?.tripName}</h2>
+                  <h2 className={styles.SetText}> {itinerary?.tripHeadingCultureTitle}</h2>
                   <h5 className={styles.SetTextWith}>{itinerary?.tripHeadingCulture}</h5>
                 </div>
                 <MyAccordion AccordianData={itinerary?.dayByDay || []} />
@@ -343,8 +343,6 @@ const Trip = () => {
               </div>
             </div>
             <div className={styles.section} ref={section4Ref} id={styles.section4}>
-
-
               <MyGallery Images={itinerary?.images || []} />
               <div className={styles.LastFourContent}>
                 <div>

@@ -162,6 +162,12 @@ export default function Navbar() {
 
         <div className="w-100" style={{ width: "100%", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
           <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
+            <a className="d-flex" href="mailto:mailto:sumit.steve@yahoo.com">
+              sumit.steve@yahoo.com
+            </a>
+
+          </div>
+          <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
             Talk to our Travel Expert  :
           </div>
 
