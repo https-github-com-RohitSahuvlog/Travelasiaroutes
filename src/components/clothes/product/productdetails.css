@@ -1,0 +1,177 @@
+.container {
+    width: 100%;
+    margin-top: 150px !important;
+}
+
+.products-container {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-start;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* // write media query */
+@media screen and (max-width: 768px) {
+    .products-container {
+        flex-direction: column;
+    }
+}
+
+.product_img_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.product__images {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.product__details {}
+
+.product__image {
+    width: 95%;
+    height: 400px;
+
+}
+
+.product__small {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.product__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.product__reviews {
+    display: flex;
+    align-items: center;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+    text-align: left;
+}
+
+.font-weight-normal p {
+    font-size: 1rem;
+    align-items: center;
+}
+
+.product__size_div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.product__size {
+    background-color: transparent;
+    color: #333;
+    padding: 2px 5px;
+    border: 2px solid #333;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.product__size.active {
+    background-color: #555;
+    color: #fff;
+}
+
+.product_details {
+    text-align: left;
+}
+
+.product__reviews {
+    margin: 1rem 0rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.button-dark {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 1rem;
+}
+
+.minus,
+.plus {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: 5px;
+}
+
+.minus:hover,
+.plus:hover {
+    background-color: #555;
+    color: white;
+}
+
+.num {
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: 5px;
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: flex-start;
+}
+
+.border-button {
+    background-color: transparent;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.border-button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.product-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 10px;
+}

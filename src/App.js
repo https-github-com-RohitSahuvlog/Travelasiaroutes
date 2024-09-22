@@ -29,6 +29,8 @@ import { useEffect } from "react";
 import { getItineraryTrip } from "./redux/action/travel";
 import { useDispatch } from "react-redux";
 import Trip from "./components/travel-group/Trip/trip-tour";
+import ClotheslandingPage from "./components/clothes/landingclothes";
+import ProductDetails from "./components/clothes/product/productdetails";
 
 
 function App() {
@@ -81,6 +83,8 @@ function App() {
           element={< BabyLonToBhagdadTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
         <Route path="/travel-groups/:itineraryname" element={<Trip />} />
+        <Route path="/product/rugs" element={<ClotheslandingPage />} />
+        <Route path="/product/:slug" element={<ProductDetails />} />
         <Route path="/pageerror" element={<PageError />} />
       </Routes>
       <Footer />
