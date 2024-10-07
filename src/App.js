@@ -31,6 +31,7 @@ import { useDispatch } from "react-redux";
 import Trip from "./components/travel-group/Trip/trip-tour";
 import ClotheslandingPage from "./components/clothes/landingclothes";
 import ProductDetails from "./components/clothes/product/productdetails";
+import CartPage from "./components/clothes/product/CartPage";
 
 
 function App() {
@@ -84,7 +85,8 @@ function App() {
         <Route path="/activitylevel" element={<ActivityLevels />} />
         <Route path="/travel-groups/:itineraryname" element={<Trip />} />
         <Route path="/product/rugs" element={<ClotheslandingPage />} />
-        <Route path="/product/:slug" element={<ProductDetails />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/product/checkout" element={<CartPage />} />
         <Route path="/pageerror" element={<PageError />} />
       </Routes>
       <Footer />

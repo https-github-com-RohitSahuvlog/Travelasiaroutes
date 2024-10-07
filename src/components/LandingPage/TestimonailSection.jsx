@@ -46,6 +46,7 @@ const carousalData = [
     para: "Every destination, a chance to give back. Our local expertise and ground teams empower us to select impactful community and conservation projects that truly matter",
   },
 ];
+
 export default function TestimonailSection() {
   return (
     <div className="testimonial-section">

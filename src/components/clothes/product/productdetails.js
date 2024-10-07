@@ -1,34 +1,51 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
-import { products } from "../dummy";
+import { toast } from 'react-toastify';
+import { useDispatch, useSelector } from 'react-redux';
 import "./productdetails.css";
+import Axios from '../../../api';
+import { addToCart } from '../../../redux/action/cartActions';
 
 const ProductDetails = () => {
-    const { slug } = useParams();
-    const [product, setProduct] = useState(null);
+    const { id } = useParams();
+    const dispatch = useDispatch();
     const [index, setIndex] = useState(0);
     const [qty, setQty] = useState(1);
     const [selectedSize, setSize] = useState('S');
+    const [product, setProduct] = useState([])
+    const { image, name, details, price } = product;
+    const navigation = useNavigate()
 
     useEffect(() => {
-        const fetchProduct = () => {
-            const productData = products.find((prod) => prod._id === slug);
-            setProduct(productData);
-        };
+        async function fetchRugDetails() {
+            try {
+                const response = await Axios.get(`/api/products/${id}`);
+                if (response.status === 200) {
+                    const rugData = response.data;
+                    setProduct(rugData);
+                } else {
+                    toast.error('Failed to fetch rug details.', { position: toast.POSITION.TOP_RIGHT });
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                toast.error('An error occurred while fetching rug details.', { position: toast.POSITION.TOP_RIGHT });
+            }
+        }
 
-        fetchProduct();
-    }, [slug]);
+        fetchRugDetails();
+    }, [id]);
 
-    if (!product) return <div>Loading...</div>;
-
-    const { image, name, details, price } = product;
 
     const handleBuyNow = () => {
-        console.log('Buy Now');
+        alert("Buy")
+        navigation("/product/checkout")
     };
 
-    console.log(product);
+    const addToCartHandler = () => {
+        dispatch(addToCart(id, qty));
+        toast.success('Added to cart', { position: "top-right" });
+    };
 
     const decQty = () => {
         if (qty > 1) {
@@ -89,6 +106,9 @@ const ProductDetails = () => {
                             <div className='btn-container'>
 
                                 <button className="border-button small-margin" onClick={handleBuyNow}>BUY NOW</button>
+
+                                <button className="border-button small-margin" onClick={addToCartHandler}>ADD CART</button>
+
                             </div>
                         </div>
                     )
