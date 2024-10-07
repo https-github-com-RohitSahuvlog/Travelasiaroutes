@@ -38,7 +38,7 @@ const ProductDetails = () => {
 
 
     const handleBuyNow = () => {
-        alert("Buy")
+        dispatch(addToCart(id, qty));
         navigation("/product/checkout")
     };
 
