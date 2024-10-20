@@ -210,9 +210,9 @@ export default function Navbar() {
           <li className="to_drop">
             <Link to="/travel-groups"> Small Group Boutique Expeditions </Link>
           </li>
-          <li className="to_drop"  >
+          {/* <li className="to_drop"  >
             <Link to="/product/rugs">Rugs</Link>
-          </li>
+          </li> */}
           <li className="to_drop" >
             <Link to="/" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}> By Destination </Link>
 
