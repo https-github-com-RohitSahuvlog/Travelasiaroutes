@@ -23,7 +23,7 @@ const SwiperContainer = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    z-index: 5000;
+    z-index: 1;
     word-break: break-word;
     padding: 0 20px;
     background-color: rgb(95, 207, 128);
