@@ -7,7 +7,8 @@
   text-align: center;
   background-image: url("https://res.cloudinary.com/dxhoawdbh/image/upload/v1711888886/85-Siem-Reap_800x400_1_ky5pmj.jpg");
   object-position: top !important;
-  background-size: cover
+  background-size: cover;
+  margin-top: 90px;
 }
 
 
