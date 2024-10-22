@@ -36,7 +36,14 @@ const initialData = [
     region: "MiddleEast",
     title: "The Journey to Cradle of Civilisation (Babylon to Baghdad)- ",
     description: "Embark on a captivating journey through time, from the ancient wonders of Babylon to the modern marvels of Baghdad",
-  }
+  },
+  {
+    link: "landlock-laos-combodia",
+    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711257216/2AE71DED-1C67-4722-90A5-1695735C645A1232473463_bfuo3m.jpg",
+    region: "Asia–Pacific",
+    title: "Landlocked Laos & Life along Mekong with Combodia Extension",
+    description: "(Small Group Journey)",
+  },
 ];
 
 const GlobalStyle = createGlobalStyle`
