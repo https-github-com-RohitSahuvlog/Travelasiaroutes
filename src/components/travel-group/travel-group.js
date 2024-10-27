@@ -11,21 +11,21 @@ const initialData = [
 
   {
     link: "oman",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704125530/1573728245_oman.png_p6odjy.png",
+    thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730029928/ntfbhxthuein06iqdtnf.jpg",
     region: "MiddleEast",
     title: "Unexpected Oman-The Land of Frankincense",
     description: "Embark on a mesmerizing odyssey through the unseen legends of Oman",
   },
   {
     link: "saudi-arabia",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704258953/0UZhVeo5-Saudi-tourism_odswhp.jpg",
+    thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032242/titfaq7ac6kjwxjgmzhz.jpg",
     region: "MiddleEast",
     title: "Beyond Borders- A Journey through Saudi Arabia",
     description: "Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.",
   },
   {
     link: "india-kumbh",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711944832/kumbh-mela-2025_qjfgi8.jpg",
+    thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032614/j15ni4cjdovst6vkda6r.jpg",
     region: "Asia–Pacific",
     title: "India's Kumbh Mela Festival",
     description: "Explore India's sacred Kumbh Mela: engage with sadhus, boat rides, and spiritual wonders await.",
@@ -39,7 +39,7 @@ const initialData = [
   },
   {
     link: "landlock-laos-combodia",
-    thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711257216/2AE71DED-1C67-4722-90A5-1695735C645A1232473463_bfuo3m.jpg",
+    thumbnail: "hhttps://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712235/tuzwdpsbywevcyrbjok0.jpg",
     region: "Asia–Pacific",
     title: "Landlocked Laos & Life along Mekong with Combodia Extension",
     description: "(Small Group Journey)",

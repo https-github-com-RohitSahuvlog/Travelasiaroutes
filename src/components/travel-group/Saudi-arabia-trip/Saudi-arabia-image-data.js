@@ -8,12 +8,12 @@ export const Images = [
         thumbnail: "https://www.oneworld365.org/img/000/56/56384.jpg",
     },
     {
-        original: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704260086/100222995_wcqb9d.jpg",
-        thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704260086/100222995_wcqb9d.jpg",
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032242/titfaq7ac6kjwxjgmzhz.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032242/titfaq7ac6kjwxjgmzhz.jpg",
     },
     {
-        original: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704337719/arab-tourist-baku-arabi-turizm_l2nguf.jpg",
-        thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1704337719/arab-tourist-baku-arabi-turizm_l2nguf.jpg",
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032242/fxmdyfjbzhrhrayrl7j2.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032242/fxmdyfjbzhrhrayrl7j2.jpg",
     },
     {
         original: "https://www.travelnews.co.za/sites/default/files/images/article/202206/saudiarabiatourism.jpg",
