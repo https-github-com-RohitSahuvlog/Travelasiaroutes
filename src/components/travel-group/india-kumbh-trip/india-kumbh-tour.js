@@ -98,6 +98,7 @@ const IndiaKumbhTrip = () => {
   return (
     <div>
       <div className={styles.MainUpperr}>
+        <img src={Images[6]?.original} className={styles.backgorundImage} />
         <div className={styles.MainContent}>
           <h1 className={styles.Title}>India's Kumbh Mela Festival</h1>
           <div className={styles.Italic}>Explore India's sacred Kumbh Mela: engage with sadhus, boat rides, and spiritual wonders await.</div>

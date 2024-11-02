@@ -19,7 +19,7 @@ const MainUpper = styled.div`
   text-align: center;
   background-image: url(${props => props.backgroundImage});
   background-size: cover;
-  background-position: top;
+  margin-top: 130px;
 `;
 
 
@@ -112,7 +112,8 @@ const Trip = () => {
 
   return (
     <div>
-      <MainUpper backgroundImage={itinerary?.tripImage}>
+      <MainUpper>
+        <img src={itinerary?.tripImage} className={styles.backgorundImage} />
         <div className={styles.MainContent}>
           <h1 className={styles.Title}>{itinerary?.tripTitle}</h1>
           <div className={styles.Italic}>{itinerary?.tripSubtitle}</div>

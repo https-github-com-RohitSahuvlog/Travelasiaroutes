@@ -98,6 +98,7 @@ const OmanTrip = () => {
   return (
     <div>
       <div className={styles.MainUpperr}>
+        <img src={Images[2]?.original} className={styles.backgorundImage} />
         <div className={styles.MainContent}>
           <h1 className={styles.Title}>Unexpected Oman</h1>
           <div className={styles.Italic}>The land of Frankincense & Golden Sands.</div>

@@ -97,6 +97,7 @@ const LaosCombodiaTrip = () => {
   return (
     <div>
       <div className={styles.MainUpperr}>
+        <img src={Images[2]?.original} className={styles.backgorundImage} />
         <div className={styles.MainContent}>
           <h1 className={styles.Title}>Landlocked Laos & Life along Mekong with Combodia Extension</h1>
           <div className={styles.Italic}>(Small Group Journey)</div>

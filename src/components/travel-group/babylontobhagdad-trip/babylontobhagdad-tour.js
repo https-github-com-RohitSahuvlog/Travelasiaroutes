@@ -98,6 +98,7 @@ const BabyLonToBhagdadTrip = () => {
   return (
     <div>
       <div className={styles.MainUpperr}>
+        <img src={Images[0]?.original} className={styles.backgorundImage} />
         <div className={styles.MainContent}>
           <h1 className={styles.Title}>The Journey to Cradle of Civilisation (Babylon to Baghdad)- </h1>
           <div className={styles.Italic}>Embark on a captivating journey through time, from the ancient wonders of Babylon to the modern marvels of Baghdad</div>

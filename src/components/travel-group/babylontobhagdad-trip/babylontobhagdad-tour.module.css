@@ -5,18 +5,26 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url("https://res.cloudinary.com/dcxwlwsgd/image/upload/v1722760449/WhatsApp_Image_2024-08-04_at_14.02.26_4_f98ffn.jpg");
-  object-position: top;
-  object-fit: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-top: 90px;
 }
 
+.backgorundImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  object-position: center;
+  outline: none;
+}
 
 .MainContent {
   color: #fff;
+  width: 100%;
   margin: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 
 .Title {
