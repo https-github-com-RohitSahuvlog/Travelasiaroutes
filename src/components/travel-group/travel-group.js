@@ -18,14 +18,14 @@ const initialData = [
   },
   {
     link: "saudi-arabia",
-    thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032242/titfaq7ac6kjwxjgmzhz.jpg",
+    thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032242/fxmdyfjbzhrhrayrl7j2.jpg",
     region: "MiddleEast",
     title: "Beyond Borders- A Journey through Saudi Arabia",
     description: "Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.",
   },
   {
     link: "india-kumbh",
-    thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032614/j15ni4cjdovst6vkda6r.jpg",
+    thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730507784/rwogce20tzbortqy2vcl.jpg",
     region: "Asia–Pacific",
     title: "India's Kumbh Mela Festival",
     description: "Explore India's sacred Kumbh Mela: engage with sadhus, boat rides, and spiritual wonders await.",

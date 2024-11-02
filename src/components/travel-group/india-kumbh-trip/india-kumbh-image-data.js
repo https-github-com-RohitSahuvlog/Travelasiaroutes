@@ -19,4 +19,16 @@ export const Images = [
         original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032614/j15ni4cjdovst6vkda6r.jpg",
         thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032614/j15ni4cjdovst6vkda6r.jpg",
     },
+    {
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730507784/w9tpsdtepuot9ech1lzt.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730507784/w9tpsdtepuot9ech1lzt.jpg",
+    },
+    {
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730507784/rwogce20tzbortqy2vcl.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730507784/rwogce20tzbortqy2vcl.jpg",
+    },
+    {
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730507786/tgl4bmxn7xchi1rkqclg.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730507786/tgl4bmxn7xchi1rkqclg.jpg",
+    },
 ];
