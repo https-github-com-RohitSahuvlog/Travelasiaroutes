@@ -1,5 +1,9 @@
 export const Images = [
     {
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730555109/y2jqrnh5bnzoxfimmiiy.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730555109/y2jqrnh5bnzoxfimmiiy.jpg",
+    },
+    {
         original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730029929/gawahigrekrmpioldhli.webp",
         thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730029929/gawahigrekrmpioldhli.webp",
     },

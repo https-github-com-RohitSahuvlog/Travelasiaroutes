@@ -98,7 +98,7 @@ const SaudiArabiaTrip = () => {
   return (
     <div>
       <div className={styles.MainUpperr}>
-        <img src={Images[1].original} className={styles.backgorundImage} />
+        <img src={Images[1]?.original} className={styles.backgorundImage} />
         <div className={styles.MainContent}>
           <h1 className={styles.Title}>Beyond Borders- A Journey through Saudi Arabia</h1>
           <div className={styles.Italic}>Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.</div>
