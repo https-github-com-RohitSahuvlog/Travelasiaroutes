@@ -2,9 +2,11 @@ import React from "react";
 import "../../css/ScrollVideoSection.css";
 
 const videoUrls = [
-  "https://res.cloudinary.com/dxhoawdbh/video/upload/v1700374712/VID-20231119-WA0003_m7urrc.mp4",
-  "https://res.cloudinary.com/dxhoawdbh/video/upload/v1700374695/WhatsApp_Video_2023-11-19_at_11.18.44_n0nefh.mp4",
-  "https://res.cloudinary.com/dxhoawdbh/video/upload/v1700374747/WhatsApp_Video_2023-11-19_at_11.24.21_dn4t12.mp4",
+  // "https://res.cloudinary.com/dxhoawdbh/video/upload/v1700374712/VID-20231119-WA0003_m7urrc.mp4",
+  // "https://res.cloudinary.com/dxhoawdbh/video/upload/v1700374695/WhatsApp_Video_2023-11-19_at_11.18.44_n0nefh.mp4",
+  // "https://res.cloudinary.com/dxhoawdbh/video/upload/v1700374747/WhatsApp_Video_2023-11-19_at_11.24.21_dn4t12.mp4",
+  "Kumbh Mela.mp4",
+  "iran.mp4"
 ];
 
 export default function ScrollVideoSection() {
