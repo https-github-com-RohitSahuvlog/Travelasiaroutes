@@ -95,14 +95,13 @@ main {
     gap: 1rem 2rem;
 }
 
-.btncontainer {
-    width: 90vw;
+.acc-btn-container {
+    width: 95%;
     background: var(--clr-white);
     border-radius: var(--radius);
     max-width: var(--fixed-width);
     display: flex;
     justify-content: flex-end;
-    padding: 0.5rem;
 }
 
 .container h3 {

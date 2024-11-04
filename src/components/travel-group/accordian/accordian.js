@@ -1,50 +1,61 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import "./subaccordian.css";
 import SubAccordian from './subaccordian';
 
 const MyAccordion = ({ AccordianData }) => {
-  const [expandedStates, setExpandedStates] = useState([])
+  const [expandedStates, setExpandedStates] = useState([]);
 
-  const handleToggleAll = () => {
-    setExpandedStates((prevStates) => prevStates.map((state) => !state));
+  // Initialize the expandedStates array when AccordianData changes
+  useEffect(() => {
+    setExpandedStates(AccordianData?.map(() => false));
+  }, [AccordianData]);
+
+  // Expand all items
+  const handleExpandAll = () => {
+    setExpandedStates(expandedStates.map(() => true));
   };
 
+  // Collapse all items
+  const handleCollapseAll = () => {
+    setExpandedStates(expandedStates.map(() => false));
+  };
+
+  // Toggle individual item based on index
   const handleToggle = (index) => {
-    console.log(`handleToggle: ${index}`);
-    setExpandedStates((prevStates) =>
+    setExpandedStates(prevStates =>
       prevStates.map((state, i) => (i === index ? !state : state))
     );
   };
-  console.log(expandedStates, AccordianData);
-
-  useEffect(() => {
-    setExpandedStates(AccordianData?.map((acc, i) => false));
-  }, [AccordianData]);
 
   return (
     <main>
-      <div className='btncontainer'>
-        <button className='expand-btn' onClick={handleToggleAll}>
-          {expandedStates.every((state) => state)
-            ? 'Collapse All'
-            : 'Expand All'}
-        </button>
+      <div className='acc-btn-container'>
+        {expandedStates.every((state) => state)
+          ?
+          <button className='expand-btn' onClick={handleCollapseAll}>
+            Collapse All
+          </button> : <button className='expand-btn' onClick={handleExpandAll}>
+            Expand All
+          </button>
+        }
+
+
+
       </div>
       <div className='container'>
-
         <section className='info'>
           {AccordianData.map((question, index) => (
-            <SubAccordian key={index} {...question}
+            <SubAccordian
+              key={index}
+              {...question}
               isExpanded={expandedStates[index]}
               onToggle={() => handleToggle(index)}
             />
           ))}
-
         </section>
-
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default MyAccordion
+export default MyAccordion;
