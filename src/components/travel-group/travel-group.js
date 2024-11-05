@@ -17,13 +17,6 @@ const initialData = [
     description: "Embark on a mesmerizing odyssey through the unseen legends of Oman",
   },
   {
-    link: "saudi-arabia",
-    thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730032242/fxmdyfjbzhrhrayrl7j2.jpg",
-    region: "MiddleEast",
-    title: "Beyond Borders- A Journey through Saudi Arabia",
-    description: "Discover the beauty of Saudi Arabia with its rich heritage, cultural wonders, and heartwarming hospitality.",
-  },
-  {
     link: "india-kumbh",
     thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730507784/rwogce20tzbortqy2vcl.jpg",
     region: "Asia–Pacific",
