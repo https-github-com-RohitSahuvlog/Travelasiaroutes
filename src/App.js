@@ -15,7 +15,6 @@ import UzbekistanTrip from "./components/travel-group/uzbekistan/uzbekistan-tour
 import SeeItiniery from "./components/Bydestination/India/see-itiniery";
 import OmanTrip from "./components/travel-group/oman-trip/oman-tour";
 import JordanTrip from "./components/travel-group/Jordan-trip/Jordan-tour";
-import SaudiArabiaTrip from "./components/travel-group/Saudi-arabia-trip/Saudi-arabia-tour";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import LaosCombodiaTrip from "./components/travel-group/landlock-laos-combodia/landlock-laos-combodia-tour";
 import IndiaKumbhTrip from "./components/travel-group/india-kumbh-trip/india-kumbh-tour";
@@ -71,7 +70,6 @@ function App() {
         <Route path="/travel-groups/philippines" element={<PhilippinesTrip />} />
         <Route path="/travel-groups/oman" element={<OmanTrip />} />
         <Route path="/travel-groups/jordan" element={<JordanTrip />} />
-        <Route path="/travel-groups/saudi-arabia" element={<SaudiArabiaTrip />} />
         <Route path="/travel-groups/uzbekistan" element={<UzbekistanTrip />} />
         <Route path="/travel-groups/landlock-laos-combodia" element={< LaosCombodiaTrip />} />
         <Route path="/travel-groups/india-kumbh" element={< IndiaKumbhTrip />} />
