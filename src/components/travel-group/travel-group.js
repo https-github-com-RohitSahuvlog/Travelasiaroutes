@@ -39,7 +39,7 @@ const initialData = [
   },
   {
     link: "landlock-laos-combodia",
-    thumbnail: "hhttps://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712235/tuzwdpsbywevcyrbjok0.jpg",
+    thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712235/tuzwdpsbywevcyrbjok0.jpg",
     region: "Asia–Pacific",
     title: "Landlocked Laos & Life along Mekong with Combodia Extension",
     description: "(Small Group Journey)",
