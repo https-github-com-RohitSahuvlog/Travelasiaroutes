@@ -105,6 +105,7 @@ const TravelGroups = () => {
   return (
     <div>
       <div className={styles.MainUpper}>
+        <img src={"https://res.cloudinary.com/dxhoawdbh/image/upload/v1716354085/luxury-group-travel-hero_vzw725.jpg"} className={styles.backgorundImage} />
         <div className={styles.MainContent}>
           <h1 className={styles.Title} > LUXURY GROUP TRAVEL</h1>
           <div className={styles.Italic}>For intrepid travelers looking for the best in luxury small group tours</div>
