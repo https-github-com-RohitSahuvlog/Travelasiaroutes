@@ -95,14 +95,10 @@
 }
 
 .AddContent {
-
   max-width: 1380px;
-  width: 80%;
-  padding: 25px;
+  width: 90%;
   margin: auto;
   text-align: center;
-
-
 }
 
 .TitleSet {
@@ -125,7 +121,6 @@
 
 
 .MainDiv {
-
   height: 80px;
   max-width: 1380px;
   width: 100%;
@@ -166,7 +161,6 @@
 }
 
 .HomeHeadingData {
-  width: 80%;
   line-height: 1.1;
   font-weight: 400;
   text-transform: uppercase;
