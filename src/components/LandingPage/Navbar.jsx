@@ -23,13 +23,11 @@ const SwiperContainer = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1001;
     word-break: break-word;
-    padding: 0 20px;
+    padding: 5px 20px;
     background-color: rgb(95, 207, 128);
     color: white;
-    margin-bottom: 5px;
-
     a{
       color: white;
       font-size: 0.9rem;
@@ -161,18 +159,8 @@ export default function Navbar() {
     <>
       <SwiperContainer>
         <div className="w-100" style={{ width: "100%", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "flex" }}>
-          {/* <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
-            <a className="d-flex" href="mailto:mailto:sumit.steve@yahoo.com">
-              sumit.steve@yahoo.com
-            </a>
-          </div> */}
-
 
           <div className="w-100" style={{ width: "100%", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
-            <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
-
-
-            </div>
             <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
               Talk to our Travel Expert  :
             </div>
