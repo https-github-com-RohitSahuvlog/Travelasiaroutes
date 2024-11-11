@@ -11,7 +11,7 @@ const initialData = [
 
   {
     link: "oman",
-    thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730029928/ntfbhxthuein06iqdtnf.jpg",
+    thumbnail: "https://www.remotelands.com/remotenew1/dist/images/country/oman/city/15030503/b160822041.jpg",
     region: "MiddleEast",
     title: "Unexpected Oman-The Land of Frankincense",
     description: "Embark on a mesmerizing odyssey through the unseen legends of Oman",
