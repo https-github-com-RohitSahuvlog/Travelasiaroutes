@@ -422,25 +422,23 @@
 
 .SectionThreeMain>div {
   height: auto;
-  /* width: 100%; */
-  /* border:1px solid black; */
   display: flex;
   flex-direction: row;
-  margin: 2%;
   display: flex;
   flex-direction: column;
-
 }
 
 .FirstDiv {
-  width: 40%;
-
-
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #333;
+  padding: 0px 20px;
 }
 
 
 .SecondDiv {
-  width: 53%;
+  width: 100%;
   text-align: left;
   font-size: 1.4rem;
   line-height: 2.2rem;
