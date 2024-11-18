@@ -133,9 +133,9 @@ const Trip = () => {
 
       <div className={styles.Capp}>
         <div className={styles.Flex}>
-          {/* <div>
+          <div>
             <ScrollHighlightNabbar scrollToSection={scrollToSection} navHeader={navHeader} />
-          </div> */}
+          </div>
           <div>
             <div className={styles.section} ref={section1Ref} id={styles.section1} >
               <div className={styles.SettingHeadingRatio}>
