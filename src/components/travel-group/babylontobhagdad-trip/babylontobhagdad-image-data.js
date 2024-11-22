@@ -1,22 +1,35 @@
 export const Images = [
     {
-        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730550767/sacynbugxl3womux99xw.jpg",
-        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730550767/sacynbugxl3womux99xw.jpg",
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240624/WhatsApp_Image_2024-11-22_at_01.23.32_yqrymj.jpg",
+        "thumbnail": "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240624/WhatsApp_Image_2024-11-22_at_01.23.32_yqrymj.jpg",
     },
     {
-        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730550765/vsyvtcj05qj8tsnqncfz.jpg",
-        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730550765/vsyvtcj05qj8tsnqncfz.jpg",
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240379/WhatsApp_Image_2024-11-22_at_01.23.23_fjopij.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240379/WhatsApp_Image_2024-11-22_at_01.23.23_fjopij.jpg",
     },
     {
-        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730550766/aoet7sjy0tcngmtzhubb.jpg",
-        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730550766/aoet7sjy0tcngmtzhubb.jpg",
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240379/WhatsApp_Image_2024-11-22_at_01.23.24_uzphb5.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240379/WhatsApp_Image_2024-11-22_at_01.23.24_uzphb5.jpg",
     },
     {
-        original: "https://www.al-monitor.com/sites/default/files/styles/article_header/public/almpics/2017/03/RTR2Y1RF.jpg/RTR2Y1RF.jpg?h=f7822858&itok=OyrsgX7-",
-        thumbnail: "https://www.al-monitor.com/sites/default/files/styles/article_header/public/almpics/2017/03/RTR2Y1RF.jpg/RTR2Y1RF.jpg?h=f7822858&itok=OyrsgX7-",
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240379/WhatsApp_Image_2024-11-22_at_01.23.13_ijs3qw.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240379/WhatsApp_Image_2024-11-22_at_01.23.13_ijs3qw.jpg",
     },
     {
-        original: "https://res.cloudinary.com/dcxwlwsgd/image/upload/v1722760449/WhatsApp_Image_2024-08-04_at_14.02.26_4_f98ffn.jpg",
-        thumbnail: "https://res.cloudinary.com/dcxwlwsgd/image/upload/v1722760449/WhatsApp_Image_2024-08-04_at_14.02.26_4_f98ffn.jpg",
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240379/WhatsApp_Image_2024-11-22_at_01.23.25_1_x6ehfp.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240379/WhatsApp_Image_2024-11-22_at_01.23.25_1_x6ehfp.jpg",
     },
+    {
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240380/WhatsApp_Image_2024-11-22_at_01.23.23_1_dxrsba.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240380/WhatsApp_Image_2024-11-22_at_01.23.23_1_dxrsba.jpg",
+    },
+    {
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240453/WhatsApp_Image_2024-11-22_at_01.23.33_n1lxee.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240453/WhatsApp_Image_2024-11-22_at_01.23.33_n1lxee.jpg",
+    },
+    {
+        original: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240455/WhatsApp_Image_2024-11-22_at_01.23.40_wpz0tf.jpg",
+        thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240455/WhatsApp_Image_2024-11-22_at_01.23.40_wpz0tf.jpg",
+    },
+
 ];

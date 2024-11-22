@@ -133,7 +133,7 @@ const Trip = () => {
 
       <div className={styles.Capp}>
         <div className={styles.Flex}>
-          <div>
+          <div className={styles.SideScroll}>
             <ScrollHighlightNabbar scrollToSection={scrollToSection} navHeader={navHeader} />
           </div>
           <div>

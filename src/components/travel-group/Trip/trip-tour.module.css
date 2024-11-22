@@ -94,28 +94,10 @@
   text-align: center;
 }
 
-
-.Flex {
-  display: flex;
-}
-
-/* .section{
-    height: auto;
-    background-color: black;
-  } */
 #section1 {
   background-color: white;
-  /* height: 600px; */
-  /* background-color: pink; */
-  /* margin-bottom: 5%; */
 }
 
-.MainHeading {
-  /* height: 200px; */
-
-
-  /* border: 1px solid black; */
-}
 
 .SettingHeading {
   text-align: center;
@@ -185,7 +167,18 @@
   color: #333;
 }
 
+@media only screen and (min-width: 954px) {
+  .Flex {
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 954px) {
+
+  .SideScroll {
+    display: none;
+  }
+
   .SetFlexProperty {
     height: auto;
     padding-bottom: 1px;
