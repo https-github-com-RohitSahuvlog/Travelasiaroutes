@@ -5,7 +5,7 @@ import styles from "./laos-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
 import { LaosImages } from "./laos-image-data";
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { LaosAccData } from "./laos-accordian-data";
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
@@ -24,9 +24,10 @@ const LaosTrip = () => {
   const location = useLocation();
   const [packageTable, setpackageTable] = useState([]);
   const [open, setOpen] = useState(false);
+  const navigation = useNavigate()
 
   const handleOpen = () => {
-    setOpen(true);
+    navigation("/booking-form")
   };
 
   const handleClose = () => {
@@ -233,14 +234,14 @@ const LaosTrip = () => {
                           }</td>
                           <td>{new Date(detail.endDate).toLocaleDateString('en-GB')
                           }</td>
-                          <td>{`$ ${detail.price} USD`
+                          <td>{`$ ${detail.price} `
                           }</td>
                           <td style={
                             {
                               width: 'auto'
                             }
                           }>{`$ ${detail.singleSupplementPrice
-                            } USD`
+                            } `
                             }</td>
                           <td style={
                             {

@@ -5,7 +5,7 @@ import styles from "./uzbekistan-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
 import { LaosImages } from "./uzbekistan-image-data";
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { UzbekistanExpeditionData } from "./uzbekistan-accordian-data";
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
@@ -25,9 +25,10 @@ const UzbekistanTrip = () => {
   const location = useLocation();
   const [packageTable, setpackageTable] = useState([]);
   const [open, setOpen] = useState(false);
+  const navigation = useNavigate()
 
   const handleOpen = () => {
-    setOpen(true);
+    navigation("/booking-form")
   };
 
   const handleClose = () => {
@@ -249,14 +250,14 @@ const UzbekistanTrip = () => {
                             </>)
                           }
                           <td>{`$ ${detail.price
-                            } USD`
+                            } `
                           }</td>
                           <td style={
                             {
                               width: 'auto'
                             }
                           }>{`$ ${detail.singleSupplementPrice
-                            } USD`
+                            } `
                             }</td>
                           <td style={
                             {

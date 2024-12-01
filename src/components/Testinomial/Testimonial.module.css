@@ -8,9 +8,6 @@
   grid-template-rows: 1fr 50px;
   justify-items: center;
   row-gap: 1rem;
-
-
-
 }
 
 .testinomialheader {
@@ -26,7 +23,7 @@
   font-size: 2rem;
   font-weight: 600;
   color: #e4bd5a;
-  font-family: Aleo, Georgia, serif;
+  /* font-family: Aleo, Georgia, serif; */
 }
 
 .quotes-img-right {
@@ -45,7 +42,6 @@
   grid-template-columns: 10% 1fr 10%;
   justify-content: center;
   text-align: center;
-  margin-top: 2rem;
 }
 
 .main-quotes-div {
@@ -86,7 +82,7 @@
 
 /* ------------------ */
 .para {
-  font-family: Aleo, Georgia, serif;
+  /* font-family: Aleo, Georgia, serif; */
   font-weight: 600 !important;
   letter-spacing: 0 !important;
   font-size: 1.3rem;
@@ -103,7 +99,7 @@
   text-decoration: none;
   -webkit-transition: opacity 0.7s cubic-bezier(.39, .575, .565, 1);
   transition: opacity 0.7s cubic-bezier(.39, .575, .565, 1);
-  font-family: Aleo, Georgia, serif;
+  /* font-family: Aleo, Georgia, serif; */
 }
 
 .myDot {

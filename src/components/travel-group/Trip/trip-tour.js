@@ -4,7 +4,7 @@ import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabba
 import styles from "./trip-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
 import Axios from '../../../api';
@@ -28,9 +28,10 @@ const Trip = () => {
   const [packageTable, setpackageTable] = useState([]);
   const [open, setOpen] = useState(false);
   const [itinerary, setItinerary] = useState({})
+  const navigation = useNavigate()
 
   const handleOpen = () => {
-    setOpen(true);
+    navigation("/booking-form")
   };
 
   const handleClose = () => {
@@ -243,14 +244,14 @@ const Trip = () => {
                             </>)
                           }
                           <td>{`$ ${detail.price
-                            } USD`
+                            } `
                           }</td>
                           <td style={
                             {
                               width: 'auto'
                             }
                           }>{`$ ${detail.singleSupplementPrice
-                            } USD`
+                            } `
                             }</td>
                           <td style={
                             {
