@@ -1,5 +1,5 @@
 .sect {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     justify-content: space-around;
     font-size: 20px;
     gap: 20px;
@@ -46,7 +46,7 @@
 
     .sect {
         display: flex;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
         justify-content: space-around;
         padding: 28px;
         font-size: 20px;

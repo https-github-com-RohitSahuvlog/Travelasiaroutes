@@ -72,7 +72,7 @@ const Testimonial = (props) => {
             key={i}
             size={20}
             color="#E4BD5A"
-            className="mr-2 cursor-pointer"
+            className="cursor-pointer"
           />
         );
       } else if (i === Math.ceil(rating) && !Number.isInteger(rating)) {
@@ -81,7 +81,7 @@ const Testimonial = (props) => {
             key={i}
             size={17}
             color="#E4BD5A"
-            className="mr-1 cursor-pointer"
+            className="cursor-pointer"
           />
         );
       } else {
@@ -90,12 +90,12 @@ const Testimonial = (props) => {
             key={i}
             size={20}
             color="#E4BD5A"
-            className="mr-1 cursor-pointer"
+            className="cursor-pointer"
           />
         );
       }
     }
-    return <div className="flex"> {stars}</div>;
+    return <div className="m-4"> {stars}</div>;
   };
 
   return (
@@ -124,17 +124,11 @@ const Testimonial = (props) => {
                 className={`feedbackText--${i} ${styles["main-quotes-div"]} ${styles["not-visible"]}`}
               >
                 <div className={styles.para}>{el.testimonial}</div>
-                <div className={styles.stars}>
-                  {generateStars(el.rating)}
-                </div>
                 <div className={styles.subText}>{el.author}</div>
-
+                {generateStars(el.rating)}
               </div>
             );
           })}
-          <div
-            className={`${styles["quotes-img"]} ${styles["quotes-img-left"]}`}
-          />
         </div>
         <div ref={refButtonsParentDiv}>
           {testimonialData.map((_, i, arr) => {

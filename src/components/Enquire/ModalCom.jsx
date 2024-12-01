@@ -35,13 +35,13 @@ function ModalCom({ handleClose }) {
 
       <div className="main_container">
         <div className="buttons_container">
-          <button
+          {/* <button
             onClick={() => setComponent("callus")}
             className={
               component === "callus" ? "button_active" : "button_inactive"
             }>
             CALL US
-          </button>
+          </button> */}
           <button
             onClick={() => setComponent("enquire")}
             className={

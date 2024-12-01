@@ -5,7 +5,7 @@ import styles from "./india-kumbh-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
 import { Images } from "./india-kumbh-image-data";
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { IndiaKumbhTripAccData } from "./india-kumbh-data";
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
@@ -24,9 +24,10 @@ const IndiaKumbhTrip = () => {
   const location = useLocation();
   const [packageTable, setpackageTable] = useState([]);
   const [open, setOpen] = useState(false);
+  const navigation = useNavigate();
 
   const handleOpen = () => {
-    setOpen(true);
+    navigation("/booking-form")
   };
 
   const handleClose = () => {
@@ -246,14 +247,14 @@ const IndiaKumbhTrip = () => {
                             </>)
                           }
                           <td>{`$ ${detail.price
-                            } USD`
+                            } `
                           }</td>
                           <td style={
                             {
                               width: 'auto'
                             }
                           }>{`$ ${detail.singleSupplementPrice
-                            } USD`
+                            } `
                             }</td>
                           <td style={
                             {
