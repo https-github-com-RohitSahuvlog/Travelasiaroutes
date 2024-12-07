@@ -5,10 +5,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  object-position: center;
-  object-fit: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-top: 130px;
 }
 
@@ -18,6 +14,7 @@
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  object-position: center;
   outline: none;
 }
 
@@ -29,6 +26,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .Title {
@@ -56,7 +54,7 @@
 }
 
 .GoButton {
-  margin: 2%;
+  margin: 1%;
   cursor: pointer;
 }
 
@@ -66,7 +64,6 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  font-family: Roboto;
   font-weight: 700;
   outline: none;
   -webkit-user-select: none;
@@ -79,7 +76,7 @@
   -o-transition: all .3s ease;
   transition: all .3s ease;
   padding: 0.563rem 1.125rem;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   border-radius: 0;
   line-height: 1.4;
   color: #fff;
@@ -94,7 +91,6 @@
 }
 
 .Capp {
-  font-family: sans-serif;
   text-align: center;
 }
 
@@ -103,22 +99,8 @@
   display: flex;
 }
 
-/* .section{
-    height: auto;
-    background-color: black;
-  } */
 #section1 {
   background-color: white;
-  /* height: 600px; */
-  /* background-color: pink; */
-  /* margin-bottom: 5%; */
-}
-
-.MainHeading {
-  /* height: 200px; */
-
-
-  /* border: 1px solid black; */
 }
 
 .SettingHeading {
@@ -138,7 +120,6 @@
 
 .SetTextWith {
   font-size: 1.2rem;
-  font-family: Crimson Text, serif;
   color: #333;
   margin-bottom: 5vh;
 }
@@ -147,7 +128,6 @@
   height: auto;
   padding-bottom: 1px;
   width: 100%;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
 
@@ -156,8 +136,6 @@
 .SetFlexProperty div {
   height: auto;
   width: 100%;
-  /* margin: 10px 10px; */
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
   text-align: justify;
@@ -168,9 +146,7 @@
   font-weight: 700;
   padding-left: 1.6rem;
   color: #666;
-  margin-bottom: 1rem;
   font-size: 1.2rem;
-  font-family: Crimson Text, serif;
 }
 
 .SetDataLeft>ul {
@@ -180,11 +156,12 @@
 .SetDataLeft>ul>li {
   margin: 20px;
   text-align: left;
+  font-size: 1.2rem;
 }
 
 .SetDataright {
   padding-left: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2.2rem;
   color: #333;
 }
@@ -193,10 +170,7 @@
   .SetFlexProperty {
     height: auto;
     padding-bottom: 1px;
-    /* background-color: black; */
-
     width: 100%;
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
 
@@ -205,8 +179,6 @@
   .SetFlexProperty div {
     height: auto;
     width: 100%;
-    margin: 10px 0px;
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     text-align: justify;
@@ -217,8 +189,6 @@
 .SettingHeadingRatio {
   padding: 2%;
   height: auto;
-
-  /* border: 1px solid black; */
 }
 
 .SetTextRatio {
@@ -257,7 +227,6 @@
   outline: none;
   border: none;
   box-shadow: none;
-  /* height: 50vh; */
   z-index: 0;
 
 }
@@ -267,14 +236,12 @@
   height: auto;
   padding: 2%;
   font-size: 1.2rem;
-  /* border: 1px solid black; */
 }
 
 .PutData {
   text-align: left;
   height: auto;
   width: 98%;
-  /* border:1px solid black; */
 }
 
 .DataHeading {
@@ -290,18 +257,14 @@
 
 .HeadingContent {
   line-height: 1.6;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #666;
   font-weight: 600;
   margin-left: 30px;
   margin: 20px;
 }
 
-
 @media only screen and (max-width: 434px) and (min-width: 300px) {
-  /* #section1 {
-    height: 2000px;
-  } */
 
   .Title {
     font-size: 1.5rem;
@@ -318,10 +281,8 @@
   .SetFlexProperty {
     height: auto;
     padding-bottom: 1px;
-    /* background-color: black; */
 
     width: 100%;
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
 
@@ -329,9 +290,6 @@
 
   .SetFlexProperty div {
     height: auto;
-    /* width: 80%; */
-    /* margin: 20px 35px; */
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     text-align: justify;
@@ -350,40 +308,29 @@
 .SectionTwo {
   height: auto;
   width: 100%;
-  /* border: 1px solid black; */
-
-  /* padding: 1%; */
 }
 
 .SectionTwo>img {
   height: 200px;
   margin: 1%;
   width: 90%;
-  /* border: 1px solid black; */
-
 }
 
 
 .SecondFlex {
-  /* height: 200px; */
   width: 100%;
-  /* border: 1px solid black; */
 }
 
 .SetSecondFlex {
-  /* height: 150px; */
   margin: 0% 5%;
   width: 90%;
-  /* border: 1px solid black; */
   display: flex;
   gap: 2px;
 }
 
 .SetSecondFlex>img {
   height: 160px;
-  /* margin: 0% 5%; */
   width: 20%;
-  /* border: 1px solid black; */
   display: flex;
 }
 
@@ -391,12 +338,6 @@
   width: 150px;
   height: 100px;
 }
-
-/* @media only screen and (max-width: 381px) {
-   .P1{
-    display: none;
-   }
-} */
 
 #section3 {
   background-color: white;
@@ -407,7 +348,6 @@
   height: auto;
   padding-bottom: 1%;
   width: 100%;
-  /* border:1px solid black; */
   display: flex;
   flex-direction: row;
 
@@ -415,40 +355,32 @@
 
 .SectionThreeMain>div {
   height: auto;
-  /* width: 100%; */
-  /* border:1px solid black; */
   display: flex;
   flex-direction: row;
-  margin: 2%;
+  margin: 1%;
   display: flex;
   flex-direction: column;
 
 }
 
 .FirstDiv {
-  width: 40%;
-
-
+  width: fit-content;
 }
 
 
 .SecondDiv {
-  width: 53%;
+  width: fit-content;
   text-align: left;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
   color: #333;
   border-left: 5px solid #aaaaaa5e;
   padding: 0px 20px;
   text-align: justify;
+  font-size: 1.2rem;
 
 }
 
 .tripfeedbackquote {
-  font-size: 1.3rem;
-  /* font-style: italic; */
-  font-family: Crimson Text, serif;
-  /* color: #aaa; */
+  font-size: 1.2rem;
   font-weight: 100;
   margin: 10px 0px;
   text-align: justify;
@@ -463,7 +395,6 @@
 .ParaThird {
   font-size: 1.8rem;
   font-style: italic;
-  font-family: Crimson Text, serif;
   color: #aaa;
   font-weight: 100;
 }
@@ -475,7 +406,6 @@
     height: auto;
     padding-bottom: 1%;
     width: 100%;
-    /* border:1px solid black; */
     display: flex;
     flex-direction: column;
 
@@ -485,20 +415,21 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    margin: 2%;
+    margin: 1%;
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
   }
 
   .FirstDiv {
-    width: 95%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
   }
 
   .SecondDiv {
-    width: 95%;
+    width: fit-content;
+    font-size: 1.2rem;
   }
 
 }
@@ -508,20 +439,16 @@
 }
 
 .FourFlex {
-  /* border: 1px solid black; */
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
   padding-bottom: 3%;
-  /* padding: 2.5% 2.5%; */
-
 }
 
 
 .FourFlex div {
   text-align: left;
-  /* border: 1px solid black; */
   height: auto;
   width: 45%;
   margin: 2.5%;
@@ -532,14 +459,12 @@
   padding-left: 23px;
   font-size: 2rem;
   font-weight: 600;
-  font-family: Crimson Text, serif;
   color: #333;
 }
 
 .FourSubHeading {
   font-size: 2rem;
   font-weight: 600;
-  font-family: Crimson Text, serif;
   color: #333;
 }
 
@@ -558,14 +483,11 @@
 
 
 .LastFourContent {
-  /* border: 1px solid black; */
-  /* height: 400px; */
   width: 100%;
 
 }
 
 .LastFourContent>div {
-  /* border: 1px solid black; */
   height: auto;
   padding-bottom: 1%;
   width: 90%;
@@ -585,8 +507,7 @@
 .ContentSubHeadingPart {
   color: #333;
   margin: 0;
-  font-size: 1.4rem;
-  font-family: Crimson Text, serif;
+  font-size: 1.2rem;
   font-weight: 600;
   text-align: justify;
 }
@@ -594,18 +515,14 @@
 @media only screen and (max-width: 700px) and (min-width: 360px) {
 
   .FourFlex {
-    /* border: 1px solid black; */
     height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* padding: 2.5% 2.5%; */
-
     padding-bottom: 3%;
   }
 
   .FourFlex div {
-    /* border: 1px solid black; */
     height: auto;
     width: 90%;
     margin: 5%;
@@ -643,11 +560,6 @@
 
 @media (max-width: 650px) {
 
-  /* .table-data table,
-  .table-data thead,
-  .table-data tbody,
-  .table-data th,
-  .table-data td, */
   .table_bordered {
     display: flex;
   }
@@ -692,7 +604,7 @@
     text-align: left;
     border: 2px solid #222;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -753,7 +665,6 @@
   color: white;
   border-radius: 50%;
   margin-right: 5px;
-  /* Adjust the spacing between the icon and text */
 }
 
 .crossIcon {
