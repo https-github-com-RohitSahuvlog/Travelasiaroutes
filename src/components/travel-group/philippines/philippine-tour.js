@@ -127,7 +127,7 @@ const PhilippinesTrip = () => {
           <div>
             <ScrollHighlightNabbar scrollToSection={scrollToSection} navHeader={navHeader} />
           </div>
-          <div className='w-[100vw]' style={{ width: "100vw" }}>
+          <div style={{ width: "100%" }}>
             <div className={styles.section} ref={section1Ref} id={styles.section1} >
               <div className={styles.SettingHeadingRatio}>
                 <div className={styles.SetText}>TRIP OVERVIEW</div>
