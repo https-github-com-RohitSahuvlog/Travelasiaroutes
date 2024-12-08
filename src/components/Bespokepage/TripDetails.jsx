@@ -22,7 +22,6 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import dayjs from 'dayjs';
 
 const destinations = [
-  // Countries in Asia
   { value: "azerbaijan", label: "Azerbaijan", link: "/azerbaijan" },
   { value: "bangladesh", label: "Bangladesh", link: "/bangladesh" },
   { value: "bhutan", label: "Bhutan", link: "/bhutan" },
@@ -53,7 +52,6 @@ const destinations = [
   { value: "uzbekistan", label: "Uzbekistan", link: "/uzbekistan" },
   { value: "vietnam", label: "Vietnam", link: "/vietnam" },
 
-  // Countries in the Middle East
   { value: "egypt", label: "Egypt", link: "/egypt" },
   { value: "iran", label: "Iran", link: "/iran" },
   { value: "israel", label: "Israel", link: "/israel" },
@@ -66,7 +64,6 @@ const destinations = [
   { value: "uae", label: "United Arab Emirates", link: "/uae" },
   { value: "yemen", label: "Yemen", link: "/yemen" },
 
-  // Countries in Africa
   { value: "algeria", label: "Algeria", link: "/algeria" },
   { value: "botswana", label: "Botswana", link: "/botswana" },
   { value: "cameroon", label: "Cameroon", link: "/cameroon" },
@@ -90,7 +87,7 @@ const destinations = [
   { value: "tanzania", label: "Tanzania", link: "/tanzania" },
   { value: "tunisia", label: "Tunisia", link: "/tunisia" },
   { value: "uganda", label: "Uganda", link: "/uganda" }
-];
+].sort((a, b) => a.value.localeCompare(b.value));
 
 
 
