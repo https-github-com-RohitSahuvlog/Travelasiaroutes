@@ -353,12 +353,12 @@
 }
 
 .FirstDiv {
-  width: fit-content;
+  width: 100%;
 }
 
 
 .SecondDiv {
-  width: fit-content;
+  width: 100%;
   text-align: left;
   color: #333;
   border-left: 5px solid #aaaaaa5e;
@@ -372,6 +372,7 @@
   font-weight: 100;
   margin: 10px 0px;
   text-align: justify;
+  width: 98%
 }
 
 .ThirdPic {
@@ -406,13 +407,13 @@
   }
 
   .FirstDiv {
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
 
   .SecondDiv {
-    width: fit-content;
+    width: 100%;
     font-size: 1.2rem;
   }
 
