@@ -1,24 +1,23 @@
 import styled, { css } from "styled-components";
-import { useContext, useEffect, useState } from "react";
-import axios from "axios";
-import { toast } from "react-toastify";
+import { useState } from "react";
+import { toast } from 'react-toastify';
 import { useSelector, useDispatch } from "react-redux";
-import { addToCart, removeFromCart } from "../../../redux/action/cartActions";
+import { addToCart } from "../../../redux/action/cartActions";
 import Axios from "../../../api";
 
 const CartPage = () => {
   const cartProducts = useSelector((item) => item.cart.cartItems);
   const dispatch = useDispatch();
-  const [products, setProducts] = useState([]);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [city, setCity] = useState('');
+  const [phone, setPhone] = useState('');
   const [postalCode, setPostalCode] = useState('');
   const [streetAddress, setStreetAddress] = useState('');
   const [country, setCountry] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  console.log("cartprocessing", cartProducts);
 
   const moreOfThisProduct = (id) => {
     const product = cartProducts.find(p => p._id === id);
@@ -30,11 +29,16 @@ const CartPage = () => {
   const lessOfThisProduct = (id) => {
     const product = cartProducts.find(p => p._id === id);
     if (product && product.qty > 1) {
-      dispatch(removeFromCart(id));
+      dispatch(addToCart(id, product.qty - 1))
     }
   };
 
   const goToPayment = async () => {
+    setIsLoaded(true);
+    if (!name || !email || !city || !postalCode || !streetAddress || !country) {
+      toast.error('Please fill all the fields.', { position: "top-right" });
+      return;
+    }
     try {
       const totalPrice = cartProducts.reduce((total, product) => total + product.price * product.qty, 0);
 
@@ -56,14 +60,14 @@ const CartPage = () => {
       if (response.status === 201) {
         setIsSuccess(true);
       } else {
-        toast.error('Failed to process payment. Please try again.', { position: toast.POSITION.TOP_RIGHT });
+        toast.error('Failed to process payment. Please try again.', { position: "top-right" });
       }
     } catch (error) {
-      // General error handling
       console.error('Error during payment process:', error.response ? error.response.data.message : error.message);
 
-      // Optional: Display error message to user
-      // showToast('An error occurred during the payment process. Please try again.', 'error');
+      toast.error('Failed to process payment. Please try again.', { position: "top-right" });
+    } finally {
+      setIsLoaded(false);
     }
   };
 
@@ -97,7 +101,7 @@ const CartPage = () => {
               <thead>
                 <tr>
                   <th>Product</th>
-                  <th>Quantity</th>
+                  <th>Size</th>
                   <th>Price</th>
                 </tr>
               </thead>
@@ -133,12 +137,13 @@ const CartPage = () => {
         </Box>
         {!!cartProducts?.length && (
           <Box>
-            <h3>Order information</h3>
+            <h3>Order Confirmation</h3>
             <Input
               type="text"
               placeholder="Name"
               value={name}
               name="name"
+              required
               onChange={ev => setName(ev.target.value)}
             />
             <Input
@@ -146,7 +151,16 @@ const CartPage = () => {
               placeholder="Email"
               value={email}
               name="email"
+              required
               onChange={ev => setEmail(ev.target.value)}
+            />
+            <Input
+              type="number"
+              placeholder="phone"
+              value={phone}
+              name="phone"
+              required
+              onChange={ev => setPhone(ev.target.value)}
             />
             <CityHolder>
               <Input
@@ -154,6 +168,7 @@ const CartPage = () => {
                 placeholder="City"
                 value={city}
                 name="city"
+                required
                 onChange={ev => setCity(ev.target.value)}
               />
               <Input
@@ -161,6 +176,7 @@ const CartPage = () => {
                 placeholder="Postal Code"
                 value={postalCode}
                 name="postalCode"
+                required
                 onChange={ev => setPostalCode(ev.target.value)}
               />
             </CityHolder>
@@ -168,6 +184,7 @@ const CartPage = () => {
               type="text"
               placeholder="Street Address"
               value={streetAddress}
+              required
               name="streetAddress"
               onChange={ev => setStreetAddress(ev.target.value)}
             />
@@ -176,10 +193,11 @@ const CartPage = () => {
               placeholder="Country"
               value={country}
               name="country"
+              required
               onChange={ev => setCountry(ev.target.value)}
             />
-            <Button black block onClick={goToPayment}>
-              Continue to payment
+            <Button black block onClick={goToPayment} disabled={isLoaded}>
+              Send Order
             </Button>
           </Box>
         )}
@@ -197,7 +215,7 @@ margin-left: 1rem;
 
 export const ButtonStyle = css`
   border:0;
-  padding: 5px 15px;
+  padding: 0.5rem;
   border-radius: 5px;
   cursor: pointer;
   display: inline-flex;
@@ -210,7 +228,9 @@ export const ButtonStyle = css`
     margin-right: 5px;
   }
   ${props => props.block && css`
-    display: block;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
     width: 100%;
   `}
   ${props => props.white && !props.outline && css`
@@ -238,6 +258,11 @@ export const ButtonStyle = css`
       height: 20px;
     }
   `}
+  ${props => props.disabled && css`
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+  `}
 `;
 
 const Button = styled.button`
@@ -246,11 +271,12 @@ const Button = styled.button`
 
 const Input = styled.input`
   width: 100%;
-  padding: 5px;
+  padding: 0.5rem;
   margin-bottom: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing:border-box;
+  margin-top: 0.5rem;
 `;
 
 const ColumnsWrapper = styled.div`
@@ -309,7 +335,6 @@ const ProductImageBox = styled.div`
 
 const QuantityLabel = styled.span`
   padding: 0 15px;
-  display: block;
   @media screen and (min-width: 768px) {
     display: inline-block;
     padding: 0 10px;

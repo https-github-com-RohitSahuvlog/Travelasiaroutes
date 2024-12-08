@@ -14,7 +14,7 @@ const ProductDetails = () => {
     const [qty, setQty] = useState(1);
     const [selectedSize, setSize] = useState('S');
     const [product, setProduct] = useState([])
-    const { image, name, details, price } = product;
+    const { image, name, details, price, slug, stock, productCode } = product;
     const navigation = useNavigate()
 
     useEffect(() => {
@@ -43,18 +43,9 @@ const ProductDetails = () => {
     };
 
     const addToCartHandler = () => {
-        dispatch(addToCart(id, qty));
-        toast.success('Added to cart', { position: "top-right" });
-    };
-
-    const decQty = () => {
-        if (qty > 1) {
-            setQty(qty - 1);
-        }
-    };
-
-    const incQty = () => {
-        setQty(qty + 1);
+        // dispatch(addToCart(id, qty));
+        // toast.success('Added to cart', { position: "top-right" });
+        navigation("/booking-form");
     };
 
     return (
@@ -77,39 +68,31 @@ const ProductDetails = () => {
                 {
                     product && (
                         <div className="product__details">
+                            <h3 className="product__code">{productCode}</h3>
                             <h6 className="product__title">{name}</h6>
-                            <p className="font-weight-normal"> ${price}</p>
+                            <h4 className="product__price">Price : ${price}</h4>
+
                             <p className='product__size_div'>
-                                <span className="text-gray">Size:</span>
-                                <span className={`product__size ${selectedSize === 'S' ? 'active' : ''}`} onClick={() => setSize('S')}>S</span>
-                                <span className={`product__size ${selectedSize === 'M' ? 'active' : ''}`} onClick={() => setSize('M')}>M</span>
-                                <span className={`product__size ${selectedSize === 'L' ? 'active' : ''}`} onClick={() => setSize('L')}>L</span>
+                                <h3 className="text-gray">Size:</h3>
+                                {
+                                    slug?.current && <span className={`product__size ${selectedSize === 'S' ? 'active' : ''}`} >{slug?.current}</span>
+                                }
                             </p>
-                            <div className="product__reviews">
-                                <AiFillStar size={25} color="#363636" />
-                                <AiFillStar size={25} color="#363636" />
-                                <AiFillStar size={25} color="#363636" />
-                                <AiFillStar size={25} color="#363636" />
-                                <AiOutlineStar size={25} color="#363636" />
-                                <p>({product.reviews})</p>
+                            <div className="product_details">
+                                <span lassName="product_details_title">The design Story:</span> {details}
                             </div>
-                            <p className="product_details">{details}</p>
-                            <div className="flex product__qty">
-                                <p className="minus" onClick={decQty}>
-                                    <AiOutlineMinus size={15} color="#363636" />
-                                </p>
-                                <p className="num">{qty}</p>
-                                <p className="plus" onClick={incQty}>
-                                    <AiOutlinePlus size={15} color="#363636" />
-                                </p>
-                            </div>
+
+
                             <div className='btn-container'>
 
-                                <button className="border-button small-margin" onClick={handleBuyNow}>BUY NOW</button>
+                                <button className="border-button small-margin" onClick={handleBuyNow}>Own this Masterpiece</button>
 
-                                <button className="border-button small-margin" onClick={addToCartHandler}>ADD CART</button>
+                                <button className="border-button small-margin" onClick={addToCartHandler}>
+                                    Contact us
+                                </button>
 
                             </div>
+                            {stock === 0 ? <p className="outofstock">Out of Stock</p> : <p className="product__stock">In Stock</p>}
                         </div>
                     )
                 }
