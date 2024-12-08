@@ -25,7 +25,7 @@
 }
 
 .call-and-home-nav-item {
-  width: 100%;
+  width: fit-content;
   display: -webkit-inline-box;
   align-items: center;
   gap: 0.5rem;
