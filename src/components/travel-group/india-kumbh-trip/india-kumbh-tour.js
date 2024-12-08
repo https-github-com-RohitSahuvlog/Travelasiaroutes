@@ -283,7 +283,7 @@ const IndiaKumbhTrip = () => {
                             } `
                           }</td>
                           <td>
-                            <Link to="/bespoke">
+                            <Link to="/booking-form">
                               <button className={styles.btn_booknow
                               }>Book Now</button>
                             </Link>

@@ -13,7 +13,6 @@ const Product = () => {
     const [rugList, setRugList] = useState([]);
     const carousel = useRef();
     const navigate = useNavigate()
-    const dispatch = useDispatch();
 
     useEffect(() => {
         setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
@@ -32,11 +31,6 @@ const Product = () => {
     useEffect(() => {
         fetchData();
     }, []);
-
-    const addToCartHandler = (id) => {
-        dispatch(addToCart(id, 1));
-        toast.success('Added to cart', { position: "top-right" });
-    };
 
     return (
         <div className="product-carousel">
@@ -65,12 +59,14 @@ const Product = () => {
                             <div className="product-info">
                                 <p className="product-name">{product?.name}</p>
                                 <p className="product-price">${product?.price}</p>
-                                <div className='btncontainer'>
+                                {product?.stock === 0 ? <p className="outofstock">Out of Stock</p> : <div className='btncontainer'>
                                     <button className="small-button" onClick={() => {
                                         navigate(`/product/${product?._id}`)
-                                    }}>Buy Now</button>
-                                    <button onClick={() => addToCartHandler(product?._id)} className="small-button">Add to Cart</button>
-                                </div>
+                                    }}>See More</button>
+
+                                </div>}
+
+
                             </div>
                         </motion.div>
                     ))}
