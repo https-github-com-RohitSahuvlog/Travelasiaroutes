@@ -92,6 +92,8 @@
   flex-direction: column;
   gap: 1rem;
   padding: 5px;
+  text-align: justify;
+
 }
 
 .about-us-section-para-portion-right {
@@ -160,26 +162,15 @@
 
 
   .about-us-section-para-portion {
-    display: flex;
-    gap: 3rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    font-family: Aleo, Georgia, serif;
-
-    /* word-break: break-all; */
-    /* align-items: center; */
+    width: 100%;
+    text-align: center;
+    text-align: justify;
   }
 
   .about-us-section-para-portion-left {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 5px;
+    width: 100%;
+    text-align: center;
+    text-align: justify;
   }
 
-  .about-us-section-para-portion-right {
-    display: flex;
-    flex-direction: column;
-  }
 }

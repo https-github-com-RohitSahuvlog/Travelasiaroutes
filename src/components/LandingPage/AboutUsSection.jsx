@@ -7,35 +7,26 @@ export default function AboutUsSection() {
   return (
     <div className="about-us-section">
       <div className="about-us-sectionright">
-        <h2 style={{ borderBottom: "3px solid   #e4bd5a" }}>MidAsia Routes Journey</h2>
+        <h2 style={{ borderBottom: "3px solid  #e4bd5a", textAlign: "center", justifyContent: "center", fontSize: "2rem", marginBottom: "1rem" }}>Whispers of the Caravan: Tales of Lost and Found</h2>
         <div className="about-us-section-para-portion">
           <div className="about-us-section-para-portion-left">
-            <p>
-              Midasia Routes, born from the adventurous spirit of Sumit Pruthi,
-              a true traveler with a Middle Eastern soul.
-            </p>
-            <p>
-              Since 2006, we've crafted heart-pounding journeys that transcend
-              tourism, weaving dreams into expeditions.
-            </p>
+            At Midasia Routes, we invite you to step into the footsteps of wanderers past—those who dared to tread the unknown, guided only by whispers of the Silk Road winds. Our journeys are not mere itineraries but poetic odysseys, unearthing stories of fear, freedom, and transformation.
           </div>
           <div className="about-us-section-para-portion-right">
-            <p>
-              Unveil hidden wonders: yacht-explored archipelagos, breathtaking
-              chopper vistas, and secluded wildlife realms. Embrace palatial
-              sanctuaries on secret shores, connect with ancient communities,
-              and discover an unseen part of the world led by those who know its
-              essence. Your journey, your pace, your connection—etched in 15
-              years of expertise. Unveil your travel DNA with Midasia Routes.
+            Each expedition is a tapestry woven with ancient rituals, untold secrets, and the vibrant pulse of cultures untouched by time. Here, your path is not just a trail on a map—it’s a bridge to the extraordinary, where the echoes of the past meet the promises of tomorrow.
+            <br />
+            <p style={{ width: "100%", textAlign: "center" }}>
+              Are you ready to write your own tale on the ever-unfolding road?
             </p>
+
           </div>
         </div>
 
-        <button className="btn-a btn-a-outline" style={{ zIndex: 5 }}>
+        {/* <button className="btn-a btn-a-outline" style={{ zIndex: 5 }}>
           <Link to="/aboutus" >About Us</Link>
-        </button>
+        </button> */}
       </div>
-      <div
+      {/* <div
         className={`about-us-sectionleft ${isImageHovered ? "rotate" : ""}`}
         onMouseEnter={() => setIsImageHovered(true)}
         onMouseLeave={() => setIsImageHovered(false)}
@@ -46,7 +37,7 @@ export default function AboutUsSection() {
           }
           alt="Sumit Travel"
         />
-      </div>
-    </div>
+      </div> */}
+    </div >
   );
 }
