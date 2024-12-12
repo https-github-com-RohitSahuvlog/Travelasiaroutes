@@ -284,6 +284,10 @@ export default function Navbar() {
                 <Link to="/">By Destination</Link>
               </div>
 
+              <li className="side_nav_link"  >
+                <Link to="/product/rugs">Rugs</Link>
+              </li>
+
               <div className="side_nav_link">
                 <Link to="/aboutus">Our Story</Link>
               </div>
