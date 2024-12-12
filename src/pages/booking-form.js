@@ -2,12 +2,15 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { addBookingForm } from '../redux/action/enquiry';
 import img from "../../src/images/background.jpg"
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 const Box = styled.div`
   width: 100%;
   background-image: url(${img});
    background-size: cover;
   background-position: center;
+  height: auto;
 
 `;
 
@@ -80,6 +83,7 @@ const Button = styled.button`
 `;
 
 const TravelForm = () => {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         destination: '',
         travelPlans: '',
@@ -101,9 +105,13 @@ const TravelForm = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        addBookingForm(formData);
+        let res = await addBookingForm(formData);
+        if (res) {
+            toast.success('Form submitted successfully');
+            navigate("/")
+        }
     };
 
     useEffect(() => {
