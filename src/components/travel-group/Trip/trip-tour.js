@@ -226,7 +226,7 @@ const Trip = () => {
                         <th>Action</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody className={styles.table_body}>
                       {packageTable && packageTable.map((detail) => (
                         <tr key={detail._id
                         } className={styles.pricingRow
@@ -243,9 +243,10 @@ const Trip = () => {
                               <td>{detail?.flexiabledate || "Flexiable date"}</td>
                             </>)
                           }
-                          <td>{`$ ${detail.price
-                            } `
-                          }</td>
+                          <td>
+                            <div className={styles.table_price}>{`$ ${detail.price
+                              } `
+                            }</div></td>
                           <td style={
                             {
                               width: 'auto'
@@ -357,7 +358,7 @@ const Trip = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

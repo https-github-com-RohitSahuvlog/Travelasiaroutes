@@ -49,13 +49,6 @@ let initialData = [
     description: "Explore India's sacred Kumbh Mela: engage with sadhus, boat rides, and spiritual wonders await.",
   },
   {
-    link: "/travel-groups/babylon-baghdad",
-    thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1732240624/WhatsApp_Image_2024-11-22_at_01.23.32_yqrymj.jpg",
-    region: "MiddleEast",
-    title: "The Journey to Cradle of Civilisation (Babylon to Baghdad)- ",
-    description: "Embark on a captivating journey through time, from the ancient wonders of Babylon to the modern marvels of Baghdad",
-  },
-  {
     link: "/travel-groups/landlock-laos-combodia",
     thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712224/bdusztm1tpe4tfnrtaos.jpg",
     region: "Asia–Pacific",
