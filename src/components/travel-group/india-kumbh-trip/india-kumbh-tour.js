@@ -246,9 +246,10 @@ const IndiaKumbhTrip = () => {
                               <td>{detail.flexiabledate}</td>
                             </>)
                           }
-                          <td>{`$ ${detail.price
-                            } `
-                          }</td>
+                          <td>
+                            <div className={styles.table_price}>{`$ ${detail.price
+                              } `
+                            }</div></td>
                           <td style={
                             {
                               width: 'auto'
