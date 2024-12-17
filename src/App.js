@@ -73,8 +73,6 @@ function App() {
         <Route path="/travel-groups/uzbekistan" element={<UzbekistanTrip />} />
         <Route path="/travel-groups/landlock-laos-combodia" element={< LaosCombodiaTrip />} />
         <Route path="/travel-groups/india-kumbh" element={< IndiaKumbhTrip />} />
-        <Route path="/travel-groups/babylon-baghdad"
-          element={< BabyLonToBhagdadTrip />} />
         <Route path="/travel-groups/egypt-and-nile"
           element={< EgyptAndNileTrip />} />
 
@@ -82,7 +80,7 @@ function App() {
           element={< BabyLonToBhagdadTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
         <Route path="/travel-groups/:itineraryname" element={<Trip />} />
-        <Route path="/product/rugs" element={<ClotheslandingPage />} />
+        {/* <Route path="/product/rugs" element={<ClotheslandingPage />} /> */}
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/product/checkout" element={<CartPage />} />
         <Route path="/pageerror" element={<PageError />} />
