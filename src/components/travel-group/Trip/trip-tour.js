@@ -349,8 +349,13 @@ const Trip = () => {
               <MyGallery Images={itinerary?.images || []} />
               <div className={styles.LastFourContent}>
                 <div>
-                  <h4 className={styles.ContentSubHeading}>A JOURNEY BUILT JUST FOR YOU</h4>
-                  <p className={styles.ContentSubHeadingPart}>Take customization to the next level on a journey fully tailored to you. MidAsia's destination specialists will gladly tailor this existing itinerary—or build one completely from scratch—to suit your style, interests, and time frame. Contact us to see what's possible.</p>
+                  <h4 className={styles.ContentSubHeading}>{
+                    itinerary.customizationDescription?.heading[0] || "A JOURNEY BUILT JUST FOR YOU"
+
+                  }</h4>
+                  <p className={styles.ContentSubHeadingPart}>{itinerary.customizationDescription?.description[0] ||
+                    "Take customization to the next level on a journey fully tailored to you. MidAsia's destination specialists will gladly tailor this existing itinerary—or build one completely from scratch—to suit your style, interests, and time frame. Contact us to see what's possible."
+                  }</p>
                 </div>
               </div>
             </div>
