@@ -1,47 +1,24 @@
-import React, { useState, useEffect, useRef } from "react";
-import Slider from "../Carousal/slider.js"
-// import tanjortemple from "../../images/tanjoretemple.jpg";
-const carousalData = [
-
-  {
-    image:
-      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721581842/tiftwxyood3l9revbhwa.jpg",
-    heading: "Unlocking Your Travel DNA",
-    para: "Tailoring Experiences Just for You.",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288332/z9g7rpj8ddmmfuyurfwn.jpg",
-    heading: "Once-in-a-Lifetime Memory",
-    para: "A Symphony of Culture, Luxury and Discovery.",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288332/a1aleqataokwjnzp2ua2.jpg",
-    heading: "Unleash Wanderlust",
-    para: "Your Path to Untouched Destinations",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288332/zn8fne4kchxjkmghai1l.jpg",
-    heading: "Guiding Beyond Maps",
-    para: "Authentic Encounters with Exceptional Local Leaders",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288331/nvmspnna9rszpq4sq0ex.jpg",
-    heading: "Native-Led Voyages",
-    para: "Exclusive Itineraries Curated by Destination Natives",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1693288334/hg3vbjtsbqqwxbra8cx6.jpg",
-    heading: "Intimate Boutique Escapes",
-    para: "Pioneering Excellence Across Middle East and Asia",
-  },
-];
+import React, { useState, useEffect } from "react";
+import Slider from "../Carousal/slider.js";
+import { toast } from "react-toastify";
+import Axios from "../../api";
 
 const LandingCarousal = () => {
+  const [carousalData, setCarousalData] = useState([]);
+
+  const fetchCarousals = async () => {
+    try {
+      const response = await Axios.get('/api/carousels');
+      setCarousalData(response.data);
+    } catch (error) {
+      console.log(error);
+      toast.error('Error fetching carousals');
+    }
+  };
+
+  useEffect(() => {
+    fetchCarousals();
+  }, []);
 
   return (
     <div className="landinglanding-carousal">
