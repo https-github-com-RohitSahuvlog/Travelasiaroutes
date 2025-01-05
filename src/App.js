@@ -9,17 +9,11 @@ import About from "./components/AboutUs/About";
 import Footer from "./components/LandingPage/Footer";
 import TravelGroups from "./components/travel-group/travel-group";
 import ActivityLevels from "./components/activityLevel/activityLevel";
-import LaosTrip from "./components/travel-group/laos-trip/laos-tour";
-import PhilippinesTrip from "./components/travel-group/philippines/philippine-tour";
-import UzbekistanTrip from "./components/travel-group/uzbekistan/uzbekistan-tour";
 import SeeItiniery from "./components/Bydestination/India/see-itiniery";
 import OmanTrip from "./components/travel-group/oman-trip/oman-tour";
-import JordanTrip from "./components/travel-group/Jordan-trip/Jordan-tour";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import LaosCombodiaTrip from "./components/travel-group/landlock-laos-combodia/landlock-laos-combodia-tour";
 import IndiaKumbhTrip from "./components/travel-group/india-kumbh-trip/india-kumbh-tour";
-import BabyLonToBhagdadTrip from "./components/travel-group/babylontobhagdad-trip/babylontobhagdad-tour";
-import EgyptAndNileTrip from "./components/travel-group/egypt-and-nile-trip/egypt-and-nile-tour";
 import PrivacyPolicy from "./pages/privacy_policy";
 import TermsAndConditions from "./pages/Booking-terms-conditions";
 import TravelForm from "./pages/booking-form";
@@ -66,21 +60,12 @@ function App() {
         <Route path="/Itineraries" element={<Itineraries />} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/travel-groups" element={<TravelGroups />} />
-        <Route path="/travel-groups/laos" element={<LaosTrip />} />
-        <Route path="/travel-groups/philippines" element={<PhilippinesTrip />} />
         <Route path="/travel-groups/oman" element={<OmanTrip />} />
-        <Route path="/travel-groups/jordan" element={<JordanTrip />} />
-        <Route path="/travel-groups/uzbekistan" element={<UzbekistanTrip />} />
         <Route path="/travel-groups/landlock-laos-combodia" element={< LaosCombodiaTrip />} />
         <Route path="/travel-groups/india-kumbh" element={< IndiaKumbhTrip />} />
-        <Route path="/travel-groups/egypt-and-nile"
-          element={< EgyptAndNileTrip />} />
-
-        <Route path="/travel-groups/egypt-and-nile"
-          element={< BabyLonToBhagdadTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
         <Route path="/travel-groups/:itineraryname" element={<Trip />} />
-        {/* <Route path="/product/rugs" element={<ClotheslandingPage />} /> */}
+        <Route path="/product/rugs" element={<ClotheslandingPage />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/product/checkout" element={<CartPage />} />
         <Route path="/pageerror" element={<PageError />} />
