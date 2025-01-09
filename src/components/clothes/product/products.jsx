@@ -34,12 +34,12 @@ const Product = () => {
 
     return (
         <div className="product-carousel">
-            <div className="container">
+            {/* <div className="container">
                 <div className="content">
                     <h2 className="title">Customise or Create your Own Rug</h2>
                     <h3 className="subtitle">Your Ideas. Our Craftsmanship. Endless Possibilities.</h3>
                 </div>
-            </div>
+            </div> */}
             <motion.div
                 ref={carousel}
                 className="carousel"
