@@ -98,18 +98,7 @@ const ProductDetails = () => {
                 }
 
             </div>
-            {/* <div className="recommended standard-margin-top">
-                <h6 className="secondary-font small-margin">You may also like</h6>
-                <div className="product-list">
-                    {products.map((prod) => (
-                        <div key={prod.id} className="product-card">
-                            <img src={prod.image[0]} alt={prod.name} />
-                            <h3>{prod.name}</h3>
-                            <p>${prod.price}</p>
-                        </div>
-                    ))}
-                </div>
-            </div> */}
+
         </div>
     );
 };

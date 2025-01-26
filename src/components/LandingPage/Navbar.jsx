@@ -199,9 +199,7 @@ export default function Navbar() {
           <li className="to_drop">
             <Link to="/travel-groups"> Small Group Boutique Expeditions </Link>
           </li>
-          <li className="to_drop"  >
-            <Link to="/product/rugs">Rugs</Link>
-          </li>
+
           <li className="to_drop" >
             <Link to="/" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}> By Destination </Link>
 
@@ -239,6 +237,9 @@ export default function Navbar() {
 
 
 
+          </li>
+          <li className="to_drop"  >
+            <Link to="/product/rugs">Heritage Masterpiece </Link>
           </li>
           <li>
             <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
@@ -283,14 +284,12 @@ export default function Navbar() {
               <div className="side_nav_link" onClick={() => setShowDestinationDropdown(!showDestinationDropdown)}>
                 <Link to="/">By Destination</Link>
               </div>
-
-              <li className="side_nav_link"  >
-                <Link to="/product/rugs">Rugs</Link>
-              </li>
-
               <div className="side_nav_link">
                 <Link to="/aboutus">Our Story</Link>
               </div>
+              <li className="side_nav_link">
+                <Link to="/product/rugs">Heritage Masterpiece</Link>
+              </li>
 
               <div className="side_nav_link">
                 <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>

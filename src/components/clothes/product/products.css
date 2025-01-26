@@ -114,3 +114,130 @@
     color: #666;
     text-align: center;
 }
+
+
+.midasia-container {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #444;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.hero {
+    background: #fff7e6;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    color: #8b4513;
+    /* Earthy tone */
+    font-size: 2rem;
+}
+
+.hero p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.highlight {
+    background: #fff7e6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.highlight h2 {
+    color: #8b4513;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.highlight p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #8b4513;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #a65b2d;
+}
+
+.contact-details h2,
+.locations h2 {
+    color: #6b4226;
+    margin-bottom: 1rem;
+}
+
+.contact-card {
+    width: 100%;
+    margin: auto;
+    background: #fff7e6;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-card a {
+    color: #8b4513;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-card>p {
+    margin: 0.5rem;
+}
+
+.contact-card>h3 {
+    margin: 1rem;
+}
+
+.locations,
+.contact-details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.locations>h2 {
+    color: #8b4513;
+}
+
+.locations p {
+    color: #555;
+    font-size: 1rem;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
