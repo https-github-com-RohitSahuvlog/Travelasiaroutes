@@ -185,9 +185,9 @@ export default function Navbar() {
         <div className="call-and-home-nav-item">
           <Link to="/"><img src={logo} alt="MidAsia logo" className="navbar-logo img-fluid" /></Link>
 
-          <a href="mailto:sumit.steve@yahoo.com" className="call-and-home-nav-item d-flex align-items-center text-black">
+          {/* <a href="mailto:sumit.steve@yahoo.com" className="call-and-home-nav-item d-flex align-items-center text-black">
             <EmailIcon />
-          </a>
+          </a> */}
         </div>
         <div className="nav-items">
           <li className="to_drop"  >
@@ -237,6 +237,9 @@ export default function Navbar() {
 
 
 
+          </li>
+          <li className="to_drop">
+            <Link to="/aboutus">Our Story</Link>
           </li>
           <li className="to_drop"  >
             <Link to="/product/rugs">Heritage Masterpiece </Link>

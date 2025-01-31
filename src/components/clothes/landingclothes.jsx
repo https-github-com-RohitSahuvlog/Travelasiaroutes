@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 import styled from "@emotion/styled";
-import Banner from "./banner/banner";
 import Product from "./product/products";
 const Landingpage = styled.div`
 
@@ -14,7 +13,6 @@ export default function ClotheslandingPage() {
     }, []);
     return (
         <Landingpage className="Landingpage">
-            <Banner />
             <Product />
         </Landingpage>
     );
