@@ -42,13 +42,6 @@ let initialData = [
     description: "Embark on a mesmerizing odyssey through the unseen legends of Oman",
   },
   {
-    link: "/travel-groups/india-kumbh",
-    thumbnail: "https://res.cloudinary.com/dr2kfppse/image/upload/v1730507784/rwogce20tzbortqy2vcl.jpg",
-    region: "Asia–Pacific",
-    title: "India's Kumbh Mela Festival",
-    description: "Explore India's sacred Kumbh Mela: engage with sadhus, boat rides, and spiritual wonders await.",
-  },
-  {
     link: "/travel-groups/landlock-laos-combodia",
     thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712224/bdusztm1tpe4tfnrtaos.jpg",
     region: "Asia–Pacific",

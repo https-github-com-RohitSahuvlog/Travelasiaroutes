@@ -13,7 +13,6 @@ import SeeItiniery from "./components/Bydestination/India/see-itiniery";
 import OmanTrip from "./components/travel-group/oman-trip/oman-tour";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import LaosCombodiaTrip from "./components/travel-group/landlock-laos-combodia/landlock-laos-combodia-tour";
-import IndiaKumbhTrip from "./components/travel-group/india-kumbh-trip/india-kumbh-tour";
 import PrivacyPolicy from "./pages/privacy_policy";
 import TermsAndConditions from "./pages/Booking-terms-conditions";
 import TravelForm from "./pages/booking-form";
@@ -62,7 +61,6 @@ function App() {
         <Route path="/travel-groups" element={<TravelGroups />} />
         <Route path="/travel-groups/oman" element={<OmanTrip />} />
         <Route path="/travel-groups/landlock-laos-combodia" element={< LaosCombodiaTrip />} />
-        <Route path="/travel-groups/india-kumbh" element={< IndiaKumbhTrip />} />
         <Route path="/activitylevel" element={<ActivityLevels />} />
         <Route path="/travel-groups/:itineraryname" element={<Trip />} />
         <Route path="/product/rugs" element={<ClotheslandingPage />} />
