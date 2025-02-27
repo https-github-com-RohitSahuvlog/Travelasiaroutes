@@ -167,6 +167,7 @@
 .SetDataLeft>ul>li {
   margin: 20px;
   text-align: left;
+  list-style: disc;
 }
 
 .SetDataright {

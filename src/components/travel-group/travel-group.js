@@ -8,21 +8,6 @@ import Axios from '../../api';
 import Modal from './enuiry-model/model';
 
 const initialData = [
-
-  {
-    link: "oman",
-    thumbnail: "https://www.remotelands.com/remotenew1/dist/images/country/oman/city/15030503/b160822041.jpg",
-    region: "MiddleEast",
-    title: "Unexpected Oman-The Land of Frankincense",
-    description: "Embark on a mesmerizing odyssey through the unseen legends of Oman",
-  },
-  {
-    link: "landlock-laos-combodia",
-    thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712235/tuzwdpsbywevcyrbjok0.jpg",
-    region: "Asia–Pacific",
-    title: "Landlocked Laos & Life along Mekong with Combodia Extension",
-    description: "(Small Group Journey)",
-  },
 ];
 
 const GlobalStyle = createGlobalStyle`

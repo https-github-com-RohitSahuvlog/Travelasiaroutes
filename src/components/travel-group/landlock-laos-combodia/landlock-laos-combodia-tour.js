@@ -177,9 +177,9 @@ const LaosCombodiaTrip = () => {
                       <li>Cruise along the scenic Mekong River and witness rural life along its banks.</li>
                       <li>Visit Luang Prabang, a UNESCO World Heritage Site known for its stunning architecture and cultural heritage.</li>
                       <li>Participate in the traditional alms-giving ceremony and explore ancient temples in Luang Prabang.</li>
-                      <li>Experience the natural beauty of Kuang Si Waterfalls and take part in a traditional Baci ceremony.</li>
+                      <li> the natural beauty of Kuang Si Waterfalls and take part in a traditional Baci ceremony.</li>
                       <li>Trek through lush mountain trails and visit remote villages to learn about local customs and traditions.</li>
-                      <li>Embark on a scenic boat cruise down the Nam Ou River and explore the picturesque town of Nong Khiaw.</li>
+                      <li>Embark onExperience a scenic boat cruise down the Nam Ou River and explore the picturesque town of Nong Khiaw.</li>
                       <li>Discover the capital city of Vientiane and visit iconic landmarks such as Pha That Luang and Wat Sisaket.</li>
                       <li>Explore the Bolaven Plateau in Pakse and visit minority villages to learn about their way of life.</li>
 

@@ -32,9 +32,5 @@ export const Images = [
     {
         original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712235/tuzwdpsbywevcyrbjok0.jpg",
         thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712235/tuzwdpsbywevcyrbjok0.jpg",
-    },
-    {
-        original: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712225/mjdryedvutm7adlfois6.jpg",
-        thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712225/mjdryedvutm7adlfois6.jpg",
     }
 ];

@@ -26,29 +26,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-let initialData = [
-  // {
-  //   link: "/travel-groups/3eyeshimalayas",
-  //   thumbnail: "https://res.cloudinary.com/dxhoawdbh/image/upload/v1711857300/m160822019_u66yv0.jpg",
-  //   region: "Asia–Pacific",
-  //   title: "3 Eyes of Himalayas- Best of Tibet, Bhutan and Nepal",
-  //   description: "Uncover the charm of Tibet, Bhutan, and Nepal. Dive into rich cultures, ancient traditions, and stunning landscapes. Plus, discover the allure of the Philippines. Your unforgettable journey begins here!"
-  // },
-  {
-    link: "/travel-groups/oman",
-    thumbnail: "https://www.remotelands.com/remotenew1/dist/images/country/oman/city/15030503/b160822041.jpg",
-    region: "MiddleEast",
-    title: "Unexpected Oman-The Land of Frankincense",
-    description: "Embark on a mesmerizing odyssey through the unseen legends of Oman",
-  },
-  {
-    link: "/travel-groups/landlock-laos-combodia",
-    thumbnail: "https://res.cloudinary.com/dg5dkcpkn/image/upload/v1721712224/bdusztm1tpe4tfnrtaos.jpg",
-    region: "Asia–Pacific",
-    title: "Landlocked Laos & Life along Mekong with Combodia Extension",
-    description: "(Small Group Journey)",
-  },
-]
+let initialData = []
 export default function JetExpeditions() {
   const itineraryData = useSelector((state) => state.travelPackages.itineraryTripData);
   const [data, setData] = useState(initialData);
