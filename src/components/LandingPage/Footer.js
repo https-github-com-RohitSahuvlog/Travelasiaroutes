@@ -5,202 +5,261 @@ import {
   faFacebook,
   faTwitter,
   faInstagram,
+  faLinkedin,
+  faYoutube,
+  faWhatsapp
 } from '@fortawesome/free-brands-svg-icons';
-import Axios from "../../api";
-import { Link } from "react-router-dom";
-
+import { 
+  faMapMarkerAlt, 
+  faPhoneAlt, 
+  faGlobe, 
+  faEnvelope, 
+  faArrowUp 
+} from '@fortawesome/free-solid-svg-icons';
+import axios from "axios";
 
 const Footer = () => {
-  const [data, setData] = useState({
+  const [footerData, setFooterData] = useState({
     officeBranches: [],
     contactInfo: [],
   });
+  
+  const [email, setEmail] = useState("");
 
   useEffect(() => {
-    Axios.get("/api/footer/get-footer")
-      .then((response) => {
-        const { data } = response; // Access the 'data' property in the response
-        const { officeBranches, contactInfo } = data;
-        setData({ officeBranches, contactInfo });
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
+    fetchFooterData();
   }, []);
+
+  const fetchFooterData = async () => {
+    try {
+      const response = await axios.get("https://api.midasiaroutes.in/api/footer/get-footer");
+      const { officeBranches, contactInfo } = response.data;
+      setFooterData({ officeBranches, contactInfo });
+    } catch (error) {
+      console.error("Error fetching footer data:", error);
+    }
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    console.log("Subscribing email:", email);
+    setEmail("");
+  };
+
+  // Office locations with fallback data
+  const officeLocations =  [
+    {
+      id: 1,  
+      location: "USA",
+      address: "1309 Coffeen Avenue, STE 1200, Sheridan, Wyoming 82801, USA"
+    },
+    {
+      id: 2,
+      location: "India",
+      address: "B/176-Greenfields, Delhi-NCR, 121003"
+    }
+  ];
+
+  // Contact information with fallback data
+  const contactInformation =  [
+    {
+      id: 1,
+      icon: faPhoneAlt,
+      text: "USA/Canada: +1 (888) 449-0977"
+    },
+    {
+      id: 2,
+      icon: faGlobe,
+      text: "Worldwide: +91-8750970676"
+    },
+    {
+      id: 3,
+      icon: faEnvelope,
+      text: "sumit.steve@yahoo.com, sumit@midasiaroutes.com"
+    }
+  ];
+
+  // Function to scroll to top
+  const scrollToTop = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+
+  const allOfficeLocations = [
+    "Delhi", "Muscat", "Dubai", "Bangkok", "Baghdad", "Shiraz", "Tashkent", "Kathmandu", "Cairo"
+  ];
 
   return (
     <>
-      <div className={styles.FooterMain}>
-        <div className={styles.Container}>
-          <div className={styles.Footsec}>
-            <div className={`${styles["col-md-12 col-12"]} ${styles.footer_logo}`}>
-              <div className={styles.footer_about}>
-                <div className={styles.about_logo}>
-                  <a href="#">
-                    {/* <img className={styles.img} src="https://midasiaroutes.com/images/footer_logo.png" alt="Image" /> */}
-                  </a>
+      <footer className={styles.footer || "footer"}>
+        <div className={styles.footerTop || "footer-top"}>
+          <div className={styles.container || "container"}>
+            <div className={styles.footerWrapper || "footer-wrapper"}>
+              <div className={styles.footerInfo || "footer-info"}>
+                <div className={styles.addressContainer || "address-container"}>
+                  <h3 className={styles.footerSectionTitle || "footer-section-title"}>OUR OFFICES / ADDRESS</h3>
+                  <div className={styles.officesGrid || "offices-grid"}>
+                    {officeLocations.map((office, index) => (
+                      <div className={styles.officeCard || "office-card"} key={office.id || index}>
+                        <div className={styles.officeLocation || "office-location"}>
+                          <div className={styles.officeIcon || "office-icon"}>
+                            <FontAwesomeIcon icon={faMapMarkerAlt} />
+                          </div>
+                          <div className={styles.officeAddress || "office-address"}>
+                            Office Branch/DMC - {office.location} {office.address}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className={`${styles["col-md-12 "]} ${styles.contact_us_new}`}>
-              <h3 className={styles.H3_use}>OUR OFFICES / ADDRESS <hr className={styles.hrclass} /></h3>
-            </div>
 
-            <div className={styles.location_title}>
-              {data.officeBranches && data.officeBranches.map((item, index) => (
+              <div className={styles.footerLinks || "footer-links"}>
+                <div className={styles.footerLinksColumn || "footer-links-column"}>
+                  <h3 className={styles.footerSectionTitle || "footer-section-title"}>MidAsiaRoutes</h3>
+                  <ul className={styles.footerNav || "footer-nav"}>
+                    <li>
+                      <a href="/">Home</a>
+                    </li>
+                    <li>
+                      <a href="/bespoke">Bespoke-For your Travel DNA</a>
+                    </li>
+                    <li>
+                      <a href="/travel-groups">Small Group Boutique Expeditions</a>
+                    </li>
+                    {/* our story */}
+                    <li><a href="/aboutus">Our Story</a></li>
+                  </ul>
+                </div>
 
-                <div key={index} className={`${styles["col-md-3"]} ${styles.location_new}`}>
-                  <ul>
-                    <li className={styles.local_li} >
-                      <span>
-                        {item.location} - {item.address}
-                      </span>
+                <div className={styles.footerLinksColumn || "footer-links-column"}>
+                  <h3 className={styles.footerSectionTitle || "footer-section-title"}>Other Links</h3>
+                  <ul className={styles.footerNav || "footer-nav"}>
+                    <li>
+                      <a href="/privacy">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="/booking-terms">Booking Terms & Conditions</a>
+                    </li>
+                    <li>
+                      <a href="/booking-form">Booking Forms</a>
                     </li>
                   </ul>
                 </div>
-              ))}
 
-            </div>
-            {/* </div> */}
-            <hr className={styles.hr} />
-            <div className={styles.footer_links}>
-              <div className={styles.footer_left}>
-                <div className={styles.row}>
-                  <div className={styles["col-md-12 col-ms-12 col-xs-12"]}>
-                    <div className={styles.footer_about}>
-                      <div className={styles.about_location}>
-                        <div >
-                          <h3 className={styles.H3_us}>officeBranches <hr className={styles.hrclass} /></h3>
-                          {data?.contactInfo && data?.contactInfo.map((item, index) => (
-
-                            <ul className={styles.menulist} key={index}>
-                              <li className={styles.loc_li}>
-                                {item.label} : {item.number || item.address}
-                              </li>
-                            </ul>
-                          ))}
-                          {data?.contactInfo && data?.contactInfo.map((item, index) => (
-
-                            <ul className={styles.menulist} key={index}>
-                              <li className={styles.loc_li}>
-                                {item.address} <br />
-                              </li>
-                            </ul>
-                          ))}
+                <div className={styles.footerLinksColumn || "footer-links-column"}>
+                  <h3 className={styles.footerSectionTitle || "footer-section-title"}>Contact Us</h3>
+                  <div className={styles.contactInfo || "contact-info"}>
+                    {contactInformation.map((contact, index) => (
+                      <div className={styles.contactItem || "contact-item"} key={contact.id || index}>
+                        <div className={styles.contactIcon || "contact-icon"}>
+                          <FontAwesomeIcon icon={contact.icon} />
                         </div>
-
+                        <div className={styles.contactText || "contact-text"}>
+                          {contact.text}
+                        </div>
                       </div>
-                      <br />
-
-                      {/* </div> */}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.footer_right}>
-                <div className={styles.row}>
-                  <div className={`${styles["col-md-4 col-sm-4 col-xs-12"]}`}>
-                    <div className={styles.footer_links_list}>
-                      <h3 className={styles.H3_us}>
-                        MidAsiaRoutes
-                        <hr className={styles.hrclass} />
-                      </h3>
-                      <ul className={styles.menulist}>
-                        <li className={styles.loca_li}>
-                          <a href="/">Home</a>
-                        </li>
-                        <li className={styles.loca_li}>
-                          <a href="/bespoke">
-                            Bespoke-For your Travel DNA</a>
-                        </li>
-                        <li className={styles.loca_li}>
-                          <a href="/travel-groups">Small Group Boutique Expeditions</a>
-                        </li>
-                        {/* <li className={styles.loca_li}>
-                          <a href="#">By Destination</a>
-                        </li> */}
-                      </ul>
-                    </div>
-                  </div>
-                  {/* <div className={`${styles["col-md-4 col-sm-4 col-xs-12"]}`}>
-                    <div className={styles.footer_links_list}>
-                      <h3 className={styles.H3_us}>
-                        Our Geography
-                        <hr className={styles.hrclass} />
-                      </h3>
-                      <ul className={styles.menulist}>
-                        <li className={styles.loca_li}>
-                          <a href="#">Asia/Pacific</a>
-                        </li>
-                        <li className={styles.loca_li}>
-                          <a href="#">MiddleEast</a>
-                        </li>
-
-                      </ul>
-                    </div>
-                  </div> */}
-                  <div className={`${styles["col-md-4 col-sm-4 col-xs-12"]}`}>
-                    <div className={styles.footer_links_list}>
-                      <h3 className={styles.H3_us}>
-                        Other Links
-                        <hr className={styles.hrclass} />
-                      </h3>
-                      <ul className={styles.menulist}>
-                        <li className={styles.loca_li}>
-                          <Link to="/privacy">Privacy Policy</Link>
-
-                        </li>
-                        <li className={styles.loca_li}>
-                          <Link to="/booking-terms">Booking Terms & Conditions</Link>
-                        </li>
-                        {/* <li className={styles.loca_li}>
-                          <a href="#">SiteMap</a>
-                        </li> */}
-                        <li className={styles.loca_li}>
-                          <Link to="/booking-form">Booking Forms</Link>
-                        </li>
-                      </ul>
-                    </div>
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
 
-      </div >
-      <div className={styles.copyright}>
-        <div className={styles.social_link}>
-          <div className={styles.social_icons}>
-            <div>
-              <a href="https://www.facebook.com/midasia/" className={styles.icon} title="Facebook" target="_blank">
-                <FontAwesomeIcon icon={faFacebook} size="1.2x" />
-              </a>
-            </div>
-
-            <div>
-              <a href="#" className={styles.icon} title="Twitter" target="_blank">
-                <FontAwesomeIcon icon={faTwitter} size="1.2x" />
-              </a>
-            </div>
-
-            <div>
-              <a href="https://www.instagram.com/midasia_routes?igsh=dHBudmYzMTEzNXJj&utm_source=qr" className={styles.iconinsta} title="Instagram" target="_blank">
-                <FontAwesomeIcon icon={faInstagram} size="1.2x" />
-              </a>
-            </div>
-
-          </div>
-        </div>
-        <div className={styles.container_fluid}>
-          <div className={styles.copyright_content}>
-            <p className={styles.copyP}>
-              © 2020 MIDAISAROUTES All Rights Reserved.
+        <div className={styles.additionalOffices || "additional-offices"}>
+          <div className={styles.container || "container"}>
+            <p className={styles.otherOfficesText || "other-offices-text"}>
+              Other Offices:<br />
+              {" "}
+              {allOfficeLocations.join(" | ")}
             </p>
           </div>
         </div>
-      </div>
+
+        <div className={styles.footerMiddle || "footer-middle"}>
+          <div className={styles.container || "container"}>
+            <div className={styles.footerMiddleWrapper || "footer-middle-wrapper"}>
+              <div className={styles.newsletter || "newsletter"}>
+                <h4 className={styles.newsletterTitle || "newsletter-title"}>Subscribe to Our Newsletter</h4>
+                <form className={styles.newsletterForm || "newsletter-form"} onSubmit={handleSubscribe}>
+                  <input
+                    type="email"
+                    className={styles.newsletterInput || "newsletter-input"}
+                    placeholder="Your Email Address"
+                    value={email}
+                    onChange={handleEmailChange}
+                    required
+                  />
+                  <button type="submit" className={styles.newsletterButton || "newsletter-button"}>
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+
+              <div className={styles.socialLinks || "social-links"}>
+                <a
+                  href="https://www.facebook.com/midasia/"
+                  className={styles.socialLink || "social-link"}
+                  aria-label="Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faFacebook} />
+                </a>
+                <a
+                  href="https://twitter.com/midasiaroutes"
+                  className={styles.socialLink || "social-link"}
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
+                <a
+                  href="https://www.instagram.com/midasia_routes?igsh=dHBudmYzMTEzNXJj&utm_source=qr"
+                  className={styles.socialLink || "social-link"}
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <a
+                  href="https://linkedin.com/company/midasiaroutes"
+                  className={styles.socialLink || "social-link"}
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a
+                  href="https://youtube.com/midasiaroutes"
+                  className={styles.socialLink || "social-link"}
+                  aria-label="YouTube"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faYoutube} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.footerBottom || "footer-bottom"}>
+          <div className={styles.container || "container"}>
+            <p className={styles.copyright || "copyright"}>
+              © {new Date().getFullYear()} <a href="/">MIDASIAROUTES</a> All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
