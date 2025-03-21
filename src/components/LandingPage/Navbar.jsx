@@ -241,9 +241,6 @@ export default function Navbar() {
           <li className="to_drop">
             <Link to="/aboutus">Our Story</Link>
           </li>
-          <li className="to_drop"  >
-            <Link to="/product/rugs">Heritage Masterpiece </Link>
-          </li>
           <li>
             <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
             <Modal
@@ -290,10 +287,6 @@ export default function Navbar() {
               <div className="side_nav_link">
                 <Link to="/aboutus">Our Story</Link>
               </div>
-              <li className="side_nav_link">
-                <Link to="/product/rugs">Heritage Masterpiece</Link>
-              </li>
-
               <div className="side_nav_link">
                 <button className="btn-a btn-a-outline" onClick={handleOpen}>Start Planning</button>
                 <Modal
