@@ -109,7 +109,7 @@ const Footer = () => {
                             <FontAwesomeIcon icon={faMapMarkerAlt} />
                           </div>
                           <div className={styles.officeAddress || "office-address"}>
-                            Office Branch/DMC - {office.location} {office.address}
+                            Head Office/DMC - {office.location} {office.address}
                           </div>
                         </div>
                       </div>
