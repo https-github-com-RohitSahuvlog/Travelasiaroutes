@@ -91,11 +91,12 @@ const Trip = () => {
     try {
       const response = await Axios.get(`/api/itinerary/trip-name/${country}`);
       if(!response?.data.length){
-        <Navigate to="/pageerror" />
+        navigation("/pageerror")
         return;
       }
       setItinerary(response?.data[0]);
     } catch (error) {
+      navigation("/pageerror")
       console.error("Error fetching data:", error);
     }
   };
