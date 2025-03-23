@@ -4,7 +4,7 @@ import ScrollHighlightNabbar from '../ScrollHighlightNabbar/ScrollHighlightNabba
 import styles from "./trip-tour.module.css";
 import MyGallery from '../SliderImage/slider-image-group';
 import MyAccordion from '../accordian/accordian';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@mui/material';
 import Modal from '../enuiry-model/model';
 import Axios from '../../../api';
@@ -90,7 +90,11 @@ const Trip = () => {
   const fetchItineraryData = async (country) => {
     try {
       const response = await Axios.get(`/api/itinerary/trip-name/${country}`);
-      setItinerary(response.data);
+      if(!response?.data.length){
+        <Navigate to="/pageerror" />
+        return;
+      }
+      setItinerary(response?.data[0]);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
