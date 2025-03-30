@@ -5,12 +5,390 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
 <url>
   <loc>https://midasiaroutes.com/</loc>
   <lastmod>2025-03-30T11:00:28+00:00</lastmod>
 </url>
+
+<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://midasiaroutes.com/</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/azerbaijan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/bangladesh</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/bhutan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/brunei</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/cambodia</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/china</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/japan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/india</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/indonesia</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/kazakhstan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/kyrgyzstan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/laos</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/malaysia</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/maldives</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/mongolia</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/myanmar</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/nepal</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/pakistan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/philippines</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/singapore</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/south-korea</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/sri-lanka</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/taiwan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/tajikistan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/thailand</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/tibet</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/turkmenistan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/uzbekistan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/vietnam</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/egypt</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/iran</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/israel</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/iraq</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/jordan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/lebanon</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/oman</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/palestine</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/saudi-arabia</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/uae</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/yemen</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/algeria</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/botswana</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/cameroon</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/chad</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/congo</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/djibouti</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/eritrea</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/ethiopia</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/kenya</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/madagascar</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/malawi</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/mali</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/mauritius</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/morocco</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/namibia</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/rwanda</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/seychelles</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/somalia</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/south-sudan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/sudan</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/tanzania</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/tunisia</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/uganda</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/bespoke</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/travel-groups</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/aboutus</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/privacy</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/booking-terms</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/booking-form</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/activitylevel</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/Itineraries</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/product/rugs</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/product/checkout</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://midasiaroutes.com/pageerror</loc>
+	<lastmod>2025-03-30T15:10:38+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>
 
 
 </urlset>
